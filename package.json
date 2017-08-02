@@ -1,0 +1,23 @@
+{
+  "name": "prx-podagent",
+  "version": "0.0.1",
+  "description": "User-agent parser for common podcast clients",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRX/prx-podagent.git"
+  },
+  "keywords": [
+    "podcast",
+    "user-agent"
+  ],
+  "author": "ryan cavis <ryan@prx.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PRX/prx-podagent/issues"
+  },
+  "homepage": "https://github.com/PRX/prx-podagent#readme"
+}
