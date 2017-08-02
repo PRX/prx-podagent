@@ -1,4 +1,16 @@
 agents:
+  - regex: ^AppleCoreMedia.+Apple TV
+    name: Apple Podcasts
+  - regex: ^AppleCoreMedia.+Audio Accessory
+    name: Apple Podcasts
+  - regex: ^AppleCoreMedia.+iPad
+    name: Apple Podcasts
+  - regex: ^AppleCoreMedia.+iPhone
+    name: Apple Podcasts
+  - regex: ^AppleCoreMedia.+iPod
+    name: Apple Podcasts
+  - regex: ^AppleCoreMedia.+Macintosh
+    name: Apple Podcasts
   - regex: ^Mozilla/5\.0.+iPhone.+FxiOS
     name: iPhone Firefox
   - regex: ^Mozilla/5\.0.+iPhone.+CriOS
