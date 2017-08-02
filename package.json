@@ -4,7 +4,7 @@
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha test/*-test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/PRX/prx-podagent/issues"
   },
-  "homepage": "https://github.com/PRX/prx-podagent#readme"
+  "homepage": "https://github.com/PRX/prx-podagent#readme",
+  "devDependencies": {
+    "csv": "^1.1.1",
+    "mocha": "^3.5.0"
+  },
+  "dependencies": {
+    "js-yaml": "^3.9.1"
+  }
 }

@@ -1,0 +1,15 @@
+agents:
+  - regex: ^Mozilla/5\.0.+iPhone.+FxiOS
+    name: iPhone Firefox
+  - regex: ^Mozilla/5\.0.+iPhone.+CriOS
+    name: iPhone Chrome
+  - regex: ^Mozilla/5\.0.+iPhone.+FBAN
+    name: iPhone Facebook
+  - regex: ^Mozilla/5\.0.+iPhone.+Twitter
+    name: iPhone Twitter
+  - regex: ^Mozilla/5\.0.+iPhone.+AppleNews
+    name: iPhone AppleNews
+  - regex: ^Mozilla/5\.0.+iPhone.+Safari
+    name: iPhone Safari
+  - regex: ^Mozilla/5\.0.+iPhone
+    name: iPhone Safari
