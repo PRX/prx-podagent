@@ -4,7 +4,9 @@
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*-test.js"
+    "test": "mocha test/*-test.js",
+    "lock": "node lock.js",
+    "prepublish": "node lock.js"
   },
   "repository": {
     "type": "git",

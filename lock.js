@@ -61,3 +61,4 @@ console.log(`  ${Object.keys(newLock.tags).length} tags`);
 
 let newText = yaml.safeDump(newLock, {lineWidth: 200});
 fs.writeFileSync(`${__dirname}/db/agents.lock.yml`, newText);
+console.log('done!');
