@@ -350,7 +350,7 @@ agents:
     type: Mobile App
     os: iOS
   - regex: ^Mozilla/5\.0.+iPhone.+AppleNews
-    name: AppleNews
+    name: Apple News
     type: Mobile App
     os: iOS
   - regex: ^Mozilla/5\.0.+iPhone.+Safari
