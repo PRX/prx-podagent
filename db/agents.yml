@@ -31,32 +31,6 @@ agents:
     name: null
     type: Mobile App
     os: Android
-  # applecoremedia ... truthy?
-  - regex: ^AppleCoreMedia.+Apple TV
-    name: Podcasts
-    type: Smart TV
-    os: iOS
-  - regex: ^AppleCoreMedia.+Audio Accessory # HomePod
-    name: Podcasts
-    type: Smart Home
-    os: iOS
-  - regex: ^AppleCoreMedia.+iPad
-    name: Podcasts
-    type: Mobile App
-    os: iOS
-  - regex: ^AppleCoreMedia.+iPhone
-    name: Podcasts
-    type: Mobile App
-    os: iOS
-  - regex: ^AppleCoreMedia.+iPod
-    name: Podcasts
-    type: Mobile App
-    os: iOS
-  - regex: ^AppleCoreMedia.+Macintosh
-    name: iTunes
-    type: Desktop App
-    os: macOS
-  # more misc
   - regex: ^Breaker.+CFNetwork
     name: Breaker
     type: Mobile App
@@ -121,6 +95,18 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^iTunes.+Macintosh
+    name: iTunes
+    type: Desktop App
+    os: macOS
+  - regex: ^iTunes.+Windows
+    name: iTunes
+    type: Desktop App
+    os: Windows
+  - regex: ^Lavf
+    name: null
+    type: Desktop App # really?
+    os: null
   - regex: ^LG-.+LG Player.+Android
     name: null
     type: Mobile App
@@ -129,6 +115,104 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^NPR%20One.+CFNetwork
+    name: NPR One
+    type: Mobile App
+    os: iOS
+  - regex: ^NPROneAndroid
+    name: NPR One
+    type: Mobile App
+    os: Android
+  - regex: ^okhttp
+    name: null
+    type: Mobile App
+    os: Android
+  - regex: ^Overcast
+    name: Overcast
+    type: Mobile App
+    os: iOS
+  - regex: ^Player FM
+    name: Player FM
+    type: Mobile App
+    os: Android
+  - regex: ^Pocket Casts
+    name: Pocket Casts
+    type: Mobile App
+    os: null
+  - regex: ^Podbean/iOS
+    name: Podbean
+    type: Mobile App
+    os: iOS
+  - regex: ^PodcastAddict.+Android
+    name: PodcastAddict
+    type: Mobile App
+    os: Android
+  - regex: ^podcast/.+CFNetwork
+    name: The Podcast App
+    type: Mobile App
+    os: iOS
+  - regex: ^Podkicker
+    name: Podkicker
+    type: Mobile App
+    os: Android
+  - regex: ^RadioPublic Android|^RadioPublic/android
+    name: RadioPublic
+    type: Mobile App
+    os: Android
+  - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork
+    name: RadioPublic
+    type: Mobile App
+    os: iOS
+  - regex: ^Sonos
+    name: Sonos
+    type: Smart Home
+    os: null
+  - regex: ^Stitcher/Android
+    name: Stitcher
+    type: Mobile App
+    os: Android
+  - regex: ^Stitcher/iOS
+    name: Stitcher
+    type: Mobile App
+    os: iOS
+  - regex: ^Zune
+    name: Zune
+    type: Mobile App
+    os: null
+
+  # witness ye podcasts and despair
+  - regex: ^Podcasts
+    name: Podcasts
+    type: Mobile App
+    os: iOS
+  - regex: ^itunesstored
+    name: Podcasts
+    type: Mobile App
+    os: iOS
+  - regex: ^AppleCoreMedia.+Apple TV
+    name: Podcasts
+    type: Smart TV
+    os: iOS
+  - regex: ^AppleCoreMedia.+Audio Accessory # HomePod
+    name: Podcasts
+    type: Smart Home
+    os: iOS
+  - regex: ^AppleCoreMedia.+iPad
+    name: Podcasts
+    type: Mobile App
+    os: iOS
+  - regex: ^AppleCoreMedia.+iPhone
+    name: Podcasts
+    type: Mobile App
+    os: iOS
+  - regex: ^AppleCoreMedia.+iPod
+    name: Podcasts
+    type: Mobile App
+    os: iOS
+  - regex: ^AppleCoreMedia.+Macintosh
+    name: iTunes
+    type: Desktop App
+    os: macOS
 
   # old, old IE
   - regex: ^Mozilla/4\.0.+MSIE
@@ -156,6 +240,14 @@ agents:
     type: Mobile Browser
     os: Android
   - regex: ^Mozilla/5\.0.+Android
+    name: null
+    type: Mobile Browser
+    os: Android
+  - regex: ^Samsung.+stagefright
+    name: null
+    type: Mobile Browser
+    os: Android
+  - regex: ^stagefright.+Android
     name: null
     type: Mobile Browser
     os: Android
@@ -306,6 +398,15 @@ agents:
     type: Desktop Browser
     os: Linux
 
-  # process bots last
+  # unlabeled firefox, huh?
+  - regex: ^Mozilla/5\.0.+Gecko.+Firefox
+    name: Firefox
+    type: Desktop Browser
+    os: null
+
+  # bots and blanks last
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
     caseInsensitive: true
+    bot: true
+  - regex: ^\s*$
+    blank: true
