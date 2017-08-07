@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/PRX/prx-podagent#readme",
   "devDependencies": {
+    "chai": "^4.1.1",
     "csv": "^1.1.1",
     "mocha": "^3.5.0"
   },

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
+const TAGS = ['name', 'type', 'os'];
 
 /**
  * Sync parse a user agent string
@@ -10,7 +11,7 @@ exports.parse = (agentStr, callback) => {
       if (err) {
         callback(err);
       } else {
-        callback(findAgent(agentStr));
+        callback(null, findAgent(agentStr));
       }
     });
   } else {
@@ -27,12 +28,12 @@ exports.load = (callback) => {
   if (DB) {
     callback && callback();
   } else if (callback) {
-    fs.readFile(`${__dirname}/db/agents.yml`, (err, text) => {
+    fs.readFile(`${__dirname}/db/agents.lock.yml`, (err, text) => {
       parseAgents(text);
       callback(err);
     });
   } else {
-    parseAgents(fs.readFileSync(`${__dirname}/db/agents.yml`, 'utf8'));
+    parseAgents(fs.readFileSync(`${__dirname}/db/agents.lock.yml`, 'utf8'));
   }
 }
 
@@ -42,8 +43,13 @@ exports.load = (callback) => {
  function parseAgents(text) {
    let data = yaml.safeLoad(text) || {};
    let agents = data.agents || [];
+   let tagLookup = data.tags || [];
    DB = agents.map(agent => {
      agent.regex = new RegExp(agent.regex);
+     TAGS.forEach(t => {
+       agent[`${t}Id`] = agent[t];
+       agent[t] = tagLookup[agent[t]] || 'Unknown';
+     });
      return agent;
    });
  }

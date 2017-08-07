@@ -1,0 +1,409 @@
+agents:
+  - regex: ^\+hermespod\.com
+    name: '1'
+    type: '35'
+    os: '41'
+  - regex: ^Acast.+Android
+    name: '2'
+    type: '36'
+    os: '42'
+  - regex: ^Acast.+CFNetwork
+    name: '2'
+    type: '36'
+    os: '43'
+  - regex: ^AlexaMediaPlayer
+    name: '3'
+    type: '37'
+    os: '44'
+  - regex: ^AllYouCanBooks.+CFNetwork
+    name: '4'
+    type: '36'
+    os: '43'
+  - regex: ^AndroidDownloadManager
+    type: '36'
+    os: '42'
+  - regex: ^AntennaPod
+    name: '5'
+    type: '36'
+    os: '42'
+  - regex: ^Apache-HttpClient
+    type: '36'
+    os: '42'
+  - regex: ^Breaker.+CFNetwork
+    name: '6'
+    type: '36'
+    os: '43'
+  - regex: ^Castaway.+CFNetwork
+    name: '7'
+    type: '36'
+    os: '43'
+  - regex: ^CastBox.+Android
+    name: '8'
+    type: '36'
+    os: '42'
+  - regex: ^Castbox.+iOS
+    name: '8'
+    type: '36'
+    os: '43'
+  - regex: ^CastBox/com\.castbox\.CastBox
+    name: '8'
+    type: '36'
+    os: '43'
+  - regex: ^CastBox
+    name: '8'
+    type: '36'
+  - regex: ^Castro
+    name: '9'
+    type: '36'
+    os: '43'
+  - regex: ^Clementine
+    name: '10'
+    type: '35'
+  - regex: ^Dalvik.+Android
+    type: '36'
+    os: '42'
+  - regex: ^Downcast.+iPad
+    name: '11'
+    type: '36'
+    os: '43'
+  - regex: ^Downcast.+iPhone
+    name: '11'
+    type: '36'
+    os: '43'
+  - regex: ^Downcast.+iPod
+    name: '11'
+    type: '36'
+    os: '43'
+  - regex: ^Downcast.+OS X
+    name: '11'
+    type: '35'
+    os: '45'
+  - regex: ^ExoPlayer.+Android
+    type: '36'
+    os: '42'
+  - regex: ^ExoMediaPlayer.+Android
+    type: '36'
+    os: '42'
+  - regex: ^Fire OS.+stagefright
+    type: '36'
+    os: '42'
+  - regex: ^iTunes.+Macintosh
+    name: '12'
+    type: '35'
+    os: '45'
+  - regex: ^iTunes.+Windows
+    name: '12'
+    type: '35'
+    os: '41'
+  - regex: ^Lavf
+    type: '35'
+  - regex: ^LG-.+LG Player.+Android
+    type: '36'
+    os: '42'
+  - regex: ^LibVLC.+Android
+    type: '36'
+    os: '42'
+  - regex: ^NPR%20One.+CFNetwork
+    name: '13'
+    type: '36'
+    os: '43'
+  - regex: ^NPROneAndroid
+    name: '13'
+    type: '36'
+    os: '42'
+  - regex: ^okhttp
+    type: '36'
+    os: '42'
+  - regex: ^Overcast
+    name: '14'
+    type: '36'
+    os: '43'
+  - regex: ^Player FM
+    name: '15'
+    type: '36'
+    os: '42'
+  - regex: ^Pocket Casts
+    name: '16'
+    type: '36'
+  - regex: ^Podbean/iOS
+    name: '17'
+    type: '36'
+    os: '43'
+  - regex: ^PodcastAddict.+Android
+    name: '18'
+    type: '36'
+    os: '42'
+  - regex: ^podcast/.+CFNetwork
+    name: '19'
+    type: '36'
+    os: '43'
+  - regex: ^Podkicker
+    name: '20'
+    type: '36'
+    os: '42'
+  - regex: ^RadioPublic Android|^RadioPublic/android
+    name: '21'
+    type: '36'
+    os: '42'
+  - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork
+    name: '21'
+    type: '36'
+    os: '43'
+  - regex: ^Sonos
+    name: '22'
+    type: '37'
+  - regex: ^Stitcher/Android
+    name: '23'
+    type: '36'
+    os: '42'
+  - regex: ^Stitcher/iOS
+    name: '23'
+    type: '36'
+    os: '43'
+  - regex: ^Zune
+    name: '24'
+    type: '36'
+  - regex: ^Podcasts
+    name: '25'
+    type: '36'
+    os: '43'
+  - regex: ^itunesstored
+    name: '25'
+    type: '36'
+    os: '43'
+  - regex: ^AppleCoreMedia.+Apple TV
+    name: '25'
+    type: '38'
+    os: '43'
+  - regex: ^AppleCoreMedia.+Audio Accessory
+    name: '25'
+    type: '37'
+    os: '43'
+  - regex: ^AppleCoreMedia.+iPad
+    name: '25'
+    type: '36'
+    os: '43'
+  - regex: ^AppleCoreMedia.+iPhone
+    name: '25'
+    type: '36'
+    os: '43'
+  - regex: ^AppleCoreMedia.+iPod
+    name: '25'
+    type: '36'
+    os: '43'
+  - regex: ^AppleCoreMedia.+Macintosh
+    name: '12'
+    type: '35'
+    os: '45'
+  - regex: ^Mozilla/4\.0.+MSIE
+    name: '26'
+    type: '39'
+    os: '41'
+  - regex: ^Mozilla/5\.0.+BB10.+Safari
+    name: '27'
+    type: '40'
+    os: '46'
+  - regex: ^Mozilla/5\.0.+BB10
+    type: '40'
+    os: '46'
+  - regex: ^Mozilla/5\.0.+Android.+Firefox
+    name: '28'
+    type: '40'
+    os: '42'
+  - regex: ^Mozilla/5\.0.+Android.+Chrome
+    name: '29'
+    type: '40'
+    os: '42'
+  - regex: ^Mozilla/5\.0.+Android
+    type: '40'
+    os: '42'
+  - regex: ^Samsung.+stagefright
+    type: '40'
+    os: '42'
+  - regex: ^stagefright.+Android
+    type: '40'
+    os: '42'
+  - regex: ^Mozilla/5\.0.+Macintosh.+Firefox
+    name: '28'
+    type: '39'
+    os: '45'
+  - regex: ^Mozilla/5\.0.+Macintosh.+Chrome
+    name: '29'
+    type: '39'
+    os: '45'
+  - regex: ^Mozilla/5\.0.+Macintosh.+Safari
+    name: '27'
+    type: '39'
+    os: '45'
+  - regex: ^Mozilla/5\.0.+Macintosh
+    type: '39'
+    os: '45'
+  - regex: ^Mozilla/5\.0.+Windows Phone.+Firefox
+    name: '28'
+    type: '40'
+    os: '47'
+  - regex: ^Mozilla/5\.0.+Windows Phone.+Chrome
+    name: '29'
+    type: '40'
+    os: '47'
+  - regex: ^Mozilla/5\.0.+Windows Phone.+IEMobile
+    name: '26'
+    type: '40'
+    os: '47'
+  - regex: ^Mozilla/5\.0.+Windows Phone
+    type: '40'
+    os: '47'
+  - regex: ^Mozilla/5\.0.+Windows NT.+Firefox
+    name: '28'
+    type: '39'
+    os: '41'
+  - regex: ^Mozilla/5\.0.+Windows NT.+Chrome
+    name: '29'
+    type: '39'
+    os: '41'
+  - regex: ^Mozilla/5\.0.+Windows NT
+    name: '26'
+    type: '39'
+    os: '41'
+  - regex: ^Mozilla/5\.0.+iPad.+FxiOS
+    name: '28'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad.+CriOS
+    name: '29'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad.+FBAN
+    name: '30'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad.+Twitter
+    name: '31'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad.+AppleNews
+    name: '32'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad.+Safari
+    name: '27'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPad
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+FxiOS
+    name: '28'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+CriOS
+    name: '29'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+FBAN
+    name: '30'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+Twitter
+    name: '31'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+AppleNews
+    name: '32'
+    type: '36'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone.+Safari
+    name: '27'
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+iPhone
+    type: '40'
+    os: '43'
+  - regex: ^Mozilla/5\.0.+CrOS
+    name: '29'
+    type: '39'
+    os: '48'
+  - regex: ^Mozilla/5\.0.+Tizen.+TV
+    type: '38'
+    os: '49'
+  - regex: ^Mozilla/5\.0.+Tizen
+    type: '40'
+    os: '49'
+  - regex: ^Mozilla/5\.0.+BeyondPod
+    name: '33'
+    type: '36'
+    os: '42'
+  - regex: ^Mozilla/5\.0.+NetCast
+    name: '34'
+    type: '38'
+    os: '50'
+  - regex: ^Mozilla/5\.0.+Linux.+Firefox
+    name: '28'
+    type: '39'
+    os: '49'
+  - regex: ^Mozilla/5\.0.+Linux.+Chrome
+    name: '29'
+    type: '39'
+    os: '49'
+  - regex: ^Mozilla/5\.0.+Linux
+    type: '39'
+    os: '49'
+  - regex: ^Mozilla/5\.0.+Gecko.+Firefox
+    name: '28'
+    type: '39'
+  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
+    caseInsensitive: true
+    bot: true
+  - regex: ^\s*$
+    blank: true
+tags:
+  '1': HermesPod
+  '2': Acast
+  '3': Alexa
+  '4': AllYouCanBooks
+  '5': AntennaPod
+  '6': Breaker
+  '7': Castaway
+  '8': CastBox
+  '9': Castro
+  '10': Clementine
+  '11': Downcast
+  '12': iTunes
+  '13': NPR One
+  '14': Overcast
+  '15': Player FM
+  '16': Pocket Casts
+  '17': Podbean
+  '18': PodcastAddict
+  '19': The Podcast App
+  '20': Podkicker
+  '21': RadioPublic
+  '22': Sonos
+  '23': Stitcher
+  '24': Zune
+  '25': Podcasts
+  '26': Internet Explorer
+  '27': Safari
+  '28': Firefox
+  '29': Chrome
+  '30': Facebook
+  '31': Twitter
+  '32': Apple News
+  '33': BeyondPod
+  '34': NetCast
+  '35': Desktop App
+  '36': Mobile App
+  '37': Smart Home
+  '38': Smart TV
+  '39': Desktop Browser
+  '40': Mobile Browser
+  '41': Windows
+  '42': Android
+  '43': iOS
+  '44': Amazon OS
+  '45': macOS
+  '46': BlackBerryOS
+  '47': Windows Phone
+  '48': ChromeOS
+  '49': Linux
+  '50': webOS
