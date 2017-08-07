@@ -17,7 +17,7 @@ describe('tags-test', function() {
       let data = podagent.parse(agent);
       if (data) {
         let count = names[data.name || null] || 0;
-        names[data.name || null] = count + 1;
+        names[data.name || null] = count + weight;
       }
     });
     printTotal(names);
@@ -29,7 +29,7 @@ describe('tags-test', function() {
       let data = podagent.parse(agent);
       if (data) {
         let count = types[data.type || null] || 0;
-        types[data.type || null] = count + 1;
+        types[data.type || null] = count + weight;
       }
     });
     printTotal(types);
@@ -41,7 +41,7 @@ describe('tags-test', function() {
       let data = podagent.parse(agent);
       if (data) {
         let count = oss[data.os || null] || 0;
-        oss[data.os || null] = count + 1;
+        oss[data.os || null] = count + weight;
       }
     });
     printTotal(oss);
