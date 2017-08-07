@@ -1,8 +1,8 @@
 # PRX Podcast User-Agent Parser
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/prx-podagent)
-[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/prx-podagent)
+[![license](https://img.shields.io/github/license/PRX/prx-podagent.svg)](LICENSE)
+[![npm](https://img.shields.io/npm/v/prx-podagent.svg)](https://www.npmjs.com/package/prx-podagent)
+[![npm](https://img.shields.io/npm/dt/prx-podagent.svg)](https://www.npmjs.com/package/prx-podagent)
 
 ## Description
 
