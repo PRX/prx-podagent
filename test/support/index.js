@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv = require('csv');
 const bot = require('./bot');
+const mocha = require('mocha');
 
 // log statements AFTER the test name prints
 let afterLogs = [];
@@ -13,7 +14,21 @@ afterEach(() => afterLogs.forEach(s => {
   }
 }));
 exports.alog = msg => afterLogs.push(msg);
-global.alog = module.exports.alog;
+global.alog = exports.alog;
+
+// debug log
+exports.dlog = msg => {
+  if (process.env.DEBUG) {
+    exports.alog(mocha.reporters.Base.color('pending', msg));
+  }
+}
+global.dlog = exports.dlog;
+
+// error log
+exports.elog = msg => {
+  exports.alog(mocha.reporters.Base.color('error message', msg));
+}
+global.elog = exports.elog;
 
 // test for bots
 exports.isBot = bot.isBot;
@@ -46,9 +61,9 @@ before(function(done) {
 // helpers to print total
 exports.total = (count, noBots) => {
   let total = noBots ? nonBotTotal : agentTotal;
-  return (count / agentTotal).toFixed(1) + `% (${count} / ${total})`;
+  return (count / agentTotal * 100).toFixed(1) + `% (${count} / ${total})`;
 }
 exports.weight = (count, noBots) => {
   let weight = noBots ? nonBotWeight : agentWeight;
-  return (count / weight).toFixed(1) + `% (${count} / ${weight})`;
+  return (count / weight * 100).toFixed(1) + `% (${count} / ${weight})`;
 }
