@@ -47,8 +47,8 @@ exports.load = (callback) => {
    DB = agents.map(agent => {
      agent.regex = new RegExp(agent.regex);
      TAGS.forEach(t => {
-       agent[`${t}Id`] = agent[t];
-       agent[t] = tagLookup[agent[t]] || 'Unknown';
+       agent[`${t}Id`] = parseInt(agent[t]) || null;
+       agent[t] = tagLookup[agent[t]] || null;
      });
      return agent;
    });

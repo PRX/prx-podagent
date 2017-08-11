@@ -10,9 +10,9 @@ describe('podagent-test', function() {
       expect(agent.name).to.equal('Podcasts');
       expect(agent.type).to.equal('Mobile App');
       expect(agent.os).to.equal('iOS');
-      expect(agent.nameId).to.equal('25');
-      expect(agent.typeId).to.equal('36');
-      expect(agent.osId).to.equal('43');
+      expect(agent.nameId).to.equal(25);
+      expect(agent.typeId).to.equal(36);
+      expect(agent.osId).to.equal(43);
       done(err);
     });
   });
@@ -22,9 +22,25 @@ describe('podagent-test', function() {
     expect(agent.name).to.equal('Podcasts');
     expect(agent.type).to.equal('Mobile App');
     expect(agent.os).to.equal('iOS');
-    expect(agent.nameId).to.equal('25');
-    expect(agent.typeId).to.equal('36');
-    expect(agent.osId).to.equal('43');
+    expect(agent.nameId).to.equal(25);
+    expect(agent.typeId).to.equal(36);
+    expect(agent.osId).to.equal(43);
+  });
+
+  it('returns nulls for unknowns on a match', () => {
+    let agent = podagent.parse('curl/foo');
+    expect(agent.bot).to.equal(true);
+    expect(agent.name).to.be.null;
+    expect(agent.type).to.be.null;
+    expect(agent.os).to.be.null;
+    expect(agent.nameId).to.be.null;
+    expect(agent.typeId).to.be.null;
+    expect(agent.osId).to.be.null;
+  });
+
+  it('returns null for a non-match', () => {
+    let agent = podagent.parse('foo/bar');
+    expect(agent).to.be.null;
   });
 
 });
