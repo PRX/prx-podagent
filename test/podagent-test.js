@@ -43,4 +43,11 @@ describe('podagent-test', function() {
     expect(agent).to.be.null;
   });
 
+  it('can be case insensitive', () => {
+    expect(podagent.parse('Pocket Casts')).not.to.be.null;
+    expect(podagent.parse('Pocket casts')).to.be.null;
+    expect(podagent.parse('Mozilla/5.0 (compatible; Google-Podcast)')).not.to.be.null;
+    expect(podagent.parse('Mozilla/5.0 (compatible; gOoGle-Podcast)')).not.to.be.null;
+  });
+
 });

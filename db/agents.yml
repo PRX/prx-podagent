@@ -31,6 +31,10 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^APKXDL.+Android
+    name: null
+    type: Mobile App
+    os: Android
   - regex: ^Breaker.+CFNetwork
     name: Breaker
     type: Mobile App
@@ -83,7 +87,11 @@ agents:
     name: Downcast
     type: Desktop App
     os: macOS
-  - regex: ^ExoPlayer.+Android
+  - regex: ^Echo
+    name: Alexa
+    type: Smart Home
+    os: Amazon OS #???
+  - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     name: null
     type: Mobile App
     os: Android
@@ -95,6 +103,22 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^gPodder.+Windows
+    name: gPodder
+    type: Desktop App
+    os: Windows
+  - regex: ^gPodder
+    name: gPodder
+    type: Desktop App
+    os: null
+  - regex: ^iHeartRadio.+iPad
+    name: iHeartRadio
+    type: Mobile App
+    os: iOS
+  - regex: ^iHeartRadio.+iPhone
+    name: iHeartRadio
+    type: Mobile App
+    os: iOS
   - regex: ^iTunes.+Macintosh
     name: iTunes
     type: Desktop App
@@ -103,11 +127,19 @@ agents:
     name: iTunes
     type: Desktop App
     os: Windows
+  - regex: ^Juice.+Windows
+    name: Juice Receiver
+    type: Desktop App
+    os: Windows
   - regex: ^Lavf
     name: null
     type: Desktop App # really?
     os: null
-  - regex: ^LG-.+LG Player.+Android
+  - regex: ^Laughable.+iOS
+    name: Laughable
+    type: Mobile App
+    os: iOS
+  - regex: ^(LG-|Player).+LG Player.+Android
     name: null
     type: Mobile App
     os: Android
@@ -123,6 +155,10 @@ agents:
     name: NPR One
     type: Mobile App
     os: Android
+  - regex: ^(NSPlayer.+WMFSDK|WMPlayer)
+    name: Windows Media Player
+    type: Desktop App
+    os: Windows
   - regex: ^okhttp
     name: null
     type: Mobile App
@@ -139,18 +175,34 @@ agents:
     name: Pocket Casts
     type: Mobile App
     os: null
+  - regex: ^Podbean.+Android
+    name: Podbean
+    type: Mobile App
+    os: Android
   - regex: ^Podbean/iOS
     name: Podbean
     type: Mobile App
     os: iOS
-  - regex: ^PodcastAddict.+Android
+  - regex: ^PodCruncher.+CFNetwork
+    name: PodCruncher
+    type: Mobile App
+    os: iOS
+  - regex: ^PodTrapper
+    name: PodTrapper
+    type: Mobile App
+    os: null
+  - regex: ^(PodcastAddict|Podcast Addict).+Android
     name: PodcastAddict
     type: Mobile App
     os: Android
-  - regex: ^podcast/.+CFNetwork
+  - regex: ^podcast/.+(CFNetwork|iOS)
     name: The Podcast App
     type: Mobile App
     os: iOS
+  - regex: ^PodcastRepublic.+Android
+    name: PodcastRepublic
+    type: Mobile App
+    os: Android
   - regex: ^Podkicker
     name: Podkicker
     type: Mobile App
@@ -163,6 +215,18 @@ agents:
     name: RadioPublic
     type: Mobile App
     os: iOS
+  - regex: ^Roku
+    name: Roku
+    type: Smart Home
+    os: null
+  - regex: ^RSSRadio
+    name: RSSRadio
+    type: Mobile App
+    os: iOS
+  - regex: ^ServeStream
+    name: ServeStream
+    type: Mobile App
+    os: Android
   - regex: ^Sonos
     name: Sonos
     type: Smart Home
@@ -175,6 +239,22 @@ agents:
     name: Stitcher
     type: Mobile App
     os: iOS
+  - regex: ^TED.+CFNetwork
+    name: TED
+    type: Mobile App
+    os: iOS
+  - regex: ^TuneIn.+CFNetwork
+    name: TuneIn
+    type: Mobile App
+    os: iOS
+  - regex: ^(uTorrent|BTWebClient)
+    name: uTorrent
+    type: Desktop App # and mobile???
+    os: null
+  - regex: ^Winamp
+    name: Winamp
+    type: Desktop App
+    os: Windows
   - regex: ^Zune
     name: Zune
     type: Mobile App
@@ -193,7 +273,7 @@ agents:
     name: Podcasts
     type: Smart TV
     os: iOS
-  - regex: ^AppleCoreMedia.+Audio Accessory # HomePod
+  - regex: ^AppleCoreMedia.+(Audio Accessory|HomePod)
     name: Podcasts
     type: Smart Home
     os: iOS
@@ -213,6 +293,16 @@ agents:
     name: iTunes
     type: Desktop App
     os: macOS
+
+  # google search (including "google podcasts" app)
+  - regex: ^Mozilla/5\.0.+Android.+GSA
+    name: Google Search App
+    type: Mobile App
+    os: Android
+  - regex: ^Mozilla/5\.0.+iPhone.+GSA
+    name: Google Search App
+    type: Mobile App
+    os: iOS
 
   # old, old IE
   - regex: ^Mozilla/4\.0.+MSIE
@@ -404,8 +494,17 @@ agents:
     type: Desktop Browser
     os: null
 
+  # unlabeled everything, huh?
+  - regex: ^Mozilla/5\.0( compatible)?$
+    name: null
+    type: Desktop Browser # maybe?
+    os: null
+
   # bots and blanks last
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
+    caseInsensitive: true
+    bot: true
+  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot
     caseInsensitive: true
     bot: true
   - regex: ^\s*$

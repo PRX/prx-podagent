@@ -1,10 +1,11 @@
 {
   "name": "prx-podagent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*-test.js",
+    "unknowns": "mocha test/unknowns.js",
     "lock": "node lock.js",
     "prepublish": "node lock.js"
   },
