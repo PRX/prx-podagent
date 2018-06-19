@@ -45,7 +45,11 @@ exports.load = (callback) => {
    let agents = data.agents || [];
    let tagLookup = data.tags || [];
    DB = agents.map(agent => {
-     agent.regex = new RegExp(agent.regex);
+     if (agent.caseInsensitive) {
+       agent.regex = new RegExp(agent.regex, 'i');
+     } else {
+       agent.regex = new RegExp(agent.regex);
+     }
      TAGS.forEach(t => {
        agent[`${t}Id`] = parseInt(agent[t]) || null;
        agent[t] = tagLookup[agent[t]] || null;

@@ -81,6 +81,10 @@ agents:
     name: '11'
     type: '35'
     os: '45'
+  - regex: ^Echo
+    name: '3'
+    type: '37'
+    os: '44'
   - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     type: '36'
     os: '42'
@@ -137,7 +141,7 @@ agents:
     name: '13'
     type: '36'
     os: '42'
-  - regex: ^NSPlayer.+WMFSDK
+  - regex: ^(NSPlayer.+WMFSDK|WMPlayer)
     name: '55'
     type: '35'
     os: '41'
@@ -170,7 +174,7 @@ agents:
   - regex: ^PodTrapper
     name: '57'
     type: '36'
-  - regex: ^PodcastAddict.+Android
+  - regex: ^(PodcastAddict|Podcast Addict).+Android
     name: '18'
     type: '36'
     os: '42'
@@ -194,6 +198,9 @@ agents:
     name: '21'
     type: '36'
     os: '43'
+  - regex: ^Roku
+    name: '64'
+    type: '37'
   - regex: ^RSSRadio
     name: '63'
     type: '36'
@@ -420,7 +427,10 @@ agents:
   - regex: ^Mozilla/5\.0.+Gecko.+Firefox
     name: '28'
     type: '39'
-  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|^fyyd-poll
+  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
+    caseInsensitive: true
+    bot: true
+  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot
     caseInsensitive: true
     bot: true
   - regex: ^\s*$
@@ -489,3 +499,4 @@ tags:
   '61': Winamp
   '62': Google Search App
   '63': RSSRadio
+  '64': Roku
