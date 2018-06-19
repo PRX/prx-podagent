@@ -29,6 +29,9 @@ agents:
   - regex: ^Apache-HttpClient
     type: '36'
     os: '42'
+  - regex: ^APKXDL.+Android
+    type: '36'
+    os: '42'
   - regex: ^Breaker.+CFNetwork
     name: '6'
     type: '36'
@@ -78,7 +81,7 @@ agents:
     name: '11'
     type: '35'
     os: '45'
-  - regex: ^ExoPlayer.+Android
+  - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     type: '36'
     os: '42'
   - regex: ^ExoMediaPlayer.+Android
@@ -87,6 +90,21 @@ agents:
   - regex: ^Fire OS.+stagefright
     type: '36'
     os: '42'
+  - regex: ^gPodder.+Windows
+    name: '51'
+    type: '35'
+    os: '41'
+  - regex: ^gPodder
+    name: '51'
+    type: '35'
+  - regex: ^iHeartRadio.+iPad
+    name: '52'
+    type: '36'
+    os: '43'
+  - regex: ^iHeartRadio.+iPhone
+    name: '52'
+    type: '36'
+    os: '43'
   - regex: ^iTunes.+Macintosh
     name: '12'
     type: '35'
@@ -95,9 +113,17 @@ agents:
     name: '12'
     type: '35'
     os: '41'
+  - regex: ^Juice.+Windows
+    name: '53'
+    type: '35'
+    os: '41'
   - regex: ^Lavf
     type: '35'
-  - regex: ^LG-.+LG Player.+Android
+  - regex: ^Laughable.+iOS
+    name: '54'
+    type: '36'
+    os: '43'
+  - regex: ^(LG-|Player).+LG Player.+Android
     type: '36'
     os: '42'
   - regex: ^LibVLC.+Android
@@ -111,6 +137,10 @@ agents:
     name: '13'
     type: '36'
     os: '42'
+  - regex: ^NSPlayer.+WMFSDK
+    name: '55'
+    type: '35'
+    os: '41'
   - regex: ^okhttp
     type: '36'
     os: '42'
@@ -125,18 +155,33 @@ agents:
   - regex: ^Pocket Casts
     name: '16'
     type: '36'
+  - regex: ^Podbean.+Android
+    name: '17'
+    type: '36'
+    os: '42'
   - regex: ^Podbean/iOS
     name: '17'
     type: '36'
     os: '43'
+  - regex: ^PodCruncher.+CFNetwork
+    name: '56'
+    type: '36'
+    os: '43'
+  - regex: ^PodTrapper
+    name: '57'
+    type: '36'
   - regex: ^PodcastAddict.+Android
     name: '18'
     type: '36'
     os: '42'
-  - regex: ^podcast/.+CFNetwork
+  - regex: ^podcast/.+(CFNetwork|iOS)
     name: '19'
     type: '36'
     os: '43'
+  - regex: ^PodcastRepublic.+Android
+    name: '58'
+    type: '36'
+    os: '42'
   - regex: ^Podkicker
     name: '20'
     type: '36'
@@ -147,6 +192,10 @@ agents:
     os: '42'
   - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork
     name: '21'
+    type: '36'
+    os: '43'
+  - regex: ^RSSRadio
+    name: '63'
     type: '36'
     os: '43'
   - regex: ^Sonos
@@ -160,6 +209,18 @@ agents:
     name: '23'
     type: '36'
     os: '43'
+  - regex: ^TED.+CFNetwork
+    name: '59'
+    type: '36'
+    os: '43'
+  - regex: ^TuneIn.+CFNetwork
+    name: '60'
+    type: '36'
+    os: '43'
+  - regex: ^Winamp
+    name: '61'
+    type: '35'
+    os: '41'
   - regex: ^Zune
     name: '24'
     type: '36'
@@ -175,7 +236,7 @@ agents:
     name: '25'
     type: '38'
     os: '43'
-  - regex: ^AppleCoreMedia.+Audio Accessory
+  - regex: ^AppleCoreMedia.+(Audio Accessory|HomePod)
     name: '25'
     type: '37'
     os: '43'
@@ -195,6 +256,14 @@ agents:
     name: '12'
     type: '35'
     os: '45'
+  - regex: ^Mozilla/5\.0.+Android.+GSA
+    name: '62'
+    type: '36'
+    os: '42'
+  - regex: ^Mozilla/5\.0.+iPhone.+GSA
+    name: '62'
+    type: '36'
+    os: '43'
   - regex: ^Mozilla/4\.0.+MSIE
     name: '26'
     type: '39'
@@ -351,7 +420,7 @@ agents:
   - regex: ^Mozilla/5\.0.+Gecko.+Firefox
     name: '28'
     type: '39'
-  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
+  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|^fyyd-poll
     caseInsensitive: true
     bot: true
   - regex: ^\s*$
@@ -407,3 +476,16 @@ tags:
   '48': ChromeOS
   '49': Linux
   '50': webOS
+  '51': gPodder
+  '52': iHeartRadio
+  '53': Juice Receiver
+  '54': Laughable
+  '55': Windows Media Player
+  '56': PodCruncher
+  '57': PodTrapper
+  '58': PodcastRepublic
+  '59': TED
+  '60': TuneIn
+  '61': Winamp
+  '62': Google Search App
+  '63': RSSRadio
