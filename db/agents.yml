@@ -223,6 +223,10 @@ agents:
     name: RSSRadio
     type: Mobile App
     os: iOS
+  - regex: ^ServeStream
+    name: ServeStream
+    type: Mobile App
+    os: Android
   - regex: ^Sonos
     name: Sonos
     type: Smart Home
@@ -243,6 +247,10 @@ agents:
     name: TuneIn
     type: Mobile App
     os: iOS
+  - regex: ^(uTorrent|BTWebClient)
+    name: uTorrent
+    type: Desktop App # and mobile???
+    os: null
   - regex: ^Winamp
     name: Winamp
     type: Desktop App
@@ -484,6 +492,12 @@ agents:
   - regex: ^Mozilla/5\.0.+Gecko.+Firefox
     name: Firefox
     type: Desktop Browser
+    os: null
+
+  # unlabeled everything, huh?
+  - regex: ^Mozilla/5\.0( compatible)?$
+    name: null
+    type: Desktop Browser # maybe?
     os: null
 
   # bots and blanks last

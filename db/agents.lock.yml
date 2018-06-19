@@ -205,6 +205,10 @@ agents:
     name: '63'
     type: '36'
     os: '43'
+  - regex: ^ServeStream
+    name: '65'
+    type: '36'
+    os: '42'
   - regex: ^Sonos
     name: '22'
     type: '37'
@@ -224,6 +228,9 @@ agents:
     name: '60'
     type: '36'
     os: '43'
+  - regex: ^(uTorrent|BTWebClient)
+    name: '66'
+    type: '35'
   - regex: ^Winamp
     name: '61'
     type: '35'
@@ -427,6 +434,8 @@ agents:
   - regex: ^Mozilla/5\.0.+Gecko.+Firefox
     name: '28'
     type: '39'
+  - regex: ^Mozilla/5\.0( compatible)?$
+    type: '39'
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
     caseInsensitive: true
     bot: true
@@ -500,3 +509,5 @@ tags:
   '62': Google Search App
   '63': RSSRadio
   '64': Roku
+  '65': ServeStream
+  '66': uTorrent
