@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*-test.js",
+    "unknowns": "mocha test/unknowns.js",
     "lock": "node lock.js",
     "prepublish": "node lock.js"
   },
