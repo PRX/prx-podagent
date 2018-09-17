@@ -39,6 +39,10 @@ agents:
     name: Breaker
     type: Mobile App
     os: iOS
+  - regex: ^Breaker
+    name: Breaker
+    type: Mobile App
+    os: Android
   - regex: ^Castaway.+CFNetwork
     name: Castaway
     type: Mobile App
@@ -111,6 +115,22 @@ agents:
     name: gPodder
     type: Desktop App
     os: null
+  - regex: ^gvfs
+    name: null
+    type: Desktop App
+    os: Linux
+  - regex: ^HardCast.+CFNetwork
+    name: HardCast
+    type: Mobile App
+    os: iOS
+  - regex: ^Himalaya.+CFNetwork
+    name: Himalaya
+    type: Mobile App
+    os: iOS
+  - regex: ^iCatcher!
+    name: iCatcher
+    type: Mobile App
+    os: iOS
   - regex: ^iHeartRadio.+iPad
     name: iHeartRadio
     type: Mobile App
@@ -119,6 +139,10 @@ agents:
     name: iHeartRadio
     type: Mobile App
     os: iOS
+  - regex: ^iHeartRadio.+Android
+    name: iHeartRadio
+    type: Mobile App
+    os: Android
   - regex: ^iTunes.+Macintosh
     name: iTunes
     type: Desktop App
@@ -131,6 +155,10 @@ agents:
     name: Juice Receiver
     type: Desktop App
     os: Windows
+  - regex: ^KPCCAndroid
+    name: KPCC App
+    type: Mobile App
+    os: Android
   - regex: ^Lavf
     name: null
     type: Desktop App # really?
@@ -147,6 +175,10 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^MediaMonkey 4
+    name: MediaMonkey
+    type: Desktop App
+    os: Windows
   - regex: ^NPR%20One.+CFNetwork
     name: NPR One
     type: Mobile App
@@ -187,6 +219,18 @@ agents:
     name: PodCruncher
     type: Mobile App
     os: iOS
+  - regex: ^Podbbang.+Android
+    name: Podbbang
+    type: Mobile App
+    os: Android
+  - regex: ^Podbbang.+CFNetwork
+    name: Podbbang
+    type: Mobile App
+    os: Android
+  - regex: ^Podbbang
+    name: Podbbang
+    type: Mobile App
+    os: null
   - regex: ^PodTrapper
     name: PodTrapper
     type: Mobile App
@@ -227,10 +271,10 @@ agents:
     name: ServeStream
     type: Mobile App
     os: Android
-  - regex: ^Sonos
+  - regex: ^(Linux.+)?Sonos/
     name: Sonos
     type: Smart Home
-    os: null
+    os: Sonos OS
   - regex: ^Stitcher/Android
     name: Stitcher
     type: Mobile App
@@ -243,6 +287,10 @@ agents:
     name: TED
     type: Mobile App
     os: iOS
+  - regex: ^TED.+Android
+    name: TED
+    type: Mobile App
+    os: Android
   - regex: ^TuneIn.+CFNetwork
     name: TuneIn
     type: Mobile App
@@ -289,6 +337,14 @@ agents:
     name: Apple Podcasts
     type: Mobile App
     os: iOS
+  - regex: ^AppleCoreMedia.+(Apple Watch)
+    name: Apple Podcasts
+    type: Smart Watch
+    os: WatchOS
+  - regex: \bwatchOS/
+    name: Apple Podcasts
+    type: Smart Watch
+    os: WatchOS
   - regex: ^AppleCoreMedia.+Macintosh
     name: iTunes
     type: Desktop App
@@ -508,7 +564,7 @@ agents:
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
     caseInsensitive: true
     bot: true
-  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot
+  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator
     caseInsensitive: true
     bot: true
   - regex: ^\s*$
