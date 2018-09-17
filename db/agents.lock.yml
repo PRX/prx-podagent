@@ -270,14 +270,18 @@ agents:
     name: '12'
     type: '35'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Android.+GSA
+  - regex: ^Mozilla/5\.0.+Android.+GSA/
     name: '62'
     type: '36'
     os: '42'
-  - regex: ^Mozilla/5\.0.+iPhone.+GSA
+  - regex: ^Mozilla/5\.0.+iPhone.+GSA/
     name: '62'
     type: '36'
     os: '43'
+  - regex: \bGoogleChirp\/
+    name: '62'
+    type: '37'
+    os: '67'
   - regex: ^Mozilla/4\.0.+MSIE
     name: '26'
     type: '39'
@@ -469,7 +473,7 @@ tags:
   '22': Sonos
   '23': Stitcher
   '24': Zune
-  '25': Podcasts
+  '25': Apple Podcasts
   '26': Internet Explorer
   '27': Safari
   '28': Firefox
@@ -506,8 +510,9 @@ tags:
   '59': TED
   '60': TuneIn
   '61': Winamp
-  '62': Google Search App
+  '62': Google Podcasts
   '63': RSSRadio
   '64': Roku
   '65': ServeStream
   '66': uTorrent
+  '67': Google Home

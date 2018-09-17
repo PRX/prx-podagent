@@ -262,31 +262,31 @@ agents:
 
   # witness ye podcasts and despair
   - regex: ^Podcasts
-    name: Podcasts
+    name: Apple Podcasts
     type: Mobile App
     os: iOS
   - regex: ^itunesstored
-    name: Podcasts
+    name: Apple Podcasts
     type: Mobile App
     os: iOS
   - regex: ^AppleCoreMedia.+Apple TV
-    name: Podcasts
+    name: Apple Podcasts
     type: Smart TV
     os: iOS
   - regex: ^AppleCoreMedia.+(Audio Accessory|HomePod)
-    name: Podcasts
+    name: Apple Podcasts
     type: Smart Home
     os: iOS
   - regex: ^AppleCoreMedia.+iPad
-    name: Podcasts
+    name: Apple Podcasts
     type: Mobile App
     os: iOS
   - regex: ^AppleCoreMedia.+iPhone
-    name: Podcasts
+    name: Apple Podcasts
     type: Mobile App
     os: iOS
   - regex: ^AppleCoreMedia.+iPod
-    name: Podcasts
+    name: Apple Podcasts
     type: Mobile App
     os: iOS
   - regex: ^AppleCoreMedia.+Macintosh
@@ -295,14 +295,18 @@ agents:
     os: macOS
 
   # google search (including "google podcasts" app)
-  - regex: ^Mozilla/5\.0.+Android.+GSA
-    name: Google Search App
+  - regex: ^Mozilla/5\.0.+Android.+GSA/
+    name: Google Podcasts
     type: Mobile App
     os: Android
-  - regex: ^Mozilla/5\.0.+iPhone.+GSA
-    name: Google Search App
+  - regex: ^Mozilla/5\.0.+iPhone.+GSA/
+    name: Google Podcasts
     type: Mobile App
     os: iOS
+  - regex: \bGoogleChirp\/
+    name: Google Podcasts
+    type: Smart Home
+    os: Google Home
 
   # old, old IE
   - regex: ^Mozilla/4\.0.+MSIE
