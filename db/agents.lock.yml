@@ -36,6 +36,10 @@ agents:
     name: '6'
     type: '36'
     os: '43'
+  - regex: ^Breaker
+    name: '6'
+    type: '36'
+    os: '42'
   - regex: ^Castaway.+CFNetwork
     name: '7'
     type: '36'
@@ -101,6 +105,21 @@ agents:
   - regex: ^gPodder
     name: '51'
     type: '35'
+  - regex: ^gvfs
+    type: '35'
+    os: '49'
+  - regex: ^HardCast.+CFNetwork
+    name: '76'
+    type: '36'
+    os: '43'
+  - regex: ^Himalaya.+CFNetwork
+    name: '70'
+    type: '36'
+    os: '43'
+  - regex: ^iCatcher!
+    name: '72'
+    type: '36'
+    os: '43'
   - regex: ^iHeartRadio.+iPad
     name: '52'
     type: '36'
@@ -109,6 +128,10 @@ agents:
     name: '52'
     type: '36'
     os: '43'
+  - regex: ^iHeartRadio.+Android
+    name: '52'
+    type: '36'
+    os: '42'
   - regex: ^iTunes.+Macintosh
     name: '12'
     type: '35'
@@ -121,6 +144,10 @@ agents:
     name: '53'
     type: '35'
     os: '41'
+  - regex: ^KPCCAndroid
+    name: '73'
+    type: '36'
+    os: '42'
   - regex: ^Lavf
     type: '35'
   - regex: ^Laughable.+iOS
@@ -133,6 +160,10 @@ agents:
   - regex: ^LibVLC.+Android
     type: '36'
     os: '42'
+  - regex: ^MediaMonkey 4
+    name: '71'
+    type: '35'
+    os: '41'
   - regex: ^NPR%20One.+CFNetwork
     name: '13'
     type: '36'
@@ -171,6 +202,17 @@ agents:
     name: '56'
     type: '36'
     os: '43'
+  - regex: ^Podbbang.+Android
+    name: '75'
+    type: '36'
+    os: '42'
+  - regex: ^Podbbang.+CFNetwork
+    name: '75'
+    type: '36'
+    os: '42'
+  - regex: ^Podbbang
+    name: '75'
+    type: '36'
   - regex: ^PodTrapper
     name: '57'
     type: '36'
@@ -209,9 +251,10 @@ agents:
     name: '65'
     type: '36'
     os: '42'
-  - regex: ^Sonos
+  - regex: ^(Linux.+)?Sonos/
     name: '22'
     type: '37'
+    os: '74'
   - regex: ^Stitcher/Android
     name: '23'
     type: '36'
@@ -224,6 +267,10 @@ agents:
     name: '59'
     type: '36'
     os: '43'
+  - regex: ^TED.+Android
+    name: '59'
+    type: '36'
+    os: '42'
   - regex: ^TuneIn.+CFNetwork
     name: '60'
     type: '36'
@@ -266,18 +313,30 @@ agents:
     name: '25'
     type: '36'
     os: '43'
+  - regex: ^AppleCoreMedia.+(Apple Watch)
+    name: '25'
+    type: '68'
+    os: '69'
+  - regex: \bwatchOS/
+    name: '25'
+    type: '68'
+    os: '69'
   - regex: ^AppleCoreMedia.+Macintosh
     name: '12'
     type: '35'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Android.+GSA
+  - regex: ^Mozilla/5\.0.+Android.+GSA/
     name: '62'
     type: '36'
     os: '42'
-  - regex: ^Mozilla/5\.0.+iPhone.+GSA
+  - regex: ^Mozilla/5\.0.+iPhone.+GSA/
     name: '62'
     type: '36'
     os: '43'
+  - regex: \bGoogleChirp\/
+    name: '62'
+    type: '37'
+    os: '67'
   - regex: ^Mozilla/4\.0.+MSIE
     name: '26'
     type: '39'
@@ -439,7 +498,7 @@ agents:
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
     caseInsensitive: true
     bot: true
-  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot
+  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator
     caseInsensitive: true
     bot: true
   - regex: ^\s*$
@@ -469,7 +528,7 @@ tags:
   '22': Sonos
   '23': Stitcher
   '24': Zune
-  '25': Podcasts
+  '25': Apple Podcasts
   '26': Internet Explorer
   '27': Safari
   '28': Firefox
@@ -506,8 +565,18 @@ tags:
   '59': TED
   '60': TuneIn
   '61': Winamp
-  '62': Google Search App
+  '62': Google Podcasts
   '63': RSSRadio
   '64': Roku
   '65': ServeStream
   '66': uTorrent
+  '67': Google Home
+  '68': Smart Watch
+  '69': WatchOS
+  '70': Himalaya
+  '71': MediaMonkey
+  '72': iCatcher
+  '73': KPCC App
+  '74': Sonos OS
+  '75': Podbbang
+  '76': HardCast

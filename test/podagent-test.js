@@ -7,7 +7,7 @@ describe('podagent-test', function() {
 
   it('async parses user agents', (done) => {
     podagent.parse(str, (err, agent) => {
-      expect(agent.name).to.equal('Podcasts');
+      expect(agent.name).to.equal('Apple Podcasts');
       expect(agent.type).to.equal('Mobile App');
       expect(agent.os).to.equal('iOS');
       expect(agent.nameId).to.equal(25);
@@ -19,7 +19,7 @@ describe('podagent-test', function() {
 
   it('sync parses user agents', () => {
     let agent = podagent.parse(str);
-    expect(agent.name).to.equal('Podcasts');
+    expect(agent.name).to.equal('Apple Podcasts');
     expect(agent.type).to.equal('Mobile App');
     expect(agent.os).to.equal('iOS');
     expect(agent.nameId).to.equal(25);
