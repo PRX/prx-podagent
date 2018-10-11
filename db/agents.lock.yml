@@ -255,6 +255,22 @@ agents:
     name: '22'
     type: '37'
     os: '74'
+  - regex: ^Spotify/.+Android
+    name: '77'
+    type: '36'
+    os: '42'
+  - regex: ^Spotify/.+iOS
+    name: '77'
+    type: '36'
+    os: '43'
+  - regex: ^Spotify/.+OSX
+    name: '77'
+    type: '35'
+    os: '45'
+  - regex: ^Spotify/.+Win32
+    name: '77'
+    type: '35'
+    os: '41'
   - regex: ^Stitcher/Android
     name: '23'
     type: '36'
@@ -580,3 +596,4 @@ tags:
   '74': Sonos OS
   '75': Podbbang
   '76': HardCast
+  '77': Spotify
