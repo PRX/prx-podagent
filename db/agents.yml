@@ -275,6 +275,22 @@ agents:
     name: Sonos
     type: Smart Home
     os: Sonos OS
+  - regex: ^Spotify/.+Android
+    name: Spotify
+    type: Mobile App
+    os: Android
+  - regex: ^Spotify/.+iOS
+    name: Spotify
+    type: Mobile App
+    os: iOS
+  - regex: ^Spotify/.+OSX
+    name: Spotify
+    type: Desktop App
+    os: macOS
+  - regex: ^Spotify/.+Win32
+    name: Spotify
+    type: Desktop App
+    os: Windows
   - regex: ^Stitcher/Android
     name: Stitcher
     type: Mobile App
