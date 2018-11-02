@@ -315,6 +315,14 @@ agents:
     name: uTorrent
     type: Desktop App # and mobile???
     os: null
+  - regex: ^WNYC.+Android
+    name: WNYC App
+    type: Mobile App
+    os: Android
+  - regex: ^WNYC.+(Darwin|iPhone|iOS)
+    name: WNYC App
+    type: Mobile App
+    os: iOS
   - regex: ^Winamp
     name: Winamp
     type: Desktop App
