@@ -11,6 +11,10 @@ agents:
     name: '2'
     type: '36'
     os: '43'
+  - regex: ^AhaRadio.+CFNetwork
+    name: '78'
+    type: '36'
+    os: '43'
   - regex: ^AlexaMediaPlayer
     name: '3'
     type: '37'
@@ -40,6 +44,9 @@ agents:
     name: '6'
     type: '36'
     os: '42'
+  - regex: ^Bullhorn
+    name: '79'
+    type: '36'
   - regex: ^Castaway.+CFNetwork
     name: '7'
     type: '36'
@@ -69,6 +76,10 @@ agents:
   - regex: ^Dalvik.+Android
     type: '36'
     os: '42'
+  - regex: ^doubleTwist CloudPlayer
+    name: '80'
+    type: '36'
+    os: '42'
   - regex: ^Downcast.+iPad
     name: '11'
     type: '36'
@@ -89,6 +100,10 @@ agents:
     name: '3'
     type: '37'
     os: '44'
+  - regex: ^English.+Radio.+IELTS.+TOEFL.+CFNetwork
+    name: '81'
+    type: '36'
+    os: '43'
   - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     type: '36'
     os: '42'
@@ -140,6 +155,9 @@ agents:
     name: '12'
     type: '35'
     os: '41'
+  - regex: '^iTunes\/[0-9\.]+'
+    name: '12'
+    type: '35'
   - regex: ^Juice.+Windows
     name: '53'
     type: '35'
@@ -181,6 +199,14 @@ agents:
     os: '42'
   - regex: ^Overcast
     name: '14'
+    type: '36'
+    os: '43'
+  - regex: ^Pandora.+Android
+    name: '82'
+    type: '36'
+    os: '42'
+  - regex: ^Mozilla.+(iPad|iPhone).+Pandora
+    name: '82'
     type: '36'
     os: '43'
   - regex: ^Player FM
@@ -232,6 +258,10 @@ agents:
     name: '20'
     type: '36'
     os: '42'
+  - regex: ^Procast.+iOS
+    name: '83'
+    type: '36'
+    os: '43'
   - regex: ^RadioPublic Android|^RadioPublic/android
     name: '21'
     type: '36'
@@ -271,6 +301,10 @@ agents:
     name: '77'
     type: '35'
     os: '41'
+  - regex: ^Spotify/.+Linux
+    name: '77'
+    type: '35'
+    os: '49'
   - regex: ^Stitcher/Android
     name: '23'
     type: '36'
@@ -287,6 +321,10 @@ agents:
     name: '59'
     type: '36'
     os: '42'
+  - regex: ^TREBLE
+    name: '84'
+    type: '36'
+    os: '43'
   - regex: ^TuneIn.+CFNetwork
     name: '60'
     type: '36'
@@ -294,6 +332,14 @@ agents:
   - regex: ^(uTorrent|BTWebClient)
     name: '66'
     type: '35'
+  - regex: ^WNYC.+Android
+    name: '85'
+    type: '36'
+    os: '42'
+  - regex: ^WNYC.+(Darwin|iPhone|iOS)
+    name: '85'
+    type: '36'
+    os: '43'
   - regex: ^Winamp
     name: '61'
     type: '35'
@@ -597,3 +643,11 @@ tags:
   '75': Podbbang
   '76': HardCast
   '77': Spotify
+  '78': AhaRadio
+  '79': Bullhorn
+  '80': CloudPlayer
+  '81': English Radio IELTS TOEFL
+  '82': Pandora
+  '83': Procast
+  '84': Treble.fm
+  '85': WNYC App

@@ -11,6 +11,10 @@ agents:
     name: Acast
     type: Mobile App
     os: iOS
+  - regex: ^AhaRadio.+CFNetwork
+    name: AhaRadio
+    type: Mobile App
+    os: iOS
   - regex: ^AlexaMediaPlayer
     name: Alexa
     type: Smart Home
@@ -43,6 +47,10 @@ agents:
     name: Breaker
     type: Mobile App
     os: Android
+  - regex: ^Bullhorn
+    name: Bullhorn
+    type: Mobile App
+    os: null #???
   - regex: ^Castaway.+CFNetwork
     name: Castaway
     type: Mobile App
@@ -75,6 +83,10 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^doubleTwist CloudPlayer
+    name: CloudPlayer
+    type: Mobile App
+    os: Android
   - regex: ^Downcast.+iPad
     name: Downcast
     type: Mobile App
@@ -95,6 +107,10 @@ agents:
     name: Alexa
     type: Smart Home
     os: Amazon OS #???
+  - regex: ^English.+Radio.+IELTS.+TOEFL.+CFNetwork
+    name: English Radio IELTS TOEFL
+    type: Mobile App
+    os: iOS
   - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     name: null
     type: Mobile App
@@ -151,6 +167,10 @@ agents:
     name: iTunes
     type: Desktop App
     os: Windows
+  - regex: ^iTunes\/[0-9\.]+
+    name: iTunes
+    type: Desktop App
+    os: null
   - regex: ^Juice.+Windows
     name: Juice Receiver
     type: Desktop App
@@ -197,6 +217,14 @@ agents:
     os: Android
   - regex: ^Overcast
     name: Overcast
+    type: Mobile App
+    os: iOS
+  - regex: ^Pandora.+Android
+    name: Pandora
+    type: Mobile App
+    os: Android
+  - regex: ^Mozilla.+(iPad|iPhone).+Pandora
+    name: Pandora
     type: Mobile App
     os: iOS
   - regex: ^Player FM
@@ -251,6 +279,10 @@ agents:
     name: Podkicker
     type: Mobile App
     os: Android
+  - regex: ^Procast.+iOS
+    name: Procast
+    type: Mobile App
+    os: iOS
   - regex: ^RadioPublic Android|^RadioPublic/android
     name: RadioPublic
     type: Mobile App
@@ -291,6 +323,10 @@ agents:
     name: Spotify
     type: Desktop App
     os: Windows
+  - regex: ^Spotify/.+Linux
+    name: Spotify
+    type: Desktop App
+    os: Linux
   - regex: ^Stitcher/Android
     name: Stitcher
     type: Mobile App
@@ -307,6 +343,10 @@ agents:
     name: TED
     type: Mobile App
     os: Android
+  - regex: ^TREBLE
+    name: Treble.fm
+    type: Mobile App
+    os: iOS
   - regex: ^TuneIn.+CFNetwork
     name: TuneIn
     type: Mobile App
