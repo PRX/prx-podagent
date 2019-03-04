@@ -315,6 +315,10 @@ agents:
     name: RadioPublic
     type: Mobile App
     os: iOS
+  - regex: ^ReactNativeVideo.+Android
+    name: null
+    type: Mobile App
+    os: Android
   - regex: ^Roku
     name: Roku
     type: Smart Home

@@ -293,6 +293,9 @@ agents:
     name: '21'
     type: '36'
     os: '43'
+  - regex: ^ReactNativeVideo.+Android
+    type: '36'
+    os: '42'
   - regex: ^Roku
     name: '64'
     type: '37'
