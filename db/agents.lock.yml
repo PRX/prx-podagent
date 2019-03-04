@@ -7,7 +7,7 @@ agents:
     name: '2'
     type: '36'
     os: '42'
-  - regex: ^Acast.+CFNetwork
+  - regex: ^Acast.+(CFNetwork|iOS)
     name: '2'
     type: '36'
     os: '43'
@@ -36,7 +36,11 @@ agents:
   - regex: ^APKXDL.+Android
     type: '36'
     os: '42'
-  - regex: ^Breaker.+CFNetwork
+  - regex: ^Bose/
+    name: '86'
+    type: '37'
+    os: '44'
+  - regex: ^Breaker/iOS
     name: '6'
     type: '36'
     os: '43'
@@ -143,6 +147,10 @@ agents:
     name: '52'
     type: '36'
     os: '43'
+  - regex: ^iHeartRadio.+CFNetwork
+    name: '52'
+    type: '36'
+    os: '43'
   - regex: ^iHeartRadio.+Android
     name: '52'
     type: '36'
@@ -182,6 +190,10 @@ agents:
     name: '71'
     type: '35'
     os: '41'
+  - regex: ^myTuner.+CFNetwork
+    name: '87'
+    type: '36'
+    os: '43'
   - regex: ^NPR%20One.+CFNetwork
     name: '13'
     type: '36'
@@ -194,6 +206,13 @@ agents:
     name: '55'
     type: '35'
     os: '41'
+  - regex: ^NSPlayer/
+    name: '55'
+    type: '35'
+    os: '41'
+  - regex: ^OkDownload
+    type: '36'
+    os: '42'
   - regex: ^okhttp
     type: '36'
     os: '42'
@@ -207,6 +226,10 @@ agents:
     os: '42'
   - regex: ^Mozilla.+(iPad|iPhone).+Pandora
     name: '82'
+    type: '36'
+    os: '43'
+  - regex: ^Player( |%20)FM.+CFNetwork
+    name: '15'
     type: '36'
     os: '43'
   - regex: ^Player FM
@@ -270,6 +293,9 @@ agents:
     name: '21'
     type: '36'
     os: '43'
+  - regex: ^ReactNativeVideo.+Android
+    type: '36'
+    os: '42'
   - regex: ^Roku
     name: '64'
     type: '37'
@@ -277,10 +303,17 @@ agents:
     name: '63'
     type: '36'
     os: '43'
+  - regex: ^samsung-agent/
+    type: '37'
+    os: '42'
   - regex: ^ServeStream
     name: '65'
     type: '36'
     os: '42'
+  - regex: Sodes.+CFNetwork
+    name: '88'
+    type: '36'
+    os: '43'
   - regex: ^(Linux.+)?Sonos/
     name: '22'
     type: '37'
@@ -332,12 +365,20 @@ agents:
   - regex: ^(uTorrent|BTWebClient)
     name: '66'
     type: '35'
+  - regex: ^com\.wbez\.app.+Android
+    name: '89'
+    type: '36'
+    os: '42'
   - regex: ^WNYC.+Android
     name: '85'
     type: '36'
     os: '42'
   - regex: ^WNYC.+(Darwin|iPhone|iOS)
     name: '85'
+    type: '36'
+    os: '43'
+  - regex: ^Wilson/
+    name: '90'
     type: '36'
     os: '43'
   - regex: ^Winamp
@@ -651,3 +692,8 @@ tags:
   '83': Procast
   '84': Treble.fm
   '85': WNYC App
+  '86': Bose
+  '87': myTuner
+  '88': '''sodes'
+  '89': WBEZ App
+  '90': Wilson FM

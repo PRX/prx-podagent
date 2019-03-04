@@ -7,7 +7,7 @@ agents:
     name: Acast
     type: Mobile App
     os: Android
-  - regex: ^Acast.+CFNetwork
+  - regex: ^Acast.+(CFNetwork|iOS)
     name: Acast
     type: Mobile App
     os: iOS
@@ -39,7 +39,11 @@ agents:
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Breaker.+CFNetwork
+  - regex: ^Bose/
+    name: Bose
+    type: Smart Home
+    os: Amazon OS #???
+  - regex: ^Breaker/iOS
     name: Breaker
     type: Mobile App
     os: iOS
@@ -155,6 +159,10 @@ agents:
     name: iHeartRadio
     type: Mobile App
     os: iOS
+  - regex: ^iHeartRadio.+CFNetwork
+    name: iHeartRadio
+    type: Mobile App
+    os: iOS
   - regex: ^iHeartRadio.+Android
     name: iHeartRadio
     type: Mobile App
@@ -199,6 +207,10 @@ agents:
     name: MediaMonkey
     type: Desktop App
     os: Windows
+  - regex: ^myTuner.+CFNetwork
+    name: myTuner
+    type: Mobile App
+    os: iOS
   - regex: ^NPR%20One.+CFNetwork
     name: NPR One
     type: Mobile App
@@ -211,6 +223,14 @@ agents:
     name: Windows Media Player
     type: Desktop App
     os: Windows
+  - regex: ^NSPlayer/
+    name: Windows Media Player
+    type: Desktop App
+    os: Windows
+  - regex: ^OkDownload
+    name: null
+    type: Mobile App
+    os: Android
   - regex: ^okhttp
     name: null
     type: Mobile App
@@ -225,6 +245,10 @@ agents:
     os: Android
   - regex: ^Mozilla.+(iPad|iPhone).+Pandora
     name: Pandora
+    type: Mobile App
+    os: iOS
+  - regex: ^Player( |%20)FM.+CFNetwork
+    name: Player FM
     type: Mobile App
     os: iOS
   - regex: ^Player FM
@@ -291,6 +315,10 @@ agents:
     name: RadioPublic
     type: Mobile App
     os: iOS
+  - regex: ^ReactNativeVideo.+Android
+    name: null
+    type: Mobile App
+    os: Android
   - regex: ^Roku
     name: Roku
     type: Smart Home
@@ -299,10 +327,18 @@ agents:
     name: RSSRadio
     type: Mobile App
     os: iOS
+  - regex: ^samsung-agent/
+    name: null
+    type: Smart Home
+    os: Android # ???
   - regex: ^ServeStream
     name: ServeStream
     type: Mobile App
     os: Android
+  - regex: Sodes.+CFNetwork
+    name: "'sodes"
+    type: Mobile App
+    os: iOS
   - regex: ^(Linux.+)?Sonos/
     name: Sonos
     type: Smart Home
@@ -355,12 +391,20 @@ agents:
     name: uTorrent
     type: Desktop App # and mobile???
     os: null
+  - regex: ^com\.wbez\.app.+Android
+    name: WBEZ App
+    type: Mobile App
+    os: Android
   - regex: ^WNYC.+Android
     name: WNYC App
     type: Mobile App
     os: Android
   - regex: ^WNYC.+(Darwin|iPhone|iOS)
     name: WNYC App
+    type: Mobile App
+    os: iOS
+  - regex: ^Wilson/
+    name: Wilson FM
     type: Mobile App
     os: iOS
   - regex: ^Winamp
