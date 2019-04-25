@@ -186,6 +186,9 @@ agents:
   - regex: ^LibVLC.+Android
     type: '36'
     os: '42'
+  - regex: '^Luminary\/[0-9\.]+'
+    name: '91'
+    type: '36'
   - regex: ^MediaMonkey 4
     name: '71'
     type: '35'
@@ -697,3 +700,4 @@ tags:
   '88': '''sodes'
   '89': WBEZ App
   '90': Wilson FM
+  '91': Luminary
