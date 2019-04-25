@@ -44,6 +44,28 @@ if (agent) {
 }
 ```
 
+## Development
+
+Basic tests are located in the `/test` directory, and can be run with `npm test`.
+
+Additionally, there is a `test/support/testagents.csv` file containing some actual
+production logs.  The "coverage" and "omissions" tests use this file to check that
+the database file accounts for all the major known user agents.
+
+To add a new user agent:
+
+1. Add some lines to `testagents.csv` with your new user agent. Give them a high
+   count like "9999" and run the tests to make sure they show up in the omissions.
+2. Edit the `db/agents.yml` to include a regular expression, then a name for the
+   app and the type/os (if known). Try to be reasonably specific with your regex,
+   so that you don't unintentionally match other user agents.
+3. Run `npm lock` to regenerate the `db/agents.lock.yml`.  This file normalizes
+   the text tags/labels shared between the various matchers.  Check that your
+   change didn't add any unexpected new tags (if you accidentally changed the
+   case of a label or something).
+4. Re-run the tests to validate that your agent strings are no longer in the
+   omissions test.
+
 ## License
 
 [MIT License](LICENSE)
