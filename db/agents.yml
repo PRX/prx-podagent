@@ -203,6 +203,10 @@ agents:
     name: null
     type: Mobile App
     os: Android
+  - regex: ^Luminary\/[0-9\.]+
+    name: Luminary
+    type: Mobile App
+    os: null
   - regex: ^MediaMonkey 4
     name: MediaMonkey
     type: Desktop App
