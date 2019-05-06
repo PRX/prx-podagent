@@ -1,683 +1,681 @@
 agents:
-  - regex: ^\+hermespod\.com
+  - regex: /^\+hermespod\.com/
     name: HermesPod
     type: Desktop App
     os: Windows
-  - regex: ^Acast.+Android
+  - regex: /^Acast.+Android/
     name: Acast
     type: Mobile App
     os: Android
-  - regex: ^Acast.+(CFNetwork|iOS)
+  - regex: /^Acast.+(CFNetwork|iOS)/
     name: Acast
     type: Mobile App
     os: iOS
-  - regex: ^AhaRadio.+CFNetwork
+  - regex: /^AhaRadio.+CFNetwork/
     name: AhaRadio
     type: Mobile App
     os: iOS
-  - regex: ^AlexaMediaPlayer
+  - regex: /^AlexaMediaPlayer/
     name: Alexa
     type: Smart Home
     os: Amazon OS #???
-  - regex: ^AllYouCanBooks.+CFNetwork
+  - regex: /^AllYouCanBooks.+CFNetwork/
     name: AllYouCanBooks
     type: Mobile App
     os: iOS
-  - regex: ^AndroidDownloadManager
+  - regex: /^AndroidDownloadManager/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^AntennaPod
+  - regex: /^AntennaPod/
     name: AntennaPod
     type: Mobile App
     os: Android
-  - regex: ^Apache-HttpClient
+  - regex: /^Apache-HttpClient/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^APKXDL.+Android
+  - regex: /^APKXDL.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Bose/
+  - regex: /^Bose\//
     name: Bose
     type: Smart Home
     os: Amazon OS #???
-  - regex: ^Breaker/iOS
+  - regex: /^Breaker\/iOS/
     name: Breaker
     type: Mobile App
     os: iOS
-  - regex: ^Breaker
+  - regex: /^Breaker/
     name: Breaker
     type: Mobile App
     os: Android
-  - regex: ^Bullhorn
+  - regex: /^Bullhorn/
     name: Bullhorn
     type: Mobile App
     os: null #???
-  - regex: ^Castaway.+CFNetwork
+  - regex: /^Castaway.+CFNetwork/
     name: Castaway
     type: Mobile App
     os: iOS
-  - regex: ^CastBox.+Android
+  - regex: /^CastBox.+Android/
     name: CastBox
     type: Mobile App
     os: Android
-  - regex: ^Castbox.+iOS
+  - regex: /^Castbox.+iOS/
     name: CastBox
     type: Mobile App
     os: iOS
-  - regex: ^CastBox/com\.castbox\.CastBox
+  - regex: /^CastBox\/com\.castbox\.CastBox/
     name: CastBox
     type: Mobile App
     os: iOS
-  - regex: ^CastBox
+  - regex: /^CastBox/
     name: CastBox
     type: Mobile App
     os: null
-  - regex: ^Castro
+  - regex: /^Castro/
     name: Castro
     type: Mobile App
     os: iOS
-  - regex: ^Clementine
+  - regex: /^Clementine/
     name: Clementine
     type: Desktop App
     os: null
-  - regex: ^Dalvik.+Android
+  - regex: /^Dalvik.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^doubleTwist CloudPlayer
+  - regex: /^doubleTwist CloudPlayer/
     name: CloudPlayer
     type: Mobile App
     os: Android
-  - regex: ^Downcast.+iPad
+  - regex: /^Downcast.+iPad/
     name: Downcast
     type: Mobile App
     os: iOS
-  - regex: ^Downcast.+iPhone
+  - regex: /^Downcast.+iPhone/
     name: Downcast
     type: Mobile App
     os: iOS
-  - regex: ^Downcast.+iPod
+  - regex: /^Downcast.+iPod/
     name: Downcast
     type: Mobile App
     os: iOS
-  - regex: ^Downcast.+OS X
+  - regex: /^Downcast.+OS X/
     name: Downcast
     type: Desktop App
     os: macOS
-  - regex: ^Echo
+  - regex: /^Echo/
     name: Alexa
     type: Smart Home
     os: Amazon OS #???
-  - regex: ^English.+Radio.+IELTS.+TOEFL.+CFNetwork
+  - regex: /^English.+Radio.+IELTS.+TOEFL.+CFNetwork/
     name: English Radio IELTS TOEFL
     type: Mobile App
     os: iOS
-  - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
+  - regex: /^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^ExoMediaPlayer.+Android
+  - regex: /^ExoMediaPlayer.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Fire OS.+stagefright
+  - regex: /^Fire OS.+stagefright/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^gPodder.+Windows
+  - regex: /^gPodder.+Windows/
     name: gPodder
     type: Desktop App
     os: Windows
-  - regex: ^gPodder
+  - regex: /^gPodder/
     name: gPodder
     type: Desktop App
     os: null
-  - regex: ^gvfs
+  - regex: /^gvfs/
     name: null
     type: Desktop App
     os: Linux
-  - regex: ^HardCast.+CFNetwork
+  - regex: /^HardCast.+CFNetwork/
     name: HardCast
     type: Mobile App
     os: iOS
-  - regex: ^Himalaya.+CFNetwork
+  - regex: /^Himalaya.+CFNetwork/
     name: Himalaya
     type: Mobile App
     os: iOS
-  - regex: ^iCatcher!
+  - regex: /^iCatcher!/
     name: iCatcher
     type: Mobile App
     os: iOS
-  - regex: ^iHeartRadio.+iPad
+  - regex: /^iHeartRadio.+iPad/
     name: iHeartRadio
     type: Mobile App
     os: iOS
-  - regex: ^iHeartRadio.+iPhone
+  - regex: /^iHeartRadio.+iPhone/
     name: iHeartRadio
     type: Mobile App
     os: iOS
-  - regex: ^iHeartRadio.+CFNetwork
+  - regex: /^iHeartRadio.+CFNetwork/
     name: iHeartRadio
     type: Mobile App
     os: iOS
-  - regex: ^iHeartRadio.+Android
+  - regex: /^iHeartRadio.+Android/
     name: iHeartRadio
     type: Mobile App
     os: Android
-  - regex: ^iTunes.+Macintosh
+  - regex: /^iTunes.+Macintosh/
     name: iTunes
     type: Desktop App
     os: macOS
-  - regex: ^iTunes.+Windows
+  - regex: /^iTunes.+Windows/
     name: iTunes
     type: Desktop App
     os: Windows
-  - regex: ^iTunes\/[0-9\.]+
+  - regex: /^iTunes\/[0-9\.]+/
     name: iTunes
     type: Desktop App
     os: null
-  - regex: ^Juice.+Windows
+  - regex: /^Juice.+Windows/
     name: Juice Receiver
     type: Desktop App
     os: Windows
-  - regex: ^KPCCAndroid
+  - regex: /^KPCCAndroid/
     name: KPCC App
     type: Mobile App
     os: Android
-  - regex: ^Lavf
+  - regex: /^Lavf/
     name: null
     type: Desktop App # really?
     os: null
-  - regex: ^Laughable.+iOS
+  - regex: /^Laughable.+iOS/
     name: Laughable
     type: Mobile App
     os: iOS
-  - regex: ^(LG-|Player).+LG Player.+Android
+  - regex: /^(LG-|Player).+LG Player.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^LibVLC.+Android
+  - regex: /^LibVLC.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Luminary\/[0-9\.]+
+  - regex: /^Luminary\/+/
     name: Luminary
     type: Mobile App
     os: null
-  - regex: ^MediaMonkey 4
+  - regex: /^MediaMonkey 4/
     name: MediaMonkey
     type: Desktop App
     os: Windows
-  - regex: ^myTuner.+CFNetwork
+  - regex: /^myTuner.+CFNetwork/
     name: myTuner
     type: Mobile App
     os: iOS
-  - regex: ^NPR%20One.+CFNetwork
+  - regex: /^NPR%20One.+CFNetwork/
     name: NPR One
     type: Mobile App
     os: iOS
-  - regex: ^NPROneAndroid
+  - regex: /^NPROneAndroid/
     name: NPR One
     type: Mobile App
     os: Android
-  - regex: ^(NSPlayer.+WMFSDK|WMPlayer)
+  - regex: /^(NSPlayer.+WMFSDK|WMPlayer)/
     name: Windows Media Player
     type: Desktop App
     os: Windows
-  - regex: ^NSPlayer/
+  - regex: /^NSPlayer\//
     name: Windows Media Player
     type: Desktop App
     os: Windows
-  - regex: ^OkDownload
+  - regex: /^OkDownload/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^okhttp
+  - regex: /^okhttp/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Overcast
+  - regex: /^Overcast/
     name: Overcast
     type: Mobile App
     os: iOS
-  - regex: ^Pandora.+Android
+  - regex: /^Pandora.+Android/
     name: Pandora
     type: Mobile App
     os: Android
-  - regex: ^Mozilla.+(iPad|iPhone).+Pandora
+  - regex: /^Mozilla.+(iPad|iPhone).+Pandora/
     name: Pandora
     type: Mobile App
     os: iOS
-  - regex: ^Player( |%20)FM.+CFNetwork
+  - regex: /^Player( |%20)FM.+CFNetwork/
     name: Player FM
     type: Mobile App
     os: iOS
-  - regex: ^Player FM
+  - regex: /^Player FM/
     name: Player FM
     type: Mobile App
     os: Android
-  - regex: ^Pocket Casts
+  - regex: /^Pocket Casts/
     name: Pocket Casts
     type: Mobile App
     os: null
-  - regex: ^Podbean.+Android
+  - regex: /^Podbean.+Android/
     name: Podbean
     type: Mobile App
     os: Android
-  - regex: ^Podbean/iOS
+  - regex: /^Podbean\/iOS/
     name: Podbean
     type: Mobile App
     os: iOS
-  - regex: ^PodCruncher.+CFNetwork
+  - regex: /^PodCruncher.+CFNetwork/
     name: PodCruncher
     type: Mobile App
     os: iOS
-  - regex: ^Podbbang.+Android
+  - regex: /^Podbbang.+Android/
     name: Podbbang
     type: Mobile App
     os: Android
-  - regex: ^Podbbang.+CFNetwork
+  - regex: /^Podbbang.+CFNetwork/
     name: Podbbang
     type: Mobile App
     os: Android
-  - regex: ^Podbbang
+  - regex: /^Podbbang/
     name: Podbbang
     type: Mobile App
     os: null
-  - regex: ^PodTrapper
+  - regex: /^PodTrapper/
     name: PodTrapper
     type: Mobile App
     os: null
-  - regex: ^(PodcastAddict|Podcast Addict).+Android
+  - regex: /^(PodcastAddict|Podcast Addict).+Android/
     name: PodcastAddict
     type: Mobile App
     os: Android
-  - regex: ^podcast/.+(CFNetwork|iOS)
+  - regex: /^podcast\/.+(CFNetwork|iOS)/
     name: The Podcast App
     type: Mobile App
     os: iOS
-  - regex: ^PodcastRepublic.+Android
+  - regex: /^PodcastRepublic.+Android/
     name: PodcastRepublic
     type: Mobile App
     os: Android
-  - regex: ^Podkicker
+  - regex: /^Podkicker/
     name: Podkicker
     type: Mobile App
     os: Android
-  - regex: ^Procast.+iOS
+  - regex: /^Procast.+iOS/
     name: Procast
     type: Mobile App
     os: iOS
-  - regex: ^RadioPublic Android|^RadioPublic/android
+  - regex: /^RadioPublic Android|^RadioPublic\/android/
     name: RadioPublic
     type: Mobile App
     os: Android
-  - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork
+  - regex: /^RadioPublic iOS|^RadioPublic.+CFNetwork/
     name: RadioPublic
     type: Mobile App
     os: iOS
-  - regex: ^ReactNativeVideo.+Android
+  - regex: /^ReactNativeVideo.+Android/
     name: null
     type: Mobile App
     os: Android
-  - regex: ^Roku
+  - regex: /^Roku/
     name: Roku
     type: Smart Home
     os: null
-  - regex: ^RSSRadio
+  - regex: /^RSSRadio/
     name: RSSRadio
     type: Mobile App
     os: iOS
-  - regex: ^samsung-agent/
+  - regex: /^samsung-agent\//
     name: null
     type: Smart Home
     os: Android # ???
-  - regex: ^ServeStream
+  - regex: /^ServeStream/
     name: ServeStream
     type: Mobile App
     os: Android
-  - regex: Sodes.+CFNetwork
+  - regex: /Sodes.+CFNetwork/
     name: "'sodes"
     type: Mobile App
     os: iOS
-  - regex: ^(Linux.+)?Sonos/
+  - regex: /^(Linux.+)?Sonos\//
     name: Sonos
     type: Smart Home
     os: Sonos OS
-  - regex: ^Spotify/.+Android
+  - regex: /^Spotify\/.+Android/
     name: Spotify
     type: Mobile App
     os: Android
-  - regex: ^Spotify/.+iOS
+  - regex: /^Spotify\/.+iOS/
     name: Spotify
     type: Mobile App
     os: iOS
-  - regex: ^Spotify/.+OSX
+  - regex: /^Spotify\/.+OSX/
     name: Spotify
     type: Desktop App
     os: macOS
-  - regex: ^Spotify/.+Win32
+  - regex: /^Spotify\/.+Win32/
     name: Spotify
     type: Desktop App
     os: Windows
-  - regex: ^Spotify/.+Linux
+  - regex: /^Spotify\/.+Linux/
     name: Spotify
     type: Desktop App
     os: Linux
-  - regex: ^Stitcher/Android
+  - regex: /^Stitcher\/Android/
     name: Stitcher
     type: Mobile App
     os: Android
-  - regex: ^Stitcher/iOS
+  - regex: /^Stitcher\/iOS/
     name: Stitcher
     type: Mobile App
     os: iOS
-  - regex: ^TED.+CFNetwork
+  - regex: /^TED.+CFNetwork/
     name: TED
     type: Mobile App
     os: iOS
-  - regex: ^TED.+Android
+  - regex: /^TED.+Android/
     name: TED
     type: Mobile App
     os: Android
-  - regex: ^TREBLE
+  - regex: /^TREBLE/
     name: Treble.fm
     type: Mobile App
     os: iOS
-  - regex: ^TuneIn.+CFNetwork
+  - regex: /^TuneIn.+CFNetwork/
     name: TuneIn
     type: Mobile App
     os: iOS
-  - regex: ^(uTorrent|BTWebClient)
+  - regex: /^(uTorrent|BTWebClient)/
     name: uTorrent
     type: Desktop App # and mobile???
     os: null
-  - regex: ^com\.wbez\.app.+Android
+  - regex: /^com\.wbez\.app.+Android/
     name: WBEZ App
     type: Mobile App
     os: Android
-  - regex: ^WNYC.+Android
+  - regex: /^WNYC.+Android/
     name: WNYC App
     type: Mobile App
     os: Android
-  - regex: ^WNYC.+(Darwin|iPhone|iOS)
+  - regex: /^WNYC.+(Darwin|iPhone|iOS)/
     name: WNYC App
     type: Mobile App
     os: iOS
-  - regex: ^Wilson/
+  - regex: /^Wilson\//
     name: Wilson FM
     type: Mobile App
     os: iOS
-  - regex: ^Winamp
+  - regex: /^Winamp/
     name: Winamp
     type: Desktop App
     os: Windows
-  - regex: ^Zune
+  - regex: /^Zune/
     name: Zune
     type: Mobile App
     os: null
 
   # witness ye podcasts and despair
-  - regex: ^Podcasts
+  - regex: /^Podcasts/
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: ^itunesstored
+  - regex: /^itunesstored/
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: ^AppleCoreMedia.+Apple TV
+  - regex: /^AppleCoreMedia.+Apple TV/
     name: Apple Podcasts
     type: Smart TV
     os: iOS
-  - regex: ^AppleCoreMedia.+(Audio Accessory|HomePod)
+  - regex: /^AppleCoreMedia.+(Audio Accessory|HomePod)/
     name: Apple Podcasts
     type: Smart Home
     os: iOS
-  - regex: ^AppleCoreMedia.+iPad
+  - regex: /^AppleCoreMedia.+iPad/
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: ^AppleCoreMedia.+iPhone
+  - regex: /^AppleCoreMedia.+iPhone/
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: ^AppleCoreMedia.+iPod
+  - regex: /^AppleCoreMedia.+iPod/
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: ^AppleCoreMedia.+(Apple Watch)
+  - regex: /^AppleCoreMedia.+(Apple Watch)/
     name: Apple Podcasts
     type: Smart Watch
     os: WatchOS
-  - regex: \bwatchOS/
+  - regex: /^watchOS\//
     name: Apple Podcasts
     type: Smart Watch
     os: WatchOS
-  - regex: ^AppleCoreMedia.+Macintosh
+  - regex: /^AppleCoreMedia.+Macintosh/
     name: iTunes
     type: Desktop App
     os: macOS
 
   # google search (including "google podcasts" app)
-  - regex: ^Mozilla/5\.0.+Android.+GSA/
+  - regex: /^Mozilla\/5\.0.+Android.+GSA\//
     name: Google Podcasts
     type: Mobile App
     os: Android
-  - regex: ^Mozilla/5\.0.+iPhone.+GSA/
+  - regex: /^Mozilla\/5\.0.+iPhone.+GSA\//
     name: Google Podcasts
     type: Mobile App
     os: iOS
-  - regex: \bGoogleChirp\/
+  - regex: /^GoogleChirp\//
     name: Google Podcasts
     type: Smart Home
     os: Google Home
 
   # old, old IE
-  - regex: ^Mozilla/4\.0.+MSIE
+  - regex: /^Mozilla\/4\.0.+MSIE/
     name: Internet Explorer
     type: Desktop Browser
     os: Windows
 
   # blackberry?
-  - regex: ^Mozilla/5\.0.+BB10.+Safari
+  - regex: /^Mozilla\/5\.0.+BB10.+Safari/
     name: Safari
     type: Mobile Browser
     os: BlackBerryOS
-  - regex: ^Mozilla/5\.0.+BB10
+  - regex: /^Mozilla\/5\.0.+BB10/
     name: null
     type: Mobile Browser
     os: BlackBerryOS
 
   # android browsers
-  - regex: ^Mozilla/5\.0.+Android.+Firefox
+  - regex: /^Mozilla\/5\.0.+Android.+Firefox/
     name: Firefox
     type: Mobile Browser
     os: Android
-  - regex: ^Mozilla/5\.0.+Android.+Chrome
+  - regex: /^Mozilla\/5\.0.+Android.+Chrome/
     name: Chrome
     type: Mobile Browser
     os: Android
-  - regex: ^Mozilla/5\.0.+Android
+  - regex: /^Mozilla\/5\.0.+Android/
     name: null
     type: Mobile Browser
     os: Android
-  - regex: ^Samsung.+stagefright
+  - regex: /^Samsung.+stagefright/
     name: null
     type: Mobile Browser
     os: Android
-  - regex: ^stagefright.+Android
+  - regex: /^stagefright.+Android/
     name: null
     type: Mobile Browser
     os: Android
 
   # mac browsers
-  - regex: ^Mozilla/5\.0.+Macintosh.+Firefox
+  - regex: /^Mozilla\/5\.0.+Macintosh.+Firefox/
     name: Firefox
     type: Desktop Browser
     os: macOS
-  - regex: ^Mozilla/5\.0.+Macintosh.+Chrome
+  - regex: /^Mozilla\/5\.0.+Macintosh.+Chrome/
     name: Chrome
     type: Desktop Browser
     os: macOS
-  - regex: ^Mozilla/5\.0.+Macintosh.+Safari
+  - regex: /^Mozilla\/5\.0.+Macintosh.+Safari/
     name: Safari
     type: Desktop Browser
     os: macOS
-  - regex: ^Mozilla/5\.0.+Macintosh
+  - regex: /^Mozilla\/5\.0.+Macintosh/
     name: null
     type: Desktop Browser
     os: macOS
 
   # windows phone browsers
-  - regex: ^Mozilla/5\.0.+Windows Phone.+Firefox
+  - regex: /^Mozilla\/5\.0.+Windows Phone.+Firefox/
     name: Firefox
     type: Mobile Browser
     os: Windows Phone
-  - regex: ^Mozilla/5\.0.+Windows Phone.+Chrome
+  - regex: /^Mozilla\/5\.0.+Windows Phone.+Chrome/
     name: Chrome
     type: Mobile Browser
     os: Windows Phone
-  - regex: ^Mozilla/5\.0.+Windows Phone.+IEMobile
+  - regex: /^Mozilla\/5\.0.+Windows Phone.+IEMobile/
     name: Internet Explorer
     type: Mobile Browser
     os: Windows Phone
-  - regex: ^Mozilla/5\.0.+Windows Phone
+  - regex: /^Mozilla\/5\.0.+Windows Phone/
     name: null
     type: Mobile Browser
     os: Windows Phone
 
   # windows desktop browsers
-  - regex: ^Mozilla/5\.0.+Windows NT.+Firefox
+  - regex: /^Mozilla\/5\.0.+Windows NT.+Firefox/
     name: Firefox
     type: Desktop Browser
     os: Windows
-  - regex: ^Mozilla/5\.0.+Windows NT.+Chrome
+  - regex: /^Mozilla\/5\.0.+Windows NT.+Chrome/
     name: Chrome
     type: Desktop Browser
     os: Windows
-  - regex: ^Mozilla/5\.0.+Windows NT
+  - regex: /^Mozilla\/5\.0.+Windows NT/
     name: Internet Explorer
     type: Desktop Browser
     os: Windows
 
   # ipad browsers
-  - regex: ^Mozilla/5\.0.+iPad.+FxiOS
+  - regex: /^Mozilla\/5\.0.+iPad.+FxiOS/
     name: Firefox
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad.+CriOS
+  - regex: /^Mozilla\/5\.0.+iPad.+CriOS/
     name: Chrome
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad.+FBAN
+  - regex: /^Mozilla\/5\.0.+iPad.+FBAN/
     name: Facebook
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad.+Twitter
+  - regex: /^Mozilla\/5\.0.+iPad.+Twitter/
     name: Twitter
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad.+AppleNews
+  - regex: /^Mozilla\/5\.0.+iPad.+AppleNews/
     name: Apple News
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad.+Safari
+  - regex: /^Mozilla\/5\.0.+iPad.+Safari/
     name: Safari
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPad
+  - regex: /^Mozilla\/5\.0.+iPad/
     name: null
     type: Mobile Browser
     os: iOS
 
   # iphone browsers
-  - regex: ^Mozilla/5\.0.+iPhone.+FxiOS
+  - regex: /^Mozilla\/5\.0.+iPhone.+FxiOS/
     name: Firefox
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone.+CriOS
+  - regex: /^Mozilla\/5\.0.+iPhone.+CriOS/
     name: Chrome
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone.+FBAN
+  - regex: /^Mozilla\/5\.0.+iPhone.+FBAN/
     name: Facebook
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone.+Twitter
+  - regex: /^Mozilla\/5\.0.+iPhone.+Twitter/
     name: Twitter
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone.+AppleNews
+  - regex: /^Mozilla\/5\.0.+iPhone.+AppleNews/
     name: Apple News
     type: Mobile App
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone.+Safari
+  - regex: /^Mozilla\/5\.0.+iPhone.+Safari/
     name: Safari
     type: Mobile Browser
     os: iOS
-  - regex: ^Mozilla/5\.0.+iPhone
+  - regex: /^Mozilla\/5\.0.+iPhone/
     name: null
     type: Mobile Browser
     os: iOS
 
   # misc browsers
-  - regex: ^Mozilla/5\.0.+CrOS
+  - regex: /^Mozilla\/5\.0.+CrOS/
     name: Chrome
     type: Desktop Browser
     os: ChromeOS
-  - regex: ^Mozilla/5\.0.+Tizen.+TV
+  - regex: /^Mozilla\/5\.0.+Tizen.+TV/
     name: null
     type: Smart TV
     os: Linux
-  - regex: ^Mozilla/5\.0.+Tizen
+  - regex: /^Mozilla\/5\.0.+Tizen/
     name: null
     type: Mobile Browser
     os: Linux
-  - regex: ^Mozilla/5\.0.+BeyondPod
+  - regex: /^Mozilla\/5\.0.+BeyondPod/
     name: BeyondPod
     type: Mobile App
     os: Android
-  - regex: ^Mozilla/5\.0.+NetCast
+  - regex: /^Mozilla\/5\.0.+NetCast/
     name: NetCast
     type: Smart TV
     os: webOS
 
   # linux browsers
-  - regex: ^Mozilla/5\.0.+Linux.+Firefox
+  - regex: /^Mozilla\/5\.0.+Linux.+Firefox/
     name: Firefox
     type: Desktop Browser
     os: Linux
-  - regex: ^Mozilla/5\.0.+Linux.+Chrome
+  - regex: /^Mozilla\/5\.0.+Linux.+Chrome/
     name: Chrome
     type: Desktop Browser
     os: Linux
-  - regex: ^Mozilla/5\.0.+Linux
+  - regex: /^Mozilla\/5\.0.+Linux/
     name: null
     type: Desktop Browser
     os: Linux
 
   # unlabeled firefox, huh?
-  - regex: ^Mozilla/5\.0.+Gecko.+Firefox
+  - regex: /^Mozilla\/5\.0.+Gecko.+Firefox/
     name: Firefox
     type: Desktop Browser
     os: null
 
   # unlabeled everything, huh?
-  - regex: ^Mozilla/5\.0( compatible)?$
+  - regex: /^Mozilla\/5\.0( compatible)?$/
     name: null
     type: Desktop Browser # maybe?
     os: null
 
   # bots and blanks last
-  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
-    caseInsensitive: true
+  - regex: /bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i
     bot: true
-  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator
-    caseInsensitive: true
+  - regex: /^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i
     bot: true
-  - regex: ^\s*$
+  - regex: /^\s*$/
     blank: true
