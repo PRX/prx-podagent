@@ -10,6 +10,7 @@ let agentsData = yaml.safeLoad(agentsText) || {};
 let lockData = yaml.safeLoad(lockText) || {};
 
 const TAG_NAMES = ['name', 'type', 'os'];
+const ALLOW_KEYS = ['regex', 'bot', 'blank'];
 
 function invert(obj) {
   let ret = {};
@@ -47,10 +48,12 @@ let newLock = {};
 newLock.agents = (agentsData.agents || []).map(agent => {
   let data = {};
   Object.keys(agent).forEach(key => {
-    if (TAG_NAMES.indexOf(key) === -1) {
-      data[key] = agent[key];
-    } else if (agent[key]) {
-      data[key] = tags[agent[key]];
+    if (agent[key]) {
+      if (TAG_NAMES.indexOf(key) > -1) {
+        data[key] = tags[agent[key]];
+      } else if (ALLOW_KEYS.indexOf(key) > -1) {
+        data[key] = agent[key];
+      }
     }
   });
   return data;
