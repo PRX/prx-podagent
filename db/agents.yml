@@ -203,7 +203,7 @@ agents:
     name: null
     type: Mobile App
     os: Android
-  - regex: '/^Luminary\/+/'
+  - regex: '/^Luminary\/[0-9\.]+/'
     name: Luminary
     type: Mobile App
     os: null
