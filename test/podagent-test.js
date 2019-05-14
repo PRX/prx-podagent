@@ -4,6 +4,7 @@ const podagent = require('../index');
 describe('podagent-test', function() {
 
   let str = 'AppleCoreMedia/1.0.0.14C92 (iPhone; U; CPU OS 10_2 like Mac OS X; en_us)';
+  let browser = 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko';
 
   it('async parses user agents', (done) => {
     podagent.parse(str, (err, agent) => {
@@ -48,6 +49,30 @@ describe('podagent-test', function() {
     expect(podagent.parse('Pocket casts')).to.be.null;
     expect(podagent.parse('Mozilla/5.0 (compatible; Google-Podcast)')).not.to.be.null;
     expect(podagent.parse('Mozilla/5.0 (compatible; gOoGle-Podcast)')).not.to.be.null;
+  });
+
+  it('returns all matches for an agent string', () => {
+    let agents = podagent.parseAll(browser);
+    expect(agents.length).to.equal(2);
+    expect(agents[0].name).to.equal('Internet Explorer');
+    expect(agents[0].type).to.equal('Mobile Browser');
+    expect(agents[0].os).to.equal('Windows Phone');
+    expect(agents[1].name).to.equal(null);
+    expect(agents[1].type).to.equal('Mobile Browser');
+    expect(agents[1].os).to.equal('Windows Phone');
+  });
+
+  it('returns an empty array for a non-match', () => {
+    let agent = podagent.parseAll('foo/bar');
+    expect(agent).to.eql([]);
+  });
+
+  it('includes the index of the match', () => {
+    let agent = podagent.parse(browser);
+    expect(agent.index).not.to.be.undefined;
+
+    let matched = podagent.db.matchers[agent.index];
+    expect(matched[0]).to.equal(agent.regex);
   });
 
 });

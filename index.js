@@ -2,11 +2,21 @@ const fs = require('fs');
 const db = require('./db/agents.js');
 
 /**
+ * Direct access
+ */
+exports.db = db;
+
+/**
  * Parse a user agent string
  */
 exports.parse = (agentStr, callback) => {
-  const match = db.matchers.find(m => m[0].test(agentStr));
-  const data = exports.format(match);
+  let data = null;
+  for (let i = 0; i < db.matchers.length; i++) {
+    if (db.matchers[i][0].test(agentStr)) {
+      data = exports.format(db.matchers[i], i);
+      break;
+    }
+  }
   if (callback) {
     callback(null, data);
   }
@@ -17,8 +27,12 @@ exports.parse = (agentStr, callback) => {
  * Return _all_ matches for a user agent, not just the first
  */
 exports.parseAll = (agentStr, callback) => {
-  const matches = db.matchers.filter(m => m[0].test(agentStr));
-  const datas = matches.map.map(m => exports.format(m));
+  let datas = [];
+  for (let i = 0; i < db.matchers.length; i++) {
+    if (db.matchers[i][0].test(agentStr)) {
+      datas.push(exports.format(db.matchers[i], i));
+    }
+  }
   if (callback) {
     callback(null, datas);
   }
@@ -28,7 +42,7 @@ exports.parseAll = (agentStr, callback) => {
 /**
  * Nicely format a matcher
  */
-exports.format = (match) => {
+exports.format = (match, idx) => {
   if (match) {
     return {
       regex: match[0],
@@ -39,6 +53,7 @@ exports.format = (match) => {
       typeId: match[2] || null,
       osId: match[3] || null,
       bot: match[4] || false,
+      index: idx,
     };
   } else {
     return null;
