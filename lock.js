@@ -64,4 +64,27 @@ console.log(`  ${Object.keys(newLock.tags).length} tags`);
 
 let newText = yaml.safeDump(newLock, {lineWidth: 200});
 fs.writeFileSync(`${__dirname}/db/agents.lock.yml`, newText);
+
+let jsLines = []
+console.log('write js database...');
+jsLines.push('exports.tags = {');
+Object.keys(newLock.tags).forEach((id, idx) => {
+  const val = newLock.tags[id].replace(/'/g, `\\'`);
+  jsLines.push(`  ${id}: '${val}',`);
+});
+jsLines.push('};');
+jsLines.push('exports.matchers = [');
+newLock.agents.forEach(agent => {
+  const name = agent.name || 'null';
+  const type = agent.type || 'null';
+  const os = agent.os || 'null';
+  if (agent.bot) {
+    jsLines.push(`  [${agent.regex}, ${name}, ${type}, ${os}, true],`);
+  } else {
+    jsLines.push(`  [${agent.regex}, ${name}, ${type}, ${os}],`);
+  }
+});
+jsLines.push('];\n');
+fs.writeFileSync(`${__dirname}/db/agents.js`, jsLines.join('\n'));
+
 console.log('done!');
