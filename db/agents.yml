@@ -67,7 +67,7 @@ agents:
   - regex: '/^Bose\//'
     name: Bose
     type: Smart Home
-    os: Amazon OS #???
+    os: null
     examples:
       - Bose/7.22.0
   - regex: '/^Breaker\/iOS/'
@@ -677,130 +677,162 @@ agents:
     name: Apple Podcasts
     type: Mobile App
     os: iOS
+    examples:
+      - Podcasts/1400.139 CFNetwork/1079.4 Darwin/19.0.0
+      - Podcasts/3.9 CFNetwork/1073.6.3 Darwin/19.0.0
+      - Podcasts/1.0.0 iPhone/12.2 hw/iPhone9_3
   - regex: '/^itunesstored/'
     name: Apple Podcasts
     type: Mobile App
     os: iOS
+    examples:
+      - itunesstored/1.0 iOS/11.4.1 model/iPad7,5 hwp/t8010 build/15G77 (5; dt:170)
+      - itunesstored/1.0 iOS/9.3.5 model/iPod5,1 hwp/s5l8942x build/13G36 (4; dt:81)
+      - itunesstored/1.0 iOS/10.3.3 model/iPhone5,3 hwp/s5l8950x build/14G60 (6; dt:97)
   - regex: '/^AppleCoreMedia.+Apple TV/'
     name: Apple Podcasts
     type: Smart TV
     os: iOS
+    examples:
+      - AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_us)
+      - AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_gb)
   - regex: '/^AppleCoreMedia.+(Audio Accessory|HomePod)/'
     name: Apple Podcasts
     type: Smart Home
     os: iOS
-  - regex: '/^AppleCoreMedia.+iPad/'
+    examples:
+      - AppleCoreMedia/1.0.0.16D39 (HomePod; U; CPU OS 12_1_3 like Mac OS X; en_us)
+  - regex: '/^AppleCoreMedia.+(iPhone|iPad|iPod)/'
     name: Apple Podcasts
     type: Mobile App
     os: iOS
-  - regex: '/^AppleCoreMedia.+iPhone/'
-    name: Apple Podcasts
-    type: Mobile App
-    os: iOS
-  - regex: '/^AppleCoreMedia.+iPod/'
-    name: Apple Podcasts
-    type: Mobile App
-    os: iOS
-  - regex: '/^AppleCoreMedia.+(Apple Watch)/'
+    examples:
+      - AppleCoreMedia/1.0.0.16D57 (iPhone; U; CPU OS 12_1_4 like Mac OS X; en_us)
+      - AppleCoreMedia/1.0.0.16D57 (iPad; U; CPU OS 12_1_4 like Mac OS X; en_us)
+      - AppleCoreMedia/1.0.0.16D57 (iPod touch; U; CPU OS 12_1_4 like Mac OS X; en_us)
+  - regex: '/^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\(null\).+watchOS)/'
     name: Apple Podcasts
     type: Smart Watch
     os: WatchOS
-  - regex: '/^watchOS\//'
-    name: Apple Podcasts
-    type: Smart Watch
-    os: WatchOS
+    examples:
+      - AppleCoreMedia/1.0.0.16S535 (Apple Watch; U; CPU OS 5_1_3 like Mac OS X; en_us)
+      - atc/1.0 watchOS/5.1.3 model/Watch3,3 hwp/t8004 build/16S535 (6; dt:155)
+      - (null)/(null) watchOS/5.0.1 model/Watch3,3 hwp/t8004 build/16R381 (6; dt:155)
   - regex: '/^AppleCoreMedia.+Macintosh/'
     name: iTunes
     type: Desktop App
     os: macOS
+    examples:
+      - AppleCoreMedia/1.0.0.18D109 (Macintosh; U; Intel Mac OS X 10_14_3; en_us)
+      - AppleCoreMedia/1.0.0.18D109 (Macintosh; U; Intel Mac OS X 10_14_3; en_gb)
 
   # google search (including "google podcasts" app)
   - regex: '/^Mozilla\/5\.0.+Android.+GSA\//'
     name: Google Podcasts
     type: Mobile App
     os: Android
+    examples:
+      - Mozilla/5.0 (Linux; Android 9; Pixel 2 Build/PQ2A.190205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.105 Mobile Safari/537.36 GSA/9.27.3.21.arm64
   - regex: '/^Mozilla\/5\.0.+iPhone.+GSA\//'
     name: Google Podcasts
     type: Mobile App
     os: iOS
-  - regex: '/^GoogleChirp\//'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/67.1.233829879 Mobile/15E148 Safari/605.1
+  - regex: '/^(Libassistant.+)?GoogleChirp\//'
     name: Google Podcasts
     type: Smart Home
     os: Google Home
+    examples:
+      - Libassistant/1.0 GoogleChirp/1.0.1 (Linux; Android/5.0) GOOG/7 AppleWebKit/534.30 (KHTML, like Gecko)
 
   # old, old IE
   - regex: '/^Mozilla\/4\.0.+MSIE/'
     name: Internet Explorer
     type: Desktop Browser
     os: Windows
+    examples:
+      - Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)
 
   # blackberry?
   - regex: '/^Mozilla\/5\.0.+BB10.+Safari/'
     name: Safari
     type: Mobile Browser
     os: BlackBerryOS
-  - regex: '/^Mozilla\/5\.0.+BB10/'
-    name: null
+    examples:
+      - Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3216 Mobile Safari/537.35+
+
+  # windows phone browsers
+  - regex: '/^Mozilla\/5\.0.+Windows Phone.+Edge\//'
+    name: Edge
     type: Mobile Browser
-    os: BlackBerryOS
+    os: Windows Phone
+    examples:
+      - Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; NOKIA; Lumia 830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393
+  - regex: '/^Mozilla\/5\.0.+Windows Phone.+IEMobile/'
+    name: Internet Explorer
+    type: Mobile Browser
+    os: Windows Phone
+    examples:
+      - Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko
 
   # android browsers
   - regex: '/^Mozilla\/5\.0.+Android.+Firefox/'
     name: Firefox
     type: Mobile Browser
     os: Android
+    examples:
+      - Mozilla/5.0 (Android 8.0.0; Mobile; rv:65.0) Gecko/65.0 Firefox/65.0
   - regex: '/^Mozilla\/5\.0.+Android.+Chrome/'
     name: Chrome
     type: Mobile Browser
     os: Android
+    examples:
+      - Mozilla/5.0 (Linux; Android 8.0.0; SM-G950U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36
   - regex: '/^Mozilla\/5\.0.+Android/'
     name: null
     type: Mobile Browser
     os: Android
+    examples:
+      - Mozilla/5.0 (Linux; U; Android 6.0.1;trltevzw/MMB29M)
   - regex: '/^Samsung.+stagefright/'
     name: null
     type: Mobile Browser
     os: Android
+    examples:
+      - Samsung SM-G920V stagefright/Beyonce/1.1.9 (Linux;Android 7.0)
   - regex: '/^stagefright.+Android/'
     name: null
     type: Mobile Browser
     os: Android
+    examples:
+      - stagefright/1.2 (Linux;Android 8.0.0)
 
   # mac browsers
   - regex: '/^Mozilla\/5\.0.+Macintosh.+Firefox/'
     name: Firefox
     type: Desktop Browser
     os: macOS
+    examples:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100101 Firefox/65.0
   - regex: '/^Mozilla\/5\.0.+Macintosh.+Chrome/'
     name: Chrome
     type: Desktop Browser
     os: macOS
+    examples:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
   - regex: '/^Mozilla\/5\.0.+Macintosh.+Safari/'
     name: Safari
     type: Desktop Browser
     os: macOS
+    examples:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
   - regex: '/^Mozilla\/5\.0.+Macintosh/'
     name: null
     type: Desktop Browser
     os: macOS
-
-  # windows phone browsers
-  - regex: '/^Mozilla\/5\.0.+Windows Phone.+Firefox/'
-    name: Firefox
-    type: Mobile Browser
-    os: Windows Phone
-  - regex: '/^Mozilla\/5\.0.+Windows Phone.+Chrome/'
-    name: Chrome
-    type: Mobile Browser
-    os: Windows Phone
-  - regex: '/^Mozilla\/5\.0.+Windows Phone.+IEMobile/'
-    name: Internet Explorer
-    type: Mobile Browser
-    os: Windows Phone
-  - regex: '/^Mozilla\/5\.0.+Windows Phone/'
-    name: null
-    type: Mobile Browser
-    os: Windows Phone
+    examples:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko)
 
   # windows desktop browsers
   - regex: '/^Mozilla\/5\.0.+Windows NT.+Firefox/'

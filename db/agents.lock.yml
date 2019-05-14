@@ -39,7 +39,6 @@ agents:
   - regex: /^Bose\//
     name: '86'
     type: '37'
-    os: '44'
   - regex: /^Breaker\/iOS/
     name: '6'
     type: '36'
@@ -402,23 +401,11 @@ agents:
     name: '25'
     type: '37'
     os: '43'
-  - regex: /^AppleCoreMedia.+iPad/
+  - regex: /^AppleCoreMedia.+(iPhone|iPad|iPod)/
     name: '25'
     type: '36'
     os: '43'
-  - regex: /^AppleCoreMedia.+iPhone/
-    name: '25'
-    type: '36'
-    os: '43'
-  - regex: /^AppleCoreMedia.+iPod/
-    name: '25'
-    type: '36'
-    os: '43'
-  - regex: /^AppleCoreMedia.+(Apple Watch)/
-    name: '25'
-    type: '68'
-    os: '69'
-  - regex: /^watchOS\//
+  - regex: /^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\(null\).+watchOS)/
     name: '25'
     type: '68'
     os: '69'
@@ -434,7 +421,7 @@ agents:
     name: '62'
     type: '36'
     os: '43'
-  - regex: /^GoogleChirp\//
+  - regex: /^(Libassistant.+)?GoogleChirp\//
     name: '62'
     type: '37'
     os: '67'
@@ -446,9 +433,14 @@ agents:
     name: '27'
     type: '40'
     os: '46'
-  - regex: /^Mozilla\/5\.0.+BB10/
+  - regex: /^Mozilla\/5\.0.+Windows Phone.+Edge\//
+    name: '92'
     type: '40'
-    os: '46'
+    os: '47'
+  - regex: /^Mozilla\/5\.0.+Windows Phone.+IEMobile/
+    name: '26'
+    type: '40'
+    os: '47'
   - regex: /^Mozilla\/5\.0.+Android.+Firefox/
     name: '28'
     type: '40'
@@ -481,21 +473,6 @@ agents:
   - regex: /^Mozilla\/5\.0.+Macintosh/
     type: '39'
     os: '45'
-  - regex: /^Mozilla\/5\.0.+Windows Phone.+Firefox/
-    name: '28'
-    type: '40'
-    os: '47'
-  - regex: /^Mozilla\/5\.0.+Windows Phone.+Chrome/
-    name: '29'
-    type: '40'
-    os: '47'
-  - regex: /^Mozilla\/5\.0.+Windows Phone.+IEMobile/
-    name: '26'
-    type: '40'
-    os: '47'
-  - regex: /^Mozilla\/5\.0.+Windows Phone/
-    type: '40'
-    os: '47'
   - regex: /^Mozilla\/5\.0.+Windows NT.+Firefox/
     name: '28'
     type: '39'
@@ -694,3 +671,4 @@ tags:
   '89': WBEZ App
   '90': Wilson FM
   '91': Luminary
+  '92': Edge
