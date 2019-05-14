@@ -3,274 +3,438 @@ agents:
     name: HermesPod
     type: Desktop App
     os: Windows
+    examples:
+      - +hermespod.com/v1.5.x
   - regex: '/^Acast.+Android/'
     name: Acast
     type: Mobile App
     os: Android
+    examples:
+      - Acast/1.38.1 (Linux;Android 6.0) ExoPlayerLib/2.9.0
   - regex: '/^Acast.+(CFNetwork|iOS)/'
     name: Acast
     type: Mobile App
     os: iOS
+    examples:
+      - Acast/1.63.0 (Phone; iOS 12.1.4; iPhone10,5)
+      - Acast/4346 CFNetwork/975.0.3 Darwin/18.2.0
   - regex: '/^AhaRadio.+CFNetwork/'
     name: AhaRadio
     type: Mobile App
     os: iOS
-  - regex: '/^AlexaMediaPlayer/'
+    examples:
+      - AhaRadio2/8.12.3 CFNetwork/976 Darwin/18.2.0
+  - regex: '/^(AlexaMediaPlayer|AlexaService)/'
     name: Alexa
     type: Smart Home
-    os: Amazon OS #???
+    os: Amazon OS
+    examples:
+      - AlexaMediaPlayer/2.0.205032.0 (Linux;Android 5.1.1) ExoPlayerLib/1.5.9
+      - AlexaMediaPlayer/Stitcher (Linux;Android 8.1.0) ExoPlayerLib/2.2.0
+      - AlexaService/2.2.257912.0 (Linux;Android 8.0.0) ExoPlayerLib/2.5.4
   - regex: '/^AllYouCanBooks.+CFNetwork/'
     name: AllYouCanBooks
     type: Mobile App
     os: iOS
+    examples:
+      - AllYouCanBooks/510 CFNetwork/978.0.7 Darwin/18.5.0
   - regex: '/^AndroidDownloadManager/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - AndroidDownloadManager/9 (Linux; U; Android 9; Pixel 2 Build/PQ2A.190205.002)
+      - AndroidDownloadManager/8.1.0 (Linux; U; Android 8.1.0; Moto G (5S) Build/OPP28.65-37-7)
+      - AndroidDownloadManager
   - regex: '/^AntennaPod/'
     name: AntennaPod
     type: Mobile App
     os: Android
+    examples:
+      - AntennaPod/1.7.1
   - regex: '/^Apache-HttpClient/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - Apache-HttpClient/4.2.4 (java 1.5)
   - regex: '/^APKXDL.+Android/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - APKXDL (Linux; U; Android 4.0.4;en_US; D01E/IMM76D) Downloader
   - regex: '/^Bose\//'
     name: Bose
     type: Smart Home
     os: Amazon OS #???
+    examples:
+      - Bose/7.22.0
   - regex: '/^Breaker\/iOS/'
     name: Breaker
     type: Mobile App
     os: iOS
+    examples:
+      - Breaker/iOS
+      - Breaker/iOS (https://breaker.audio)
+      - Breaker/iOS/0.8.0
   - regex: '/^Breaker/'
     name: Breaker
     type: Mobile App
     os: Android
+    examples:
+      - Breaker/0.7.10
   - regex: '/^Bullhorn/'
     name: Bullhorn
     type: Mobile App
-    os: null #???
+    os: null
+    examples:
+      - Bullhorn
   - regex: '/^Castaway.+CFNetwork/'
     name: Castaway
     type: Mobile App
     os: iOS
-  - regex: '/^CastBox.+Android/'
+    examples:
+      - Castaway/8 CFNetwork/976 Darwin/18.2.0
+  - regex: '/^Cast[Bb]ox.+Android/'
     name: CastBox
     type: Mobile App
     os: Android
-  - regex: '/^Castbox.+iOS/'
+    examples:
+      - CastBox/7.54.2-190220138 (Linux;Android 8.0.0) ExoPlayerLib/2.8.3/7.54.2-190220138 (Linux;Android 8.0.0) ExoPlayerLib/2.8.3
+      - CastBox/7.54.2-190220138 (Linux;Android 9) ExoPlayerLib/2.8.3
+      - CastBox/5.7.3-190226042.rd00e051 (Linux;Android 9)
+  - regex: '/^Cast[Bb]ox.+iOS/'
     name: CastBox
     type: Mobile App
     os: iOS
+    examples:
+      - Castbox/2.4 (fm.castbox.audiobook.radio.podcast; build:4; iOS 12.1.3)
+      - Castbox/4.21.1 (fm.castbox.audiobook.radio.podcast; build:1; iOS 12.1.4) Alamofire/4.7.3
+      - CastBox/4.24 (fm.castbox.audiobook.radio.podcast; build:5; iOS 12.1.4)
   - regex: '/^CastBox\/com\.castbox\.CastBox/'
     name: CastBox
     type: Mobile App
     os: iOS
+    examples:
+      - CastBox/com.castbox.CastBox (1.0; OS Version 11.4 (Build 15F79))
   - regex: '/^CastBox/'
     name: CastBox
     type: Mobile App
     os: null
+    examples:
+      - CastBox/5.7.3-190226042.rd00e051
   - regex: '/^Castro/'
     name: Castro
     type: Mobile App
     os: iOS
+    examples:
+      - Castro 2019.1/1099
+      - Castro/516 CFNetwork/976 Darwin/18.2.0
+      - Castro 3.2.2/1093
   - regex: '/^Clementine/'
     name: Clementine
     type: Desktop App
     os: null
+    examples:
+      - Clementine 1.3.1 Clementine 1.3.1 Clementine 1.3.1
+      - Clementine 1.3.1
   - regex: '/^Dalvik.+Android/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
+      - Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N900 Build/KOT49H)
   - regex: '/^doubleTwist CloudPlayer/'
     name: CloudPlayer
     type: Mobile App
     os: Android
-  - regex: '/^Downcast.+iPad/'
+    examples:
+      - doubleTwist CloudPlayer
+  - regex: '/^Downcast.+(iPhone|iPad|iPod)/'
     name: Downcast
     type: Mobile App
     os: iOS
-  - regex: '/^Downcast.+iPhone/'
-    name: Downcast
-    type: Mobile App
-    os: iOS
-  - regex: '/^Downcast.+iPod/'
-    name: Downcast
-    type: Mobile App
-    os: iOS
+    examples:
+      - Downcast/2.9.16 (iPhone; iOS 11.3.1; Scale/2.00)
+      - Downcast/2.9.38 (iPad; iOS 12.1.4; Scale/2.00)
+      - Downcast/2.9.38 (iPod touch; iOS 12.1.1; Scale/2.00)
   - regex: '/^Downcast.+OS X/'
     name: Downcast
     type: Desktop App
     os: macOS
+    examples:
+      - Downcast/2.9.39 (Mac OS X Version 10.12.6 (Build 16G1815))
+  - regex: '/^iTunes.+Downcast/'
+    name: Downcast
+    type: null
+    os: null
+    examples:
+      - iTunes/10.7 Downcast/4955
+    notes:
+      - https://downcast.fm/2016/03/07/Publishers-and-user-agents.html
   - regex: '/^Echo/'
     name: Alexa
     type: Smart Home
-    os: Amazon OS #???
+    os: Amazon OS
+    examples:
+      - Echo/1.0(APNG)
+      - Echo/1.0(MRM)
   - regex: '/^English.+Radio.+IELTS.+TOEFL.+CFNetwork/'
     name: English Radio IELTS TOEFL
     type: Mobile App
     os: iOS
-  - regex: '/^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/'
+    examples:
+      - English%20Radio%20-%20IELTS%20TOEFL%20TOEIC%20Listening%20and%20Speaking/1 CFNetwork/976 Darwin/18.2.0
+  - regex: '/^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/'
     name: null
     type: Mobile App
     os: Android
-  - regex: '/^ExoMediaPlayer.+Android/'
-    name: null
-    type: Mobile App
-    os: Android
+    examples:
+      - yourApplicationName/2.15.2 (Linux;Android 8.0.0) ExoPlayerLib/2.8.2
   - regex: '/^Fire OS.+stagefright/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - Fire OS/5.3.6.4 stagefright/1.2 (Linux;Android 5.1.1)
+      - Fire OS/6.0 stagefright/1.2 (Linux;Android 7.1.2)
   - regex: '/^gPodder.+Windows/'
     name: gPodder
     type: Desktop App
     os: Windows
+    examples:
+      - gPodder/3.9.3 (+http://gpodder.org/) Windows/8
+  - regex: '/^gPodder.+Linux/'
+    name: gPodder
+    type: Desktop App
+    os: Linux
+    examples:
+      - gPodder/3.10.1 (+http://gpodder.org/) Linux/4.4.0-53-generic
   - regex: '/^gPodder/'
     name: gPodder
     type: Desktop App
     os: null
+    examples:
+      - gPodder/3.5.2 (+http://gpodder.org/)
   - regex: '/^gvfs/'
     name: null
     type: Desktop App
     os: Linux
+    examples:
+      - gvfs/1.36.1
+    notes:
+      - Virtual filesystem for the GNOME desktop
+      - https://wiki.gnome.org/Projects/gvfs
   - regex: '/^HardCast.+CFNetwork/'
     name: HardCast
     type: Mobile App
     os: iOS
+    examples:
+      - HardCast/11 CFNetwork/978.0.7 Darwin/18.5.0
+    notes:
+      - Removed from AppStore
   - regex: '/^Himalaya.+CFNetwork/'
     name: Himalaya
     type: Mobile App
     os: iOS
-  - regex: '/^iCatcher!/'
+    examples:
+      - Himalaya/2.2.45 (iPhone; iOS 12.1.3; Scale/3.00; CFNetwork; iPhone9,2)
+      - Himalaya/1895 CFNetwork/976 Darwin/18.2.0
+  - regex: '/^Himalaya.+Android/'
+    name: Himalaya
+    type: Mobile App
+    os: Android
+    examples:
+      - Himalaya/2.2.45 Android/28 (Pixel)
+  - regex: '/^(iCatcher!|iTunes.+iCatcher!)/'
     name: iCatcher
     type: Mobile App
     os: iOS
-  - regex: '/^iHeartRadio.+iPad/'
+    examples:
+      - iCatcher!/5.2.2 (iPhone; iOS 12.1.4; Scale/2.0)
+      - iCatcher!/5.2.2 (iPad; iOS 12.1.1; Scale/2.0)
+      - iTunes (iCatcher!/2.8.13)
+  - regex: '/^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)/'
     name: iHeartRadio
     type: Mobile App
     os: iOS
-  - regex: '/^iHeartRadio.+iPhone/'
-    name: iHeartRadio
-    type: Mobile App
-    os: iOS
-  - regex: '/^iHeartRadio.+CFNetwork/'
-    name: iHeartRadio
-    type: Mobile App
-    os: iOS
+    examples:
+      - iHeartRadio/8.16.2 (iPhone; iOS 12.1.4; iPhone9,1)
+      - iHeartRadio/8.16.2 (iPad; iOS 12.1.4; iPad6,3)
+      - iHeartRadio/8.16.2 (iPod touch; iOS 12.1.4; iPod7,1)
+      - iHeartRadio/2019021102 CFNetwork/976 Darwin/18.2.0
   - regex: '/^iHeartRadio.+Android/'
     name: iHeartRadio
     type: Mobile App
     os: Android
+    examples:
+      - iHeartRadio/8.18.1 (Android 8.0.0; SM-G950U Build/R16NW)
+      - iHeartRadio/1.13.0 (Android 7.0; LGMP450 Build/NRD90U)
   - regex: '/^iTunes.+Macintosh/'
     name: iTunes
     type: Desktop App
     os: macOS
+    examples:
+      - iTunes/12.9.2 (Macintosh; OS X 10.14.3) AppleWebKit/606.4.5
+      - iTunes/12.8 (Macintosh; OS X 10.13.2) AppleWebKit/604.4.7.1.3
   - regex: '/^iTunes.+Windows/'
     name: iTunes
     type: Desktop App
     os: Windows
-  - regex: '/^iTunes\/[0-9\.]+/'
-    name: iTunes
-    type: Desktop App
-    os: null
+    examples:
+      - iTunes/12.9.3 (Windows; Microsoft Windows 10 x64 Home Premium Edition (Build 17134); x64) AppleWebKit/7606.4005.2002.2
   - regex: '/^Juice.+Windows/'
     name: Juice Receiver
     type: Desktop App
     os: Windows
+    examples:
+      - Juice/2.2 (Windows) +http://juicereceiver.sf.net/
   - regex: '/^KPCCAndroid/'
     name: KPCC App
     type: Mobile App
     os: Android
+    examples:
+      - KPCCAndroid
+  - regex: '/^KPCC.+CFNetwork/'
+    name: KPCC App
+    type: Mobile App
+    os: iOS
+    examples:
+      - KPCCPublicRadioiPhoneApp/2.8.1 CFNetwork/609.1.4 Darwin/13.0.0
   - regex: '/^Lavf/'
     name: null
     type: Desktop App # really?
     os: null
+    examples:
+      - Lavf/57.25.100
   - regex: '/^Laughable.+iOS/'
     name: Laughable
     type: Mobile App
     os: iOS
-  - regex: '/^(LG-|Player).+LG Player.+Android/'
+    examples:
+      - Laughable iOS/3.0.1 (com.bywayEndeavors.Laughable; build:3.0.1.0; iOS 12.1.4) Alamofire/4.7.3
+  - regex: '/^(LG-|LM-|Player).+LG Player.+Android/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - Player/LG Player 1.0 for Android 7.0 (stagefright alternative),
+      - LM-G710/V10o Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
+      - LG-H872/V20g Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
   - regex: '/^LibVLC.+Android/'
     name: null
     type: Mobile App
     os: Android
-  - regex: '/^Luminary\/[0-9\.]+/'
+    examples:
+      - LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)
+  - regex: '/^Luminary.+iOS/'
     name: Luminary
     type: Mobile App
-    os: null
+    os: iOS
+    examples:
+      - Luminary/0.0.243 build 3326/iOS 12.2
+  - regex: '/^Luminary.+Android/'
+    name: Luminary
+    type: Mobile App
+    os: Android
+    examples:
+      - Luminary/1.0.0 build 1035/Android 27
   - regex: '/^MediaMonkey 4/'
     name: MediaMonkey
     type: Desktop App
     os: Windows
+    examples:
+      - MediaMonkey 4.1.12.1798
   - regex: '/^myTuner.+CFNetwork/'
     name: myTuner
     type: Mobile App
     os: iOS
+    examples:
+      - myTuner%20Radio%20app/33 CFNetwork/976 Darwin/18.2.0
   - regex: '/^NPR%20One.+CFNetwork/'
     name: NPR One
     type: Mobile App
     os: iOS
+    examples:
+      - NPR%20One/122 CFNetwork/976 Darwin/18.2.0
   - regex: '/^NPROneAndroid/'
     name: NPR One
     type: Mobile App
     os: Android
-  - regex: '/^(NSPlayer.+WMFSDK|WMPlayer)/'
+    examples:
+      - NPROneAndroid
+  - regex: '/^(NSPlayer|WMFSDK|WMPlayer)/'
     name: Windows Media Player
     type: Desktop App
     os: Windows
-  - regex: '/^NSPlayer\//'
-    name: Windows Media Player
-    type: Desktop App
-    os: Windows
+    examples:
+      - NSPlayer/10.0.0.3702 WMFSDK/10.0
+      - NSPlayer/8.0.0.3801
+      - WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203
   - regex: '/^OkDownload/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - OkDownload/1.0.4-SNAPSHOT
   - regex: '/^okhttp/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - okhttp/3.12.1
   - regex: '/^Overcast/'
     name: Overcast
     type: Mobile App
     os: iOS
+    examples:
+      - Overcast/3.0 (+http://overcast.fm/; iOS podcast app)
   - regex: '/^Pandora.+Android/'
     name: Pandora
     type: Mobile App
     os: Android
+    examples:
+      - Pandora/1902.1 Android/8.0.0 dreamqltesq (ExoPlayerLib1.5.14.1)
+      - Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)
   - regex: '/^Mozilla.+(iPad|iPhone).+Pandora/'
     name: Pandora
     type: Mobile App
     os: iOS
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Pandora/1902.1
+      - Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Pandora/1902.1
   - regex: '/^Player( |%20)FM.+CFNetwork/'
     name: Player FM
     type: Mobile App
     os: iOS
+    examples:
+      - Player%20FM/255 CFNetwork/976 Darwin/18.2.0
   - regex: '/^Player FM/'
     name: Player FM
     type: Mobile App
     os: Android
+    examples:
+      - Player FM
   - regex: '/^Pocket Casts/'
     name: Pocket Casts
     type: Mobile App
     os: null
+    examples:
+      - Pocket Casts
   - regex: '/^Podbean.+Android/'
     name: Podbean
     type: Mobile App
     os: Android
+    examples:
+      - Podbean/Android App 5.7.4 (http://podbean.com),4dc1ce28e3ba4751ea72d9b998bbe8fa
   - regex: '/^Podbean\/iOS/'
     name: Podbean
     type: Mobile App
     os: iOS
+    examples:
+      - Podbean/iOS (http://podbean.com) 5.0 - 85789C9A6F604AA6A2E1DC9299404271
   - regex: '/^PodCruncher.+CFNetwork/'
     name: PodCruncher
     type: Mobile App
@@ -279,146 +443,234 @@ agents:
     name: Podbbang
     type: Mobile App
     os: Android
-  - regex: '/^Podbbang.+CFNetwork/'
+    examples:
+      - PodbbangPlayer/4.40.277 (Linux;Android 8.0.0) ExoPlayerLib/2.3.0
+  - regex: '/^[Pp]odbbang.+(iOS|CFNetwork)/'
     name: Podbbang
     type: Mobile App
     os: Android
+    examples:
+      - podbbang/5.151.294 (com.koreacenter.podbbang; build:330; iOS 12.1.4) Alamofire/4.8.0
   - regex: '/^Podbbang/'
     name: Podbbang
     type: Mobile App
     os: null
+    examples:
+      - Podbbang
+      - PodbbangDownload
+      - PodbbangPlayer
   - regex: '/^PodTrapper/'
     name: PodTrapper
     type: Mobile App
-    os: null
+    os: Android
+    examples:
+      - PodTrapper
   - regex: '/^(PodcastAddict|Podcast Addict).+Android/'
     name: PodcastAddict
     type: Mobile App
     os: Android
+    examples:
+      - PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
+      - Podcast Addict - Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1080 Build/SU6-7.7)
   - regex: '/^podcast\/.+(CFNetwork|iOS)/'
     name: The Podcast App
     type: Mobile App
     os: iOS
+    examples:
+      - podcast/496 iOS/Version 12.1.4 (Build 16D57) The Podcast App/2.6
+      - podcast/276 CFNetwork/976 Darwin/18.2.0
   - regex: '/^PodcastRepublic.+Android/'
     name: PodcastRepublic
     type: Mobile App
     os: Android
+    examples:
+      - PodcastRepublic/18.0 (Linux; U; Android 8.0.0;dreamqltesq/R16NW)
   - regex: '/^Podkicker/'
     name: Podkicker
     type: Mobile App
     os: Android
-  - regex: '/^Procast.+iOS/'
+    examples:
+      - Podkicker/3.0.2
+      - Podkicker Pro/3.0.2
+  - regex: '/^Pro[Cc]ast.+(iOS|CFNetwork)/'
     name: Procast
     type: Mobile App
     os: iOS
+    examples:
+      - Procast (iOS)
+      - ProCast/1 CFNetwork/976 Darwin/18.2.0
   - regex: '/^RadioPublic Android|^RadioPublic\/android/'
     name: RadioPublic
     type: Mobile App
     os: Android
+    examples:
+      - RadioPublic/android-1.11
   - regex: '/^RadioPublic iOS|^RadioPublic.+CFNetwork/'
     name: RadioPublic
     type: Mobile App
     os: iOS
+    examples:
+      - RadioPublic iOS 1.9.17
   - regex: '/^ReactNativeVideo.+Android/'
     name: null
     type: Mobile App
     os: Android
+    examples:
+      - ReactNativeVideo/2.0 (Linux;Android 5.1.1) ExoPlayerLib/2.9.1
   - regex: '/^Roku/'
     name: Roku
     type: Smart Home
     os: null
+    examples:
+      - Roku/DVP-9.0 (049.00E04142A)
   - regex: '/^RSSRadio/'
     name: RSSRadio
     type: Mobile App
     os: iOS
+    examples:
+      - RSSRadio/9220
+      - RSSRadio/9220 (iPhone;iOS;12.1.4)
+      - RSSRadio/9220 (iPad;iOS;12.1.4)
+      - RSSRadio/9220 (iPod touch;iOS;12.1.1)
+      - RSSRadio7Lite/9220 CFNetwork/976 Darwin/18.2.0
   - regex: '/^samsung-agent\//'
     name: null
     type: Smart Home
-    os: Android # ???
+    os: Android
+    examples:
+      - samsung-agent/1.1
   - regex: '/^ServeStream/'
     name: ServeStream
     type: Mobile App
     os: Android
+    examples:
+      - ServeStream
   - regex: '/Sodes.+CFNetwork/'
     name: "'sodes"
     type: Mobile App
     os: iOS
-  - regex: '/^(Linux.+)?Sonos\//'
+    examples:
+      - Sodes/1657 CFNetwork/976 Darwin/18.2.0
+  - regex: '/^(Sonos|Linux.+Sonos)/'
     name: Sonos
     type: Smart Home
     os: Sonos OS
+    examples:
+      - Linux UPnP/1.0 Sonos/48.2-61220 (ZPS12)
+      - Sonos
   - regex: '/^Spotify\/.+Android/'
     name: Spotify
     type: Mobile App
     os: Android
+    examples:
+      - Spotify/8.4.94 Android/26 (SM-G950F)
   - regex: '/^Spotify\/.+iOS/'
     name: Spotify
     type: Mobile App
     os: iOS
+    examples:
+      - Spotify/8.4.93 iOS/12.1.4 (iPhone8,1)
   - regex: '/^Spotify\/.+OSX/'
     name: Spotify
     type: Desktop App
     os: macOS
+    examples:
+      - Spotify/110000237 OSX/0 (MacBookAir7,2)
+      - Spotify/109300244 OSX/0 (iMac17,1)
   - regex: '/^Spotify\/.+Win32/'
     name: Spotify
     type: Desktop App
     os: Windows
+    examples:
+      - Spotify/110000237 Win32/0 (PC laptop)
+      - Spotify/110000237 Win32/0 (PC desktop)
   - regex: '/^Spotify\/.+Linux/'
     name: Spotify
     type: Desktop App
     os: Linux
+    examples:
+      - Spotify/110000237 Linux/0 (PC desktop)
   - regex: '/^Stitcher\/Android/'
     name: Stitcher
     type: Mobile App
     os: Android
+    examples:
+      - Stitcher/Android
   - regex: '/^Stitcher\/iOS/'
     name: Stitcher
     type: Mobile App
     os: iOS
+    examples:
+      - Stitcher/iOS
   - regex: '/^TED.+CFNetwork/'
     name: TED
     type: Mobile App
     os: iOS
+    examples:
+      - TED/2941 CFNetwork/976 Darwin/18.2.0
   - regex: '/^TED.+Android/'
     name: TED
     type: Mobile App
     os: Android
+    examples:
+      - TED Android; Version 3.3.3; OPPO R15 9
   - regex: '/^TREBLE/'
     name: Treble.fm
     type: Mobile App
     os: iOS
+    examples:
+      - TREBLE/1.0
   - regex: '/^TuneIn.+CFNetwork/'
     name: TuneIn
     type: Mobile App
     os: iOS
+    examples:
+      - TuneIn%20Radio/1163 CFNetwork/976 Darwin/18.2.0
+      - TuneIn%20Radio%20Pro/1163 CFNetwork/976 Darwin/18.2.0
   - regex: '/^(uTorrent|BTWebClient)/'
     name: uTorrent
     type: Desktop App # and mobile???
     os: null
+    examples:
+      - uTorrent/2210(25302)
+      - BTWebClient/355S(44994)
   - regex: '/^com\.wbez\.app.+Android/'
     name: WBEZ App
     type: Mobile App
     os: Android
+    examples:
+      - com.wbez.app/7.2.2 (Linux;Android 8.0.0) ExoPlayerLib/2.5.1
   - regex: '/^WNYC.+Android/'
     name: WNYC App
     type: Mobile App
     os: Android
+    examples:
+      - WNYC App/3.0.10 Android/25 device/KYOCERA-E6810
   - regex: '/^WNYC.+(Darwin|iPhone|iOS)/'
     name: WNYC App
     type: Mobile App
     os: iOS
+    examples:
+      - WNYC App/3.0.30-11136 iOS/12.2 device/iPhone10,1
   - regex: '/^Wilson\//'
     name: Wilson FM
     type: Mobile App
     os: iOS
+    examples:
+      - Wilson/1.1.2 (com.fictivekin.Wilson; build:39; iOS 12.1.4) Alamofire/4.6.0
   - regex: '/^Winamp/'
     name: Winamp
     type: Desktop App
     os: Windows
+    examples:
+      - Winamp/5.8
+      - WinampMPEG/2.7
   - regex: '/^Zune/'
     name: Zune
     type: Mobile App
-    os: null
+    os: Windows
+    examples:
+      - Zune/4.8
 
   # witness ye podcasts and despair
   - regex: '/^Podcasts/'
@@ -677,5 +929,11 @@ agents:
     bot: true
   - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i'
     bot: true
+    examplez:
+      - PandoraRSSCrawler/1.0 (podcastpartnerships@pandora.com)
+      - RSSRadio (Push Notification Scanner;support@dorada.co.uk)
+      - Spotify/1.0
+      - StitcherBot (MP3 Search Bot for Stitcher Personalized Radio Service)
+      - TED POD-2.0.2
   - regex: '/^\s*$/'
     blank: true

@@ -15,7 +15,7 @@ agents:
     name: '78'
     type: '36'
     os: '43'
-  - regex: /^AlexaMediaPlayer/
+  - regex: /^(AlexaMediaPlayer|AlexaService)/
     name: '3'
     type: '37'
     os: '44'
@@ -55,11 +55,11 @@ agents:
     name: '7'
     type: '36'
     os: '43'
-  - regex: /^CastBox.+Android/
+  - regex: '/^Cast[Bb]ox.+Android/'
     name: '8'
     type: '36'
     os: '42'
-  - regex: /^Castbox.+iOS/
+  - regex: '/^Cast[Bb]ox.+iOS/'
     name: '8'
     type: '36'
     os: '43'
@@ -84,15 +84,7 @@ agents:
     name: '80'
     type: '36'
     os: '42'
-  - regex: /^Downcast.+iPad/
-    name: '11'
-    type: '36'
-    os: '43'
-  - regex: /^Downcast.+iPhone/
-    name: '11'
-    type: '36'
-    os: '43'
-  - regex: /^Downcast.+iPod/
+  - regex: /^Downcast.+(iPhone|iPad|iPod)/
     name: '11'
     type: '36'
     os: '43'
@@ -100,6 +92,8 @@ agents:
     name: '11'
     type: '35'
     os: '45'
+  - regex: /^iTunes.+Downcast/
+    name: '11'
   - regex: /^Echo/
     name: '3'
     type: '37'
@@ -108,10 +102,7 @@ agents:
     name: '81'
     type: '36'
     os: '43'
-  - regex: /^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/
-    type: '36'
-    os: '42'
-  - regex: /^ExoMediaPlayer.+Android/
+  - regex: /^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/
     type: '36'
     os: '42'
   - regex: /^Fire OS.+stagefright/
@@ -121,6 +112,10 @@ agents:
     name: '51'
     type: '35'
     os: '41'
+  - regex: /^gPodder.+Linux/
+    name: '51'
+    type: '35'
+    os: '49'
   - regex: /^gPodder/
     name: '51'
     type: '35'
@@ -135,19 +130,15 @@ agents:
     name: '70'
     type: '36'
     os: '43'
-  - regex: /^iCatcher!/
+  - regex: /^Himalaya.+Android/
+    name: '70'
+    type: '36'
+    os: '42'
+  - regex: /^(iCatcher!|iTunes.+iCatcher!)/
     name: '72'
     type: '36'
     os: '43'
-  - regex: /^iHeartRadio.+iPad/
-    name: '52'
-    type: '36'
-    os: '43'
-  - regex: /^iHeartRadio.+iPhone/
-    name: '52'
-    type: '36'
-    os: '43'
-  - regex: /^iHeartRadio.+CFNetwork/
+  - regex: /^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)/
     name: '52'
     type: '36'
     os: '43'
@@ -163,9 +154,6 @@ agents:
     name: '12'
     type: '35'
     os: '41'
-  - regex: '/^iTunes\/[0-9\.]+/'
-    name: '12'
-    type: '35'
   - regex: /^Juice.+Windows/
     name: '53'
     type: '35'
@@ -174,21 +162,30 @@ agents:
     name: '73'
     type: '36'
     os: '42'
+  - regex: /^KPCC.+CFNetwork/
+    name: '73'
+    type: '36'
+    os: '43'
   - regex: /^Lavf/
     type: '35'
   - regex: /^Laughable.+iOS/
     name: '54'
     type: '36'
     os: '43'
-  - regex: /^(LG-|Player).+LG Player.+Android/
+  - regex: /^(LG-|LM-|Player).+LG Player.+Android/
     type: '36'
     os: '42'
   - regex: /^LibVLC.+Android/
     type: '36'
     os: '42'
-  - regex: '/^Luminary\/[0-9\.]+/'
+  - regex: /^Luminary.+iOS/
     name: '91'
     type: '36'
+    os: '43'
+  - regex: /^Luminary.+Android/
+    name: '91'
+    type: '36'
+    os: '42'
   - regex: /^MediaMonkey 4/
     name: '71'
     type: '35'
@@ -205,11 +202,7 @@ agents:
     name: '13'
     type: '36'
     os: '42'
-  - regex: /^(NSPlayer.+WMFSDK|WMPlayer)/
-    name: '55'
-    type: '35'
-    os: '41'
-  - regex: /^NSPlayer\//
+  - regex: /^(NSPlayer|WMFSDK|WMPlayer)/
     name: '55'
     type: '35'
     os: '41'
@@ -258,7 +251,7 @@ agents:
     name: '75'
     type: '36'
     os: '42'
-  - regex: /^Podbbang.+CFNetwork/
+  - regex: '/^[Pp]odbbang.+(iOS|CFNetwork)/'
     name: '75'
     type: '36'
     os: '42'
@@ -268,6 +261,7 @@ agents:
   - regex: /^PodTrapper/
     name: '57'
     type: '36'
+    os: '42'
   - regex: /^(PodcastAddict|Podcast Addict).+Android/
     name: '18'
     type: '36'
@@ -284,7 +278,7 @@ agents:
     name: '20'
     type: '36'
     os: '42'
-  - regex: /^Procast.+iOS/
+  - regex: '/^Pro[Cc]ast.+(iOS|CFNetwork)/'
     name: '83'
     type: '36'
     os: '43'
@@ -317,7 +311,7 @@ agents:
     name: '88'
     type: '36'
     os: '43'
-  - regex: /^(Linux.+)?Sonos\//
+  - regex: /^(Sonos|Linux.+Sonos)/
     name: '22'
     type: '37'
     os: '74'
@@ -391,6 +385,7 @@ agents:
   - regex: /^Zune/
     name: '24'
     type: '36'
+    os: '41'
   - regex: /^Podcasts/
     name: '25'
     type: '36'
