@@ -64,6 +64,12 @@ agents:
     os: Android
     examples:
       - APKXDL (Linux; U; Android 4.0.4;en_US; D01E/IMM76D) Downloader
+  - regex: '/^Mozilla\/5\.0.+BeyondPod/'
+    name: BeyondPod
+    type: Mobile App
+    os: Android
+    examples:
+      - Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)
   - regex: '/^Bose\//'
     name: Bose
     type: Smart Home
@@ -435,10 +441,13 @@ agents:
     os: iOS
     examples:
       - Podbean/iOS (http://podbean.com) 5.0 - 85789C9A6F604AA6A2E1DC9299404271
-  - regex: '/^PodCruncher.+CFNetwork/'
+  - regex: '/^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)/'
     name: PodCruncher
     type: Mobile App
     os: iOS
+    examples:
+      - PodCruncher/3.7.1 CFNetwork/976 Darwin/18.2.0
+      - iTunes/10.5.2 (PodCruncher 2.2)
   - regex: '/^Podbbang.+Android/'
     name: Podbbang
     type: Mobile App
@@ -835,137 +844,150 @@ agents:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko)
 
   # windows desktop browsers
+  - regex: '/^Mozilla\/5\.0.+Windows NT.+Edge/'
+    name: Edge
+    type: Desktop Browser
+    os: Windows
+    examples:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
   - regex: '/^Mozilla\/5\.0.+Windows NT.+Firefox/'
     name: Firefox
     type: Desktop Browser
     os: Windows
+    examples:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0
   - regex: '/^Mozilla\/5\.0.+Windows NT.+Chrome/'
     name: Chrome
     type: Desktop Browser
     os: Windows
+    examples:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
   - regex: '/^Mozilla\/5\.0.+Windows NT/'
     name: Internet Explorer
     type: Desktop Browser
     os: Windows
+    examples:
+      - Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
 
-  # ipad browsers
-  - regex: '/^Mozilla\/5\.0.+iPad.+FxiOS/'
+  # ios browsers
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+FxiOS/'
     name: Firefox
     type: Mobile Browser
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad.+CriOS/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/15.0b13894 Mobile/16D57 Safari/605.1.15
+      - Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) FxiOS/14.0b12646 Mobile/14G60 Safari/603.3.8
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+CriOS/'
     name: Chrome
     type: Mobile Browser
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad.+FBAN/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/72.0.3626.101 Mobile/15E148 Safari/605.1
+      - Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/72.0.3626.101 Mobile/15E148 Safari/605.1
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+FBAN/'
     name: Facebook
     type: Mobile App
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad.+Twitter/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/210.0.0.37.117;FBBV/143754374;FBDV/iPhone5,3;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Verizon;FBID/phone;FBLC/en_US;FBOP/5;FBRV/0]
+      - Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 [FBAN/FBIOS;FBAV/210.0.0.37.117;FBBV/143754374;FBDV/iPad5,3;FBMD/iPad;FBSN/iOS;FBSV/12.1.4;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+Twitter/'
     name: Twitter
     type: Mobile App
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad.+AppleNews/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16E227 Twitter for iPhone/7.49
+      - Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16E227 Twitter for iPhone/7.49
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+AppleNews/'
     name: Apple News
     type: Mobile App
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad.+Safari/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) AppleNews/1706 Version/4.1.1
+      - Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) AppleNews/1000 Version/2.3.1
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad).+Safari/'
     name: Safari
     type: Mobile Browser
     os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPad/'
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1
+      - Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1
+  - regex: '/^Mozilla\/5\.0.+(iPhone|iPad)/'
     name: null
     type: Mobile Browser
     os: iOS
-
-  # iphone browsers
-  - regex: '/^Mozilla\/5\.0.+iPhone.+FxiOS/'
-    name: Firefox
-    type: Mobile Browser
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone.+CriOS/'
-    name: Chrome
-    type: Mobile Browser
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone.+FBAN/'
-    name: Facebook
-    type: Mobile App
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone.+Twitter/'
-    name: Twitter
-    type: Mobile App
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone.+AppleNews/'
-    name: Apple News
-    type: Mobile App
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone.+Safari/'
-    name: Safari
-    type: Mobile Browser
-    os: iOS
-  - regex: '/^Mozilla\/5\.0.+iPhone/'
-    name: null
-    type: Mobile Browser
-    os: iOS
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57
+      - Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57
 
   # misc browsers
   - regex: '/^Mozilla\/5\.0.+CrOS/'
     name: Chrome
     type: Desktop Browser
     os: ChromeOS
+    examples:
+      - Mozilla/5.0 (X11; CrOS x86_64 11151.113.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.127 Safari/537.36
   - regex: '/^Mozilla\/5\.0.+Tizen.+TV/'
     name: null
     type: Smart TV
     os: Linux
+    examples:
+      - Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 TV Safari/537.36
+      - Mozilla/5.0 (SMART-TV; Linux; Tizen 3.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/47.0.2526.69 TV safari/537.36
   - regex: '/^Mozilla\/5\.0.+Tizen/'
     name: null
     type: Mobile Browser
     os: Linux
-  - regex: '/^Mozilla\/5\.0.+BeyondPod/'
-    name: BeyondPod
-    type: Mobile App
-    os: Android
+    examples:
+      - Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG Family Hub 3.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile Safari/537.36
   - regex: '/^Mozilla\/5\.0.+NetCast/'
     name: NetCast
     type: Smart TV
     os: webOS
+    examples:
+      - Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.31 SmartTV/6.0
 
   # linux browsers
   - regex: '/^Mozilla\/5\.0.+Linux.+Firefox/'
     name: Firefox
     type: Desktop Browser
     os: Linux
+    examples:
+      - Mozilla/5.0 (X11; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
   - regex: '/^Mozilla\/5\.0.+Linux.+Chrome/'
     name: Chrome
     type: Desktop Browser
     os: Linux
+    examples:
+      - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/4E423F
   - regex: '/^Mozilla\/5\.0.+Linux/'
     name: null
     type: Desktop Browser
     os: Linux
+    examples:
+      - Mozilla/5.0 (Linux; x86_64 GNU/Linux)
 
   # unlabeled firefox, huh?
   - regex: '/^Mozilla\/5\.0.+Gecko.+Firefox/'
     name: Firefox
     type: Desktop Browser
     os: null
+    examples:
+      - Mozilla/5.0 (amd64; rv:28.0) Gecko/20100101 Firefox/28.0
 
   # unlabeled everything, huh?
   - regex: '/^Mozilla\/5\.0( compatible)?$/'
     name: null
     type: Desktop Browser # maybe?
     os: null
+    examples:
+      - Mozilla/5.0
+      - Mozilla/5.0 compatible
 
-  # bots and blanks last
+  # bots
   - regex: '/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i'
     bot: true
   - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i'
     bot: true
-    examplez:
-      - PandoraRSSCrawler/1.0 (podcastpartnerships@pandora.com)
-      - RSSRadio (Push Notification Scanner;support@dorada.co.uk)
-      - Spotify/1.0
-      - StitcherBot (MP3 Search Bot for Stitcher Personalized Radio Service)
-      - TED POD-2.0.2
   - regex: '/^\s*$/'
     blank: true

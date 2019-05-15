@@ -36,6 +36,10 @@ agents:
   - regex: /^APKXDL.+Android/
     type: '36'
     os: '42'
+  - regex: /^Mozilla\/5\.0.+BeyondPod/
+    name: '33'
+    type: '36'
+    os: '42'
   - regex: /^Bose\//
     name: '86'
     type: '37'
@@ -242,7 +246,7 @@ agents:
     name: '17'
     type: '36'
     os: '43'
-  - regex: /^PodCruncher.+CFNetwork/
+  - regex: /^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)/
     name: '56'
     type: '36'
     os: '43'
@@ -473,6 +477,10 @@ agents:
   - regex: /^Mozilla\/5\.0.+Macintosh/
     type: '39'
     os: '45'
+  - regex: /^Mozilla\/5\.0.+Windows NT.+Edge/
+    name: '92'
+    type: '39'
+    os: '41'
   - regex: /^Mozilla\/5\.0.+Windows NT.+Firefox/
     name: '28'
     type: '39'
@@ -485,58 +493,31 @@ agents:
     name: '26'
     type: '39'
     os: '41'
-  - regex: /^Mozilla\/5\.0.+iPad.+FxiOS/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+FxiOS/
     name: '28'
     type: '40'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad.+CriOS/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+CriOS/
     name: '29'
     type: '40'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad.+FBAN/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+FBAN/
     name: '30'
     type: '36'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad.+Twitter/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+Twitter/
     name: '31'
     type: '36'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad.+AppleNews/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+AppleNews/
     name: '32'
     type: '36'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad.+Safari/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad).+Safari/
     name: '27'
     type: '40'
     os: '43'
-  - regex: /^Mozilla\/5\.0.+iPad/
-    type: '40'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+FxiOS/
-    name: '28'
-    type: '40'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+CriOS/
-    name: '29'
-    type: '40'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+FBAN/
-    name: '30'
-    type: '36'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+Twitter/
-    name: '31'
-    type: '36'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+AppleNews/
-    name: '32'
-    type: '36'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone.+Safari/
-    name: '27'
-    type: '40'
-    os: '43'
-  - regex: /^Mozilla\/5\.0.+iPhone/
+  - regex: /^Mozilla\/5\.0.+(iPhone|iPad)/
     type: '40'
     os: '43'
   - regex: /^Mozilla\/5\.0.+CrOS/
@@ -549,10 +530,6 @@ agents:
   - regex: /^Mozilla\/5\.0.+Tizen/
     type: '40'
     os: '49'
-  - regex: /^Mozilla\/5\.0.+BeyondPod/
-    name: '33'
-    type: '36'
-    os: '42'
   - regex: /^Mozilla\/5\.0.+NetCast/
     name: '34'
     type: '38'
