@@ -5,6 +5,7 @@ describe('podagent-test', function() {
 
   let str = 'AppleCoreMedia/1.0.0.14C92 (iPhone; U; CPU OS 10_2 like Mac OS X; en_us)';
   let browser = 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko';
+  let browser2 = 'Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) FxiOS/14.0b12646 Mobile/14G60 Safari/603.3.8';
 
   it('async parses user agents', (done) => {
     podagent.parse(str, (err, agent) => {
@@ -52,14 +53,17 @@ describe('podagent-test', function() {
   });
 
   it('returns all matches for an agent string', () => {
-    let agents = podagent.parseAll(browser);
-    expect(agents.length).to.equal(2);
-    expect(agents[0].name).to.equal('Internet Explorer');
+    let agents = podagent.parseAll(browser2);
+    expect(agents.length).to.equal(3);
+    expect(agents[0].name).to.equal('Firefox');
     expect(agents[0].type).to.equal('Mobile Browser');
-    expect(agents[0].os).to.equal('Windows Phone');
-    expect(agents[1].name).to.equal(null);
+    expect(agents[0].os).to.equal('iOS');
+    expect(agents[1].name).to.equal('Safari');
     expect(agents[1].type).to.equal('Mobile Browser');
-    expect(agents[1].os).to.equal('Windows Phone');
+    expect(agents[1].os).to.equal('iOS');
+    expect(agents[2].name).to.equal(null);
+    expect(agents[2].type).to.equal('Mobile Browser');
+    expect(agents[2].os).to.equal('iOS');
   });
 
   it('returns an empty array for a non-match', () => {
