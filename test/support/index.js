@@ -1,7 +1,11 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 const csv = require('csv');
 const mocha = require('mocha');
 const yaml = require('js-yaml');
+
+// sync re-lock the agents.js before running anything
+execSync('npm run lock');
 
 // log statements AFTER the test name prints
 let afterLogs = [];

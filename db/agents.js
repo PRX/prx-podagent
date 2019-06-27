@@ -93,6 +93,7 @@ exports.tags = {
   92: 'Edge',
   93: 'DoggCatcher',
   94: 'Chromecast',
+  95: 'Squeezebox',
 };
 exports.matchers = [
   [/^\+hermespod\.com/, 1, 35, 41],
@@ -189,6 +190,7 @@ exports.matchers = [
   [/^Spotify\/.+Win32/, 77, 35, 41],
   [/^Spotify\/.+Linux/, 77, 35, 49],
   [/^Stitcher\/Android/, 23, 36, 42],
+  [/^iTunes.+(SqueezeCenter|SqueezeNetwork)/, 95, 37, 49],
   [/^Stitcher\/iOS/, 23, 36, 43],
   [/^TED.+CFNetwork/, 59, 36, 43],
   [/^TED.+Android/, 59, 36, 42],
@@ -245,6 +247,5 @@ exports.matchers = [
   [/^Mozilla\/5\.0.+Gecko.+Firefox/, 28, 39, null],
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i, null, null, null, true],
-  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i, null, null, null, true],
-  [/^\s*$/, null, null, null],
+  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i, null, null, null, true],
 ];

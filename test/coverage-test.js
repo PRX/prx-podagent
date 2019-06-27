@@ -26,28 +26,28 @@ describe('coverage-test', function() {
   it('total coverage', () => {
     countIf(
       agent => agent,
-      agent => !agent || (!agent.bot && !agent.blank)
+      agent => !agent || !agent.bot
     );
   });
 
   it('name coverage', () => {
     countIf(
       agent => agent && agent.name,
-      agent => !agent || (!agent.bot && !agent.blank)
+      agent => !agent || !agent.bot
     );
   });
 
   it('type coverage', () => {
     countIf(
       agent => agent && agent.type,
-      agent => !agent || (!agent.bot && !agent.blank)
+      agent => !agent || !agent.bot
     );
   });
 
   it('os coverage', () => {
     countIf(
       agent => agent && agent.os,
-      agent => !agent || (!agent.bot && !agent.blank)
+      agent => !agent || !agent.bot
     );
   });
 

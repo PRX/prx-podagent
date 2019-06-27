@@ -350,6 +350,10 @@ agents:
     name: '23'
     type: '36'
     os: '42'
+  - regex: /^iTunes.+(SqueezeCenter|SqueezeNetwork)/
+    name: '95'
+    type: '37'
+    os: '49'
   - regex: /^Stitcher\/iOS/
     name: '23'
     type: '36'
@@ -560,10 +564,8 @@ agents:
     type: '39'
   - regex: /bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i
     bot: true
-  - regex: /^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i
+  - regex: /^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i
     bot: true
-  - regex: /^\s*$/
-    blank: true
 tags:
   '1': HermesPod
   '2': Acast
@@ -659,3 +661,4 @@ tags:
   '92': Edge
   '93': DoggCatcher
   '94': Chromecast
+  '95': Squeezebox

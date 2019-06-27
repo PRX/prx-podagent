@@ -12,7 +12,6 @@ describe('examples-test', function() {
       const matcher = podagent.db.matchers[idx][0];
 
       if (!agent) {
-        console.log(str);
         alog(`${str} => no matches ${matcher}`);
         nonMatching++;
       } else if (agent.index !== idx) {
@@ -30,7 +29,7 @@ describe('examples-test', function() {
 
     let missingExamples = 0;
     podagent.db.matchers.forEach((m, idx) => {
-      if (!hasExamples[idx]) {
+      if (!hasExamples[idx] && !m[4]) {
         missingExamples++;
         alog(`${m[0]} => no examples`);
       }

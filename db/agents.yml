@@ -618,6 +618,13 @@ agents:
     os: Android
     examples:
       - Stitcher/Android
+  - regex: '/^iTunes.+(SqueezeCenter|SqueezeNetwork)/'
+    name: Squeezebox
+    type: Smart Home
+    os: Linux
+    examples:
+      - iTunes/4.7.1 (Linux; N; piCore; armv7l-linux; EN; utf8) SqueezeCenter, Squeezebox Server, Logitech Media Server/7.9.2/1524841547
+      - iTunes/4.7.1 (Unix; N; linux; x86_64-linux; EN; utf8) SqueezeNetwork/7.7.7-sn/TRUNK
   - regex: '/^Stitcher\/iOS/'
     name: Stitcher
     type: Mobile App
@@ -1001,7 +1008,9 @@ agents:
   # bots
   - regex: '/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i'
     bot: true
-  - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator/i'
+    notes:
+      - General bots
+  - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i'
     bot: true
-  - regex: '/^\s*$/'
-    blank: true
+    notes:
+      - Podcast specific bots
