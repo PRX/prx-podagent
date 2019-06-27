@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha test/*-test.js",
     "unknowns": "mocha test/unknowns.js",
-    "lock": "node lock.js",
-    "prepublish": "node lock.js"
+    "lock": "node lock/lock-yaml.js && node lock/lock-js.js && node lock/lock-json.js",
+    "prepublish": "npm lock"
   },
   "repository": {
     "type": "git",

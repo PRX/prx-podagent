@@ -2,10 +2,12 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 
 /**
- * Normalize and lock agents database
+ * Normalize and lock agents.yml -> agents.lock.yml
+ *
+ * (a prerequisite for other js/json locks)
  */
-let agentsText = fs.readFileSync(`${__dirname}/db/agents.yml`, 'utf8');
-let lockText = fs.readFileSync(`${__dirname}/db/agents.lock.yml`, 'utf8');
+let agentsText = fs.readFileSync(`${__dirname}/../db/agents.yml`, 'utf8');
+let lockText = fs.readFileSync(`${__dirname}/../db/agents.lock.yml`, 'utf8');
 let agentsData = yaml.safeLoad(agentsText) || {};
 let lockData = yaml.safeLoad(lockText) || {};
 
@@ -18,7 +20,7 @@ function invert(obj) {
   return ret;
 }
 
-console.log('reading existing lockfile...');
+console.log('reading existing agents.lock.yml...');
 let tags = invert(lockData.tags || {}), nextId = 1;
 Object.values(tags).forEach(id => {
   if (+id >= nextId) {
@@ -28,7 +30,7 @@ Object.values(tags).forEach(id => {
 console.log(`  got ${Object.keys(tags).length} tags`);
 console.log(`  next id: ${nextId}`);
 
-console.log('reading current db...');
+console.log('reading current agents.yml...');
 let changes = false;
 TAG_NAMES.forEach(tag => {
   (agentsData.agents || []).map(a => a[tag]).filter(v => v).forEach(val => {
@@ -63,28 +65,4 @@ console.log(`  ${newLock.agents.length} agents`);
 console.log(`  ${Object.keys(newLock.tags).length} tags`);
 
 let newText = yaml.safeDump(newLock, {lineWidth: 200});
-fs.writeFileSync(`${__dirname}/db/agents.lock.yml`, newText);
-
-let jsLines = []
-console.log('write js database...');
-jsLines.push('exports.tags = {');
-Object.keys(newLock.tags).forEach((id, idx) => {
-  const val = newLock.tags[id].replace(/'/g, `\\'`);
-  jsLines.push(`  ${id}: '${val}',`);
-});
-jsLines.push('};');
-jsLines.push('exports.matchers = [');
-newLock.agents.forEach(agent => {
-  const name = agent.name || 'null';
-  const type = agent.type || 'null';
-  const os = agent.os || 'null';
-  if (agent.bot) {
-    jsLines.push(`  [${agent.regex}, ${name}, ${type}, ${os}, true],`);
-  } else {
-    jsLines.push(`  [${agent.regex}, ${name}, ${type}, ${os}],`);
-  }
-});
-jsLines.push('];\n');
-fs.writeFileSync(`${__dirname}/db/agents.js`, jsLines.join('\n'));
-
-console.log('done!');
+fs.writeFileSync(`${__dirname}/../db/agents.lock.yml`, newText);

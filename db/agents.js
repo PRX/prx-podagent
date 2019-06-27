@@ -95,7 +95,7 @@ exports.tags = {
   94: 'Chromecast',
   95: 'Squeezebox',
   96: 'Spreaker',
-  97: 'VictorReader',
+  97: 'VictorReader'
 };
 exports.matchers = [
   [/^\+hermespod\.com/, 1, 35, 41],
@@ -252,5 +252,5 @@ exports.matchers = [
   [/^Mozilla\/5\.0.+Gecko.+Firefox/, 28, 39, null],
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i, null, null, null, true],
-  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i, null, null, null, true],
+  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i, null, null, null, true]
 ];
