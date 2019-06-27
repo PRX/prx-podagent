@@ -77,10 +77,18 @@ agents:
     name: '9'
     type: '36'
     os: '43'
+  - regex: /^Mozilla\/.+CrKey/
+    name: '94'
+    type: '37'
+    os: '48'
   - regex: /^Clementine/
     name: '10'
     type: '35'
   - regex: /^Dalvik.+Android/
+    type: '36'
+    os: '42'
+  - regex: /^Mozilla.+DoggCatcher/
+    name: '93'
     type: '36'
     os: '42'
   - regex: /^doubleTwist CloudPlayer/
@@ -649,3 +657,5 @@ tags:
   '90': Wilson FM
   '91': Luminary
   '92': Edge
+  '93': DoggCatcher
+  '94': Chromecast

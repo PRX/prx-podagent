@@ -91,6 +91,8 @@ exports.tags = {
   90: 'Wilson FM',
   91: 'Luminary',
   92: 'Edge',
+  93: 'DoggCatcher',
+  94: 'Chromecast',
 };
 exports.matchers = [
   [/^\+hermespod\.com/, 1, 35, 41],
@@ -114,8 +116,10 @@ exports.matchers = [
   [/^CastBox\/com\.castbox\.CastBox/, 8, 36, 43],
   [/^CastBox/, 8, 36, null],
   [/^Castro/, 9, 36, 43],
+  [/^Mozilla\/.+CrKey/, 94, 37, 48],
   [/^Clementine/, 10, 35, null],
   [/^Dalvik.+Android/, null, 36, 42],
+  [/^Mozilla.+DoggCatcher/, 93, 36, 42],
   [/^doubleTwist CloudPlayer/, 80, 36, 42],
   [/^Downcast.+(iPhone|iPad|iPod)/, 11, 36, 43],
   [/^Downcast.+OS X/, 11, 35, 45],

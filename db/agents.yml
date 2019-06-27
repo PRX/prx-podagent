@@ -138,6 +138,13 @@ agents:
       - Castro 2019.1/1099
       - Castro/516 CFNetwork/976 Darwin/18.2.0
       - Castro 3.2.2/1093
+  - regex: '/^Mozilla\/.+CrKey/'
+    name: Chromecast
+    type: Smart Home
+    os: ChromeOS
+    examples:
+      - Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
+      - Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.141215
   - regex: '/^Clementine/'
     name: Clementine
     type: Desktop App
@@ -152,6 +159,12 @@ agents:
     examples:
       - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
       - Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N900 Build/KOT49H)
+  - regex: '/^Mozilla.+DoggCatcher/'
+    name: DoggCatcher
+    type: Mobile App
+    os: Android
+    examples:
+      - Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher
   - regex: '/^doubleTwist CloudPlayer/'
     name: CloudPlayer
     type: Mobile App
@@ -742,6 +755,7 @@ agents:
     os: Android
     examples:
       - Mozilla/5.0 (Linux; Android 9; Pixel 2 Build/PQ2A.190205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.105 Mobile Safari/537.36 GSA/9.27.3.21.arm64
+      - Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 GSA/9.51.8.21.arm64
   - regex: '/^Mozilla\/5\.0.+iPhone.+GSA\//'
     name: Google Podcasts
     type: Mobile App
