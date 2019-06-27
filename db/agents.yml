@@ -612,6 +612,19 @@ agents:
     os: Linux
     examples:
       - Spotify/110000237 Linux/0 (PC desktop)
+  - regex: '/^Spreaker for Android/'
+    name: Spreaker
+    type: Mobile App
+    os: Android
+    examples:
+      - Spreaker for Android 4.10.6 release:2019-02-01 device:phone (samsung SM-G960F; Android 9; it_IT)
+  - regex: '/^Spreaker.+(iPhone|iPad|iOS)/'
+    name: Spreaker
+    type: Mobile App
+    os: iOS
+    examples:
+      - Spreaker 7.16.9 rv:1294 (iPhone7,2; iOS 12.1.4; it_IT) SPKAudioPlayer
+      - Spreaker 7.16.1 rv:1283 (iPad2,5; iPhone OS 9.3.5; en_US) SPKAudioPlayer
   - regex: '/^Stitcher\/Android/'
     name: Stitcher
     type: Mobile App
@@ -663,6 +676,13 @@ agents:
     examples:
       - uTorrent/2210(25302)
       - BTWebClient/355S(44994)
+  - regex: '/^VictorReader/'
+    name: VictorReader
+    type: Smart Home
+    os: null
+    examples:
+      - VictorReader Stream 503 ca-en Heather Ryan 4.8.7
+      - VictorReader Stream Trek au-en Lisa Tyler 1.2.11
   - regex: '/^com\.wbez\.app.+Android/'
     name: WBEZ App
     type: Mobile App
@@ -1010,7 +1030,7 @@ agents:
     bot: true
     notes:
       - General bots
-  - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i'
+  - regex: '/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i'
     bot: true
     notes:
       - Podcast specific bots

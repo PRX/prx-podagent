@@ -346,6 +346,14 @@ agents:
     name: '77'
     type: '35'
     os: '49'
+  - regex: /^Spreaker for Android/
+    name: '96'
+    type: '36'
+    os: '42'
+  - regex: /^Spreaker.+(iPhone|iPad|iOS)/
+    name: '96'
+    type: '36'
+    os: '43'
   - regex: /^Stitcher\/Android/
     name: '23'
     type: '36'
@@ -377,6 +385,9 @@ agents:
   - regex: /^(uTorrent|BTWebClient)/
     name: '66'
     type: '35'
+  - regex: /^VictorReader/
+    name: '97'
+    type: '37'
   - regex: /^com\.wbez\.app.+Android/
     name: '89'
     type: '36'
@@ -564,7 +575,7 @@ agents:
     type: '39'
   - regex: /bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i
     bot: true
-  - regex: /^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i
+  - regex: /^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i
     bot: true
 tags:
   '1': HermesPod
@@ -662,3 +673,5 @@ tags:
   '93': DoggCatcher
   '94': Chromecast
   '95': Squeezebox
+  '96': Spreaker
+  '97': VictorReader

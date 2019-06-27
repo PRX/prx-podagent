@@ -94,6 +94,8 @@ exports.tags = {
   93: 'DoggCatcher',
   94: 'Chromecast',
   95: 'Squeezebox',
+  96: 'Spreaker',
+  97: 'VictorReader',
 };
 exports.matchers = [
   [/^\+hermespod\.com/, 1, 35, 41],
@@ -189,6 +191,8 @@ exports.matchers = [
   [/^Spotify\/.+OSX/, 77, 35, 45],
   [/^Spotify\/.+Win32/, 77, 35, 41],
   [/^Spotify\/.+Linux/, 77, 35, 49],
+  [/^Spreaker for Android/, 96, 36, 42],
+  [/^Spreaker.+(iPhone|iPad|iOS)/, 96, 36, 43],
   [/^Stitcher\/Android/, 23, 36, 42],
   [/^iTunes.+(SqueezeCenter|SqueezeNetwork)/, 95, 37, 49],
   [/^Stitcher\/iOS/, 23, 36, 43],
@@ -197,6 +201,7 @@ exports.matchers = [
   [/^TREBLE/, 84, 36, 43],
   [/^TuneIn.+CFNetwork/, 60, 36, 43],
   [/^(uTorrent|BTWebClient)/, 66, 35, null],
+  [/^VictorReader/, 97, 37, null],
   [/^com\.wbez\.app.+Android/, 89, 36, 42],
   [/^WNYC.+Android/, 85, 36, 42],
   [/^WNYC.+(Darwin|iPhone|iOS)/, 85, 36, 43],
@@ -247,5 +252,5 @@ exports.matchers = [
   [/^Mozilla\/5\.0.+Gecko.+Firefox/, 28, 39, null],
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i, null, null, null, true],
-  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice/i, null, null, null, true],
+  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i, null, null, null, true],
 ];
