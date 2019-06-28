@@ -15,33 +15,37 @@ to normalize the strings in your database.
 
 ## Install
 
-Just `npm install --save prx-podagent`. It's that easy!
+Just `npm install --save prx-podagent`. Or to use outside of node, just grab a
+database file out of the `db/` directory.
 
 ## Usage
 
-Async (recommended):
-
 ```node
 const podagent = require('prx-podagent');
-podagent.parse('some-string', (err, agent) => {
-  if (agent) {
-    console.log('Match:', agent.name, agent.type, agent.os);
-  } else {
-    console.log('Did not match any known agents');
-  }
-});
-```
-
-Sync:
-
-```node
-const podagent = require('prx-podagent');
-let agent = podagent.parse('some-string');
+const agent = podagent.parse('some-string');
 if (agent) {
   console.log('Match:', agent.name, agent.type, agent.os);
 } else {
   console.log('Did not match any known agents');
 }
+```
+
+Or outside of javascript, something like:
+
+```ruby
+require 'yaml'
+
+DB = YAML.load_file('db/agents.lock.yml')
+def match_agent(str)
+  DB['agents'].find { |a| eval(a['regex']).match(str) }&.tap do |match|
+    %w(name type os).each { |k| match[k] = DB['tags'][match[k]] }
+  end
+end
+
+puts match_agent('Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)').inspect
+# {"regex"=>"/^HardCast.+CFNetwork/", "name"=>"HardCast", "type"=>"Mobile App", "os"=>"iOS"}
+puts match_agent('blah blah blah').inspect
+# nil
 ```
 
 ## Development
@@ -54,17 +58,16 @@ the database file accounts for all the major known user agents.
 
 To add a new user agent:
 
-1. Add some lines to `testagents.csv` with your new user agent. Give them a high
-   count like "9999" and run the tests to make sure they show up in the omissions.
-2. Edit the `db/agents.yml` to include a regular expression, then a name for the
-   app and the type/os (if known). Try to be reasonably specific with your regex,
-   so that you don't unintentionally match other user agents.
+1. Edit the `db/agents.yml` file to include your new regular expression, plus
+   an example user-agent string or two.
+2. Run `npm test` (or just `mocha test/examples-test.js`) to test that your
+   example strings match the regexp.
 3. Run `npm lock` to regenerate the `db/agents.lock.yml`.  This file normalizes
    the text tags/labels shared between the various matchers.  Check that your
    change didn't add any unexpected new tags (if you accidentally changed the
    case of a label or something).
-4. Re-run the tests to validate that your agent strings are no longer in the
-   omissions test.
+4. Bump the patch version (rightmost) in `package.json` and create a pull
+   request to this repo.
 
 ## License
 
