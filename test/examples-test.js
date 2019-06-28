@@ -9,7 +9,7 @@ describe('examples-test', function() {
 
     support.eachExample((str, idx) => {
       const agent = podagent.parse(str);
-      const matcher = podagent.db.matchers[idx][0];
+      const matcher = podagent.db.agents[idx][0];
 
       if (!agent) {
         alog(`${str} => no matches ${matcher}`);
@@ -28,7 +28,7 @@ describe('examples-test', function() {
     support.eachExample((str, idx) => hasExamples[idx] = true);
 
     let missingExamples = 0;
-    podagent.db.matchers.forEach((m, idx) => {
+    podagent.db.agents.forEach((m, idx) => {
       if (!hasExamples[idx] && !m[4]) {
         missingExamples++;
         alog(`${m[0]} => no examples`);

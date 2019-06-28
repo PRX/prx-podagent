@@ -75,7 +75,7 @@ describe('podagent-test', function() {
     let agent = podagent.parse(browser);
     expect(agent.index).not.to.be.undefined;
 
-    let matched = podagent.db.matchers[agent.index];
+    let matched = podagent.db.agents[agent.index];
     expect(matched[0]).to.equal(agent.regex);
   });
 

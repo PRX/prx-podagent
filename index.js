@@ -1,4 +1,4 @@
-const db = require('./db/agents.js');
+const db = require('./db/agents.lock.js');
 
 /**
  * Direct access
@@ -10,9 +10,9 @@ exports.db = db;
  */
 exports.parse = (agentStr, callback) => {
   let data = null;
-  for (let i = 0; i < db.matchers.length; i++) {
-    if (db.matchers[i][0].test(agentStr)) {
-      data = exports.format(db.matchers[i], i);
+  for (let i = 0; i < db.agents.length; i++) {
+    if (db.agents[i][0].test(agentStr)) {
+      data = exports.format(db.agents[i], i);
       break;
     }
   }
@@ -27,9 +27,9 @@ exports.parse = (agentStr, callback) => {
  */
 exports.parseAll = (agentStr, callback) => {
   let datas = [];
-  for (let i = 0; i < db.matchers.length; i++) {
-    if (db.matchers[i][0].test(agentStr)) {
-      datas.push(exports.format(db.matchers[i], i));
+  for (let i = 0; i < db.agents.length; i++) {
+    if (db.agents[i][0].test(agentStr)) {
+      datas.push(exports.format(db.agents[i], i));
     }
   }
   if (callback) {
