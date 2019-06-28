@@ -30,6 +30,20 @@ if (agent) {
 }
 ```
 
+Or to DIY use the json non-lock file:
+
+```javascript
+  $.getJSON('agents.json', function(db) {
+    var str = 'some-agent-string';
+    var agent = db.agents.find(function(a) { return eval(a.regex).test(str); });
+    if (agent) {
+      console.log('matched!', agent);
+    } else {
+      console.log('no match for:', str);
+    }
+  });
+```
+
 Or outside of javascript, something like:
 
 ```ruby
