@@ -4,10 +4,13 @@
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently -k \"npm run dev-serve\" \"npm run dev-lock\"",
+    "dev-serve": "live-server docs",
+    "dev-lock": "nodemon -w db/agents.yml -w docs/index.pug -x npm run lock",
     "test": "mocha test/*-test.js",
     "unknowns": "mocha test/unknowns.js",
-    "lock": "node lock/lock-yaml.js && node lock/lock-js.js && node lock/lock-json.js",
-    "prepublish": "npm lock"
+    "lock": "node lock/lock-yaml.js && node lock/lock-js.js && node lock/lock-json.js && node lock/lock-html.js",
+    "prepublish": "npm run lock"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,9 @@
     "chai": "^4.1.1",
     "csv": "^1.1.1",
     "js-yaml": "^3.13.1",
-    "mocha": "^3.5.0"
+    "live-server": "^1.2.1",
+    "mocha": "^3.5.0",
+    "pug": "^2.0.4"
   },
   "dependencies": {}
 }
