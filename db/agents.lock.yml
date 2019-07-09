@@ -318,7 +318,7 @@ agents:
     name: '65'
     type: '36'
     os: '42'
-  - regex: Sodes.+CFNetwork
+  - regex: ^Sodes.+CFNetwork
     name: '88'
     type: '36'
     os: '43'

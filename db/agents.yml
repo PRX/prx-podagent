@@ -567,7 +567,7 @@ agents:
     os: Android
     examples:
       - ServeStream
-  - regex: 'Sodes.+CFNetwork'
+  - regex: '^Sodes.+CFNetwork'
     name: "'sodes"
     type: Mobile App
     os: iOS

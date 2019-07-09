@@ -85,7 +85,7 @@ exports.agents = [
   [/^RSSRadio/, 63, 36, 43],
   [/^samsung-agent\//, null, 37, 42],
   [/^ServeStream/, 65, 36, 42],
-  [/Sodes.+CFNetwork/, 88, 36, 43],
+  [/^Sodes.+CFNetwork/, 88, 36, 43],
   [/^(Sonos|Linux.+Sonos)/, 22, 37, 74],
   [/^Spotify\/.+Android/, 77, 36, 42],
   [/^Spotify\/.+iOS/, 77, 36, 43],
