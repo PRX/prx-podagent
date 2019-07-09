@@ -3,6 +3,7 @@
 [![license](https://img.shields.io/github/license/PRX/prx-podagent.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/prx-podagent.svg)](https://www.npmjs.com/package/prx-podagent)
 [![npm](https://img.shields.io/npm/dt/prx-podagent.svg)](https://www.npmjs.com/package/prx-podagent)
+[![build status](https://travis-ci.org/PRX/prx-podagent.svg?branch=master)](https://travis-ci.org/PRX/prx-podagent)
 
 ## Description
 
