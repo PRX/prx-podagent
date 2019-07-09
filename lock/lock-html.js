@@ -21,6 +21,7 @@ console.log('write html docs...')
 const agents = agentsData.agents
 agents.forEach((agent, idx) => {
   agent.index = idx
+  agent.regex = '/' + agent.regex + '/' + (agent.ignorecase ? 'i' : '')
   agent.nameId = parseInt(lockData.agents[idx].name) || null
   agent.typeId = parseInt(lockData.agents[idx].type) || null
   agent.osId = parseInt(lockData.agents[idx].os) || null

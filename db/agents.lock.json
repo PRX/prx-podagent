@@ -1,891 +1,893 @@
 {
   "agents": [
     {
-      "regex": "/^\\+hermespod\\.com/",
+      "regex": "^\\+hermespod\\.com",
       "name": "1",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^Acast.+Android/",
+      "regex": "^Acast.+Android",
       "name": "2",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Acast.+(CFNetwork|iOS)/",
+      "regex": "^Acast.+(CFNetwork|iOS)",
       "name": "2",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^AhaRadio.+CFNetwork/",
+      "regex": "^AhaRadio.+CFNetwork",
       "name": "78",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(AlexaMediaPlayer|AlexaService)/",
+      "regex": "^(AlexaMediaPlayer|AlexaService)",
       "name": "3",
       "type": "37",
       "os": "44"
     },
     {
-      "regex": "/^AllYouCanBooks.+CFNetwork/",
+      "regex": "^AllYouCanBooks.+CFNetwork",
       "name": "4",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^AndroidDownloadManager/",
+      "regex": "^AndroidDownloadManager",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^AntennaPod/",
+      "regex": "^AntennaPod",
       "name": "5",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Apache-HttpClient/",
+      "regex": "^Apache-HttpClient",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^APKXDL.+Android/",
+      "regex": "^APKXDL.+Android",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+BeyondPod/",
+      "regex": "^Mozilla\\/5\\.0.+BeyondPod",
       "name": "33",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Bose\\//",
+      "regex": "^Bose\\/",
       "name": "86",
       "type": "37"
     },
     {
-      "regex": "/^Breaker\\/iOS/",
+      "regex": "^Breaker\\/iOS",
       "name": "6",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Breaker/",
+      "regex": "^Breaker",
       "name": "6",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Bullhorn/",
+      "regex": "^Bullhorn",
       "name": "79",
       "type": "36"
     },
     {
-      "regex": "/^Castaway.+CFNetwork/",
+      "regex": "^Castaway.+CFNetwork",
       "name": "7",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Cast[Bb]ox.+Android/",
+      "regex": "^Cast[Bb]ox.+Android",
       "name": "8",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Cast[Bb]ox.+iOS/",
+      "regex": "^Cast[Bb]ox.+iOS",
       "name": "8",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^CastBox\\/com\\.castbox\\.CastBox/",
+      "regex": "^CastBox\\/com\\.castbox\\.CastBox",
       "name": "8",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^CastBox/",
+      "regex": "^CastBox",
       "name": "8",
       "type": "36"
     },
     {
-      "regex": "/^Castro/",
+      "regex": "^Castro",
       "name": "9",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/.+CrKey/",
+      "regex": "^Mozilla\\/.+CrKey",
       "name": "94",
       "type": "37",
       "os": "48"
     },
     {
-      "regex": "/^Clementine/",
+      "regex": "^Clementine",
       "name": "10",
       "type": "35"
     },
     {
-      "regex": "/^Dalvik.+Android/",
+      "regex": "^Dalvik.+Android",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla.+DoggCatcher/",
+      "regex": "^Mozilla.+DoggCatcher",
       "name": "93",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^doubleTwist CloudPlayer/",
+      "regex": "^doubleTwist CloudPlayer",
       "name": "80",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Downcast.+(iPhone|iPad|iPod)/",
+      "regex": "^Downcast.+(iPhone|iPad|iPod)",
       "name": "11",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Downcast.+OS X/",
+      "regex": "^Downcast.+OS X",
       "name": "11",
       "type": "35",
       "os": "45"
     },
     {
-      "regex": "/^iTunes.+Downcast/",
+      "regex": "^iTunes.+Downcast",
       "name": "11"
     },
     {
-      "regex": "/^Echo/",
+      "regex": "^Echo",
       "name": "3",
       "type": "37",
       "os": "44"
     },
     {
-      "regex": "/^English.+Radio.+IELTS.+TOEFL.+CFNetwork/",
+      "regex": "^English.+Radio.+IELTS.+TOEFL.+CFNetwork",
       "name": "81",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/",
+      "regex": "^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Fire OS.+stagefright/",
+      "regex": "^Fire OS.+stagefright",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^gPodder.+Windows/",
+      "regex": "^gPodder.+Windows",
       "name": "51",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^gPodder.+Linux/",
+      "regex": "^gPodder.+Linux",
       "name": "51",
       "type": "35",
       "os": "49"
     },
     {
-      "regex": "/^gPodder/",
+      "regex": "^gPodder",
       "name": "51",
       "type": "35"
     },
     {
-      "regex": "/^gvfs/",
+      "regex": "^gvfs",
       "type": "35",
       "os": "49"
     },
     {
-      "regex": "/^HardCast.+CFNetwork/",
+      "regex": "^HardCast.+CFNetwork",
       "name": "76",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Himalaya.+CFNetwork/",
+      "regex": "^Himalaya.+CFNetwork",
       "name": "70",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Himalaya.+Android/",
+      "regex": "^Himalaya.+Android",
       "name": "70",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^(iCatcher!|iTunes.+iCatcher!)/",
+      "regex": "^(iCatcher!|iTunes.+iCatcher!)",
       "name": "72",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)/",
+      "regex": "^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)",
       "name": "52",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^iHeartRadio.+Android/",
+      "regex": "^iHeartRadio.+Android",
       "name": "52",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^iTunes.+Macintosh/",
+      "regex": "^iTunes.+Macintosh",
       "name": "12",
       "type": "35",
       "os": "45"
     },
     {
-      "regex": "/^iTunes.+Windows/",
+      "regex": "^iTunes.+Windows",
       "name": "12",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^Juice.+Windows/",
+      "regex": "^Juice.+Windows",
       "name": "53",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^KPCCAndroid/",
+      "regex": "^KPCCAndroid",
       "name": "73",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^KPCC.+CFNetwork/",
+      "regex": "^KPCC.+CFNetwork",
       "name": "73",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Lavf/",
+      "regex": "^Lavf",
       "type": "35"
     },
     {
-      "regex": "/^Laughable.+iOS/",
+      "regex": "^Laughable.+iOS",
       "name": "54",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(LG-|LM-|Player).+LG Player.+Android/",
+      "regex": "^(LG-|LM-|Player).+LG Player.+Android",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^LibVLC.+Android/",
+      "regex": "^LibVLC.+Android",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Luminary.+iOS/",
+      "regex": "^Luminary.+iOS",
       "name": "91",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Luminary.+Android/",
+      "regex": "^Luminary.+Android",
       "name": "91",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^MediaMonkey 4/",
+      "regex": "^MediaMonkey 4",
       "name": "71",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^myTuner.+CFNetwork/",
+      "regex": "^myTuner.+CFNetwork",
       "name": "87",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^NPR%20One.+CFNetwork/",
+      "regex": "^NPR%20One.+CFNetwork",
       "name": "13",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^NPROneAndroid/",
+      "regex": "^NPROneAndroid",
       "name": "13",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^(NSPlayer|WMFSDK|WMPlayer)/",
+      "regex": "^(NSPlayer|WMFSDK|WMPlayer)",
       "name": "55",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^OkDownload/",
+      "regex": "^OkDownload",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^okhttp/",
+      "regex": "^okhttp",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Overcast/",
+      "regex": "^Overcast",
       "name": "14",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Pandora.+Android/",
+      "regex": "^Pandora.+Android",
       "name": "82",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla.+(iPad|iPhone).+Pandora/",
+      "regex": "^Mozilla.+(iPad|iPhone).+Pandora",
       "name": "82",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Player( |%20)FM.+CFNetwork/",
+      "regex": "^Player( |%20)FM.+CFNetwork",
       "name": "15",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Player FM/",
+      "regex": "^Player FM",
       "name": "15",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Pocket Casts/",
+      "regex": "^Pocket Casts",
       "name": "16",
       "type": "36"
     },
     {
-      "regex": "/^Podbean.+Android/",
+      "regex": "^Podbean.+Android",
       "name": "17",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Podbean\\/iOS/",
+      "regex": "^Podbean\\/iOS",
       "name": "17",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)/",
+      "regex": "^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)",
       "name": "56",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Podbbang.+Android/",
+      "regex": "^Podbbang.+Android",
       "name": "75",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^[Pp]odbbang.+(iOS|CFNetwork)/",
+      "regex": "^[Pp]odbbang.+(iOS|CFNetwork)",
       "name": "75",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Podbbang/",
+      "regex": "^Podbbang",
       "name": "75",
       "type": "36"
     },
     {
-      "regex": "/^PodTrapper/",
+      "regex": "^PodTrapper",
       "name": "57",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^(PodcastAddict|Podcast Addict).+Android/",
+      "regex": "^(PodcastAddict|Podcast Addict).+Android",
       "name": "18",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^podcast\\/.+(CFNetwork|iOS)/",
+      "regex": "^podcast\\/.+(CFNetwork|iOS)",
       "name": "19",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^PodcastRepublic.+Android/",
+      "regex": "^PodcastRepublic.+Android",
       "name": "58",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Podkicker/",
+      "regex": "^Podkicker",
       "name": "20",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Pro[Cc]ast.+(iOS|CFNetwork)/",
+      "regex": "^Pro[Cc]ast.+(iOS|CFNetwork)",
       "name": "83",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^RadioPublic Android|^RadioPublic\\/android/",
+      "regex": "^RadioPublic Android|^RadioPublic\\/android",
       "name": "21",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^RadioPublic iOS|^RadioPublic.+CFNetwork/",
+      "regex": "^RadioPublic iOS|^RadioPublic.+CFNetwork",
       "name": "21",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^ReactNativeVideo.+Android/",
+      "regex": "^ReactNativeVideo.+Android",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Roku/",
+      "regex": "^Roku",
       "name": "64",
       "type": "37"
     },
     {
-      "regex": "/^RSSRadio/",
+      "regex": "^RSSRadio",
       "name": "63",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^samsung-agent\\//",
+      "regex": "^samsung-agent\\/",
       "type": "37",
       "os": "42"
     },
     {
-      "regex": "/^ServeStream/",
+      "regex": "^ServeStream",
       "name": "65",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/Sodes.+CFNetwork/",
+      "regex": "Sodes.+CFNetwork",
       "name": "88",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(Sonos|Linux.+Sonos)/",
+      "regex": "^(Sonos|Linux.+Sonos)",
       "name": "22",
       "type": "37",
       "os": "74"
     },
     {
-      "regex": "/^Spotify\\/.+Android/",
+      "regex": "^Spotify\\/.+Android",
       "name": "77",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Spotify\\/.+iOS/",
+      "regex": "^Spotify\\/.+iOS",
       "name": "77",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Spotify\\/.+OSX/",
+      "regex": "^Spotify\\/.+OSX",
       "name": "77",
       "type": "35",
       "os": "45"
     },
     {
-      "regex": "/^Spotify\\/.+Win32/",
+      "regex": "^Spotify\\/.+Win32",
       "name": "77",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^Spotify\\/.+Linux/",
+      "regex": "^Spotify\\/.+Linux",
       "name": "77",
       "type": "35",
       "os": "49"
     },
     {
-      "regex": "/^Spreaker for Android/",
+      "regex": "^Spreaker for Android",
       "name": "96",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Spreaker.+(iPhone|iPad|iOS)/",
+      "regex": "^Spreaker.+(iPhone|iPad|iOS)",
       "name": "96",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Stitcher\\/Android/",
+      "regex": "^Stitcher\\/Android",
       "name": "23",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^iTunes.+(SqueezeCenter|SqueezeNetwork)/",
+      "regex": "^iTunes.+(SqueezeCenter|SqueezeNetwork)",
       "name": "95",
       "type": "37",
       "os": "49"
     },
     {
-      "regex": "/^Stitcher\\/iOS/",
+      "regex": "^Stitcher\\/iOS",
       "name": "23",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^TED.+CFNetwork/",
+      "regex": "^TED.+CFNetwork",
       "name": "59",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^TED.+Android/",
+      "regex": "^TED.+Android",
       "name": "59",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^TREBLE/",
+      "regex": "^TREBLE",
       "name": "84",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^TuneIn.+CFNetwork/",
+      "regex": "^TuneIn.+CFNetwork",
       "name": "60",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(uTorrent|BTWebClient)/",
+      "regex": "^(uTorrent|BTWebClient)",
       "name": "66",
       "type": "35"
     },
     {
-      "regex": "/^VictorReader/",
+      "regex": "^VictorReader",
       "name": "97",
       "type": "37"
     },
     {
-      "regex": "/^com\\.wbez\\.app.+Android/",
+      "regex": "^com\\.wbez\\.app.+Android",
       "name": "89",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^WNYC.+Android/",
+      "regex": "^WNYC.+Android",
       "name": "85",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^WNYC.+(Darwin|iPhone|iOS)/",
+      "regex": "^WNYC.+(Darwin|iPhone|iOS)",
       "name": "85",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Wilson\\//",
+      "regex": "^Wilson\\/",
       "name": "90",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Winamp/",
+      "regex": "^Winamp",
       "name": "61",
       "type": "35",
       "os": "41"
     },
     {
-      "regex": "/^Zune/",
+      "regex": "^Zune",
       "name": "24",
       "type": "36",
       "os": "41"
     },
     {
-      "regex": "/^Podcasts/",
+      "regex": "^Podcasts",
       "name": "25",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^itunesstored/",
+      "regex": "^itunesstored",
       "name": "25",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^AppleCoreMedia.+Apple TV/",
+      "regex": "^AppleCoreMedia.+Apple TV",
       "name": "25",
       "type": "38",
       "os": "43"
     },
     {
-      "regex": "/^AppleCoreMedia.+(Audio Accessory|HomePod)/",
+      "regex": "^AppleCoreMedia.+(Audio Accessory|HomePod)",
       "name": "25",
       "type": "37",
       "os": "43"
     },
     {
-      "regex": "/^AppleCoreMedia.+(iPhone|iPad|iPod)/",
+      "regex": "^AppleCoreMedia.+(iPhone|iPad|iPod)",
       "name": "25",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\\(null\\).+watchOS)/",
+      "regex": "^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\\(null\\).+watchOS)",
       "name": "25",
       "type": "68",
       "os": "69"
     },
     {
-      "regex": "/^AppleCoreMedia.+Macintosh/",
+      "regex": "^AppleCoreMedia.+Macintosh",
       "name": "12",
       "type": "35",
       "os": "45"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Android.+GSA\\//",
+      "regex": "^Mozilla\\/5\\.0.+Android.+GSA\\/",
       "name": "62",
       "type": "36",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+iPhone.+GSA\\//",
+      "regex": "^Mozilla\\/5\\.0.+iPhone.+GSA\\/",
       "name": "62",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^(Libassistant.+)?GoogleChirp\\//",
+      "regex": "^(Libassistant.+)?GoogleChirp\\/",
       "name": "62",
       "type": "37",
       "os": "67"
     },
     {
-      "regex": "/^Mozilla\\/4\\.0.+MSIE/",
+      "regex": "^Mozilla\\/4\\.0.+MSIE",
       "name": "26",
       "type": "39",
       "os": "41"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+BB10.+Safari/",
+      "regex": "^Mozilla\\/5\\.0.+BB10.+Safari",
       "name": "27",
       "type": "40",
       "os": "46"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows Phone.+Edge\\//",
+      "regex": "^Mozilla\\/5\\.0.+Windows Phone.+Edge\\/",
       "name": "92",
       "type": "40",
       "os": "47"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows Phone.+IEMobile/",
+      "regex": "^Mozilla\\/5\\.0.+Windows Phone.+IEMobile",
       "name": "26",
       "type": "40",
       "os": "47"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Android.+Firefox/",
+      "regex": "^Mozilla\\/5\\.0.+Android.+Firefox",
       "name": "28",
       "type": "40",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Android.+Chrome/",
+      "regex": "^Mozilla\\/5\\.0.+Android.+Chrome",
       "name": "29",
       "type": "40",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Android/",
+      "regex": "^Mozilla\\/5\\.0.+Android",
       "type": "40",
       "os": "42"
     },
     {
-      "regex": "/^Samsung.+stagefright/",
+      "regex": "^Samsung.+stagefright",
       "type": "40",
       "os": "42"
     },
     {
-      "regex": "/^stagefright.+Android/",
+      "regex": "^stagefright.+Android",
       "type": "40",
       "os": "42"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Macintosh.+Firefox/",
+      "regex": "^Mozilla\\/5\\.0.+Macintosh.+Firefox",
       "name": "28",
       "type": "39",
       "os": "45"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Macintosh.+Chrome/",
+      "regex": "^Mozilla\\/5\\.0.+Macintosh.+Chrome",
       "name": "29",
       "type": "39",
       "os": "45"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Macintosh.+Safari/",
+      "regex": "^Mozilla\\/5\\.0.+Macintosh.+Safari",
       "name": "27",
       "type": "39",
       "os": "45"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Macintosh/",
+      "regex": "^Mozilla\\/5\\.0.+Macintosh",
       "type": "39",
       "os": "45"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows NT.+Edge/",
+      "regex": "^Mozilla\\/5\\.0.+Windows NT.+Edge",
       "name": "92",
       "type": "39",
       "os": "41"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows NT.+Firefox/",
+      "regex": "^Mozilla\\/5\\.0.+Windows NT.+Firefox",
       "name": "28",
       "type": "39",
       "os": "41"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows NT.+Chrome/",
+      "regex": "^Mozilla\\/5\\.0.+Windows NT.+Chrome",
       "name": "29",
       "type": "39",
       "os": "41"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Windows NT/",
+      "regex": "^Mozilla\\/5\\.0.+Windows NT",
       "name": "26",
       "type": "39",
       "os": "41"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+FxiOS/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+FxiOS",
       "name": "28",
       "type": "40",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+CriOS/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+CriOS",
       "name": "29",
       "type": "40",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+FBAN/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+FBAN",
       "name": "30",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+Twitter/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+Twitter",
       "name": "31",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+AppleNews/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+AppleNews",
       "name": "32",
       "type": "36",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad).+Safari/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+Safari",
       "name": "27",
       "type": "40",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+(iPhone|iPad)/",
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad)",
       "type": "40",
       "os": "43"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+CrOS/",
+      "regex": "^Mozilla\\/5\\.0.+CrOS",
       "name": "29",
       "type": "39",
       "os": "48"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Tizen.+TV/",
+      "regex": "^Mozilla\\/5\\.0.+Tizen.+TV",
       "type": "38",
       "os": "49"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Tizen/",
+      "regex": "^Mozilla\\/5\\.0.+Tizen",
       "type": "40",
       "os": "49"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+NetCast/",
+      "regex": "^Mozilla\\/5\\.0.+NetCast",
       "name": "34",
       "type": "38",
       "os": "50"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Linux.+Firefox/",
+      "regex": "^Mozilla\\/5\\.0.+Linux.+Firefox",
       "name": "28",
       "type": "39",
       "os": "49"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Linux.+Chrome/",
+      "regex": "^Mozilla\\/5\\.0.+Linux.+Chrome",
       "name": "29",
       "type": "39",
       "os": "49"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Linux/",
+      "regex": "^Mozilla\\/5\\.0.+Linux",
       "type": "39",
       "os": "49"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0.+Gecko.+Firefox/",
+      "regex": "^Mozilla\\/5\\.0.+Gecko.+Firefox",
       "name": "28",
       "type": "39"
     },
     {
-      "regex": "/^Mozilla\\/5\\.0( compatible)?$/",
+      "regex": "^Mozilla\\/5\\.0( compatible)?$",
       "type": "39"
     },
     {
-      "regex": "/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i",
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack",
+      "ignorecase": true,
       "bot": true
     },
     {
-      "regex": "/^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable",
+      "ignorecase": true,
       "bot": true
     }
   ],

@@ -13,14 +13,15 @@ console.log('write js database...')
 
 // agent matchers
 const agents = lockData.agents.map((agent, idx) => {
+  const re = new RegExp(agent.regex, agent.ignorecase ? 'i' : undefined)
   const name = agent.name || 'null'
   const type = agent.type || 'null'
   const os = agent.os || 'null'
   const comma = (idx === lockData.agents.length - 1) ? '' : ','
   if (agent.bot) {
-    return `  [${agent.regex}, ${name}, ${type}, ${os}, true]${comma}`
+    return `  [${re}, ${name}, ${type}, ${os}, true]${comma}`
   } else {
-    return `  [${agent.regex}, ${name}, ${type}, ${os}]${comma}`
+    return `  [${re}, ${name}, ${type}, ${os}]${comma}`
   }
 })
 

@@ -12,7 +12,7 @@ let agentsData = yaml.safeLoad(agentsText) || {};
 let lockData = yaml.safeLoad(lockText) || {};
 
 const TAG_NAMES = ['name', 'type', 'os'];
-const ALLOW_KEYS = ['regex', 'bot'];
+const ALLOW_KEYS = ['regex', 'ignorecase', 'bot'];
 
 function invert(obj) {
   let ret = {};
