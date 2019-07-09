@@ -30,12 +30,16 @@ if (agent) {
 }
 ```
 
-Or to DIY use the json non-lock file:
+Or to DIY use the json lock file:
 
 ```javascript
   $.getJSON('agents.json', function(db) {
+    db.agents.forEach(function(a) {
+      a.regex = new RegExp(a.regex, a.ignorecase ? 'i' : undefined);
+    });
+
     var str = 'some-agent-string';
-    var agent = db.agents.find(function(a) { return eval(a.regex).test(str); });
+    var agent = db.agents.find(function(a) { return a.regex.test(str); });
     if (agent) {
       console.log('matched!', agent);
     } else {
@@ -44,14 +48,14 @@ Or to DIY use the json non-lock file:
   });
 ```
 
-Or outside of javascript, something like:
+Or in Ruby:
 
 ```ruby
 require 'yaml'
 
 DB = YAML.load_file('db/agents.lock.yml')
 def match_agent(str)
-  DB['agents'].find { |a| eval(a['regex']).match(str) }&.tap do |match|
+  DB['agents'].find { |a| Regexp.new(a['regex'], a['ignorecase'] ? 'i' : nil).match(str) }&.tap do |match|
     %w(name type os).each { |k| match[k] = DB['tags'][match[k]] }
   end
 end
@@ -60,6 +64,34 @@ puts match_agent('Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)').inspec
 # {"regex"=>"/^HardCast.+CFNetwork/", "name"=>"HardCast", "type"=>"Mobile App", "os"=>"iOS"}
 puts match_agent('blah blah blah').inspect
 # nil
+```
+
+Or in PHP:
+
+```php
+<?php
+require_once 'spyc.php';
+$DB = Spyc::YAMLLoad('db/agents.lock.yml');
+
+function match_agent($str) {
+  global $DB;
+
+  $match = NULL;
+  foreach ($DB['agents'] as $agent) {
+    $pattern = '/' . $agent['regex'] . '/' . ($agent['ignorecase'] ? 'i' : '');
+    if (preg_match($pattern, $str)) {
+      $match = $agent;
+      foreach (array('name', 'type', 'os') as $key) {
+        $match[$key] = $DB['tags'][$match[$key]];
+      }
+      break;
+    }
+  }
+  return $match;
+}
+
+var_dump(match_agent('Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)'));
+?>
 ```
 
 ## Development
