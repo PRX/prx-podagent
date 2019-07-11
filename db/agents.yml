@@ -315,7 +315,7 @@ agents:
     name: RadioPublic
     type: Mobile App
     os: Android
-  - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork
+  - regex: ^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic/iOS
     name: RadioPublic
     type: Mobile App
     os: iOS
