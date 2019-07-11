@@ -79,7 +79,7 @@ exports.agents = [
   [/^Podkicker/, 20, 36, 42],
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
   [/^RadioPublic Android|^RadioPublic\/android/, 21, 36, 42],
-  [/^RadioPublic iOS|^RadioPublic.+CFNetwork/, 21, 36, 43],
+  [/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic\/iOS/, 21, 36, 43],
   [/^ReactNativeVideo.+Android/, null, 36, 42],
   [/^Roku/, 64, 37, null],
   [/^RSSRadio/, 63, 36, 43],

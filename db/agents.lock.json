@@ -459,7 +459,7 @@
       "os": "42"
     },
     {
-      "regex": "^RadioPublic iOS|^RadioPublic.+CFNetwork",
+      "regex": "^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic/iOS",
       "name": "21",
       "type": "36",
       "os": "43"

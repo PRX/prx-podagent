@@ -772,12 +772,13 @@
       ]
     },
     {
-      "regex": "^RadioPublic iOS|^RadioPublic.+CFNetwork",
+      "regex": "^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic/iOS",
       "name": "RadioPublic",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
-        "RadioPublic iOS 1.9.17"
+        "RadioPublic iOS 1.9.17",
+        "RadioPublic/iOS-2.1"
       ]
     },
     {

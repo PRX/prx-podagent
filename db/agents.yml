@@ -527,12 +527,13 @@ agents:
     os: Android
     examples:
       - RadioPublic/android-1.11
-  - regex: '^RadioPublic iOS|^RadioPublic.+CFNetwork'
+  - regex: '^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic/iOS'
     name: RadioPublic
     type: Mobile App
     os: iOS
     examples:
       - RadioPublic iOS 1.9.17
+      - RadioPublic/iOS-2.1
   - regex: '^ReactNativeVideo.+Android'
     name: null
     type: Mobile App
