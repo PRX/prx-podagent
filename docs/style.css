@@ -1,0 +1,28 @@
+body {
+  min-height: 75rem;
+}
+header h1 {
+  margin: 2rem 0;
+}
+.container {
+  max-width: 60rem;
+}
+.card {
+  margin-bottom: 1rem;
+}
+.card-title code {
+  display: block;
+  color: #212529;
+}
+.card-subtitle {
+  margin-bottom: 0.75rem;
+}
+.badge {
+  margin-right: 1rem;
+}
+code.examples {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 70%;
+}

@@ -15,7 +15,7 @@ agents:
     name: '78'
     type: '36'
     os: '43'
-  - regex: ^AlexaMediaPlayer
+  - regex: ^(AlexaMediaPlayer|AlexaService)
     name: '3'
     type: '37'
     os: '44'
@@ -36,11 +36,14 @@ agents:
   - regex: ^APKXDL.+Android
     type: '36'
     os: '42'
-  - regex: ^Bose/
+  - regex: ^Mozilla\/5\.0.+BeyondPod
+    name: '33'
+    type: '36'
+    os: '42'
+  - regex: ^Bose\/
     name: '86'
     type: '37'
-    os: '44'
-  - regex: ^Breaker/iOS
+  - regex: ^Breaker\/iOS
     name: '6'
     type: '36'
     os: '43'
@@ -55,15 +58,15 @@ agents:
     name: '7'
     type: '36'
     os: '43'
-  - regex: ^CastBox.+Android
+  - regex: '^Cast[Bb]ox.+Android'
     name: '8'
     type: '36'
     os: '42'
-  - regex: ^Castbox.+iOS
+  - regex: '^Cast[Bb]ox.+iOS'
     name: '8'
     type: '36'
     os: '43'
-  - regex: ^CastBox/com\.castbox\.CastBox
+  - regex: ^CastBox\/com\.castbox\.CastBox
     name: '8'
     type: '36'
     os: '43'
@@ -74,25 +77,25 @@ agents:
     name: '9'
     type: '36'
     os: '43'
+  - regex: ^Mozilla\/.+CrKey
+    name: '94'
+    type: '37'
+    os: '48'
   - regex: ^Clementine
     name: '10'
     type: '35'
   - regex: ^Dalvik.+Android
     type: '36'
     os: '42'
+  - regex: ^Mozilla.+DoggCatcher
+    name: '93'
+    type: '36'
+    os: '42'
   - regex: ^doubleTwist CloudPlayer
     name: '80'
     type: '36'
     os: '42'
-  - regex: ^Downcast.+iPad
-    name: '11'
-    type: '36'
-    os: '43'
-  - regex: ^Downcast.+iPhone
-    name: '11'
-    type: '36'
-    os: '43'
-  - regex: ^Downcast.+iPod
+  - regex: ^Downcast.+(iPhone|iPad|iPod)
     name: '11'
     type: '36'
     os: '43'
@@ -100,6 +103,8 @@ agents:
     name: '11'
     type: '35'
     os: '45'
+  - regex: ^iTunes.+Downcast
+    name: '11'
   - regex: ^Echo
     name: '3'
     type: '37'
@@ -108,10 +113,7 @@ agents:
     name: '81'
     type: '36'
     os: '43'
-  - regex: ^(ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
-    type: '36'
-    os: '42'
-  - regex: ^ExoMediaPlayer.+Android
+  - regex: ^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
     type: '36'
     os: '42'
   - regex: ^Fire OS.+stagefright
@@ -121,6 +123,10 @@ agents:
     name: '51'
     type: '35'
     os: '41'
+  - regex: ^gPodder.+Linux
+    name: '51'
+    type: '35'
+    os: '49'
   - regex: ^gPodder
     name: '51'
     type: '35'
@@ -135,19 +141,15 @@ agents:
     name: '70'
     type: '36'
     os: '43'
-  - regex: ^iCatcher!
+  - regex: ^Himalaya.+Android
+    name: '70'
+    type: '36'
+    os: '42'
+  - regex: ^(iCatcher!|iTunes.+iCatcher!)
     name: '72'
     type: '36'
     os: '43'
-  - regex: ^iHeartRadio.+iPad
-    name: '52'
-    type: '36'
-    os: '43'
-  - regex: ^iHeartRadio.+iPhone
-    name: '52'
-    type: '36'
-    os: '43'
-  - regex: ^iHeartRadio.+CFNetwork
+  - regex: ^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)
     name: '52'
     type: '36'
     os: '43'
@@ -163,9 +165,6 @@ agents:
     name: '12'
     type: '35'
     os: '41'
-  - regex: '^iTunes\/[0-9\.]+'
-    name: '12'
-    type: '35'
   - regex: ^Juice.+Windows
     name: '53'
     type: '35'
@@ -174,21 +173,30 @@ agents:
     name: '73'
     type: '36'
     os: '42'
+  - regex: ^KPCC.+CFNetwork
+    name: '73'
+    type: '36'
+    os: '43'
   - regex: ^Lavf
     type: '35'
   - regex: ^Laughable.+iOS
     name: '54'
     type: '36'
     os: '43'
-  - regex: ^(LG-|Player).+LG Player.+Android
+  - regex: ^(LG-|LM-|Player).+LG Player.+Android
     type: '36'
     os: '42'
   - regex: ^LibVLC.+Android
     type: '36'
     os: '42'
-  - regex: '^Luminary\/[0-9\.]+'
+  - regex: ^Luminary.+iOS
     name: '91'
     type: '36'
+    os: '43'
+  - regex: ^Luminary.+Android
+    name: '91'
+    type: '36'
+    os: '42'
   - regex: ^MediaMonkey 4
     name: '71'
     type: '35'
@@ -205,11 +213,7 @@ agents:
     name: '13'
     type: '36'
     os: '42'
-  - regex: ^(NSPlayer.+WMFSDK|WMPlayer)
-    name: '55'
-    type: '35'
-    os: '41'
-  - regex: ^NSPlayer/
+  - regex: ^(NSPlayer|WMFSDK|WMPlayer)
     name: '55'
     type: '35'
     os: '41'
@@ -246,11 +250,11 @@ agents:
     name: '17'
     type: '36'
     os: '42'
-  - regex: ^Podbean/iOS
+  - regex: ^Podbean\/iOS
     name: '17'
     type: '36'
     os: '43'
-  - regex: ^PodCruncher.+CFNetwork
+  - regex: ^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)
     name: '56'
     type: '36'
     os: '43'
@@ -258,7 +262,7 @@ agents:
     name: '75'
     type: '36'
     os: '42'
-  - regex: ^Podbbang.+CFNetwork
+  - regex: '^[Pp]odbbang.+(iOS|CFNetwork)'
     name: '75'
     type: '36'
     os: '42'
@@ -268,11 +272,12 @@ agents:
   - regex: ^PodTrapper
     name: '57'
     type: '36'
+    os: '42'
   - regex: ^(PodcastAddict|Podcast Addict).+Android
     name: '18'
     type: '36'
     os: '42'
-  - regex: ^podcast/.+(CFNetwork|iOS)
+  - regex: ^podcast\/.+(CFNetwork|iOS)
     name: '19'
     type: '36'
     os: '43'
@@ -284,11 +289,11 @@ agents:
     name: '20'
     type: '36'
     os: '42'
-  - regex: ^Procast.+iOS
+  - regex: '^Pro[Cc]ast.+(iOS|CFNetwork)'
     name: '83'
     type: '36'
     os: '43'
-  - regex: ^RadioPublic Android|^RadioPublic/android
+  - regex: ^RadioPublic Android|^RadioPublic\/android
     name: '21'
     type: '36'
     os: '42'
@@ -306,46 +311,58 @@ agents:
     name: '63'
     type: '36'
     os: '43'
-  - regex: ^samsung-agent/
+  - regex: ^samsung-agent\/
     type: '37'
     os: '42'
   - regex: ^ServeStream
     name: '65'
     type: '36'
     os: '42'
-  - regex: Sodes.+CFNetwork
+  - regex: ^Sodes.+CFNetwork
     name: '88'
     type: '36'
     os: '43'
-  - regex: ^(Linux.+)?Sonos/
+  - regex: ^(Sonos|Linux.+Sonos)
     name: '22'
     type: '37'
     os: '74'
-  - regex: ^Spotify/.+Android
+  - regex: ^Spotify\/.+Android
     name: '77'
     type: '36'
     os: '42'
-  - regex: ^Spotify/.+iOS
+  - regex: ^Spotify\/.+iOS
     name: '77'
     type: '36'
     os: '43'
-  - regex: ^Spotify/.+OSX
+  - regex: ^Spotify\/.+OSX
     name: '77'
     type: '35'
     os: '45'
-  - regex: ^Spotify/.+Win32
+  - regex: ^Spotify\/.+Win32
     name: '77'
     type: '35'
     os: '41'
-  - regex: ^Spotify/.+Linux
+  - regex: ^Spotify\/.+Linux
     name: '77'
     type: '35'
     os: '49'
-  - regex: ^Stitcher/Android
+  - regex: ^Spreaker for Android
+    name: '96'
+    type: '36'
+    os: '42'
+  - regex: ^Spreaker.+(iPhone|iPad|iOS)
+    name: '96'
+    type: '36'
+    os: '43'
+  - regex: ^Stitcher\/Android
     name: '23'
     type: '36'
     os: '42'
-  - regex: ^Stitcher/iOS
+  - regex: ^iTunes.+(SqueezeCenter|SqueezeNetwork)
+    name: '95'
+    type: '37'
+    os: '49'
+  - regex: ^Stitcher\/iOS
     name: '23'
     type: '36'
     os: '43'
@@ -368,6 +385,9 @@ agents:
   - regex: ^(uTorrent|BTWebClient)
     name: '66'
     type: '35'
+  - regex: ^VictorReader
+    name: '97'
+    type: '37'
   - regex: ^com\.wbez\.app.+Android
     name: '89'
     type: '36'
@@ -380,7 +400,7 @@ agents:
     name: '85'
     type: '36'
     os: '43'
-  - regex: ^Wilson/
+  - regex: ^Wilson\/
     name: '90'
     type: '36'
     os: '43'
@@ -391,6 +411,7 @@ agents:
   - regex: ^Zune
     name: '24'
     type: '36'
+    os: '41'
   - regex: ^Podcasts
     name: '25'
     type: '36'
@@ -407,23 +428,11 @@ agents:
     name: '25'
     type: '37'
     os: '43'
-  - regex: ^AppleCoreMedia.+iPad
+  - regex: ^AppleCoreMedia.+(iPhone|iPad|iPod)
     name: '25'
     type: '36'
     os: '43'
-  - regex: ^AppleCoreMedia.+iPhone
-    name: '25'
-    type: '36'
-    os: '43'
-  - regex: ^AppleCoreMedia.+iPod
-    name: '25'
-    type: '36'
-    os: '43'
-  - regex: ^AppleCoreMedia.+(Apple Watch)
-    name: '25'
-    type: '68'
-    os: '69'
-  - regex: \bwatchOS/
+  - regex: ^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\(null\).+watchOS)
     name: '25'
     type: '68'
     os: '69'
@@ -431,38 +440,43 @@ agents:
     name: '12'
     type: '35'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Android.+GSA/
+  - regex: ^Mozilla\/5\.0.+Android.+GSA\/
     name: '62'
     type: '36'
     os: '42'
-  - regex: ^Mozilla/5\.0.+iPhone.+GSA/
+  - regex: ^Mozilla\/5\.0.+iPhone.+GSA\/
     name: '62'
     type: '36'
     os: '43'
-  - regex: \bGoogleChirp\/
+  - regex: ^(Libassistant.+)?GoogleChirp\/
     name: '62'
     type: '37'
     os: '67'
-  - regex: ^Mozilla/4\.0.+MSIE
+  - regex: ^Mozilla\/4\.0.+MSIE
     name: '26'
     type: '39'
     os: '41'
-  - regex: ^Mozilla/5\.0.+BB10.+Safari
+  - regex: ^Mozilla\/5\.0.+BB10.+Safari
     name: '27'
     type: '40'
     os: '46'
-  - regex: ^Mozilla/5\.0.+BB10
+  - regex: ^Mozilla\/5\.0.+Windows Phone.+Edge\/
+    name: '92'
     type: '40'
-    os: '46'
-  - regex: ^Mozilla/5\.0.+Android.+Firefox
+    os: '47'
+  - regex: ^Mozilla\/5\.0.+Windows Phone.+IEMobile
+    name: '26'
+    type: '40'
+    os: '47'
+  - regex: ^Mozilla\/5\.0.+Android.+Firefox
     name: '28'
     type: '40'
     os: '42'
-  - regex: ^Mozilla/5\.0.+Android.+Chrome
+  - regex: ^Mozilla\/5\.0.+Android.+Chrome
     name: '29'
     type: '40'
     os: '42'
-  - regex: ^Mozilla/5\.0.+Android
+  - regex: ^Mozilla\/5\.0.+Android
     type: '40'
     os: '42'
   - regex: ^Samsung.+stagefright
@@ -471,144 +485,100 @@ agents:
   - regex: ^stagefright.+Android
     type: '40'
     os: '42'
-  - regex: ^Mozilla/5\.0.+Macintosh.+Firefox
+  - regex: ^Mozilla\/5\.0.+Macintosh.+Firefox
     name: '28'
     type: '39'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Macintosh.+Chrome
+  - regex: ^Mozilla\/5\.0.+Macintosh.+Chrome
     name: '29'
     type: '39'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Macintosh.+Safari
+  - regex: ^Mozilla\/5\.0.+Macintosh.+Safari
     name: '27'
     type: '39'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Macintosh
+  - regex: ^Mozilla\/5\.0.+Macintosh
     type: '39'
     os: '45'
-  - regex: ^Mozilla/5\.0.+Windows Phone.+Firefox
-    name: '28'
-    type: '40'
-    os: '47'
-  - regex: ^Mozilla/5\.0.+Windows Phone.+Chrome
-    name: '29'
-    type: '40'
-    os: '47'
-  - regex: ^Mozilla/5\.0.+Windows Phone.+IEMobile
-    name: '26'
-    type: '40'
-    os: '47'
-  - regex: ^Mozilla/5\.0.+Windows Phone
-    type: '40'
-    os: '47'
-  - regex: ^Mozilla/5\.0.+Windows NT.+Firefox
+  - regex: ^Mozilla\/5\.0.+Windows NT.+Edge
+    name: '92'
+    type: '39'
+    os: '41'
+  - regex: ^Mozilla\/5\.0.+Windows NT.+Firefox
     name: '28'
     type: '39'
     os: '41'
-  - regex: ^Mozilla/5\.0.+Windows NT.+Chrome
+  - regex: ^Mozilla\/5\.0.+Windows NT.+Chrome
     name: '29'
     type: '39'
     os: '41'
-  - regex: ^Mozilla/5\.0.+Windows NT
+  - regex: ^Mozilla\/5\.0.+Windows NT
     name: '26'
     type: '39'
     os: '41'
-  - regex: ^Mozilla/5\.0.+iPad.+FxiOS
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+FxiOS
     name: '28'
     type: '40'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad.+CriOS
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+CriOS
     name: '29'
     type: '40'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad.+FBAN
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+FBAN
     name: '30'
     type: '36'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad.+Twitter
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+Twitter
     name: '31'
     type: '36'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad.+AppleNews
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+AppleNews
     name: '32'
     type: '36'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad.+Safari
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+Safari
     name: '27'
     type: '40'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPad
+  - regex: ^Mozilla\/5\.0.+(iPhone|iPad)
     type: '40'
     os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+FxiOS
-    name: '28'
-    type: '40'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+CriOS
-    name: '29'
-    type: '40'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+FBAN
-    name: '30'
-    type: '36'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+Twitter
-    name: '31'
-    type: '36'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+AppleNews
-    name: '32'
-    type: '36'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone.+Safari
-    name: '27'
-    type: '40'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+iPhone
-    type: '40'
-    os: '43'
-  - regex: ^Mozilla/5\.0.+CrOS
+  - regex: ^Mozilla\/5\.0.+CrOS
     name: '29'
     type: '39'
     os: '48'
-  - regex: ^Mozilla/5\.0.+Tizen.+TV
+  - regex: ^Mozilla\/5\.0.+Tizen.+TV
     type: '38'
     os: '49'
-  - regex: ^Mozilla/5\.0.+Tizen
+  - regex: ^Mozilla\/5\.0.+Tizen
     type: '40'
     os: '49'
-  - regex: ^Mozilla/5\.0.+BeyondPod
-    name: '33'
-    type: '36'
-    os: '42'
-  - regex: ^Mozilla/5\.0.+NetCast
+  - regex: ^Mozilla\/5\.0.+NetCast
     name: '34'
     type: '38'
     os: '50'
-  - regex: ^Mozilla/5\.0.+Linux.+Firefox
+  - regex: ^Mozilla\/5\.0.+Linux.+Firefox
     name: '28'
     type: '39'
     os: '49'
-  - regex: ^Mozilla/5\.0.+Linux.+Chrome
+  - regex: ^Mozilla\/5\.0.+Linux.+Chrome
     name: '29'
     type: '39'
     os: '49'
-  - regex: ^Mozilla/5\.0.+Linux
+  - regex: ^Mozilla\/5\.0.+Linux
     type: '39'
     os: '49'
-  - regex: ^Mozilla/5\.0.+Gecko.+Firefox
+  - regex: ^Mozilla\/5\.0.+Gecko.+Firefox
     name: '28'
     type: '39'
-  - regex: ^Mozilla/5\.0( compatible)?$
+  - regex: ^Mozilla\/5\.0( compatible)?$
     type: '39'
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
-    caseInsensitive: true
+    ignorecase: true
     bot: true
-  - regex: ^fyyd-poll|^itms|^mozilla/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator
-    caseInsensitive: true
+  - regex: ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable
+    ignorecase: true
     bot: true
-  - regex: ^\s*$
-    blank: true
 tags:
   '1': HermesPod
   '2': Acast
@@ -701,3 +671,9 @@ tags:
   '89': WBEZ App
   '90': Wilson FM
   '91': Luminary
+  '92': Edge
+  '93': DoggCatcher
+  '94': Chromecast
+  '95': Squeezebox
+  '96': Spreaker
+  '97': VictorReader

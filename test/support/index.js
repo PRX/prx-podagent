@@ -1,6 +1,11 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 const csv = require('csv');
 const mocha = require('mocha');
+const yaml = require('js-yaml');
+
+// sync re-lock the agents.js before running anything
+execSync('npm run lock');
 
 // log statements AFTER the test name prints
 let afterLogs = [];
@@ -29,11 +34,25 @@ exports.elog = msg => {
 }
 global.elog = exports.elog;
 
-// agent map
+// load agents.yml examples
+const examples = [];
+exports.eachExample = fn => examples.forEach(e => fn(e[0], e[1]));
+before(function(done) {
+  process.stdout.write('  loading agents.yml examples... ');
+  fs.readFile(`${__dirname}/../../db/agents.yml`, (err, txt) => {
+    yaml.safeLoad(txt).agents.forEach((agent, idx) => {
+      (agent.examples || []).forEach(example => {
+        examples.push([example, idx]);
+      });
+    });
+    console.log(`got ${examples.length} examples!`);
+    done(err);
+  });
+});
+
+// load testagents.csv
 const agentLookup = {}
 exports.eachAgent = fn => Object.keys(agentLookup).forEach(a => fn(a, agentLookup[a]));
-
-// test agent string csv loader
 before(function(done) {
   this.timeout(10000);
   process.stdout.write('  loading testagents.csv... ');

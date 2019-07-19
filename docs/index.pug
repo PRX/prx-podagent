@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    title='prx-podagent'
+    link(rel='icon' type='image/png' href='https://media.prx.org/favicon-16x16.png' sizes='16x16')
+    link(rel='icon' type='image/png' href='https://media.prx.org/favicon-32x32.png' sizes='32x32')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+    link(rel='stylesheet' href='style.css')
+  body
+    header.container
+      h1.text-center='prx-podagent'
+    main.container(role='main')
+      each agent in agents
+        .card
+          .card-body
+            h5.card-title
+              code=agent.regex
+            h6.card-subtitle.mb2
+              if agent.name
+                span.badge.badge-pill.badge-primary=agent.name
+              if agent.type
+                span.badge.badge-pill.badge-success=agent.type
+              if agent.os
+                span.badge.badge-pill.badge-info=agent.os
+              if agent.bot
+                span.badge.badge-pill.badge-danger='bot'
+            if agent.notes
+              p.card-text= agent.notes
+            if agent.examples
+              code.examples
+                each example in agent.examples
+                  =example + "\n"
+              
+
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+    script(src='script.js')

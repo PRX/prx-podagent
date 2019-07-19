@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>prx-podagent</title>
+    <link rel="icon" type="image/png" href="https://media.prx.org/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://media.prx.org/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="text-center">prx-podagent</h1>
+    </header>
+    <main class="container" role="main">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^\+hermespod\.com/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">HermesPod</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">+hermespod.com/v1.5.x
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Acast.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Acast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Acast/1.38.1 (Linux;Android 6.0) ExoPlayerLib/2.9.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Acast.+(CFNetwork|iOS)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Acast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Acast/1.63.0 (Phone; iOS 12.1.4; iPhone10,5)
+Acast/4346 CFNetwork/975.0.3 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AhaRadio.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">AhaRadio</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">AhaRadio2/8.12.3 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(AlexaMediaPlayer|AlexaService)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
+          </h6><code class="examples">AlexaMediaPlayer/2.0.205032.0 (Linux;Android 5.1.1) ExoPlayerLib/1.5.9
+AlexaMediaPlayer/Stitcher (Linux;Android 8.1.0) ExoPlayerLib/2.2.0
+AlexaService/2.2.257912.0 (Linux;Android 8.0.0) ExoPlayerLib/2.5.4
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AllYouCanBooks.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">AllYouCanBooks</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">AllYouCanBooks/510 CFNetwork/978.0.7 Darwin/18.5.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AndroidDownloadManager/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">AndroidDownloadManager/9 (Linux; U; Android 9; Pixel 2 Build/PQ2A.190205.002)
+AndroidDownloadManager/8.1.0 (Linux; U; Android 8.1.0; Moto G (5S) Build/OPP28.65-37-7)
+AndroidDownloadManager
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AntennaPod/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">AntennaPod</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">AntennaPod/1.7.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Apache-HttpClient/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Apache-HttpClient/4.2.4 (java 1.5)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^APKXDL.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">APKXDL (Linux; U; Android 4.0.4;en_US; D01E/IMM76D) Downloader
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+BeyondPod/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">BeyondPod</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; U; en-us; BeyondPod 4)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Bose\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Bose</span><span class="badge badge-pill badge-success">Smart Home</span>
+          </h6><code class="examples">Bose/7.22.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Breaker\/iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Breaker</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Breaker/iOS
+Breaker/iOS (https://breaker.audio)
+Breaker/iOS/0.8.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Breaker/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Breaker</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Breaker/0.7.10
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Bullhorn/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Bullhorn</span><span class="badge badge-pill badge-success">Mobile App</span>
+          </h6><code class="examples">Bullhorn
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Castaway.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Castaway</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Castaway/8 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Cast[Bb]ox.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">CastBox</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">CastBox/7.54.2-190220138 (Linux;Android 8.0.0) ExoPlayerLib/2.8.3/7.54.2-190220138 (Linux;Android 8.0.0) ExoPlayerLib/2.8.3
+CastBox/7.54.2-190220138 (Linux;Android 9) ExoPlayerLib/2.8.3
+CastBox/5.7.3-190226042.rd00e051 (Linux;Android 9)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Cast[Bb]ox.+iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">CastBox</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Castbox/2.4 (fm.castbox.audiobook.radio.podcast; build:4; iOS 12.1.3)
+Castbox/4.21.1 (fm.castbox.audiobook.radio.podcast; build:1; iOS 12.1.4) Alamofire/4.7.3
+CastBox/4.24 (fm.castbox.audiobook.radio.podcast; build:5; iOS 12.1.4)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^CastBox\/com\.castbox\.CastBox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">CastBox</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">CastBox/com.castbox.CastBox (1.0; OS Version 11.4 (Build 15F79))
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^CastBox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">CastBox</span><span class="badge badge-pill badge-success">Mobile App</span>
+          </h6><code class="examples">CastBox/5.7.3-190226042.rd00e051
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Castro/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Castro</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Castro 2019.1/1099
+Castro/516 CFNetwork/976 Darwin/18.2.0
+Castro 3.2.2/1093
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/.+CrKey/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chromecast</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">ChromeOS</span>
+          </h6><code class="examples">Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36
+Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.141215
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Clementine/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Clementine</span><span class="badge badge-pill badge-success">Desktop App</span>
+          </h6><code class="examples">Clementine 1.3.1 Clementine 1.3.1 Clementine 1.3.1
+Clementine 1.3.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Dalvik.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
+Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N900 Build/KOT49H)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla.+DoggCatcher/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">DoggCatcher</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^doubleTwist CloudPlayer/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">CloudPlayer</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">doubleTwist CloudPlayer
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Downcast.+(iPhone|iPad|iPod)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Downcast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Downcast/2.9.16 (iPhone; iOS 11.3.1; Scale/2.00)
+Downcast/2.9.38 (iPad; iOS 12.1.4; Scale/2.00)
+Downcast/2.9.38 (iPod touch; iOS 12.1.1; Scale/2.00)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Downcast.+OS X/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Downcast</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Downcast/2.9.39 (Mac OS X Version 10.12.6 (Build 16G1815))
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iTunes.+Downcast/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Downcast</span>
+          </h6>
+          <p class="card-text">https://downcast.fm/2016/03/07/Publishers-and-user-agents.html</p><code class="examples">iTunes/10.7 Downcast/4955
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Echo/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
+          </h6><code class="examples">Echo/1.0(APNG)
+Echo/1.0(MRM)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^English.+Radio.+IELTS.+TOEFL.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">English Radio IELTS TOEFL</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">English%20Radio%20-%20IELTS%20TOEFL%20TOEIC%20Listening%20and%20Speaking/1 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">yourApplicationName/2.15.2 (Linux;Android 8.0.0) ExoPlayerLib/2.8.2
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Fire OS.+stagefright/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Fire OS/5.3.6.4 stagefright/1.2 (Linux;Android 5.1.1)
+Fire OS/6.0 stagefright/1.2 (Linux;Android 7.1.2)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^gPodder.+Windows/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">gPodder</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">gPodder/3.9.3 (+http://gpodder.org/) Windows/8
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^gPodder.+Linux/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">gPodder</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">gPodder/3.10.1 (+http://gpodder.org/) Linux/4.4.0-53-generic
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^gPodder/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">gPodder</span><span class="badge badge-pill badge-success">Desktop App</span>
+          </h6><code class="examples">gPodder/3.5.2 (+http://gpodder.org/)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^gvfs/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6>
+          <p class="card-text">Virtual filesystem for the GNOME desktop,https://wiki.gnome.org/Projects/gvfs</p><code class="examples">gvfs/1.36.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^HardCast.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">HardCast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6>
+          <p class="card-text">Removed from AppStore</p><code class="examples">HardCast/11 CFNetwork/978.0.7 Darwin/18.5.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Himalaya.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Himalaya</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Himalaya/2.2.45 (iPhone; iOS 12.1.3; Scale/3.00; CFNetwork; iPhone9,2)
+Himalaya/1895 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Himalaya.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Himalaya</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Himalaya/2.2.45 Android/28 (Pixel)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(iCatcher!|iTunes.+iCatcher!)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iCatcher</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">iCatcher!/5.2.2 (iPhone; iOS 12.1.4; Scale/2.0)
+iCatcher!/5.2.2 (iPad; iOS 12.1.1; Scale/2.0)
+iTunes (iCatcher!/2.8.13)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iHeartRadio.+(iPad|iPhone|iPod|CFNetwork)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iHeartRadio</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">iHeartRadio/8.16.2 (iPhone; iOS 12.1.4; iPhone9,1)
+iHeartRadio/8.16.2 (iPad; iOS 12.1.4; iPad6,3)
+iHeartRadio/8.16.2 (iPod touch; iOS 12.1.4; iPod7,1)
+iHeartRadio/2019021102 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iHeartRadio.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iHeartRadio</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">iHeartRadio/8.18.1 (Android 8.0.0; SM-G950U Build/R16NW)
+iHeartRadio/1.13.0 (Android 7.0; LGMP450 Build/NRD90U)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iTunes.+Macintosh/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iTunes</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">iTunes/12.9.2 (Macintosh; OS X 10.14.3) AppleWebKit/606.4.5
+iTunes/12.8 (Macintosh; OS X 10.13.2) AppleWebKit/604.4.7.1.3
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iTunes.+Windows/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iTunes</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">iTunes/12.9.3 (Windows; Microsoft Windows 10 x64 Home Premium Edition (Build 17134); x64) AppleWebKit/7606.4005.2002.2
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Juice.+Windows/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Juice Receiver</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Juice/2.2 (Windows) +http://juicereceiver.sf.net/
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^KPCCAndroid/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">KPCC App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">KPCCAndroid
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^KPCC.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">KPCC App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">KPCCPublicRadioiPhoneApp/2.8.1 CFNetwork/609.1.4 Darwin/13.0.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Lavf/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Desktop App</span>
+          </h6><code class="examples">Lavf/57.25.100
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Laughable.+iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Laughable</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Laughable iOS/3.0.1 (com.bywayEndeavors.Laughable; build:3.0.1.0; iOS 12.1.4) Alamofire/4.7.3
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(LG-|LM-|Player).+LG Player.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Player/LG Player 1.0 for Android 7.0 (stagefright alternative),
+LM-G710/V10o Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
+LG-H872/V20g Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^LibVLC.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Luminary.+iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Luminary</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Luminary/0.0.243 build 3326/iOS 12.2
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Luminary.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Luminary</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Luminary/1.0.0 build 1035/Android 27
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^MediaMonkey 4/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">MediaMonkey</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">MediaMonkey 4.1.12.1798
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^myTuner.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">myTuner</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">myTuner%20Radio%20app/33 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^NPR%20One.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">NPR One</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">NPR%20One/122 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^NPROneAndroid/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">NPR One</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">NPROneAndroid
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(NSPlayer|WMFSDK|WMPlayer)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Windows Media Player</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">NSPlayer/10.0.0.3702 WMFSDK/10.0
+NSPlayer/8.0.0.3801
+WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^OkDownload/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">OkDownload/1.0.4-SNAPSHOT
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^okhttp/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">okhttp/3.12.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Overcast/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Overcast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Overcast/3.0 (+http://overcast.fm/; iOS podcast app)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Pandora.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Pandora</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Pandora/1902.1 Android/8.0.0 dreamqltesq (ExoPlayerLib1.5.14.1)
+Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla.+(iPad|iPhone).+Pandora/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Pandora</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Pandora/1902.1
+Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 Pandora/1902.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Player( |%20)FM.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Player FM</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Player%20FM/255 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Player FM/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Player FM</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Player FM
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Pocket Casts/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Pocket Casts</span><span class="badge badge-pill badge-success">Mobile App</span>
+          </h6><code class="examples">Pocket Casts
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podbean.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podbean</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Podbean/Android App 5.7.4 (http://podbean.com),4dc1ce28e3ba4751ea72d9b998bbe8fa
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podbean\/iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podbean</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Podbean/iOS (http://podbean.com) 5.0 - 85789C9A6F604AA6A2E1DC9299404271
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">PodCruncher</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">PodCruncher/3.7.1 CFNetwork/976 Darwin/18.2.0
+iTunes/10.5.2 (PodCruncher 2.2)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podbbang.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podbbang</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">PodbbangPlayer/4.40.277 (Linux;Android 8.0.0) ExoPlayerLib/2.3.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^[Pp]odbbang.+(iOS|CFNetwork)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podbbang</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">podbbang/5.151.294 (com.koreacenter.podbbang; build:330; iOS 12.1.4) Alamofire/4.8.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podbbang/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podbbang</span><span class="badge badge-pill badge-success">Mobile App</span>
+          </h6><code class="examples">Podbbang
+PodbbangDownload
+PodbbangPlayer
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^PodTrapper/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">PodTrapper</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">PodTrapper
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(PodcastAddict|Podcast Addict).+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">PodcastAddict</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
+Podcast Addict - Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1080 Build/SU6-7.7)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^podcast\/.+(CFNetwork|iOS)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">The Podcast App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">podcast/496 iOS/Version 12.1.4 (Build 16D57) The Podcast App/2.6
+podcast/276 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^PodcastRepublic.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">PodcastRepublic</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">PodcastRepublic/18.0 (Linux; U; Android 8.0.0;dreamqltesq/R16NW)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podkicker/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Podkicker</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Podkicker/3.0.2
+Podkicker Pro/3.0.2
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Pro[Cc]ast.+(iOS|CFNetwork)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Procast</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Procast (iOS)
+ProCast/1 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^RadioPublic Android|^RadioPublic\/android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">RadioPublic</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">RadioPublic/android-1.11
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic/iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">RadioPublic</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">RadioPublic iOS 1.9.17
+RadioPublic/iOS-2.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^ReactNativeVideo.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">ReactNativeVideo/2.0 (Linux;Android 5.1.1) ExoPlayerLib/2.9.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Roku/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Roku</span><span class="badge badge-pill badge-success">Smart Home</span>
+          </h6><code class="examples">Roku/DVP-9.0 (049.00E04142A)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^RSSRadio/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">RSSRadio</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">RSSRadio/9220
+RSSRadio/9220 (iPhone;iOS;12.1.4)
+RSSRadio/9220 (iPad;iOS;12.1.4)
+RSSRadio/9220 (iPod touch;iOS;12.1.1)
+RSSRadio7Lite/9220 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^samsung-agent\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">samsung-agent/1.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^ServeStream/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">ServeStream</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">ServeStream
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Sodes.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">'sodes</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Sodes/1657 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(Sonos|Linux.+Sonos)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Sonos</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Sonos OS</span>
+          </h6><code class="examples">Linux UPnP/1.0 Sonos/48.2-61220 (ZPS12)
+Sonos
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spotify\/.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spotify</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Spotify/8.4.94 Android/26 (SM-G950F)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spotify\/.+iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spotify</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Spotify/8.4.93 iOS/12.1.4 (iPhone8,1)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spotify\/.+OSX/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spotify</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Spotify/110000237 OSX/0 (MacBookAir7,2)
+Spotify/109300244 OSX/0 (iMac17,1)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spotify\/.+Win32/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spotify</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Spotify/110000237 Win32/0 (PC laptop)
+Spotify/110000237 Win32/0 (PC desktop)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spotify\/.+Linux/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spotify</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Spotify/110000237 Linux/0 (PC desktop)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spreaker for Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spreaker</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Spreaker for Android 4.10.6 release:2019-02-01 device:phone (samsung SM-G960F; Android 9; it_IT)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Spreaker.+(iPhone|iPad|iOS)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Spreaker</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Spreaker 7.16.9 rv:1294 (iPhone7,2; iOS 12.1.4; it_IT) SPKAudioPlayer
+Spreaker 7.16.1 rv:1283 (iPad2,5; iPhone OS 9.3.5; en_US) SPKAudioPlayer
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Stitcher\/Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Stitcher</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Stitcher/Android
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^iTunes.+(SqueezeCenter|SqueezeNetwork)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Squeezebox</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">iTunes/4.7.1 (Linux; N; piCore; armv7l-linux; EN; utf8) SqueezeCenter, Squeezebox Server, Logitech Media Server/7.9.2/1524841547
+iTunes/4.7.1 (Unix; N; linux; x86_64-linux; EN; utf8) SqueezeNetwork/7.7.7-sn/TRUNK
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Stitcher\/iOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Stitcher</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Stitcher/iOS
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^TED.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">TED</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">TED/2941 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^TED.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">TED</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">TED Android; Version 3.3.3; OPPO R15 9
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^TREBLE/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Treble.fm</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">TREBLE/1.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^TuneIn.+CFNetwork/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">TuneIn</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">TuneIn%20Radio/1163 CFNetwork/976 Darwin/18.2.0
+TuneIn%20Radio%20Pro/1163 CFNetwork/976 Darwin/18.2.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(uTorrent|BTWebClient)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">uTorrent</span><span class="badge badge-pill badge-success">Desktop App</span>
+          </h6><code class="examples">uTorrent/2210(25302)
+BTWebClient/355S(44994)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^VictorReader/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">VictorReader</span><span class="badge badge-pill badge-success">Smart Home</span>
+          </h6><code class="examples">VictorReader Stream 503 ca-en Heather Ryan 4.8.7
+VictorReader Stream Trek au-en Lisa Tyler 1.2.11
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^com\.wbez\.app.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">WBEZ App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">com.wbez.app/7.2.2 (Linux;Android 8.0.0) ExoPlayerLib/2.5.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^WNYC.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">WNYC App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">WNYC App/3.0.10 Android/25 device/KYOCERA-E6810
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^WNYC.+(Darwin|iPhone|iOS)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">WNYC App</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">WNYC App/3.0.30-11136 iOS/12.2 device/iPhone10,1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Wilson\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Wilson FM</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Wilson/1.1.2 (com.fictivekin.Wilson; build:39; iOS 12.1.4) Alamofire/4.6.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Winamp/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Winamp</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Winamp/5.8
+WinampMPEG/2.7
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Zune/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Zune</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Zune/4.8
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Podcasts/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Podcasts/1400.139 CFNetwork/1079.4 Darwin/19.0.0
+Podcasts/3.9 CFNetwork/1073.6.3 Darwin/19.0.0
+Podcasts/1.0.0 iPhone/12.2 hw/iPhone9_3
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^itunesstored/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">itunesstored/1.0 iOS/11.4.1 model/iPad7,5 hwp/t8010 build/15G77 (5; dt:170)
+itunesstored/1.0 iOS/9.3.5 model/iPod5,1 hwp/s5l8942x build/13G36 (4; dt:81)
+itunesstored/1.0 iOS/10.3.3 model/iPhone5,3 hwp/s5l8950x build/14G60 (6; dt:97)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AppleCoreMedia.+Apple TV/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Smart TV</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_us)
+AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_gb)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AppleCoreMedia.+(Audio Accessory|HomePod)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">AppleCoreMedia/1.0.0.16D39 (HomePod; U; CPU OS 12_1_3 like Mac OS X; en_us)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AppleCoreMedia.+(iPhone|iPad|iPod)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">AppleCoreMedia/1.0.0.16D57 (iPhone; U; CPU OS 12_1_4 like Mac OS X; en_us)
+AppleCoreMedia/1.0.0.16D57 (iPad; U; CPU OS 12_1_4 like Mac OS X; en_us)
+AppleCoreMedia/1.0.0.16D57 (iPod touch; U; CPU OS 12_1_4 like Mac OS X; en_us)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\(null\).+watchOS)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple Podcasts</span><span class="badge badge-pill badge-success">Smart Watch</span><span class="badge badge-pill badge-info">WatchOS</span>
+          </h6><code class="examples">AppleCoreMedia/1.0.0.16S535 (Apple Watch; U; CPU OS 5_1_3 like Mac OS X; en_us)
+atc/1.0 watchOS/5.1.3 model/Watch3,3 hwp/t8004 build/16S535 (6; dt:155)
+(null)/(null) watchOS/5.0.1 model/Watch3,3 hwp/t8004 build/16R381 (6; dt:155)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^AppleCoreMedia.+Macintosh/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">iTunes</span><span class="badge badge-pill badge-success">Desktop App</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">AppleCoreMedia/1.0.0.18D109 (Macintosh; U; Intel Mac OS X 10_14_3; en_us)
+AppleCoreMedia/1.0.0.18D109 (Macintosh; U; Intel Mac OS X 10_14_3; en_gb)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Android.+GSA\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Google Podcasts</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; Android 9; Pixel 2 Build/PQ2A.190205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.105 Mobile Safari/537.36 GSA/9.27.3.21.arm64
+Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 GSA/9.51.8.21.arm64
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+iPhone.+GSA\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Google Podcasts</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/67.1.233829879 Mobile/15E148 Safari/605.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^(Libassistant.+)?GoogleChirp\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Google Podcasts</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Google Home</span>
+          </h6><code class="examples">Libassistant/1.0 GoogleChirp/1.0.1 (Linux; Android/5.0) GOOG/7 AppleWebKit/534.30 (KHTML, like Gecko)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/4\.0.+MSIE/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Internet Explorer</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+BB10.+Safari/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Safari</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">BlackBerryOS</span>
+          </h6><code class="examples">Mozilla/5.0 (BB10; Kbd) AppleWebKit/537.35+ (KHTML, like Gecko) Version/10.3.3.3216 Mobile Safari/537.35+
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows Phone.+Edge\//</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Edge</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Windows Phone</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; NOKIA; Lumia 830) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Mobile Safari/537.36 Edge/14.14393
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows Phone.+IEMobile/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Internet Explorer</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Windows Phone</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Android.+Firefox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Android 8.0.0; Mobile; rv:65.0) Gecko/65.0 Firefox/65.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Android.+Chrome/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; Android 8.0.0; SM-G950U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.105 Mobile Safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; U; Android 6.0.1;trltevzw/MMB29M)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Samsung.+stagefright/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">Samsung SM-G920V stagefright/Beyonce/1.1.9 (Linux;Android 7.0)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^stagefright.+Android/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Android</span>
+          </h6><code class="examples">stagefright/1.2 (Linux;Android 8.0.0)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Macintosh.+Firefox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100101 Firefox/65.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Macintosh.+Chrome/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Macintosh.+Safari/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Safari</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Macintosh/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">macOS</span>
+          </h6><code class="examples">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows NT.+Edge/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Edge</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows NT.+Firefox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows NT.+Chrome/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Windows NT/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Internet Explorer</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Windows</span>
+          </h6><code class="examples">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+FxiOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/15.0b13894 Mobile/16D57 Safari/605.1.15
+Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) FxiOS/14.0b12646 Mobile/14G60 Safari/603.3.8
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+CriOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/72.0.3626.101 Mobile/15E148 Safari/605.1
+Mozilla/5.0 (iPad; CPU OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/72.0.3626.101 Mobile/15E148 Safari/605.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+FBAN/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Facebook</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 [FBAN/FBIOS;FBAV/210.0.0.37.117;FBBV/143754374;FBDV/iPhone5,3;FBMD/iPhone;FBSN/iOS;FBSV/10.3.3;FBSS/2;FBCR/Verizon;FBID/phone;FBLC/en_US;FBOP/5;FBRV/0]
+Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 [FBAN/FBIOS;FBAV/210.0.0.37.117;FBBV/143754374;FBDV/iPad5,3;FBMD/iPad;FBSN/iOS;FBSV/12.1.4;FBSS/2;FBCR/;FBID/tablet;FBLC/en_US;FBOP/5;FBRV/0]
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+Twitter/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Twitter</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16E227 Twitter for iPhone/7.49
+Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16E227 Twitter for iPhone/7.49
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+AppleNews/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Apple News</span><span class="badge badge-pill badge-success">Mobile App</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) AppleNews/1706 Version/4.1.1
+Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) AppleNews/1000 Version/2.3.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad).+Safari/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Safari</span><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+(iPhone|iPad)/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">iOS</span>
+          </h6><code class="examples">Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57
+Mozilla/5.0 (iPad; CPU OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+CrOS/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">ChromeOS</span>
+          </h6><code class="examples">Mozilla/5.0 (X11; CrOS x86_64 11151.113.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.127 Safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Tizen.+TV/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Smart TV</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 TV Safari/537.36
+Mozilla/5.0 (SMART-TV; Linux; Tizen 3.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.0 Chrome/47.0.2526.69 TV safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Tizen/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Mobile Browser</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; Tizen 3.0; SAMSUNG Family Hub 3.0) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/1.0 Chrome/47.0.2526.69 Mobile Safari/537.36
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+NetCast/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">NetCast</span><span class="badge badge-pill badge-success">Smart TV</span><span class="badge badge-pill badge-info">webOS</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; NetCast; U) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.31 SmartTV/6.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Linux.+Firefox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Mozilla/5.0 (X11; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Linux.+Chrome/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Chrome</span><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/4E423F
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Linux/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Desktop Browser</span><span class="badge badge-pill badge-info">Linux</span>
+          </h6><code class="examples">Mozilla/5.0 (Linux; x86_64 GNU/Linux)
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0.+Gecko.+Firefox/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Firefox</span><span class="badge badge-pill badge-success">Desktop Browser</span>
+          </h6><code class="examples">Mozilla/5.0 (amd64; rv:28.0) Gecko/20100101 Firefox/28.0
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^Mozilla\/5\.0( compatible)?$/</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-success">Desktop Browser</span>
+          </h6><code class="examples">Mozilla/5.0
+Mozilla/5.0 compatible
+</code>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack/i</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-danger">bot</span>
+          </h6>
+          <p class="card-text">General bots</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><code>/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable/i</code></h5>
+          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-danger">bot</span>
+          </h6>
+          <p class="card-text">Podcast specific bots</p>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,8 @@
+db/agents.json
+db/agents.lock.json
+db/agents.lock.yml
 db/agents.yml
+docs
+lock
 test
 tmp
-lock.js

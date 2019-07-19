@@ -2,14 +2,17 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 
 /**
- * Normalize and lock agents database
+ * Normalize and lock agents.yml -> agents.lock.yml
+ *
+ * (a prerequisite for other js/json locks)
  */
-let agentsText = fs.readFileSync(`${__dirname}/db/agents.yml`, 'utf8');
-let lockText = fs.readFileSync(`${__dirname}/db/agents.lock.yml`, 'utf8');
+let agentsText = fs.readFileSync(`${__dirname}/../db/agents.yml`, 'utf8');
+let lockText = fs.readFileSync(`${__dirname}/../db/agents.lock.yml`, 'utf8');
 let agentsData = yaml.safeLoad(agentsText) || {};
 let lockData = yaml.safeLoad(lockText) || {};
 
 const TAG_NAMES = ['name', 'type', 'os'];
+const ALLOW_KEYS = ['regex', 'ignorecase', 'bot'];
 
 function invert(obj) {
   let ret = {};
@@ -17,7 +20,7 @@ function invert(obj) {
   return ret;
 }
 
-console.log('reading existing lockfile...');
+console.log('reading existing agents.lock.yml...');
 let tags = invert(lockData.tags || {}), nextId = 1;
 Object.values(tags).forEach(id => {
   if (+id >= nextId) {
@@ -27,7 +30,7 @@ Object.values(tags).forEach(id => {
 console.log(`  got ${Object.keys(tags).length} tags`);
 console.log(`  next id: ${nextId}`);
 
-console.log('reading current db...');
+console.log('reading current agents.yml...');
 let changes = false;
 TAG_NAMES.forEach(tag => {
   (agentsData.agents || []).map(a => a[tag]).filter(v => v).forEach(val => {
@@ -47,10 +50,12 @@ let newLock = {};
 newLock.agents = (agentsData.agents || []).map(agent => {
   let data = {};
   Object.keys(agent).forEach(key => {
-    if (TAG_NAMES.indexOf(key) === -1) {
-      data[key] = agent[key];
-    } else if (agent[key]) {
-      data[key] = tags[agent[key]];
+    if (agent[key]) {
+      if (TAG_NAMES.indexOf(key) > -1) {
+        data[key] = tags[agent[key]];
+      } else if (ALLOW_KEYS.indexOf(key) > -1) {
+        data[key] = agent[key];
+      }
     }
   });
   return data;
@@ -60,5 +65,4 @@ console.log(`  ${newLock.agents.length} agents`);
 console.log(`  ${Object.keys(newLock.tags).length} tags`);
 
 let newText = yaml.safeDump(newLock, {lineWidth: 200});
-fs.writeFileSync(`${__dirname}/db/agents.lock.yml`, newText);
-console.log('done!');
+fs.writeFileSync(`${__dirname}/../db/agents.lock.yml`, newText);
