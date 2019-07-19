@@ -36,5 +36,10 @@
     "nodemon": "^1.19.1",
     "pug": "^2.0.4"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "diff": ">= 3.5.0",
+    "growl": ">= 1.10.0",
+    "lodash": ">= 4.17.13"
+  }
 }
