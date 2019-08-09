@@ -76,6 +76,7 @@ exports.agents = [
   [/^(PodcastAddict|Podcast Addict).+Android/, 18, 36, 42],
   [/^podcast\/.+(CFNetwork|iOS)/, 19, 36, 43],
   [/^PodcastRepublic.+Android/, 58, 36, 42],
+  [/^Podcoin/, 98, 36, null],
   [/^Podkicker/, 20, 36, 42],
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
   [/^RadioPublic Android|^RadioPublic\/android/, 21, 36, 42],
@@ -252,5 +253,6 @@ exports.tags = {
   94: 'Chromecast',
   95: 'Squeezebox',
   96: 'Spreaker',
-  97: 'VictorReader'
+  97: 'VictorReader',
+  98: 'Podcoin'
 };

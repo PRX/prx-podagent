@@ -441,6 +441,11 @@
       "os": "42"
     },
     {
+      "regex": "^Podcoin",
+      "name": "98",
+      "type": "36"
+    },
+    {
       "regex": "^Podkicker",
       "name": "20",
       "type": "36",
@@ -988,6 +993,7 @@
     "94": "Chromecast",
     "95": "Squeezebox",
     "96": "Spreaker",
-    "97": "VictorReader"
+    "97": "VictorReader",
+    "98": "Podcoin"
   }
 }
