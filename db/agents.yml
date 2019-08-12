@@ -507,6 +507,12 @@ agents:
     os: Android
     examples:
       - PodcastRepublic/18.0 (Linux; U; Android 8.0.0;dreamqltesq/R16NW)
+  - regex: '^Podcoin'
+    name: Podcoin
+    type: Mobile App
+    os: null
+    examples:
+      - Podcoin
   - regex: '^Podkicker'
     name: Podkicker
     type: Mobile App

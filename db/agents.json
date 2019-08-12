@@ -743,6 +743,15 @@
       ]
     },
     {
+      "regex": "^Podcoin",
+      "name": "Podcoin",
+      "type": "Mobile App",
+      "os": null,
+      "examples": [
+        "Podcoin"
+      ]
+    },
+    {
       "regex": "^Podkicker",
       "name": "Podkicker",
       "type": "Mobile App",
