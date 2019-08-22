@@ -311,7 +311,7 @@ agents:
   - regex: ^Outcast
     name: '111'
     type: '68'
-    os: '117'
+    os: '69'
   - regex: ^Overcast
     name: '14'
     type: '36'

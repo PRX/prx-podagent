@@ -82,7 +82,7 @@ exports.agents = [
   [/^OkDownload/, null, 36, 42],
   [/^okhttp/, null, 36, 42],
   [/^OrangeRadio.+CFNetwork/, 110, 36, 43],
-  [/^Outcast/, 111, 68, 117],
+  [/^Outcast/, 111, 68, 69],
   [/^Overcast/, 14, 36, 43],
   [/^Pandora.+Android/, 82, 36, 42],
   [/^Mozilla.+(iPad|iPhone).+Pandora/, 82, 36, 43],
