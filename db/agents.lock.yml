@@ -3,7 +3,7 @@ agents:
     name: '1'
     type: '35'
     os: '41'
-  - regex: ^Acast.+Android
+  - regex: '^Acast.+[aA]ndroid'
     name: '2'
     type: '36'
     os: '42'
@@ -36,6 +36,10 @@ agents:
   - regex: ^APKXDL.+Android
     type: '36'
     os: '42'
+  - regex: ^IOSAudiobooks.+CFNetwork
+    name: '101'
+    type: '36'
+    os: '43'
   - regex: ^Mozilla\/5\.0.+BeyondPod
     name: '33'
     type: '36'
@@ -54,6 +58,10 @@ agents:
   - regex: ^Bullhorn
     name: '79'
     type: '36'
+  - regex: ^Castamatic.+(CFNetwork|iOS)
+    name: '99'
+    type: '36'
+    os: '43'
   - regex: ^Castaway.+CFNetwork
     name: '7'
     type: '36'
@@ -87,7 +95,23 @@ agents:
   - regex: ^Dalvik.+Android
     type: '36'
     os: '42'
-  - regex: ^Mozilla.+DoggCatcher
+  - regex: ^Deezer.+windows
+    name: '100'
+    type: '35'
+    os: '41'
+  - regex: ^Deezer.+osx
+    name: '100'
+    type: '35'
+    os: '45'
+  - regex: ^Deezer.+Android
+    name: '100'
+    type: '36'
+    os: '42'
+  - regex: ^Deezer.+CFNetwork
+    name: '100'
+    type: '36'
+    os: '43'
+  - regex: ^(Mozilla.+)?DoggCatcher
     name: '93'
     type: '36'
     os: '42'
@@ -113,7 +137,7 @@ agents:
     name: '81'
     type: '36'
     os: '43'
-  - regex: ^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)
+  - regex: ^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)
     type: '36'
     os: '42'
   - regex: ^Fire OS.+stagefright
@@ -133,6 +157,14 @@ agents:
   - regex: ^gvfs
     type: '35'
     os: '49'
+  - regex: ^Hamro-Patro.+Android
+    name: '102'
+    type: '36'
+    os: '42'
+  - regex: ^Hamro-Patro
+    name: '102'
+    type: '36'
+    os: '43'
   - regex: ^HardCast.+CFNetwork
     name: '76'
     type: '36'
@@ -143,6 +175,18 @@ agents:
     os: '43'
   - regex: ^Himalaya.+Android
     name: '70'
+    type: '36'
+    os: '42'
+  - regex: ^HondaLink.+CFNetwork
+    name: '103'
+    type: '36'
+    os: '43'
+  - regex: ^Hubhopper.+CFNetwork
+    name: '104'
+    type: '36'
+    os: '43'
+  - regex: ^Hubhopper.+Android
+    name: '104'
     type: '36'
     os: '42'
   - regex: ^(iCatcher!|iTunes.+iCatcher!)
@@ -157,6 +201,10 @@ agents:
     name: '52'
     type: '36'
     os: '42'
+  - regex: ^Instacast.+CFNetwork
+    name: '105'
+    type: '36'
+    os: '43'
   - regex: ^iTunes.+Macintosh
     name: '12'
     type: '35'
@@ -165,10 +213,34 @@ agents:
     name: '12'
     type: '35'
     os: '41'
+  - regex: ^iTunes.+iPod
+    name: '12'
+    type: '36'
+    os: '43'
   - regex: ^Juice.+Windows
     name: '53'
     type: '35'
     os: '41'
+  - regex: ^KERA.+IOS
+    name: '106'
+    type: '36'
+    os: '43'
+  - regex: ^Kids( |%20)Listen.+CFNetwork
+    name: '107'
+    type: '36'
+    os: '43'
+  - regex: ^Kodi.+Windows
+    name: '108'
+    type: '37'
+    os: '41'
+  - regex: ^Kodi.+Android
+    name: '108'
+    type: '37'
+    os: '42'
+  - regex: ^Kodi.+Linux
+    name: '108'
+    type: '37'
+    os: '49'
   - regex: ^KPCCAndroid
     name: '73'
     type: '36'
@@ -189,7 +261,7 @@ agents:
   - regex: ^LibVLC.+Android
     type: '36'
     os: '42'
-  - regex: ^Luminary.+iOS
+  - regex: ^Luminary.+(iOS|CFNetwork)
     name: '91'
     type: '36'
     os: '43'
@@ -197,6 +269,7 @@ agents:
     name: '91'
     type: '36'
     os: '42'
+  - regex: ^Luminary\/1.0
   - regex: ^MediaMonkey 4
     name: '71'
     type: '35'
@@ -205,6 +278,14 @@ agents:
     name: '87'
     type: '36'
     os: '43'
+  - regex: ^mytuner.+Android
+    name: '87'
+    type: '36'
+    os: '42'
+  - regex: ^MusicBee
+    name: '109'
+    type: '35'
+    os: '41'
   - regex: ^NPR%20One.+CFNetwork
     name: '13'
     type: '36'
@@ -223,6 +304,14 @@ agents:
   - regex: ^okhttp
     type: '36'
     os: '42'
+  - regex: ^OrangeRadio.+CFNetwork
+    name: '110'
+    type: '36'
+    os: '43'
+  - regex: ^Outcast
+    name: '111'
+    type: '68'
+    os: '117'
   - regex: ^Overcast
     name: '14'
     type: '36'
@@ -235,6 +324,18 @@ agents:
     name: '82'
     type: '36'
     os: '43'
+  - regex: ^Pandora.+CFNetwork
+    name: '82'
+    type: '36'
+    os: '43'
+  - regex: ^Playapod.+CFNetwork
+    name: '112'
+    type: '36'
+    os: '43'
+  - regex: ^Playapod.+Android
+    name: '112'
+    type: '36'
+    os: '42'
   - regex: ^Player( |%20)FM.+CFNetwork
     name: '15'
     type: '36'
@@ -243,6 +344,10 @@ agents:
     name: '15'
     type: '36'
     os: '42'
+  - regex: ^Plex.+iOS
+    name: '113'
+    type: '36'
+    os: '43'
   - regex: ^Pocket Casts
     name: '16'
     type: '36'
@@ -292,6 +397,10 @@ agents:
     name: '20'
     type: '36'
     os: '42'
+  - regex: ^PRI\/.+CFNetwork
+    name: '114'
+    type: '36'
+    os: '43'
   - regex: '^Pro[Cc]ast.+(iOS|CFNetwork)'
     name: '83'
     type: '36'
@@ -385,6 +494,12 @@ agents:
     name: '60'
     type: '36'
     os: '43'
+  - regex: ^TuneIn.+Android
+    name: '60'
+    type: '36'
+    os: '42'
+  - regex: ^TuneIn Radio
+    name: '60'
   - regex: ^(uTorrent|BTWebClient)
     name: '66'
     type: '35'
@@ -393,6 +508,10 @@ agents:
     type: '37'
   - regex: ^com\.wbez\.app.+Android
     name: '89'
+    type: '36'
+    os: '42'
+  - regex: ^W(BU|UB)R.+Android
+    name: '115'
     type: '36'
     os: '42'
   - regex: ^WNYC.+Android
@@ -519,6 +638,10 @@ agents:
     name: '26'
     type: '39'
     os: '41'
+  - regex: ^Opera\/.+Windows
+    name: '116'
+    type: '39'
+    os: '41'
   - regex: ^Mozilla\/5\.0.+(iPhone|iPad).+FxiOS
     name: '28'
     type: '40'
@@ -571,6 +694,10 @@ agents:
   - regex: ^Mozilla\/5\.0.+Linux
     type: '39'
     os: '49'
+  - regex: ^Opera\/.+Linux
+    name: '116'
+    type: '39'
+    os: '49'
   - regex: ^Mozilla\/5\.0.+Gecko.+Firefox
     name: '28'
     type: '39'
@@ -579,7 +706,7 @@ agents:
   - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack
     ignorecase: true
     bot: true
-  - regex: ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable
+  - regex: ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0
     ignorecase: true
     bot: true
 tags:
@@ -681,3 +808,22 @@ tags:
   '96': Spreaker
   '97': VictorReader
   '98': Podcoin
+  '99': Castamatic
+  '100': Deezer
+  '101': Audiobooks
+  '102': Hamro Patro
+  '103': HondaLink
+  '104': Hubhopper
+  '105': Instacast
+  '106': KERA App
+  '107': Kids Listen
+  '108': Kodi
+  '109': MusicBee
+  '110': Orange Radio
+  '111': Outcast
+  '112': Playapod
+  '113': Plex
+  '114': PRI App
+  '115': WUBR App
+  '116': Opera
+  '117': watchOS
