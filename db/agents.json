@@ -1305,7 +1305,7 @@
     },
     {
       "regex": "^W(BU|UB)R.+Android",
-      "name": "WUBR App",
+      "name": "WBUR App",
       "type": "Mobile App",
       "os": "Android",
       "examples": [

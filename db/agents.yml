@@ -891,7 +891,7 @@ agents:
     examples:
       - com.wbez.app/7.2.2 (Linux;Android 8.0.0) ExoPlayerLib/2.5.1
   - regex: '^W(BU|UB)R.+Android'
-    name: WUBR App
+    name: WBUR App
     type: Mobile App
     os: Android
     examples:
