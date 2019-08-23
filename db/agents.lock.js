@@ -71,7 +71,6 @@ exports.agents = [
   [/^LibVLC.+Android/, null, 36, 42],
   [/^Luminary.+(iOS|CFNetwork)/, 91, 36, 43],
   [/^Luminary.+Android/, 91, 36, 42],
-  [/^Luminary\/1.0/, null, null, null],
   [/^MediaMonkey 4/, 71, 35, 41],
   [/^myTuner.+CFNetwork/, 87, 36, 43],
   [/^mytuner.+Android/, 87, 36, 42],

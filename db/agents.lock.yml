@@ -269,7 +269,6 @@ agents:
     name: '91'
     type: '36'
     os: '42'
-  - regex: ^Luminary\/1.0
   - regex: ^MediaMonkey 4
     name: '71'
     type: '35'

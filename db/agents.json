@@ -700,15 +700,6 @@
       ]
     },
     {
-      "regex": "^Luminary\\/1.0",
-      "name": null,
-      "type": null,
-      "os": null,
-      "examples": [
-        "Luminary/1.0"
-      ]
-    },
-    {
       "regex": "^MediaMonkey 4",
       "name": "MediaMonkey",
       "type": "Desktop App",

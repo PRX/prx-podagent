@@ -478,12 +478,6 @@ agents:
     os: Android
     examples:
       - Luminary/1.0.0 build 1035/Android 27
-  - regex: '^Luminary\/1.0'
-    name:
-    type:
-    os:
-    examples:
-      - Luminary/1.0
   - regex: '^MediaMonkey 4'
     name: MediaMonkey
     type: Desktop App
