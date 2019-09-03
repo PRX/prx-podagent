@@ -10,12 +10,13 @@
       ]
     },
     {
-      "regex": "^Acast.+Android",
+      "regex": "^Acast.+[aA]ndroid",
       "name": "Acast",
       "type": "Mobile App",
       "os": "Android",
       "examples": [
-        "Acast/1.38.1 (Linux;Android 6.0) ExoPlayerLib/2.9.0"
+        "Acast/1.38.1 (Linux;Android 6.0) ExoPlayerLib/2.9.0",
+        "Acast/1.43.1 (phone; android 8.0.0; samsung SM-G935F)"
       ]
     },
     {
@@ -96,6 +97,18 @@
       ]
     },
     {
+      "regex": "^IOSAudiobooks.+CFNetwork",
+      "name": "Audiobooks",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "IOSAudiobooks/7.0.1 CFNetwork/978.0.7 Darwin/18.6.0"
+      ],
+      "notes": [
+        "https://www.audiobooks.com"
+      ]
+    },
+    {
       "regex": "^Mozilla\\/5\\.0.+BeyondPod",
       "name": "BeyondPod",
       "type": "Mobile App",
@@ -140,6 +153,16 @@
       "os": null,
       "examples": [
         "Bullhorn"
+      ]
+    },
+    {
+      "regex": "^Castamatic.+(CFNetwork|iOS)",
+      "name": "Castamatic",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Castamatic/2906 CFNetwork/976 Darwin/18.2.0",
+        "Castamatic/5.0.3 (com.gunpmedia.Castamatic; build:2936; iOS 12.4.0) Alamofire/4.8.2"
       ]
     },
     {
@@ -233,12 +256,49 @@
       ]
     },
     {
-      "regex": "^Mozilla.+DoggCatcher",
+      "regex": "^Deezer.+windows",
+      "name": "Deezer",
+      "type": "Desktop App",
+      "os": "Windows",
+      "examples": [
+        "Deezer/4.11.2 (Electron; windows/10.0.18362; Desktop; us)"
+      ]
+    },
+    {
+      "regex": "^Deezer.+osx",
+      "name": "Deezer",
+      "type": "Desktop App",
+      "os": "macOS",
+      "examples": [
+        "Deezer/4.12.2 (Electron; osx/10.14.0; Desktop; en)"
+      ]
+    },
+    {
+      "regex": "^Deezer.+Android",
+      "name": "Deezer",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Deezer/6.0.3.44 (Android; 7.0; Mobile; us) Sony G3311"
+      ]
+    },
+    {
+      "regex": "^Deezer.+CFNetwork",
+      "name": "Deezer",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Deezer/6.20.0.4 CFNetwork/976 Darwin/18.2.0"
+      ]
+    },
+    {
+      "regex": "^(Mozilla.+)?DoggCatcher",
       "name": "DoggCatcher",
       "type": "Mobile App",
       "os": "Android",
       "examples": [
-        "Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher"
+        "Mozilla/5.0 (Linux; U; Windows NT 6.1; en-us; dream) DoggCatcher",
+        "DoggCatcher/1.2"
       ]
     },
     {
@@ -302,12 +362,14 @@
       ]
     },
     {
-      "regex": "^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer)",
+      "regex": "^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)",
       "name": null,
       "type": "Mobile App",
       "os": "Android",
       "examples": [
-        "yourApplicationName/2.15.2 (Linux;Android 8.0.0) ExoPlayerLib/2.8.2"
+        "yourApplicationName/2.15.2 (Linux;Android 8.0.0) ExoPlayerLib/2.8.2",
+        "Exo2/1.0.11 (Linux;Android 5.1.1) AmznExoPlayerLib/2.9.0",
+        "Exo2/3.0.7 (Linux;Android 8.0.0) ExoPlayerLib/2.4.4"
       ]
     },
     {
@@ -361,6 +423,24 @@
       ]
     },
     {
+      "regex": "^Hamro-Patro.+Android",
+      "name": "Hamro Patro",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Hamro-Patro/12.4.7 (Linux;Android 4.4.4) ExoPlayerLib/2.5.1"
+      ]
+    },
+    {
+      "regex": "^Hamro-Patro",
+      "name": "Hamro Patro",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Hamro-Patro"
+      ]
+    },
+    {
       "regex": "^HardCast.+CFNetwork",
       "name": "HardCast",
       "type": "Mobile App",
@@ -389,6 +469,33 @@
       "os": "Android",
       "examples": [
         "Himalaya/2.2.45 Android/28 (Pixel)"
+      ]
+    },
+    {
+      "regex": "^HondaLink.+CFNetwork",
+      "name": "HondaLink",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "HondaLink%20Aha/3.3 CFNetwork/1098.1 Darwin/19.0.0"
+      ]
+    },
+    {
+      "regex": "^Hubhopper.+CFNetwork",
+      "name": "Hubhopper",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Hubhopper/5.1.13 CFNetwork/978.0.7 Darwin/18.6.0"
+      ]
+    },
+    {
+      "regex": "^Hubhopper.+Android",
+      "name": "Hubhopper",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Hubhopper/5.1.2 (Linux;Android 6.0.1) ExoPlayerLib/2.9.6"
       ]
     },
     {
@@ -425,6 +532,15 @@
       ]
     },
     {
+      "regex": "^Instacast.+CFNetwork",
+      "name": "Instacast",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Instacast/2.2.4 CFNetwork/811.5.4 Darwin/16.7.0"
+      ]
+    },
+    {
       "regex": "^iTunes.+Macintosh",
       "name": "iTunes",
       "type": "Desktop App",
@@ -444,12 +560,68 @@
       ]
     },
     {
+      "regex": "^iTunes.+iPod",
+      "name": "iTunes",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "iTunes-iPod/4.2.1 (2; 8GB)",
+        "iTunes-iPod/4.2.1 (2; 32GB)"
+      ]
+    },
+    {
       "regex": "^Juice.+Windows",
       "name": "Juice Receiver",
       "type": "Desktop App",
       "os": "Windows",
       "examples": [
         "Juice/2.2 (Windows) +http://juicereceiver.sf.net/"
+      ]
+    },
+    {
+      "regex": "^KERA.+IOS",
+      "name": "KERA App",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "KERA/3.7.14/IOS/12.4/iPhone"
+      ]
+    },
+    {
+      "regex": "^Kids( |%20)Listen.+CFNetwork",
+      "name": "Kids Listen",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Kids%20Listen/55 CFNetwork/758.5.3 Darwin/15.6.0",
+        "Kids%20Listen/55 CFNetwork/902.2 Darwin/17.7.0"
+      ]
+    },
+    {
+      "regex": "^Kodi.+Windows",
+      "name": "Kodi",
+      "type": "Smart Home",
+      "os": "Windows",
+      "examples": [
+        "Kodi/17.6 (Windows NT 10.0; WOW64) App_Bitness/32 Version/17.6-Git:20171114-a9a7a20"
+      ]
+    },
+    {
+      "regex": "^Kodi.+Android",
+      "name": "Kodi",
+      "type": "Smart Home",
+      "os": "Android",
+      "examples": [
+        "Kodi/16.1 (Linux; Android 5.1.1; AFTM Build/LVY48F) Android/5.1.1 Sys_CPU/armv7l App_Bitness/32 Version/16.1-Git:2016-04-24-c327c53"
+      ]
+    },
+    {
+      "regex": "^Kodi.+Linux",
+      "name": "Kodi",
+      "type": "Smart Home",
+      "os": "Linux",
+      "examples": [
+        "Kodi/17.6 (X11; Linux armv7l) LibreELEC/8.2 HW_RaspberryPi/1.0 App_Bitness/32 Version/17.6-Git:a9a7a20"
       ]
     },
     {
@@ -509,12 +681,13 @@
       ]
     },
     {
-      "regex": "^Luminary.+iOS",
+      "regex": "^Luminary.+(iOS|CFNetwork)",
       "name": "Luminary",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
-        "Luminary/0.0.243 build 3326/iOS 12.2"
+        "Luminary/0.0.243 build 3326/iOS 12.2",
+        "Luminary/70 CFNetwork/978.0.7 Darwin/18.6.0"
       ]
     },
     {
@@ -542,6 +715,24 @@
       "os": "iOS",
       "examples": [
         "myTuner%20Radio%20app/33 CFNetwork/976 Darwin/18.2.0"
+      ]
+    },
+    {
+      "regex": "^mytuner.+Android",
+      "name": "myTuner",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "mytuner_podcasts_androidplayer/1.0.0 (Linux;Android 8.0.0) ExoPlayerLib/2.8.4"
+      ]
+    },
+    {
+      "regex": "^MusicBee",
+      "name": "MusicBee",
+      "type": "Desktop App",
+      "os": "Windows",
+      "examples": [
+        "MusicBee"
       ]
     },
     {
@@ -592,6 +783,25 @@
       ]
     },
     {
+      "regex": "^OrangeRadio.+CFNetwork",
+      "name": "Orange Radio",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "OrangeRadio/2.6.5682 CFNetwork/609.1.4 Darwin/13.0.0",
+        "OrangeRadio/3.2.1 CFNetwork/976 Darwin/18.2.0"
+      ]
+    },
+    {
+      "regex": "^Outcast",
+      "name": "Outcast",
+      "type": "Smart Watch",
+      "os": "WatchOS",
+      "examples": [
+        "Outcast 3.1.12"
+      ]
+    },
+    {
       "regex": "^Overcast",
       "name": "Overcast",
       "type": "Mobile App",
@@ -621,6 +831,34 @@
       ]
     },
     {
+      "regex": "^Pandora.+CFNetwork",
+      "name": "Pandora",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Pandora/19081002 CFNetwork/978.0.7 Darwin/18.6.0",
+        "Pandora/2100 CFNetwork/978.0.7 Darwin/18.6.0"
+      ]
+    },
+    {
+      "regex": "^Playapod.+CFNetwork",
+      "name": "Playapod",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Playapod/203 CFNetwork/758.5.3 Darwin/15.6.0"
+      ]
+    },
+    {
+      "regex": "^Playapod.+Android",
+      "name": "Playapod",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Playapod/2.0.4 (Linux;Android 6.0.1) ExoPlayerLib/2.8.4"
+      ]
+    },
+    {
       "regex": "^Player( |%20)FM.+CFNetwork",
       "name": "Player FM",
       "type": "Mobile App",
@@ -636,6 +874,16 @@
       "os": "Android",
       "examples": [
         "Player FM"
+      ]
+    },
+    {
+      "regex": "^Plex.+iOS",
+      "name": "Plex",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "PlexMobile/5.13 (iPhone; iOS 12.3.1; Scale/3.00)",
+        "PlexMobile/5.15.1 (iPad; iOS 12.1.4; Scale/2.00)"
       ]
     },
     {
@@ -759,6 +1007,16 @@
       "examples": [
         "Podkicker/3.0.2",
         "Podkicker Pro/3.0.2"
+      ]
+    },
+    {
+      "regex": "^PRI\\/.+CFNetwork",
+      "name": "PRI App",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "PRI/1 CFNetwork/1098.6 Darwin/19.0.0",
+        "PRI/1 CFNetwork/978.0.7 Darwin/18.6.0"
       ]
     },
     {
@@ -990,6 +1248,24 @@
       ]
     },
     {
+      "regex": "^TuneIn.+Android",
+      "name": "TuneIn",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "TuneIn Radio/22.6 (Linux;Android 9) ExoPlayerLib/2.9.4"
+      ]
+    },
+    {
+      "regex": "^TuneIn Radio",
+      "name": "TuneIn",
+      "type": null,
+      "os": null,
+      "examples": [
+        "TuneIn Radio"
+      ]
+    },
+    {
       "regex": "^(uTorrent|BTWebClient)",
       "name": "uTorrent",
       "type": "Desktop App",
@@ -1016,6 +1292,16 @@
       "os": "Android",
       "examples": [
         "com.wbez.app/7.2.2 (Linux;Android 8.0.0) ExoPlayerLib/2.5.1"
+      ]
+    },
+    {
+      "regex": "^W(BU|UB)R.+Android",
+      "name": "WBUR App",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "WUBR Listen/2.0.8 (Linux;Android 5.0) ExoPlayerLib/2.9.2",
+        "WBUR Listen/2.0.8 (Linux;Android 5.0) ExoPlayerLib/2.9.2"
       ]
     },
     {
@@ -1319,6 +1605,15 @@
       ]
     },
     {
+      "regex": "^Opera\\/.+Windows",
+      "name": "Opera",
+      "type": "Desktop Browser",
+      "os": "Windows",
+      "examples": [
+        "Opera/9.80 (Windows NT 5.1; U; cs) Presto/2.7.62 Version/11.01"
+      ]
+    },
+    {
       "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+FxiOS",
       "name": "Firefox",
       "type": "Mobile Browser",
@@ -1453,6 +1748,15 @@
       ]
     },
     {
+      "regex": "^Opera\\/.+Linux",
+      "name": "Opera",
+      "type": "Desktop Browser",
+      "os": "Linux",
+      "examples": [
+        "Opera/9.80 (X11; Linux i686; U; es-ES) Presto/2.8.131 Version/11.11"
+      ]
+    },
+    {
       "regex": "^Mozilla\\/5\\.0.+Gecko.+Firefox",
       "name": "Firefox",
       "type": "Desktop Browser",
@@ -1480,7 +1784,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0",
       "ignorecase": true,
       "bot": true,
       "notes": [
