@@ -86,6 +86,8 @@ exports.agents = [
   [/^Pandora.+Android/, 82, 36, 42],
   [/^Mozilla.+(iPad|iPhone).+Pandora/, 82, 36, 43],
   [/^Pandora.+CFNetwork/, 82, 36, 43],
+  [/^Mozilla.+Windows.+PandoraApp/, 82, 35, 41],
+  [/^Mozilla.+Macintosh.+PandoraApp/, 82, 35, 45],
   [/^Playapod.+CFNetwork/, 112, 36, 43],
   [/^Playapod.+Android/, 112, 36, 42],
   [/^Player( |%20)FM.+CFNetwork/, 15, 36, 43],

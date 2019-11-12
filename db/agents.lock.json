@@ -503,6 +503,18 @@
       "os": "43"
     },
     {
+      "regex": "^Mozilla.+Windows.+PandoraApp",
+      "name": "82",
+      "type": "35",
+      "os": "41"
+    },
+    {
+      "regex": "^Mozilla.+Macintosh.+PandoraApp",
+      "name": "82",
+      "type": "35",
+      "os": "45"
+    },
+    {
       "regex": "^Playapod.+CFNetwork",
       "name": "112",
       "type": "36",
