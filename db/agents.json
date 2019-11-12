@@ -841,6 +841,24 @@
       ]
     },
     {
+      "regex": "^Mozilla.+Windows.+PandoraApp",
+      "name": "Pandora",
+      "type": "Desktop App",
+      "os": "Windows",
+      "examples": [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Electron/4.2.10 Safari/537.36 PandoraApp/15.0.2"
+      ]
+    },
+    {
+      "regex": "^Mozilla.+Macintosh.+PandoraApp",
+      "name": "Pandora",
+      "type": "Desktop App",
+      "os": "macOS",
+      "examples": [
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.128 Electron/4.2.10 Safari/537.36 PandoraApp/15.0.1"
+      ]
+    },
+    {
       "regex": "^Playapod.+CFNetwork",
       "name": "Playapod",
       "type": "Mobile App",
