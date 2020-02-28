@@ -42,7 +42,7 @@
       "os": "42"
     },
     {
-      "regex": "^AntennaPod",
+      "regex": "^AntennaPod|^de\\.danoeh\\.antennapod",
       "name": "5",
       "type": "36",
       "os": "42"
@@ -62,6 +62,12 @@
       "name": "101",
       "type": "36",
       "os": "43"
+    },
+    {
+      "regex": "^BashPodder",
+      "name": "119",
+      "type": "35",
+      "os": "49"
     },
     {
       "regex": "^Mozilla\\/5\\.0.+BeyondPod",
@@ -427,7 +433,7 @@
       "os": "43"
     },
     {
-      "regex": "^mytuner.+Android",
+      "regex": "^(mytuner.+Android)|^MyTuner-ExoPlayer",
       "name": "87",
       "type": "36",
       "os": "42"
@@ -439,7 +445,7 @@
       "os": "41"
     },
     {
-      "regex": "^NPR%20One.+CFNetwork",
+      "regex": "^NPR(%20| )One.+CFNetwork",
       "name": "13",
       "type": "36",
       "os": "43"
@@ -477,6 +483,10 @@
       "name": "111",
       "type": "68",
       "os": "69"
+    },
+    {
+      "regex": "^Mozilla.+MSOffice 16",
+      "name": "120"
     },
     {
       "regex": "^Overcast",
@@ -597,7 +607,7 @@
       "os": "42"
     },
     {
-      "regex": "^podcast\\/.+(CFNetwork|iOS)",
+      "regex": "^(com\\.evolve\\.)?podcast\\/.+(CFNetwork|iOS)",
       "name": "19",
       "type": "36",
       "os": "43"
@@ -612,6 +622,18 @@
       "regex": "^Podcoin",
       "name": "98",
       "type": "36"
+    },
+    {
+      "regex": "^Podimo.+Android",
+      "name": "118",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Podimo.+iOS",
+      "name": "118",
+      "type": "36",
+      "os": "43"
     },
     {
       "regex": "^Podkicker",
@@ -755,6 +777,18 @@
       "os": "42"
     },
     {
+      "regex": "^This Am Life.+Android",
+      "name": "117",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^ThisAmericanLife.+CFNetwork",
+      "name": "117",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^TREBLE",
       "name": "84",
       "type": "36",
@@ -829,7 +863,13 @@
       "os": "41"
     },
     {
-      "regex": "^Podcasts",
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/.+(x86_64)",
+      "name": "25",
+      "type": "35",
+      "os": "45"
+    },
+    {
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/",
       "name": "25",
       "type": "36",
       "os": "43"
@@ -1062,7 +1102,7 @@
       "os": "49"
     },
     {
-      "regex": "^Mozilla\\/5\\.0.+Linux.+Chrome",
+      "regex": "^Mozilla\\/5\\.0.+(OpenBSD|NetBSD|Linux).+Chrome",
       "name": "29",
       "type": "39",
       "os": "49"
@@ -1084,16 +1124,25 @@
       "type": "39"
     },
     {
+      "regex": "^Chrome",
+      "name": "29",
+      "type": "39"
+    },
+    {
       "regex": "^Mozilla\\/5\\.0( compatible)?$",
       "type": "39"
     },
     {
-      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack",
+      "regex": "^Linux;Android [0-9]",
+      "os": "42"
+    },
+    {
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network",
       "ignorecase": true,
       "bot": true
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0",
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation",
       "ignorecase": true,
       "bot": true
     }
@@ -1214,6 +1263,10 @@
     "113": "Plex",
     "114": "PRI App",
     "115": "WBUR App",
-    "116": "Opera"
+    "116": "Opera",
+    "117": "This American Life",
+    "118": "Podimo",
+    "119": "BashPodder",
+    "120": "Outlook"
   }
 }
