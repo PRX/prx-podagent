@@ -52,6 +52,17 @@ describe('podagent-test', function() {
     expect(podagent.parse('Mozilla/5.0 (compatible; gOoGle-Podcast)')).not.to.be.null;
   });
 
+  it('can be url encoded', () => {
+    let decoded = podagent.parse('팟캐스트/1425.5 CFNetwork/1121.2.2 Darwin/19.3.0');
+    expect(decoded).not.to.be.null;
+    expect(decoded.name).to.equal('Apple Podcasts');
+
+    let encoded = podagent.parse('%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8%2F1425.5%20CFNetwork%2F1121.2.2%20Darwin%2F19.3.0');
+    expect(encoded).not.to.be.null;
+    expect(encoded.name).to.equal('Apple Podcasts');
+    expect(encoded.index).to.equal(decoded.index);
+  });
+
   it('returns all matches for an agent string', () => {
     let agents = podagent.parseAll(browser2);
     expect(agents.length).to.equal(3);

@@ -229,7 +229,7 @@ agents:
     name: '106'
     type: '36'
     os: '43'
-  - regex: ^Kids( |%20)Listen.+CFNetwork
+  - regex: ^Kids Listen.+CFNetwork
     name: '107'
     type: '36'
     os: '43'
@@ -289,7 +289,7 @@ agents:
     name: '109'
     type: '35'
     os: '41'
-  - regex: ^NPR(%20| )One.+CFNetwork
+  - regex: ^NPR One.+CFNetwork
     name: '13'
     type: '36'
     os: '43'
@@ -349,7 +349,7 @@ agents:
     name: '112'
     type: '36'
     os: '42'
-  - regex: ^Player( |%20)FM.+CFNetwork
+  - regex: ^Player FM.+CFNetwork
     name: '15'
     type: '36'
     os: '43'

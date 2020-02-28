@@ -11,7 +11,7 @@ exports.db = db;
 exports.parse = (agentStr, callback) => {
   let data = null;
   for (let i = 0; i < db.agents.length; i++) {
-    if (db.agents[i][0].test(agentStr)) {
+    if (db.agents[i][0].test(decodeURIComponent(agentStr))) {
       data = exports.format(db.agents[i], i);
       break;
     }
@@ -28,7 +28,7 @@ exports.parse = (agentStr, callback) => {
 exports.parseAll = (agentStr, callback) => {
   let datas = [];
   for (let i = 0; i < db.agents.length; i++) {
-    if (db.agents[i][0].test(agentStr)) {
+    if (db.agents[i][0].test(decodeURIComponent(agentStr))) {
       datas.push(exports.format(db.agents[i], i));
     }
   }
