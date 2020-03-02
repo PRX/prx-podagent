@@ -56,9 +56,9 @@ exports.eachAgent = fn => Object.keys(agentLookup).forEach(a => fn(a, agentLooku
 before(function(done) {
   this.timeout(10000);
   process.stdout.write('  loading testagents.csv... ');
-  let parser = csv.parse({columns: true}, (err, data) => {
+  let parser = csv.parse({columns: true, delimiter: '\t'}, (err, data) => {
     console.log(`got ${data.length} agents!\n`);
-    data.forEach(data => agentLookup[data.user_agent] = +data.count);
+    data.forEach(data => agentLookup[decodeURI(data.user_agent)] = +data.count);
     done(err);
   });
   fs.createReadStream(`${__dirname}/testagents.csv`).pipe(parser);

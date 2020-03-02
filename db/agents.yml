@@ -47,12 +47,13 @@ agents:
       - AndroidDownloadManager/9 (Linux; U; Android 9; Pixel 2 Build/PQ2A.190205.002)
       - AndroidDownloadManager/8.1.0 (Linux; U; Android 8.1.0; Moto G (5S) Build/OPP28.65-37-7)
       - AndroidDownloadManager
-  - regex: '^AntennaPod'
+  - regex: '^AntennaPod|^de\.danoeh\.antennapod'
     name: AntennaPod
     type: Mobile App
     os: Android
     examples:
       - AntennaPod/1.7.1
+      - de.danoeh.antennapod/1.8.1 (Linux;Android 9) ExoPlayerLib/2.10.8
   - regex: '^Apache-HttpClient'
     name: null
     type: Mobile App
@@ -73,6 +74,12 @@ agents:
       - IOSAudiobooks/7.0.1 CFNetwork/978.0.7 Darwin/18.6.0
     notes:
       - https://www.audiobooks.com
+  - regex: ^BashPodder
+    name: BashPodder
+    type: Desktop App
+    os: Linux
+    examples:
+      - BashPodder
   - regex: '^Mozilla\/5\.0.+BeyondPod'
     name: BeyondPod
     type: Mobile App
@@ -247,6 +254,7 @@ agents:
     os: iOS
     examples:
       - English%20Radio%20-%20IELTS%20TOEFL%20TOEIC%20Listening%20and%20Speaking/1 CFNetwork/976 Darwin/18.2.0
+      - English Radio - IELTS TOEFL TOEIC Listening and Speaking/1 CFNetwork/976 Darwin/18.2.0
   - regex: '^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)'
     name: null
     type: Mobile App
@@ -328,6 +336,7 @@ agents:
     os: iOS
     examples:
       - HondaLink%20Aha/3.3 CFNetwork/1098.1 Darwin/19.0.0
+      - HondaLink Aha/3.3 CFNetwork/1098.1 Darwin/19.0.0
   - regex: '^Hubhopper.+CFNetwork'
     name: Hubhopper
     type: Mobile App
@@ -402,13 +411,14 @@ agents:
     os: iOS
     examples:
       - KERA/3.7.14/IOS/12.4/iPhone
-  - regex: '^Kids( |%20)Listen.+CFNetwork'
+  - regex: '^Kids Listen.+CFNetwork'
     name: Kids Listen
     type: Mobile App
     os: iOS
     examples:
       - Kids%20Listen/55 CFNetwork/758.5.3 Darwin/15.6.0
       - Kids%20Listen/55 CFNetwork/902.2 Darwin/17.7.0
+      - Kids Listen/55 CFNetwork/902.2 Darwin/17.7.0
   - regex: '^Kodi.+Windows'
     name: Kodi
     type: Smart Home
@@ -490,24 +500,27 @@ agents:
     os: iOS
     examples:
       - myTuner%20Radio%20app/33 CFNetwork/976 Darwin/18.2.0
-  - regex: '^mytuner.+Android'
+      - myTuner Radio app/33 CFNetwork/976 Darwin/18.2.0
+  - regex: '^(mytuner.+Android)|^MyTuner-ExoPlayer'
     name: myTuner
     type: Mobile App
     os: Android
     examples:
       - mytuner_podcasts_androidplayer/1.0.0 (Linux;Android 8.0.0) ExoPlayerLib/2.8.4
+      - MyTuner-ExoPlayerAdapter
   - regex: '^MusicBee'
     name: MusicBee
     type: Desktop App
     os: Windows
     examples:
       - MusicBee
-  - regex: '^NPR%20One.+CFNetwork'
+  - regex: '^NPR One.+CFNetwork'
     name: NPR One
     type: Mobile App
     os: iOS
     examples:
       - NPR%20One/122 CFNetwork/976 Darwin/18.2.0
+      - NPR One/217 CFNetwork/1121.2.2 Darwin/19.3.0
   - regex: '^NPROneAndroid'
     name: NPR One
     type: Mobile App
@@ -534,6 +547,8 @@ agents:
     os: Android
     examples:
       - okhttp/3.12.1
+    notes:
+      - The Podcast App for Android for sure uses this agent
   - regex: '^OrangeRadio.+CFNetwork'
     name: Orange Radio
     type: Mobile App
@@ -547,6 +562,12 @@ agents:
     os: WatchOS
     examples:
       - Outcast 3.1.12
+  - regex: '^Mozilla.+MSOffice 16'
+    name: Outlook
+    type: null
+    os: null
+    examples:
+      - Mozilla/4.0 (compatible; ms-office; MSOffice 16)
   - regex: '^Overcast'
     name: Overcast
     type: Mobile App
@@ -598,12 +619,13 @@ agents:
     os: Android
     examples:
       - Playapod/2.0.4 (Linux;Android 6.0.1) ExoPlayerLib/2.8.4
-  - regex: '^Player( |%20)FM.+CFNetwork'
+  - regex: '^Player FM.+CFNetwork'
     name: Player FM
     type: Mobile App
     os: iOS
     examples:
       - Player%20FM/255 CFNetwork/976 Darwin/18.2.0
+      - Player FM/255 CFNetwork/976 Darwin/18.2.0
   - regex: '^Player FM'
     name: Player FM
     type: Mobile App
@@ -675,13 +697,15 @@ agents:
     examples:
       - PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
       - Podcast Addict - Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1080 Build/SU6-7.7)
-  - regex: '^podcast\/.+(CFNetwork|iOS)'
+  - regex: '^(com\.evolve\.)?podcast\/.+(CFNetwork|iOS)'
     name: The Podcast App
     type: Mobile App
     os: iOS
     examples:
       - podcast/496 iOS/Version 12.1.4 (Build 16D57) The Podcast App/2.6
       - podcast/276 CFNetwork/976 Darwin/18.2.0
+      - com.evolve.podcast/3.11.3 (iPhone; ) (build 1246, iOS 13.3.1)
+      - com.evolve.podcast/3.11.3 (iPad; ) (build 1246, iOS 12.4.1)
   - regex: '^PodcastRepublic.+Android'
     name: PodcastRepublic
     type: Mobile App
@@ -694,6 +718,18 @@ agents:
     os: null
     examples:
       - Podcoin
+  - regex: '^Podimo.+Android'
+    name: Podimo
+    type: Mobile App
+    os: Android
+    examples:
+      - Podimo/1.14.3 build 105/Android 29
+  - regex: '^Podimo.+iOS'
+    name: Podimo
+    type: Mobile App
+    os: iOS
+    examples:
+      - Podimo/1.13.5 build 131/iOS 12.4.4
   - regex: '^Podkicker'
     name: Podkicker
     type: Mobile App
@@ -851,6 +887,19 @@ agents:
     os: Android
     examples:
       - TED Android; Version 3.3.3; OPPO R15 9
+  - regex: '^This Am Life.+Android'
+    name: This American Life
+    type: Mobile App
+    os: Android
+    examples:
+      - This Am Life/3.2.6.0 (Linux;Android 9) ExoPlayerLib/2.10.2
+  - regex: '^ThisAmericanLife.+CFNetwork'
+    name: This American Life
+    type: Mobile App
+    os: iOS
+    examples:
+      - ThisAmericanLife/35 CFNetwork/1121.2.2 Darwin/19.3.0
+      - ThisAmericanLife/35 CFNetwork/1120 Darwin/19.0.0
   - regex: '^TREBLE'
     name: Treble.fm
     type: Mobile App
@@ -863,6 +912,7 @@ agents:
     os: iOS
     examples:
       - TuneIn%20Radio/1163 CFNetwork/976 Darwin/18.2.0
+      - TuneIn Radio/1163 CFNetwork/976 Darwin/18.2.0
       - TuneIn%20Radio%20Pro/1163 CFNetwork/976 Darwin/18.2.0
   - regex: '^TuneIn.+Android'
     name: TuneIn
@@ -937,7 +987,21 @@ agents:
       - Zune/4.8
 
   # witness ye podcasts and despair
-  - regex: '^Podcasts'
+  - regex: '^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\/.+(x86_64)'
+    name: Apple Podcasts
+    type: Desktop App
+    os: macOS
+    examples:
+      - Podcasts/1425.5 CFNetwork/1121.1.2 Darwin/19.3.0 (x86_64)
+      - Подкасты/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - Podcast/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - Podkaster/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - Podcasty/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - Balados/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - พ็อดคาสท์/1425.5 CFNetwork/1121.1.2 Darwin/19.3.0 (x86_64)
+      - Podcast’ler/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)
+      - '%ED%8C%9F%EC%BA%90%EC%8A%A4%ED%8A%B8/1425.5 CFNetwork/1121.1.2 Darwin/19.3.0 (x86_64)'
+  - regex: '^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\/'
     name: Apple Podcasts
     type: Mobile App
     os: iOS
@@ -945,6 +1009,13 @@ agents:
       - Podcasts/1400.139 CFNetwork/1079.4 Darwin/19.0.0
       - Podcasts/3.9 CFNetwork/1073.6.3 Darwin/19.0.0
       - Podcasts/1.0.0 iPhone/12.2 hw/iPhone9_3
+      - Podcast/1425.5 CFNetwork/1121.2.2 Darwin/19.3.0
+      - Podkaster/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0
+      - Podcaster/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0
+      - 팟캐스트/1425.5 CFNetwork/1121.2.2 Darwin/19.3.0
+      - Подкасты/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0
+      - Podcastit/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0
+      - '%D0%9F%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82%D1%8B/1420.34 CFNetwork/1121.2.2 Darwin/19.2.0'
   - regex: '^itunesstored'
     name: Apple Podcasts
     type: Mobile App
@@ -1216,12 +1287,14 @@ agents:
     os: Linux
     examples:
       - Mozilla/5.0 (X11; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
-  - regex: '^Mozilla\/5\.0.+Linux.+Chrome'
+  - regex: '^Mozilla\/5\.0.+(OpenBSD|NetBSD|Linux).+Chrome'
     name: Chrome
     type: Desktop Browser
     os: Linux
     examples:
       - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/4E423F
+      - Mozilla/5.0 (X11; OpenBSD i386) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36
+      - Mozilla/5.0 (X11; NetBSD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36
   - regex: '^Mozilla\/5\.0.+Linux'
     name: null
     type: Desktop Browser
@@ -1235,15 +1308,19 @@ agents:
     examples:
       - Opera/9.80 (X11; Linux i686; U; es-ES) Presto/2.8.131 Version/11.11
 
-  # unlabeled firefox, huh?
+  # poorly labeled stuff
   - regex: '^Mozilla\/5\.0.+Gecko.+Firefox'
     name: Firefox
     type: Desktop Browser
     os: null
     examples:
       - Mozilla/5.0 (amd64; rv:28.0) Gecko/20100101 Firefox/28.0
-
-  # unlabeled everything, huh?
+  - regex: '^Chrome'
+    name: Chrome
+    type: Desktop Browser
+    os: null
+    examples:
+      - Chrome
   - regex: '^Mozilla\/5\.0( compatible)?$'
     name: null
     type: Desktop Browser # maybe?
@@ -1251,15 +1328,32 @@ agents:
     examples:
       - Mozilla/5.0
       - Mozilla/5.0 compatible
+  - regex: '^Linux;Android [0-9]'
+    name: null
+    type: null
+    os: Android
+    examples:
+      - Linux;Android 9
+      - Linux;Android 8.0.0
 
   # bots
-  - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack'
-    ignorecase: true
-    bot: true
-    notes:
-      - General bots
-  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0'
+  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network'
     ignorecase: true
     bot: true
     notes:
       - Podcast specific bots
+    examples:
+      - Mozilla/5.0 (compatible; Google-Podcast)
+      - StitcherBot (MP3 Search Bot for Stitcher Personalized Radio Service)
+      - Spotify/1.0
+      - Podtrac Network Client/1.0 (beta)
+  - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation'
+    ignorecase: true
+    bot: true
+    notes:
+      - General bots
+    examples:
+      - Googlebot-Video/1.0
+      - Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+      - msnbot/2.0b (+http://search.msn.com/msnbot.htm)
+      - FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)

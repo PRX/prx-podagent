@@ -41,7 +41,7 @@ Or to DIY use the json lock file:
       a.regex = new RegExp(a.regex, a.ignorecase ? 'i' : undefined);
     });
 
-    var str = 'some-agent-string';
+    var str = decodeURIComponent('some-agent-string');
     var agent = db.agents.find(function(a) { return a.regex.test(str); });
     if (agent) {
       console.log('matched!', agent);
@@ -58,6 +58,7 @@ require 'yaml'
 
 DB = YAML.load_file('db/agents.lock.yml')
 def match_agent(str)
+  str = URI.unescape(str)
   DB['agents'].find { |a| Regexp.new(a['regex'], a['ignorecase'] ? 'i' : nil).match(str) }&.tap do |match|
     %w(name type os).each { |k| match[k] = DB['tags'][match[k]] }
   end
@@ -79,6 +80,7 @@ $DB = Spyc::YAMLLoad('db/agents.lock.yml');
 function match_agent($str) {
   global $DB;
 
+  $str = urldecode($str)
   $match = NULL;
   foreach ($DB['agents'] as $agent) {
     $pattern = '/' . $agent['regex'] . '/' . ($agent['ignorecase'] ? 'i' : '');
@@ -96,6 +98,17 @@ function match_agent($str) {
 var_dump(match_agent('Pandora/1812.2 Android/5.1.1 ford (ExoPlayerLib2.8.2)'));
 ?>
 ```
+
+### URI Encodings
+
+Note: it's fairly common to see URI encodings in user agent strings.  And often
+depends on your particular server setup.  The regexps in this library are
+intended to be used on the fully-uri-decoded `User-Agent` string.  So you should
+always `decodeURIComponent()` the value before attempting to match.
+
+I've also seen a mix of encoded/decoded spaces within a single user agent
+string.  Where the first space has been encoded to `%20`, but subsequent ones
+are not.  So URI decoding is probably a good idea anyways.
 
 ## Development
 
