@@ -6,6 +6,7 @@ describe('podagent-test', function() {
   let str = 'AppleCoreMedia/1.0.0.14C92 (iPhone; U; CPU OS 10_2 like Mac OS X; en_us)';
   let browser = 'Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko';
   let browser2 = 'Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) FxiOS/14.0b12646 Mobile/14G60 Safari/603.3.8';
+  let malformed = 'Mozilla/5.0 (Android 8.1.0; Mobile; rv:68.0) Gecko/68.0 Firefox/68.0 %?sTAg7HyfeS4yQEirzez6pRC6(Ymr';
 
   it('async parses user agents', (done) => {
     podagent.parse(str, (err, agent) => {
@@ -88,6 +89,13 @@ describe('podagent-test', function() {
 
     let matched = podagent.db.agents[agent.index];
     expect(matched[0]).to.equal(agent.regex);
+  });
+
+  it('handles malformed uri decode errors', () => {
+    let agent = podagent.parse(malformed);
+    expect(agent.name).to.equal('Firefox');
+    expect(agent.type).to.equal('Mobile Browser');
+    expect(agent.os).to.equal('Android');
   });
 
 });

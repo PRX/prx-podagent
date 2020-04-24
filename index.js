@@ -9,9 +9,10 @@ exports.db = db;
  * Parse a user agent string
  */
 exports.parse = (agentStr, callback) => {
+  const decoded = safeDecode(agentStr);
   let data = null;
   for (let i = 0; i < db.agents.length; i++) {
-    if (db.agents[i][0].test(decodeURIComponent(agentStr))) {
+    if (db.agents[i][0].test(decoded)) {
       data = exports.format(db.agents[i], i);
       break;
     }
@@ -26,9 +27,10 @@ exports.parse = (agentStr, callback) => {
  * Return _all_ matches for a user agent, not just the first
  */
 exports.parseAll = (agentStr, callback) => {
+  const decoded = safeDecode(agentStr);
   let datas = [];
   for (let i = 0; i < db.agents.length; i++) {
-    if (db.agents[i][0].test(decodeURIComponent(agentStr))) {
+    if (db.agents[i][0].test(decoded)) {
       datas.push(exports.format(db.agents[i], i));
     }
   }
@@ -56,5 +58,16 @@ exports.format = (match, idx) => {
     };
   } else {
     return null;
+  }
+}
+
+/**
+ * Decode uri components without failing
+ */
+function safeDecode(str) {
+  try {
+    return decodeURIComponent(str);
+  } catch (err) {
+    return str;
   }
 }
