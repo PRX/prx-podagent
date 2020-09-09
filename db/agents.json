@@ -1326,7 +1326,7 @@
       ]
     },
     {
-      "regex": "^(TED.+Android)|(com\\.sciker.tedtalksdaily)",
+      "regex": "^(TED.+Android)|(com\\.sciker\\.tedtalksdaily)",
       "name": "TED",
       "type": "Mobile App",
       "os": "Android",

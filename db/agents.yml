@@ -908,7 +908,7 @@ agents:
     os: iOS
     examples:
       - TED/2941 CFNetwork/976 Darwin/18.2.0
-  - regex: '^(TED.+Android)|(com\.sciker.tedtalksdaily)'
+  - regex: '^(TED.+Android)|(com\.sciker\.tedtalksdaily)'
     name: TED
     type: Mobile App
     os: Android
@@ -1121,6 +1121,7 @@ agents:
     os: Google Home
     examples:
       - Libassistant/1.0 GoogleChirp/1.0.1 (Linux; Android/5.0) GOOG/7 AppleWebKit/534.30 (KHTML, like Gecko)
+
   # old, old IE
   - regex: '^Mozilla\/4\.0.+MSIE'
     name: Internet Explorer

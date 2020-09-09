@@ -795,7 +795,7 @@
       "os": "43"
     },
     {
-      "regex": "^(TED.+Android)|(com\\.sciker.tedtalksdaily)",
+      "regex": "^(TED.+Android)|(com\\.sciker\\.tedtalksdaily)",
       "name": "59",
       "type": "36",
       "os": "42"

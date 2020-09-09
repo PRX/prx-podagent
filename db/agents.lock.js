@@ -136,7 +136,7 @@ exports.agents = [
   [/^iTunes.+(SqueezeCenter|SqueezeNetwork)/, 95, 37, 49],
   [/^Stitcher\/iOS/, 23, 36, 43],
   [/^TED.+CFNetwork/, 59, 36, 43],
-  [/^(TED.+Android)|(com\.sciker.tedtalksdaily)/, 59, 36, 42],
+  [/^(TED.+Android)|(com\.sciker\.tedtalksdaily)/, 59, 36, 42],
   [/^This Am Life.+Android/, 117, 36, 42],
   [/^ThisAmericanLife.+CFNetwork/, 117, 36, 43],
   [/^TREBLE/, 84, 36, 43],
