@@ -39,6 +39,13 @@ agents:
     os: iOS
     examples:
       - AllYouCanBooks/510 CFNetwork/978.0.7 Darwin/18.5.0
+  - regex: '^Amazon;AFT'
+    name: Amazon Fire TV
+    type: Smart TV
+    os: Amazon OS
+    examples:
+      - Amazon;AFTT;756a522d9f1648b89e76e80be654456a;;tpapi;3.134.19
+      - Amazon;AFTEAMR311;756a522d9f1648b89e76e80be654456a;;tpapi;3.134.19
   - regex: '^AndroidDownloadManager'
     name: null
     type: Mobile App
@@ -535,6 +542,12 @@ agents:
       - NSPlayer/10.0.0.3702 WMFSDK/10.0
       - NSPlayer/8.0.0.3801
       - WMPlayer/10.0.0.364 guid/3300AD50-2C39-46C0-AE0A-AC7B8159E203
+  - regex: '^NVIDIA;SHIELDAndroidTV'
+    name: Nvidia Shield
+    type: Smart TV
+    os: Android
+    examples:
+      - NVIDIA;SHIELDAndroidTV;756a522d9f1648b89e76e80be654456a;;tpapi;3.127.32
   - regex: '^OkDownload'
     name: null
     type: Mobile App
@@ -706,6 +719,12 @@ agents:
       - podcast/276 CFNetwork/976 Darwin/18.2.0
       - com.evolve.podcast/3.11.3 (iPhone; ) (build 1246, iOS 13.3.1)
       - com.evolve.podcast/3.11.3 (iPad; ) (build 1246, iOS 12.4.1)
+  - regex: '^PodcastGuru'
+    name: Podcast Guru
+    type: Mobile App
+    os: Android
+    examples:
+      - PodcastGuru 1.8.3-beta4
   - regex: '^PodcastRepublic.+Android'
     name: PodcastRepublic
     type: Mobile App
@@ -811,6 +830,13 @@ agents:
     examples:
       - Linux UPnP/1.0 Sonos/48.2-61220 (ZPS12)
       - Sonos
+  - regex: '^Sony;BRAVIA'
+    name: Sony Bravia
+    type: Smart TV
+    os: Android
+    examples:
+      - Sony;BRAVIA4KGB;756a522d9f1648b89e76e80be654456a;;tpapi
+      - Sony;BRAVIA2015;756a522d9f1648b89e76e80be654456a;;tpapi
   - regex: '^Spotify\/.+Android'
     name: Spotify
     type: Mobile App
@@ -856,12 +882,13 @@ agents:
     examples:
       - Spreaker 7.16.9 rv:1294 (iPhone7,2; iOS 12.1.4; it_IT) SPKAudioPlayer
       - Spreaker 7.16.1 rv:1283 (iPad2,5; iPhone OS 9.3.5; en_US) SPKAudioPlayer
-  - regex: '^Stitcher\/Android'
+  - regex: '^Stitcher.+Android'
     name: Stitcher
     type: Mobile App
     os: Android
     examples:
       - Stitcher/Android
+      - Stitcher Demo/4.8.0 (Linux;Android 10) ExoPlayerLib/2.10.7
   - regex: '^iTunes.+(SqueezeCenter|SqueezeNetwork)'
     name: Squeezebox
     type: Smart Home
@@ -881,12 +908,13 @@ agents:
     os: iOS
     examples:
       - TED/2941 CFNetwork/976 Darwin/18.2.0
-  - regex: '^TED.+Android'
+  - regex: '^(TED.+Android)|(com\.sciker.tedtalksdaily)'
     name: TED
     type: Mobile App
     os: Android
     examples:
       - TED Android; Version 3.3.3; OPPO R15 9
+      - com.sciker.tedtalksdaily
   - regex: '^This Am Life.+Android'
     name: This American Life
     type: Mobile App
@@ -979,6 +1007,16 @@ agents:
     examples:
       - Winamp/5.8
       - WinampMPEG/2.7
+  - regex: '^Xiaoyuzhou'
+    name: Xiaoyuzhou
+    type: Mobile App
+    os: iOS
+    notes:
+      - Translates as "Little Universe"
+      - TODO: watch out for an Android version
+      - https://justpodnews.com/na-ge-xiao-yu-zhou-appba-dui-bo-ke-de-xiang-fa-gen-wo-men-liao-liao-liao-du-jia/
+    examples:
+      - Xiaoyuzhou/1.9.0
   - regex: '^Zune'
     name: Zune
     type: Mobile App
@@ -1069,19 +1107,20 @@ agents:
     examples:
       - Mozilla/5.0 (Linux; Android 9; Pixel 2 Build/PQ2A.190205.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/72.0.3626.105 Mobile Safari/537.36 GSA/9.27.3.21.arm64
       - Mozilla/5.0 (Linux; Android 8.0.0; SM-G960F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36 GSA/9.51.8.21.arm64
-  - regex: '^Mozilla\/5\.0.+iPhone.+GSA\/'
+  - regex: '^(Mozilla\/5\.0.+iPhone.+GSA\/)|(GooglePodcasts.+(iPhone|iPad))'
     name: Google Podcasts
     type: Mobile App
     os: iOS
     examples:
       - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) GSA/67.1.233829879 Mobile/15E148 Safari/605.1
+      - GooglePodcasts/2.0.4 iPhone/13.6.1 hw/iPhone12_1
+      - GooglePodcasts/2.0.4 iPad/13.6.1 hw/iPad7_11
   - regex: '^(Libassistant.+)?GoogleChirp\/'
     name: Google Podcasts
     type: Smart Home
     os: Google Home
     examples:
       - Libassistant/1.0 GoogleChirp/1.0.1 (Linux; Android/5.0) GOOG/7 AppleWebKit/534.30 (KHTML, like Gecko)
-
   # old, old IE
   - regex: '^Mozilla\/4\.0.+MSIE'
     name: Internet Explorer
@@ -1337,7 +1376,7 @@ agents:
       - Linux;Android 8.0.0
 
   # bots
-  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network'
+  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport'
     ignorecase: true
     bot: true
     notes:
@@ -1347,6 +1386,7 @@ agents:
       - StitcherBot (MP3 Search Bot for Stitcher Personalized Radio Service)
       - Spotify/1.0
       - Podtrac Network Client/1.0 (beta)
+      - AnchorImport/1.0
   - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation'
     ignorecase: true
     bot: true
