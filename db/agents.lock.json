@@ -37,6 +37,12 @@
       "os": "43"
     },
     {
+      "regex": "^Amazon;AFT",
+      "name": "121",
+      "type": "38",
+      "os": "44"
+    },
+    {
       "regex": "^AndroidDownloadManager",
       "type": "36",
       "os": "42"
@@ -463,6 +469,12 @@
       "os": "41"
     },
     {
+      "regex": "^NVIDIA;SHIELDAndroidTV",
+      "name": "124",
+      "type": "38",
+      "os": "42"
+    },
+    {
       "regex": "^OkDownload",
       "type": "36",
       "os": "42"
@@ -613,6 +625,12 @@
       "os": "43"
     },
     {
+      "regex": "^PodcastGuru",
+      "name": "122",
+      "type": "36",
+      "os": "42"
+    },
+    {
       "regex": "^PodcastRepublic.+Android",
       "name": "58",
       "type": "36",
@@ -705,6 +723,12 @@
       "os": "74"
     },
     {
+      "regex": "^Sony;BRAVIA",
+      "name": "125",
+      "type": "38",
+      "os": "42"
+    },
+    {
       "regex": "^Spotify\\/.+Android",
       "name": "77",
       "type": "36",
@@ -747,7 +771,7 @@
       "os": "43"
     },
     {
-      "regex": "^Stitcher\\/Android",
+      "regex": "^Stitcher.+Android",
       "name": "23",
       "type": "36",
       "os": "42"
@@ -771,7 +795,7 @@
       "os": "43"
     },
     {
-      "regex": "^TED.+Android",
+      "regex": "^(TED.+Android)|(com\\.sciker\\.tedtalksdaily)",
       "name": "59",
       "type": "36",
       "os": "42"
@@ -857,6 +881,12 @@
       "os": "41"
     },
     {
+      "regex": "^Xiaoyuzhou",
+      "name": "123",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^Zune",
       "name": "24",
       "type": "36",
@@ -917,7 +947,7 @@
       "os": "42"
     },
     {
-      "regex": "^Mozilla\\/5\\.0.+iPhone.+GSA\\/",
+      "regex": "^(Mozilla\\/5\\.0.+iPhone.+GSA\\/)|(GooglePodcasts.+(iPhone|iPad))",
       "name": "62",
       "type": "36",
       "os": "43"
@@ -1137,7 +1167,7 @@
       "os": "42"
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport",
       "ignorecase": true,
       "bot": true
     },
@@ -1267,6 +1297,11 @@
     "117": "This American Life",
     "118": "Podimo",
     "119": "BashPodder",
-    "120": "Outlook"
+    "120": "Outlook",
+    "121": "Amazon Fire TV",
+    "122": "Podcast Guru",
+    "123": "Xiaoyuzhou",
+    "124": "Nvidia Shield",
+    "125": "Sony Bravia"
   }
 }
