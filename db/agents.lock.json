@@ -43,6 +43,23 @@
       "os": "44"
     },
     {
+      "regex": "^AmazonMusic.+CFNetwork",
+      "name": "126",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^AmazonMusic.+Android",
+      "name": "126",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^AmazonMusic",
+      "name": "126",
+      "type": "36"
+    },
+    {
       "regex": "^AndroidDownloadManager",
       "type": "36",
       "os": "42"
@@ -1302,6 +1319,7 @@
     "122": "Podcast Guru",
     "123": "Xiaoyuzhou",
     "124": "Nvidia Shield",
-    "125": "Sony Bravia"
+    "125": "Sony Bravia",
+    "126": "Amazon Music"
   }
 }

@@ -46,6 +46,27 @@ agents:
     examples:
       - Amazon;AFTT;756a522d9f1648b89e76e80be654456a;;tpapi;3.134.19
       - Amazon;AFTEAMR311;756a522d9f1648b89e76e80be654456a;;tpapi;3.134.19
+  - regex: '^AmazonMusic.+CFNetwork'
+    name: Amazon Music
+    type: Mobile App
+    os: iOS
+    examples:
+      - AmazonMusic/9.15.2 iPhone12,8 CFNetwork/1128.0.1 Darwin/19.6.0
+      - AmazonMusic/9.15.2 iPad8,1 CFNetwork/1128.0.1 Darwin/19.6.0
+      - AmazonMusic/9.15.0 iPod7,1 CFNetwork/978.0.7 Darwin/18.7.0
+  - regex: '^AmazonMusic.+Android'
+    name: Amazon Music
+    type: Mobile App
+    os: Android
+    examples:
+      - AmazonMusic/16.17.1 Dalvik/2.1.0 (Linux; U; Android 9; moto g(7) supra Build/PCOS29.114-134-20)
+      - AmazonMusic/16.17.1 Dalvik/2.1.0 (Linux; U; Android 10; Pixel 3 Build/QQ3A.200805.001)
+  - regex: '^AmazonMusic'
+    name: Amazon Music
+    type: Mobile App
+    os: null
+    examples:
+      - AmazonMusic
   - regex: '^AndroidDownloadManager'
     name: null
     type: Mobile App
