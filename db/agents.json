@@ -69,6 +69,36 @@
       ]
     },
     {
+      "regex": "^AmazonMusic.+CFNetwork",
+      "name": "Amazon Music",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "AmazonMusic/9.15.2 iPhone12,8 CFNetwork/1128.0.1 Darwin/19.6.0",
+        "AmazonMusic/9.15.2 iPad8,1 CFNetwork/1128.0.1 Darwin/19.6.0",
+        "AmazonMusic/9.15.0 iPod7,1 CFNetwork/978.0.7 Darwin/18.7.0"
+      ]
+    },
+    {
+      "regex": "^AmazonMusic.+Android",
+      "name": "Amazon Music",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "AmazonMusic/16.17.1 Dalvik/2.1.0 (Linux; U; Android 9; moto g(7) supra Build/PCOS29.114-134-20)",
+        "AmazonMusic/16.17.1 Dalvik/2.1.0 (Linux; U; Android 10; Pixel 3 Build/QQ3A.200805.001)"
+      ]
+    },
+    {
+      "regex": "^AmazonMusic",
+      "name": "Amazon Music",
+      "type": "Mobile App",
+      "os": null,
+      "examples": [
+        "AmazonMusic"
+      ]
+    },
+    {
       "regex": "^AndroidDownloadManager",
       "name": null,
       "type": "Mobile App",
@@ -846,6 +876,15 @@
       "os": null,
       "examples": [
         "Mozilla/4.0 (compatible; ms-office; MSOffice 16)"
+      ]
+    },
+    {
+      "regex": "^Overcast.+Apple Watch",
+      "name": "Overcast",
+      "type": "Smart Watch",
+      "os": "WatchOS",
+      "examples": [
+        "Overcast (+http://overcast.fm/; Apple Watch podcast app)"
       ]
     },
     {

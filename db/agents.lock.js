@@ -6,6 +6,9 @@ exports.agents = [
   [/^(AlexaMediaPlayer|AlexaService)/, 3, 37, 44],
   [/^AllYouCanBooks.+CFNetwork/, 4, 36, 43],
   [/^Amazon;AFT/, 121, 38, 44],
+  [/^AmazonMusic.+CFNetwork/, 126, 36, 43],
+  [/^AmazonMusic.+Android/, 126, 36, 42],
+  [/^AmazonMusic/, 126, 36, null],
   [/^AndroidDownloadManager/, null, 36, 42],
   [/^AntennaPod|^de\.danoeh\.antennapod/, 5, 36, 42],
   [/^Apache-HttpClient/, null, 36, 42],
@@ -86,6 +89,7 @@ exports.agents = [
   [/^OrangeRadio.+CFNetwork/, 110, 36, 43],
   [/^Outcast/, 111, 68, 69],
   [/^Mozilla.+MSOffice 16/, 120, null, null],
+  [/^Overcast.+Apple Watch/, 14, 68, 69],
   [/^Overcast/, 14, 36, 43],
   [/^Pandora.+Android/, 82, 36, 42],
   [/^Mozilla.+(iPad|iPhone).+Pandora/, 82, 36, 43],
@@ -329,5 +333,6 @@ exports.tags = {
   122: 'Podcast Guru',
   123: 'Xiaoyuzhou',
   124: 'Nvidia Shield',
-  125: 'Sony Bravia'
+  125: 'Sony Bravia',
+  126: 'Amazon Music'
 };
