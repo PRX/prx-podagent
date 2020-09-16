@@ -518,6 +518,12 @@
       "name": "120"
     },
     {
+      "regex": "^Overcast.+Apple Watch",
+      "name": "14",
+      "type": "68",
+      "os": "69"
+    },
+    {
       "regex": "^Overcast",
       "name": "14",
       "type": "36",

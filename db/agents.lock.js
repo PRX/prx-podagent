@@ -89,6 +89,7 @@ exports.agents = [
   [/^OrangeRadio.+CFNetwork/, 110, 36, 43],
   [/^Outcast/, 111, 68, 69],
   [/^Mozilla.+MSOffice 16/, 120, null, null],
+  [/^Overcast.+Apple Watch/, 14, 68, 69],
   [/^Overcast/, 14, 36, 43],
   [/^Pandora.+Android/, 82, 36, 42],
   [/^Mozilla.+(iPad|iPhone).+Pandora/, 82, 36, 43],

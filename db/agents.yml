@@ -602,6 +602,12 @@ agents:
     os: null
     examples:
       - Mozilla/4.0 (compatible; ms-office; MSOffice 16)
+  - regex: '^Overcast.+Apple Watch'
+    name: Overcast
+    type: Smart Watch
+    os: WatchOS
+    examples:
+      - Overcast (+http://overcast.fm/; Apple Watch podcast app)
   - regex: '^Overcast'
     name: Overcast
     type: Mobile App
