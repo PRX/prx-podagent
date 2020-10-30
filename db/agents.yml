@@ -1180,6 +1180,13 @@ agents:
       - Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko
 
   # android browsers
+  - regex: '^Mozilla\/5\.0.+Android.+musical_ly'
+    name: TikTok
+    type: Mobile App
+    os: Android
+    examples:
+      - Mozilla/5.0 (Linux; Android 10; SM-G960U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Mobile Safari/537.36 trill_2021707410 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musical_ly app_version/17.7.41 ByteLocale/en ByteFullLocale/en Region/US
+      - Mozilla/5.0 (Linux; Android 11; Pixel 3 Build/RP1A.201005.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.110 Mobile Safari/537.36 trill_2021707410 JsSdk/1.0 NetType/WIFI Channel/googleplay AppName/musical_ly app_version/17.7.41 ByteLocale/en ByteFullLocale/en Region/US
   - regex: '^Mozilla\/5\.0.+Android.+Firefox'
     name: Firefox
     type: Mobile Browser
@@ -1305,6 +1312,13 @@ agents:
     examples:
       - Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) AppleNews/1706 Version/4.1.1
       - Mozilla/5.0 (iPad; CPU OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) AppleNews/1000 Version/2.3.1
+  - regex: '^Mozilla\/5\.0.+(iPhone|iPad).+musical_ly'
+    name: TikTok
+    type: Mobile App
+    os: iOS
+    examples:
+      - Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 musical_ly_17.7.1 JsSdk/2.0 NetType/WIFI Channel/App Store ByteLocale/en Region/US ByteFullLocale/en WKWebView/1
+      - Mozilla/5.0 (iPad; CPU OS 13_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 musical_ly_17.7.1 JsSdk/2.0 NetType/WIFI Channel/App Store ByteLocale/en Region/US ByteFullLocale/en WKWebView/1
   - regex: '^Mozilla\/5\.0.+(iPhone|iPad).+Safari'
     name: Safari
     type: Mobile Browser

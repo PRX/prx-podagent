@@ -172,6 +172,7 @@ exports.agents = [
   [/^Mozilla\/5\.0.+BB10.+Safari/, 27, 40, 46],
   [/^Mozilla\/5\.0.+Windows Phone.+Edge\//, 92, 40, 47],
   [/^Mozilla\/5\.0.+Windows Phone.+IEMobile/, 26, 40, 47],
+  [/^Mozilla\/5\.0.+Android.+musical_ly/, 127, 36, 42],
   [/^Mozilla\/5\.0.+Android.+Firefox/, 28, 40, 42],
   [/^Mozilla\/5\.0.+Android.+Chrome/, 29, 40, 42],
   [/^Mozilla\/5\.0.+Android/, null, 40, 42],
@@ -191,6 +192,7 @@ exports.agents = [
   [/^Mozilla\/5\.0.+(iPhone|iPad).+FBAN/, 30, 36, 43],
   [/^Mozilla\/5\.0.+(iPhone|iPad).+Twitter/, 31, 36, 43],
   [/^Mozilla\/5\.0.+(iPhone|iPad).+AppleNews/, 32, 36, 43],
+  [/^Mozilla\/5\.0.+(iPhone|iPad).+musical_ly/, 127, 36, 43],
   [/^Mozilla\/5\.0.+(iPhone|iPad).+Safari/, 27, 40, 43],
   [/^Mozilla\/5\.0.+(iPhone|iPad)/, null, 40, 43],
   [/^Mozilla\/5\.0.+CrOS/, 29, 39, 48],
@@ -334,5 +336,6 @@ exports.tags = {
   123: 'Xiaoyuzhou',
   124: 'Nvidia Shield',
   125: 'Sony Bravia',
-  126: 'Amazon Music'
+  126: 'Amazon Music',
+  127: 'TikTok'
 };
