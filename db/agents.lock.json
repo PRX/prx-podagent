@@ -1006,6 +1006,12 @@
       "os": "47"
     },
     {
+      "regex": "^Mozilla\\/5\\.0.+Android.+musical_ly",
+      "name": "127",
+      "type": "36",
+      "os": "42"
+    },
+    {
       "regex": "^Mozilla\\/5\\.0.+Android.+Firefox",
       "name": "28",
       "type": "40",
@@ -1112,6 +1118,12 @@
     {
       "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+AppleNews",
       "name": "32",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^Mozilla\\/5\\.0.+(iPhone|iPad).+musical_ly",
+      "name": "127",
       "type": "36",
       "os": "43"
     },
@@ -1326,6 +1338,7 @@
     "123": "Xiaoyuzhou",
     "124": "Nvidia Shield",
     "125": "Sony Bravia",
-    "126": "Amazon Music"
+    "126": "Amazon Music",
+    "127": "TikTok"
   }
 }
