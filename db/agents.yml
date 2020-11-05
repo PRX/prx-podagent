@@ -1418,7 +1418,7 @@ agents:
       - Linux;Android 8.0.0
 
   # bots
-  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport'
+  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe'
     ignorecase: true
     bot: true
     notes:
@@ -1429,6 +1429,7 @@ agents:
       - Spotify/1.0
       - Podtrac Network Client/1.0 (beta)
       - AnchorImport/1.0
+      - Adswizz-podscribe/1.0
   - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation'
     ignorecase: true
     bot: true

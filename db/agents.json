@@ -2025,7 +2025,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2036,7 +2036,8 @@
         "StitcherBot (MP3 Search Bot for Stitcher Personalized Radio Service)",
         "Spotify/1.0",
         "Podtrac Network Client/1.0 (beta)",
-        "AnchorImport/1.0"
+        "AnchorImport/1.0",
+        "Adswizz-podscribe/1.0"
       ]
     },
     {
