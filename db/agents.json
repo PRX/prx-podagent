@@ -39,6 +39,16 @@
       ]
     },
     {
+      "regex": "^Airr.+CFNetwork",
+      "name": "Airr",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Airr/4070 CFNetwork/1206 Darwin/20.1.0",
+        "Airr/4070 CFNetwork/1128.0.1 Darwin/19.6.0"
+      ]
+    },
+    {
       "regex": "^(AlexaMediaPlayer|AlexaService)",
       "name": "Alexa",
       "type": "Smart Home",
@@ -90,12 +100,13 @@
       ]
     },
     {
-      "regex": "^AmazonMusic",
+      "regex": "^Amazon ?Music",
       "name": "Amazon Music",
       "type": "Mobile App",
       "os": null,
       "examples": [
-        "AmazonMusic"
+        "AmazonMusic",
+        "Amazon Music Podcast"
       ]
     },
     {
@@ -135,6 +146,27 @@
       "os": "Android",
       "examples": [
         "APKXDL (Linux; U; Android 4.0.4;en_US; D01E/IMM76D) Downloader"
+      ]
+    },
+    {
+      "regex": "^(Audible|com\\.audible).+Android",
+      "name": "Audible",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "com.audible.playersdk.player/2.64.0 (Linux;Android 10) ExoPlayerLib/2.5.3",
+        "Audible, Android, 2.64.0, samsung, SM-G988U, z3qsqw, 10, 1.0, WIFI",
+        "Audible, Android, 2.64.0, lge, LM-G820, alphalm_lao_com, 10, 1.0, WIFI"
+      ]
+    },
+    {
+      "regex": "^Audible.+CFNetwork",
+      "name": "Audible",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Audible/648 CFNetwork/1206 Darwin/20.1.0",
+        "Audible/123 CFNetwork/1197 Darwin/19.6.0"
       ]
     },
     {
@@ -276,13 +308,14 @@
       ]
     },
     {
-      "regex": "^Mozilla\\/.+CrKey",
+      "regex": "^(Mozilla\\/.+CrKey|Google;Chromecast)",
       "name": "Chromecast",
       "type": "Smart Home",
       "os": "ChromeOS",
       "examples": [
         "Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36",
-        "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.141215"
+        "Mozilla/5.0 (X11; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.47 Safari/537.36 CrKey/1.36.141215",
+        "Google;Chromecast;756a522d9f1648b89e76e80be654456a;;tpapi;3.134.19"
       ]
     },
     {
@@ -619,6 +652,36 @@
       "examples": [
         "iTunes-iPod/4.2.1 (2; 8GB)",
         "iTunes-iPod/4.2.1 (2; 32GB)"
+      ]
+    },
+    {
+      "regex": "^i[vV]oox.+Android",
+      "name": "iVoox",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "ivooxApp/2.267_394 (POT-LX1; Android 10; d:11466047; 3C97)",
+        "ivooxApp/2.267_394 (MI 5; Android 8.0.0; 134A)"
+      ]
+    },
+    {
+      "regex": "^i[vV]oox.+(iPhone|iPad|iOS|CFNetwork)",
+      "name": "iVoox",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "iVooxApp/3.58.01_01 (iPhone; iOS; iOS 14.2; d:3825817; 88E5)",
+        "iVooxApp/3.58.01_01 (iPad; iOS; iOS 13.7; d:2781284; 56B6)",
+        "ivooxNew/01 CFNetwork/1206 Darwin/20.1.0"
+      ]
+    },
+    {
+      "regex": "^i[vV]oox",
+      "name": "iVoox",
+      "type": "Mobile App",
+      "os": null,
+      "examples": [
+        "iVoox"
       ]
     },
     {
@@ -1134,6 +1197,34 @@
       ]
     },
     {
+      "regex": "^Podhero.+Android",
+      "name": "Podhero",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Podhero/2.4.0 (Linux;Android 10) ExoPlayerLib/2.9.6"
+      ]
+    },
+    {
+      "regex": "^Podhero.+CFNetwork",
+      "name": "Podhero",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Podhero/4357 CFNetwork/1206 Darwin/20.1.0"
+      ]
+    },
+    {
+      "regex": "^Podhero",
+      "name": "Podhero",
+      "type": "Mobile App",
+      "os": null,
+      "examples": [
+        "Podhero/4357",
+        "Podhero/1.0 (build 65e8b7c)"
+      ]
+    },
+    {
       "regex": "^Podkicker",
       "name": "Podkicker",
       "type": "Mobile App",
@@ -1229,6 +1320,16 @@
       "os": "Android",
       "examples": [
         "ServeStream"
+      ]
+    },
+    {
+      "regex": "^SiriusXM.+CFNetwork",
+      "name": "SiriusXM",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "SiriusXM/1605726906 CFNetwork/1206 Darwin/20.1.0",
+        "SiriusXM/1605726906 CFNetwork/978.0.7 Darwin/18.7.0"
       ]
     },
     {
@@ -1579,13 +1680,14 @@
       ]
     },
     {
-      "regex": "^AppleCoreMedia.+Apple TV",
+      "regex": "^(AppleCoreMedia.+Apple TV|apple;apple_tv)",
       "name": "Apple Podcasts",
       "type": "Smart TV",
       "os": "iOS",
       "examples": [
         "AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_us)",
-        "AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_gb)"
+        "AppleCoreMedia/1.0.0.16K534 (Apple TV; U; CPU OS 12_1_2 like Mac OS X; en_gb)",
+        "apple;apple_tv;33ddb95064d1479ab37179579af23b77;;tpapi;3.143.24"
       ]
     },
     {
