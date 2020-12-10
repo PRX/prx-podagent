@@ -1011,6 +1011,7 @@
     },
     {
       "regex": "^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\\(null\\).+watchOS)",
+      "bot": true,
       "name": "25",
       "type": "68",
       "os": "69"

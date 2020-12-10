@@ -1712,6 +1712,7 @@
     },
     {
       "regex": "^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\\(null\\).+watchOS)",
+      "bot": true,
       "name": "Apple Podcasts",
       "type": "Smart Watch",
       "os": "WatchOS",
@@ -1719,6 +1720,10 @@
         "AppleCoreMedia/1.0.0.16S535 (Apple Watch; U; CPU OS 5_1_3 like Mac OS X; en_us)",
         "atc/1.0 watchOS/5.1.3 model/Watch3,3 hwp/t8004 build/16S535 (6; dt:155)",
         "(null)/(null) watchOS/5.0.1 model/Watch3,3 hwp/t8004 build/16R381 (6; dt:155)"
+      ],
+      "notes": [
+        "Marked as bot (don't count downloads) per IAB guidelines",
+        "https://iabtechlab.com/blog/apple-watch-os-podcast-filtering-guidance/"
       ]
     },
     {
