@@ -25,6 +25,12 @@
       "os": "43"
     },
     {
+      "regex": "^Airr.+CFNetwork",
+      "name": "131",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^(AlexaMediaPlayer|AlexaService)",
       "name": "3",
       "type": "37",
@@ -55,7 +61,7 @@
       "os": "42"
     },
     {
-      "regex": "^AmazonMusic",
+      "regex": "^Amazon ?Music",
       "name": "126",
       "type": "36"
     },
@@ -79,6 +85,18 @@
       "regex": "^APKXDL.+Android",
       "type": "36",
       "os": "42"
+    },
+    {
+      "regex": "^(Audible|com\\.audible).+Android",
+      "name": "130",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Audible.+CFNetwork",
+      "name": "130",
+      "type": "36",
+      "os": "43"
     },
     {
       "regex": "^IOSAudiobooks.+CFNetwork",
@@ -162,7 +180,7 @@
       "os": "43"
     },
     {
-      "regex": "^Mozilla\\/.+CrKey",
+      "regex": "^(Mozilla\\/.+CrKey|Google;Chromecast)",
       "name": "94",
       "type": "37",
       "os": "48"
@@ -362,6 +380,23 @@
       "name": "12",
       "type": "36",
       "os": "43"
+    },
+    {
+      "regex": "^i[vV]oox.+Android",
+      "name": "129",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^i[vV]oox.+(iPhone|iPad|iOS|CFNetwork)",
+      "name": "129",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^i[vV]oox",
+      "name": "129",
+      "type": "36"
     },
     {
       "regex": "^Juice.+Windows",
@@ -677,6 +712,23 @@
       "os": "43"
     },
     {
+      "regex": "^Podhero.+Android",
+      "name": "132",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Podhero.+CFNetwork",
+      "name": "132",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^Podhero",
+      "name": "132",
+      "type": "36"
+    },
+    {
       "regex": "^Podkicker",
       "name": "20",
       "type": "36",
@@ -732,6 +784,12 @@
       "name": "65",
       "type": "36",
       "os": "42"
+    },
+    {
+      "regex": "^SiriusXM.+CFNetwork",
+      "name": "128",
+      "type": "36",
+      "os": "43"
     },
     {
       "regex": "^Sodes.+CFNetwork",
@@ -934,7 +992,7 @@
       "os": "43"
     },
     {
-      "regex": "^AppleCoreMedia.+Apple TV",
+      "regex": "^(AppleCoreMedia.+Apple TV|apple;apple_tv)",
       "name": "25",
       "type": "38",
       "os": "43"
@@ -1339,6 +1397,11 @@
     "124": "Nvidia Shield",
     "125": "Sony Bravia",
     "126": "Amazon Music",
-    "127": "TikTok"
+    "127": "TikTok",
+    "128": "SiriusXM",
+    "129": "iVoox",
+    "130": "Audible",
+    "131": "Airr",
+    "132": "Podhero"
   }
 }
