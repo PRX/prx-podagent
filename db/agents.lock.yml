@@ -660,7 +660,12 @@ agents:
     name: '25'
     type: '36'
     os: '43'
-  - regex: ^(AppleCoreMedia.+Apple Watch|atc.+watchOS|\(null\).+watchOS)
+  - regex: ^AppleCoreMedia.+Apple Watch
+    name: '25'
+    type: '68'
+    os: '69'
+  - regex: ^(atc.+watchOS|\(null\).+watchOS)
+    bot: true
     name: '25'
     type: '68'
     os: '69'
