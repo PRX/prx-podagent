@@ -167,7 +167,7 @@ exports.agents = [
   [/^Winamp/, 61, 35, 41],
   [/^Xiaoyuzhou/, 123, 36, 43],
   [/^Zune/, 24, 36, 41],
-  [/MixerBox\/.*Android/, 133, 36, 42],
+  [/^MixerBox\/.*Android/, 133, 36, 42],
   [/^MixerBox\/.*iOS/, 133, 36, 43],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\/.+(x86_64)/, 25, 35, 45],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\//, 25, 36, 43],

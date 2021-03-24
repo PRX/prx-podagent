@@ -1634,7 +1634,7 @@
       ]
     },
     {
-      "regex": "MixerBox\\/.*Android",
+      "regex": "^MixerBox\\/.*Android",
       "name": "MixerBox",
       "type": "Mobile App",
       "os": "Android",

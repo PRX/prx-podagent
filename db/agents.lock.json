@@ -974,7 +974,7 @@
       "os": "41"
     },
     {
-      "regex": "MixerBox\\/.*Android",
+      "regex": "^MixerBox\\/.*Android",
       "name": "133",
       "type": "36",
       "os": "42"
