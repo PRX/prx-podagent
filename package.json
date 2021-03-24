@@ -1,6 +1,6 @@
 {
   "name": "prx-podagent",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "scripts": {
@@ -30,13 +30,12 @@
     "chai": "^4.1.1",
     "concurrently": "^4.1.1",
     "csv": "^1.1.1",
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^3.14.1",
     "live-server": "^1.2.1",
     "mocha": "^3.5.0",
     "nodemon": "^1.19.1",
     "pug": "^2.0.4"
   },
-  "dependencies": {},
   "resolutions": {
     "diff": ">= 3.5.0",
     "growl": ">= 1.10.0",

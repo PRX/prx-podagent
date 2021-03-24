@@ -1634,6 +1634,24 @@
       ]
     },
     {
+      "regex": "^MixerBox\\/.*Android",
+      "name": "MixerBox",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "MixerBox/12.33 (Linux;Android 11) ExoPlayerLib/2.11.1"
+      ]
+    },
+    {
+      "regex": "^MixerBox\\/.*iOS",
+      "name": "MixerBox",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "MixerBox/807.iOS (iPhone; iOS 14.4; en_US)"
+      ]
+    },
+    {
       "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/.+(x86_64)",
       "name": "Apple Podcasts",
       "type": "Desktop App",

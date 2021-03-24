@@ -974,6 +974,18 @@
       "os": "41"
     },
     {
+      "regex": "^MixerBox\\/.*Android",
+      "name": "133",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^MixerBox\\/.*iOS",
+      "name": "133",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/.+(x86_64)",
       "name": "25",
       "type": "35",
@@ -1409,6 +1421,7 @@
     "129": "iVoox",
     "130": "Audible",
     "131": "Airr",
-    "132": "Podhero"
+    "132": "Podhero",
+    "133": "MixerBox"
   }
 }
