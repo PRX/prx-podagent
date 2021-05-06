@@ -441,7 +441,7 @@ agents:
     name: '18'
     type: '36'
     os: '42'
-  - regex: ^(com\.evolve\.)?podcast\/.+(CFNetwork|iOS)
+  - regex: ^(com\.evolve\.podcast|podcast|ThePodcastApp)\/.+(CFNetwork|iOS)
     name: '19'
     type: '36'
     os: '43'
@@ -508,6 +508,10 @@ agents:
   - regex: ^samsung-agent\/
     type: '37'
     os: '42'
+  - regex: ^Samsung Free\/
+    name: '135'
+    type: '36'
+    os: '42'
   - regex: ^ServeStream
     name: '65'
     type: '36'
@@ -528,7 +532,7 @@ agents:
     name: '125'
     type: '38'
     os: '42'
-  - regex: ^Spotify\/.+Android
+  - regex: ^Spotify(-Lite)?\/.+Android
     name: '77'
     type: '36'
     os: '42'
@@ -632,6 +636,9 @@ agents:
     name: '123'
     type: '36'
     os: '43'
+  - regex: ^microsoft;xbox
+    name: '134'
+    type: '38'
   - regex: ^Zune
     name: '24'
     type: '36'
@@ -640,7 +647,7 @@ agents:
     name: '133'
     type: '36'
     os: '42'
-  - regex: ^MixerBox\/.*iOS
+  - regex: ^MixerBox\/.*(iOS|CFNetwork)
     name: '133'
     type: '36'
     os: '43'
@@ -835,6 +842,8 @@ agents:
     type: '39'
   - regex: '^Linux;Android [0-9]'
     os: '42'
+  - regex: ^Mozilla\/5\.0.+Cloudinary
+    bot: true
   - regex: >-
       ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac
       network|^anchorimport|^adswizz-podscribe
@@ -977,3 +986,5 @@ tags:
   '131': Airr
   '132': Podhero
   '133': MixerBox
+  '134': Xbox
+  '135': Samsung Free
