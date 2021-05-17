@@ -116,7 +116,7 @@ exports.agents = [
   [/^Podbbang/, 75, 36, null],
   [/^PodTrapper/, 57, 36, 42],
   [/^(PodcastAddict|Podcast Addict).+Android/, 18, 36, 42],
-  [/^(com\.evolve\.)?podcast\/.+(CFNetwork|iOS)/, 19, 36, 43],
+  [/^(podcast\/[0-9]+ (iOS|CFNetwork))|^(com\.evolve\.podcast\/.+iOS)|^(ThePodcastApp\/.+iOS)/, 19, 36, 43],
   [/^PodcastGuru/, 122, 36, 42],
   [/^PodcastRepublic.+Android/, 58, 36, 42],
   [/^Podcoin/, 98, 36, null],
@@ -134,12 +134,13 @@ exports.agents = [
   [/^Roku/, 64, 37, null],
   [/^RSSRadio/, 63, 36, 43],
   [/^samsung-agent\//, null, 37, 42],
+  [/^Samsung Free\//, 135, 36, 42],
   [/^ServeStream/, 65, 36, 42],
   [/^SiriusXM.+CFNetwork/, 128, 36, 43],
   [/^Sodes.+CFNetwork/, 88, 36, 43],
   [/^(Sonos|Linux.+Sonos)/, 22, 37, 74],
   [/^Sony;BRAVIA/, 125, 38, 42],
-  [/^Spotify\/.+Android/, 77, 36, 42],
+  [/^Spotify(-Lite)?\/.+Android/, 77, 36, 42],
   [/^Spotify\/.+iOS/, 77, 36, 43],
   [/^Spotify\/.+OSX/, 77, 35, 45],
   [/^Spotify\/.+Win32/, 77, 35, 41],
@@ -166,9 +167,10 @@ exports.agents = [
   [/^Wilson\//, 90, 36, 43],
   [/^Winamp/, 61, 35, 41],
   [/^Xiaoyuzhou/, 123, 36, 43],
+  [/^microsoft;xbox/, 134, 38, null],
   [/^Zune/, 24, 36, 41],
   [/^MixerBox\/.*Android/, 133, 36, 42],
-  [/^MixerBox\/.*iOS/, 133, 36, 43],
+  [/^MixerBox\/.*(iOS|CFNetwork)/, 133, 36, 43],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\/.+(x86_64)/, 25, 35, 45],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\//, 25, 36, 43],
   [/^itunesstored/, 25, 36, 43],
@@ -220,6 +222,7 @@ exports.agents = [
   [/^Chrome/, 29, 39, null],
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/^Linux;Android [0-9]/, null, null, 42],
+  [/^Mozilla\/5\.0.+Cloudinary/, null, null, null, true],
   [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe/i, null, null, null, true],
   [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation/i, null, null, null, true]
 ];
@@ -356,5 +359,7 @@ exports.tags = {
   130: 'Audible',
   131: 'Airr',
   132: 'Podhero',
-  133: 'MixerBox'
+  133: 'MixerBox',
+  134: 'Xbox',
+  135: 'Samsung Free'
 };

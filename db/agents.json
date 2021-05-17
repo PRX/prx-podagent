@@ -1140,7 +1140,7 @@
       ]
     },
     {
-      "regex": "^(com\\.evolve\\.)?podcast\\/.+(CFNetwork|iOS)",
+      "regex": "^(podcast\\/[0-9]+ (iOS|CFNetwork))|^(com\\.evolve\\.podcast\\/.+iOS)|^(ThePodcastApp\\/.+iOS)",
       "name": "The Podcast App",
       "type": "Mobile App",
       "os": "iOS",
@@ -1148,7 +1148,10 @@
         "podcast/496 iOS/Version 12.1.4 (Build 16D57) The Podcast App/2.6",
         "podcast/276 CFNetwork/976 Darwin/18.2.0",
         "com.evolve.podcast/3.11.3 (iPhone; ) (build 1246, iOS 13.3.1)",
-        "com.evolve.podcast/3.11.3 (iPad; ) (build 1246, iOS 12.4.1)"
+        "com.evolve.podcast/3.11.3 (iPad; ) (build 1246, iOS 12.4.1)",
+        "ThePodcastApp/4.4.0 (iPhone; iOS 14.4; ) stream (build 4444; +https://podcast.app/)",
+        "ThePodcastApp/5.3.1 (iPhone; iOS 14.4.2; ) player (build 4740; +https://podcast.app/)",
+        "ThePodcastApp/5.1.0 (iPhone; iOS 14.4.2; ) listenLater (build 4654; +https://podcast.app/)"
       ]
     },
     {
@@ -1314,6 +1317,15 @@
       ]
     },
     {
+      "regex": "^Samsung Free\\/",
+      "name": "Samsung Free",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Samsung Free/5.2.01.7 (Linux;Android 11) ExoPlayerLib/2.12.0"
+      ]
+    },
+    {
       "regex": "^ServeStream",
       "name": "ServeStream",
       "type": "Mobile App",
@@ -1362,12 +1374,13 @@
       ]
     },
     {
-      "regex": "^Spotify\\/.+Android",
+      "regex": "^Spotify(-Lite)?\\/.+Android",
       "name": "Spotify",
       "type": "Mobile App",
       "os": "Android",
       "examples": [
-        "Spotify/8.4.94 Android/26 (SM-G950F)"
+        "Spotify/8.4.94 Android/26 (SM-G950F)",
+        "Spotify-Lite/1.4.76.82 Android/29 (SM-A013M)"
       ]
     },
     {
@@ -1625,6 +1638,16 @@
       ]
     },
     {
+      "regex": "^microsoft;xbox",
+      "name": "Xbox",
+      "type": "Smart TV",
+      "os": null,
+      "examples": [
+        "microsoft;xbox_one_s;1fc2d01aa9074dde950e8d3dc0eb1729;;tpapi;3.167.55",
+        "microsoft;xbox_series_x;1fc2d01aa9074dde950e8d3dc0eb1729;;tpapi;3.167.55"
+      ]
+    },
+    {
       "regex": "^Zune",
       "name": "Zune",
       "type": "Mobile App",
@@ -1643,12 +1666,13 @@
       ]
     },
     {
-      "regex": "^MixerBox\\/.*iOS",
+      "regex": "^MixerBox\\/.*(iOS|CFNetwork)",
       "name": "MixerBox",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
-        "MixerBox/807.iOS (iPhone; iOS 14.4; en_US)"
+        "MixerBox/807.iOS (iPhone; iOS 14.4; en_US)",
+        "MixerBox/817 CFNetwork/1220.1 Darwin/20.3.0"
       ]
     },
     {
@@ -2155,6 +2179,13 @@
       "examples": [
         "Linux;Android 9",
         "Linux;Android 8.0.0"
+      ]
+    },
+    {
+      "regex": "^Mozilla\\/5\\.0.+Cloudinary",
+      "bot": true,
+      "examples": [
+        "Mozilla/5.0 (compatible; Cloudinary/1.0)"
       ]
     },
     {

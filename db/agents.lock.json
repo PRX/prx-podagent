@@ -677,7 +677,7 @@
       "os": "42"
     },
     {
-      "regex": "^(com\\.evolve\\.)?podcast\\/.+(CFNetwork|iOS)",
+      "regex": "^(podcast\\/[0-9]+ (iOS|CFNetwork))|^(com\\.evolve\\.podcast\\/.+iOS)|^(ThePodcastApp\\/.+iOS)",
       "name": "19",
       "type": "36",
       "os": "43"
@@ -780,6 +780,12 @@
       "os": "42"
     },
     {
+      "regex": "^Samsung Free\\/",
+      "name": "135",
+      "type": "36",
+      "os": "42"
+    },
+    {
       "regex": "^ServeStream",
       "name": "65",
       "type": "36",
@@ -810,7 +816,7 @@
       "os": "42"
     },
     {
-      "regex": "^Spotify\\/.+Android",
+      "regex": "^Spotify(-Lite)?\\/.+Android",
       "name": "77",
       "type": "36",
       "os": "42"
@@ -968,6 +974,11 @@
       "os": "43"
     },
     {
+      "regex": "^microsoft;xbox",
+      "name": "134",
+      "type": "38"
+    },
+    {
       "regex": "^Zune",
       "name": "24",
       "type": "36",
@@ -980,7 +991,7 @@
       "os": "42"
     },
     {
-      "regex": "^MixerBox\\/.*iOS",
+      "regex": "^MixerBox\\/.*(iOS|CFNetwork)",
       "name": "133",
       "type": "36",
       "os": "43"
@@ -1279,6 +1290,10 @@
       "os": "42"
     },
     {
+      "regex": "^Mozilla\\/5\\.0.+Cloudinary",
+      "bot": true
+    },
+    {
       "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe",
       "ignorecase": true,
       "bot": true
@@ -1422,6 +1437,8 @@
     "130": "Audible",
     "131": "Airr",
     "132": "Podhero",
-    "133": "MixerBox"
+    "133": "MixerBox",
+    "134": "Xbox",
+    "135": "Samsung Free"
   }
 }
