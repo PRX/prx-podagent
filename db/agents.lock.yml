@@ -441,7 +441,7 @@ agents:
     name: '18'
     type: '36'
     os: '42'
-  - regex: ^(com\.evolve\.podcast|podcast|ThePodcastApp)\/.+(CFNetwork|iOS)
+  - regex: '^(podcast\/[0-9]+ (iOS|CFNetwork))|^(com\.evolve\.podcast\/.+iOS)|^(ThePodcastApp\/.+iOS)'
     name: '19'
     type: '36'
     os: '43'

@@ -116,7 +116,7 @@ exports.agents = [
   [/^Podbbang/, 75, 36, null],
   [/^PodTrapper/, 57, 36, 42],
   [/^(PodcastAddict|Podcast Addict).+Android/, 18, 36, 42],
-  [/^(com\.evolve\.podcast|podcast|ThePodcastApp)\/.+(CFNetwork|iOS)/, 19, 36, 43],
+  [/^(podcast\/[0-9]+ (iOS|CFNetwork))|^(com\.evolve\.podcast\/.+iOS)|^(ThePodcastApp\/.+iOS)/, 19, 36, 43],
   [/^PodcastGuru/, 122, 36, 42],
   [/^PodcastRepublic.+Android/, 58, 36, 42],
   [/^Podcoin/, 98, 36, null],

@@ -783,7 +783,7 @@ agents:
     examples:
       - PodcastAddict/v2 - Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)
       - Podcast Addict - Dalvik/1.6.0 (Linux; U; Android 4.4.4; XT1080 Build/SU6-7.7)
-  - regex: '^(com\.evolve\.podcast|podcast|ThePodcastApp)\/.+(CFNetwork|iOS)'
+  - regex: '^(podcast\/[0-9]+ (iOS|CFNetwork))|^(com\.evolve\.podcast\/.+iOS)|^(ThePodcastApp\/.+iOS)'
     name: The Podcast App
     type: Mobile App
     os: iOS
