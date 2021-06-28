@@ -10,7 +10,8 @@
     "test": "mocha test/*-test.js",
     "unknowns": "mocha test/unknowns.js",
     "lock": "node lock/lock-yaml.js && node lock/lock-js.js && node lock/lock-json.js && node lock/lock-html.js",
-    "prepublish": "npm run lock"
+    "prepublish": "npm run lock",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -34,11 +35,17 @@
     "live-server": "^1.2.1",
     "mocha": "^3.5.0",
     "nodemon": "^1.19.1",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "release-it": "^14.10.0"
   },
   "resolutions": {
     "diff": ">= 3.5.0",
     "growl": ">= 1.10.0",
     "lodash": ">= 4.17.13"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }
