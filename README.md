@@ -128,8 +128,14 @@ To add a new user agent:
    the text tags/labels shared between the various matchers.  Check that your
    change didn't add any unexpected new tags (if you accidentally changed the
    case of a label or something).
-4. Bump the patch version (rightmost) in `package.json` and create a pull
-   request to this repo.
+4. Create a pull request to this repo.
+
+To release a new version:
+
+1. Get or set a `GITHUB_TOKEN` ENV (needed for [release-it](https://github.com/release-it/release-it#github-releases))
+2. Run `npm run release`
+3. Select whether this is a major/minor patch, according to [semantic versioning](https://semver.org/)
+4. Select "yes" on publishing to NPM, Pushing, and creating a Github Release
 
 ## License
 
