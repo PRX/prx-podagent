@@ -508,7 +508,7 @@ agents:
   - regex: ^samsung-agent\/
     type: '37'
     os: '42'
-  - regex: ^Samsung Free\/
+  - regex: ^Samsung Free\/|^sp-agent
     name: '135'
     type: '36'
     os: '42'
@@ -688,7 +688,7 @@ agents:
     name: '12'
     type: '35'
     os: '45'
-  - regex: ^Mozilla\/5\.0.+Android.+GSA\/
+  - regex: ^Mozilla\/5\.0.+Android.+GSA\/|^GSA\/|^com.google.android.googlequicksearchbox.+Android
     name: '62'
     type: '36'
     os: '42'
