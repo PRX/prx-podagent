@@ -485,11 +485,6 @@
       "os": "42"
     },
     {
-      "regex": "^LibVLC.+Android",
-      "type": "36",
-      "os": "42"
-    },
-    {
       "regex": "^Luminary.+(iOS|CFNetwork)",
       "name": "91",
       "type": "36",
@@ -991,7 +986,14 @@
     },
     {
       "regex": "^VLC\\/",
+      "name": "141",
       "type": "35"
+    },
+    {
+      "regex": "^LibVLC.+Android",
+      "name": "141",
+      "type": "36",
+      "os": "42"
     },
     {
       "regex": "^com\\.wbez\\.app.+Android",
@@ -1506,6 +1508,7 @@
     "137": "Telmate",
     "138": "castget",
     "139": "Newsboat",
-    "140": "Anghami"
+    "140": "Anghami",
+    "141": "VLC"
   }
 }

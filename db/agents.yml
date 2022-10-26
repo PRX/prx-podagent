@@ -570,12 +570,6 @@ agents:
       - Player/LG Player 1.0 for Android 7.0 (stagefright alternative),
       - LM-G710/V10o Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
       - LG-H872/V20g Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
-  - regex: '^LibVLC.+Android'
-    name: null
-    type: Mobile App
-    os: Android
-    examples:
-      - LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)
   - regex: '^Luminary.+(iOS|CFNetwork)'
     name: Luminary
     type: Mobile App
@@ -1150,11 +1144,17 @@ agents:
       - VictorReader Stream 503 ca-en Heather Ryan 4.8.7
       - VictorReader Stream Trek au-en Lisa Tyler 1.2.11
   - regex: '^VLC\/'
-    name: null
+    name: VLC
     type: Desktop App
     os: null
     examples:
       - VLC/3.0.11.1 LibVLC/3.0.11.1
+  - regex: '^LibVLC.+Android'
+    name: VLC
+    type: Mobile App
+    os: Android
+    examples:
+      - LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)
   - regex: '^com\.wbez\.app.+Android'
     name: WBEZ App
     type: Mobile App

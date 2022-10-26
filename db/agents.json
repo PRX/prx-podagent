@@ -828,15 +828,6 @@
       ]
     },
     {
-      "regex": "^LibVLC.+Android",
-      "name": null,
-      "type": "Mobile App",
-      "os": "Android",
-      "examples": [
-        "LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)"
-      ]
-    },
-    {
       "regex": "^Luminary.+(iOS|CFNetwork)",
       "name": "Luminary",
       "type": "Mobile App",
@@ -1670,11 +1661,20 @@
     },
     {
       "regex": "^VLC\\/",
-      "name": null,
+      "name": "VLC",
       "type": "Desktop App",
       "os": null,
       "examples": [
         "VLC/3.0.11.1 LibVLC/3.0.11.1"
+      ]
+    },
+    {
+      "regex": "^LibVLC.+Android",
+      "name": "VLC",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)"
       ]
     },
     {

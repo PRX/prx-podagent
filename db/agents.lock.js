@@ -83,7 +83,6 @@ exports.agents = [
   [/^Lavf/, null, 35, null],
   [/^Laughable.+iOS/, 54, 36, 43],
   [/^(LG-|LM-|Player).+LG Player.+Android/, null, 36, 42],
-  [/^LibVLC.+Android/, null, 36, 42],
   [/^Luminary.+(iOS|CFNetwork)/, 91, 36, 43],
   [/^Luminary.+Android/, 91, 36, 42],
   [/^MediaMonkey/, 71, 35, 41],
@@ -170,7 +169,8 @@ exports.agents = [
   [/^TuneIn Radio/, 60, null, null],
   [/^(uTorrent|BTWebClient)/, 66, 35, null],
   [/^VictorReader/, 97, 37, null],
-  [/^VLC\//, null, 35, null],
+  [/^VLC\//, 141, 35, null],
+  [/^LibVLC.+Android/, 141, 36, 42],
   [/^com\.wbez\.app.+Android/, 89, 36, 42],
   [/^W(BU|UB)R.+Android/, 115, 36, 42],
   [/^WNYC.+Android/, 85, 36, 42],
@@ -377,5 +377,6 @@ exports.tags = {
   137: 'Telmate',
   138: 'castget',
   139: 'Newsboat',
-  140: 'Anghami'
+  140: 'Anghami',
+  141: 'VLC'
 };

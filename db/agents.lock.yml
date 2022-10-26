@@ -315,9 +315,6 @@ agents:
   - regex: ^(LG-|LM-|Player).+LG Player.+Android
     type: '36'
     os: '42'
-  - regex: ^LibVLC.+Android
-    type: '36'
-    os: '42'
   - regex: ^Luminary.+(iOS|CFNetwork)
     name: '91'
     type: '36'
@@ -647,7 +644,12 @@ agents:
     name: '97'
     type: '37'
   - regex: ^VLC\/
+    name: '141'
     type: '35'
+  - regex: ^LibVLC.+Android
+    name: '141'
+    type: '36'
+    os: '42'
   - regex: ^com\.wbez\.app.+Android
     name: '89'
     type: '36'
@@ -1033,3 +1035,4 @@ tags:
   '138': castget
   '139': Newsboat
   '140': Anghami
+  '141': VLC
