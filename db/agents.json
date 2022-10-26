@@ -121,6 +121,25 @@
       ]
     },
     {
+      "regex": "^Anghami.+Android",
+      "name": "Anghami",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Anghami Android 6.1.157 / V 12 (6011570) Google store",
+        "Anghami Android 6.1.157 / V 10 (6011570) Huawei store"
+      ]
+    },
+    {
+      "regex": "^Anghami.+CFNetwork",
+      "name": "Anghami",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Anghami/601030 CFNetwork/1335.0.3 Darwin/21.6.0"
+      ]
+    },
+    {
       "regex": "^AntennaPod|^de\\.danoeh\\.antennapod",
       "name": "AntennaPod",
       "type": "Mobile App",
@@ -297,6 +316,15 @@
       ]
     },
     {
+      "regex": "^castget",
+      "name": "castget",
+      "type": "Desktop App",
+      "os": "Linux",
+      "examples": [
+        "castget 2.0.1 (castget rss enclosure downloader)"
+      ]
+    },
+    {
       "regex": "^Castro",
       "name": "Castro",
       "type": "Mobile App",
@@ -454,6 +482,18 @@
         "yourApplicationName/2.15.2 (Linux;Android 8.0.0) ExoPlayerLib/2.8.2",
         "Exo2/1.0.11 (Linux;Android 5.1.1) AmznExoPlayerLib/2.9.0",
         "Exo2/3.0.7 (Linux;Android 8.0.0) ExoPlayerLib/2.4.4"
+      ]
+    },
+    {
+      "regex": "^FileDownloader\\/",
+      "name": null,
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "FileDownloader/1.7.7"
+      ],
+      "notes": [
+        "https://github.com/lingochamp/FileDownloader"
       ]
     },
     {
@@ -788,15 +828,6 @@
       ]
     },
     {
-      "regex": "^LibVLC.+Android",
-      "name": null,
-      "type": "Mobile App",
-      "os": "Android",
-      "examples": [
-        "LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)"
-      ]
-    },
-    {
       "regex": "^Luminary.+(iOS|CFNetwork)",
       "name": "Luminary",
       "type": "Mobile App",
@@ -816,12 +847,13 @@
       ]
     },
     {
-      "regex": "^MediaMonkey 4",
+      "regex": "^MediaMonkey",
       "name": "MediaMonkey",
       "type": "Desktop App",
       "os": "Windows",
       "examples": [
-        "MediaMonkey 4.1.12.1798"
+        "MediaMonkey 4.1.12.1798",
+        "MediaMonkey5 5.0.3.2627"
       ]
     },
     {
@@ -845,12 +877,30 @@
       ]
     },
     {
+      "regex": "^myTuner",
+      "name": "myTuner",
+      "type": "Mobile App",
+      "os": null,
+      "examples": [
+        "myTuner"
+      ]
+    },
+    {
       "regex": "^MusicBee",
       "name": "MusicBee",
       "type": "Desktop App",
       "os": "Windows",
       "examples": [
         "MusicBee"
+      ]
+    },
+    {
+      "regex": "^Newsboat.+Linux",
+      "name": "Newsboat",
+      "type": "Desktop App",
+      "os": "Linux",
+      "examples": [
+        "Newsboat/2.29.0 (Linux x86_64)"
       ]
     },
     {
@@ -1140,7 +1190,7 @@
       ]
     },
     {
-      "regex": "^(podcast\\/[0-9]+ (iOS|CFNetwork))|^(com\\.evolve\\.podcast\\/.+iOS)|^(ThePodcastApp\\/.+iOS)",
+      "regex": "^(podcast\\/[0-9]+ (iOS|CFNetwork))|^(com\\.evolve\\.podcast\\/.+iOS)|^(ThePodcastApp\\/.+(iOS|iPadOS))",
       "name": "The Podcast App",
       "type": "Mobile App",
       "os": "iOS",
@@ -1151,7 +1201,8 @@
         "com.evolve.podcast/3.11.3 (iPad; ) (build 1246, iOS 12.4.1)",
         "ThePodcastApp/4.4.0 (iPhone; iOS 14.4; ) stream (build 4444; +https://podcast.app/)",
         "ThePodcastApp/5.3.1 (iPhone; iOS 14.4.2; ) player (build 4740; +https://podcast.app/)",
-        "ThePodcastApp/5.1.0 (iPhone; iOS 14.4.2; ) listenLater (build 4654; +https://podcast.app/)"
+        "ThePodcastApp/5.1.0 (iPhone; iOS 14.4.2; ) listenLater (build 4654; +https://podcast.app/)",
+        "ThePodcastApp/6.30.0 (iPad; iPadOS 15.6.1; ) player (build 6427; +https://podcast.app/)"
       ]
     },
     {
@@ -1286,12 +1337,13 @@
       ]
     },
     {
-      "regex": "^Roku",
+      "regex": "^(Roku|roku)",
       "name": "Roku",
       "type": "Smart Home",
       "os": null,
       "examples": [
-        "Roku/DVP-9.0 (049.00E04142A)"
+        "Roku/DVP-9.0 (049.00E04142A)",
+        "roku;3930rw;4916bf2fd1c54ff2bace038314d21f39;;tpapi;3.199.379"
       ]
     },
     {
@@ -1343,6 +1395,26 @@
       "examples": [
         "SiriusXM/1605726906 CFNetwork/1206 Darwin/20.1.0",
         "SiriusXM/1605726906 CFNetwork/978.0.7 Darwin/18.7.0"
+      ]
+    },
+    {
+      "regex": "^Snipd.+Android",
+      "name": "Snipd",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Snipd/2.0.21 Dalvik/2.1.0 (Linux; U; Android 13; Pixel 6 Build/TP1A.221005.002)",
+        "Snipd/2.0.21 Dalvik/2.1.0 (Linux; U; Android 12; SM-G973F Build/SP1A.210812.016)"
+      ]
+    },
+    {
+      "regex": "^Snipd.+CFNetwork",
+      "name": "Snipd",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Snipd/2.0.21 CFNetwork/1390 Darwin/22.0.0 (iPhone iOS/16.0)",
+        "Snipd/2.0.23 CFNetwork/1240.0.4 Darwin/20.5.0 (iPad/Mini_4 iOS/14.6)"
       ]
     },
     {
@@ -1423,6 +1495,17 @@
       ]
     },
     {
+      "regex": "^Spotify\\/.+(Volvo|Rivian|Polestar)",
+      "name": "Spotify",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Spotify/4.3.2.0 Volvo/30 (Volvo)",
+        "Spotify/4.3.1.2 Rivian R1T/29 (Rivian R1T)",
+        "Spotify/4.3.2.0 Polestar/30 (Polestar)"
+      ]
+    },
+    {
       "regex": "^Spreaker for Android",
       "name": "Spreaker",
       "type": "Mobile App",
@@ -1487,6 +1570,16 @@
       "examples": [
         "TED Android; Version 3.3.3; OPPO R15 9",
         "com.sciker.tedtalksdaily"
+      ]
+    },
+    {
+      "regex": "^telmate-audio-player.+Android",
+      "name": "Telmate",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "telmate-audio-player/2.100.0 (Linux;Android 7.1.2) ExoPlayerLib/2.9.5",
+        "telmate-audio-player/4.0.0 (Linux;Android 7.1.2) ExoPlayerLib/2.9.5"
       ]
     },
     {
@@ -1564,6 +1657,24 @@
       "examples": [
         "VictorReader Stream 503 ca-en Heather Ryan 4.8.7",
         "VictorReader Stream Trek au-en Lisa Tyler 1.2.11"
+      ]
+    },
+    {
+      "regex": "^VLC\\/",
+      "name": "VLC",
+      "type": "Desktop App",
+      "os": null,
+      "examples": [
+        "VLC/3.0.11.1 LibVLC/3.0.11.1"
+      ]
+    },
+    {
+      "regex": "^LibVLC.+Android",
+      "name": "VLC",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "LibVLC/2.0.1 (Linux; U; Android 8.0.0;dreamlte/R16NW)"
       ]
     },
     {
@@ -1677,7 +1788,7 @@
       ]
     },
     {
-      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/.+(x86_64)",
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/.+(x86_64)",
       "name": "Apple Podcasts",
       "type": "Desktop App",
       "os": "macOS",
@@ -1694,7 +1805,7 @@
       ]
     },
     {
-      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트)\\/",
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/",
       "name": "Apple Podcasts",
       "type": "Mobile App",
       "os": "iOS",
@@ -1708,7 +1819,8 @@
         "팟캐스트/1425.5 CFNetwork/1121.2.2 Darwin/19.3.0",
         "Подкасты/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0",
         "Podcastit/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0",
-        "%D0%9F%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82%D1%8B/1420.34 CFNetwork/1121.2.2 Darwin/19.2.0"
+        "%D0%9F%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82%D1%8B/1420.34 CFNetwork/1121.2.2 Darwin/19.2.0",
+        "ポッドキャスト/1709.2.2 CFNetwork/1390 Darwin/22.0.0"
       ]
     },
     {
@@ -1763,14 +1875,15 @@
       ]
     },
     {
-      "regex": "^(atc.+watchOS|\\(null\\).+watchOS)",
+      "regex": "^(atc\\/.+(watchOS)?|\\(null\\).+watchOS)",
       "bot": true,
       "name": "Apple Podcasts",
       "type": "Smart Watch",
       "os": "WatchOS",
       "examples": [
         "atc/1.0 watchOS/5.1.3 model/Watch3,3 hwp/t8004 build/16S535 (6; dt:155)",
-        "(null)/(null) watchOS/5.0.1 model/Watch3,3 hwp/t8004 build/16R381 (6; dt:155)"
+        "(null)/(null) watchOS/5.0.1 model/Watch3,3 hwp/t8004 build/16R381 (6; dt:155)",
+        "atc/1.0"
       ],
       "notes": [
         "Marked as bot (don't count downloads) per IAB guidelines",
@@ -2192,7 +2305,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2204,7 +2317,10 @@
         "Spotify/1.0",
         "Podtrac Network Client/1.0 (beta)",
         "AnchorImport/1.0",
-        "Adswizz-podscribe/1.0"
+        "Adswizz-podscribe/1.0",
+        "Deezer Podcasters/1.0",
+        "Riddler (http://riddler.io/about)",
+        "Mozilla/5.0 (compatible; INA dlweb; +https://www.ina.fr/collecte-du-depot-legal-web)"
       ]
     },
     {
