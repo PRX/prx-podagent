@@ -380,5 +380,5 @@ exports.tags = {
   139: 'Newsboat',
   140: 'Anghami',
   141: 'VLC',
-  142: 'PRX Embed Player'
+  142: 'PRX Play'
 };

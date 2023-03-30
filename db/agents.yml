@@ -901,7 +901,7 @@ agents:
       - Procast (iOS)
       - ProCast/1 CFNetwork/976 Darwin/18.2.0
   - regex: '^play\.prx\.org'
-    name: PRX Embed Player
+    name: PRX Play
     notes:
       - Embeddable play.prx.org audio player
     examples:
