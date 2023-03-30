@@ -1309,6 +1309,16 @@
       ]
     },
     {
+      "regex": "^play\\.prx\\.org",
+      "name": "PRX Embed Player",
+      "notes": [
+        "Embeddable play.prx.org audio player"
+      ],
+      "examples": [
+        "play.prx.org"
+      ]
+    },
+    {
       "regex": "^RadioPublic Android|^RadioPublic\\/android",
       "name": "RadioPublic",
       "type": "Mobile App",
