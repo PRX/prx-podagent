@@ -133,6 +133,7 @@ exports.agents = [
   [/^Podkicker/, 20, 36, 42],
   [/^PRI\/.+CFNetwork/, 114, 36, 43],
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
+  [/^play\.prx\.org/, 142, null, null],
   [/^RadioPublic Android|^RadioPublic\/android/, 21, 36, 42],
   [/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic\/iOS/, 21, 36, 43],
   [/^ReactNativeVideo.+Android/, null, 36, 42],
@@ -378,5 +379,6 @@ exports.tags = {
   138: 'castget',
   139: 'Newsboat',
   140: 'Anghami',
-  141: 'VLC'
+  141: 'VLC',
+  142: 'PRX Play'
 };

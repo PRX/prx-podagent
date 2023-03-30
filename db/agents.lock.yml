@@ -506,6 +506,8 @@ agents:
     name: '83'
     type: '36'
     os: '43'
+  - regex: ^play\.prx\.org
+    name: '142'
   - regex: ^RadioPublic Android|^RadioPublic\/android
     name: '21'
     type: '36'
@@ -1036,3 +1038,4 @@ tags:
   '139': Newsboat
   '140': Anghami
   '141': VLC
+  '142': PRX Play
