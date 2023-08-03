@@ -86,6 +86,7 @@ exports.agents = [
   [/^Luminary.+(iOS|CFNetwork)/, 91, 36, 43],
   [/^Luminary.+Android/, 91, 36, 42],
   [/^MediaMonkey/, 71, 35, 41],
+  [/^mowpod\.com/, 143, null, null],
   [/^myTuner.+CFNetwork/, 87, 36, 43],
   [/^(mytuner.+Android)|^MyTuner-ExoPlayer/, 87, 36, 42],
   [/^myTuner/, 87, 36, null],
@@ -380,5 +381,6 @@ exports.tags = {
   139: 'Newsboat',
   140: 'Anghami',
   141: 'VLC',
-  142: 'PRX Play'
+  142: 'PRX Play',
+  143: 'mowPod'
 };

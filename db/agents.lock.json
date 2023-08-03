@@ -503,6 +503,10 @@
       "os": "41"
     },
     {
+      "regex": "^mowpod\\.com",
+      "name": "143"
+    },
+    {
       "regex": "^myTuner.+CFNetwork",
       "name": "87",
       "type": "36",
@@ -1514,6 +1518,7 @@
     "139": "Newsboat",
     "140": "Anghami",
     "141": "VLC",
-    "142": "PRX Play"
+    "142": "PRX Play",
+    "143": "mowPod"
   }
 }
