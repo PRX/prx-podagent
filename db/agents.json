@@ -857,6 +857,16 @@
       ]
     },
     {
+      "regex": "^mowpod\\.com",
+      "name": "mowPod",
+      "notes": [
+        "mowPod web player as _from query string"
+      ],
+      "examples": [
+        "mowpod.com"
+      ]
+    },
+    {
       "regex": "^myTuner.+CFNetwork",
       "name": "myTuner",
       "type": "Mobile App",

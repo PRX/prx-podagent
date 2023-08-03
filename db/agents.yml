@@ -590,6 +590,12 @@ agents:
     examples:
       - MediaMonkey 4.1.12.1798
       - MediaMonkey5 5.0.3.2627
+  - regex: '^mowpod\.com'
+    name: mowPod
+    notes:
+      - mowPod web player as _from query string
+    examples:
+      - mowpod.com
   - regex: '^myTuner.+CFNetwork'
     name: myTuner
     type: Mobile App
