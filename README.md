@@ -124,7 +124,7 @@ To add a new user agent:
    an example user-agent string or two.
 2. Run `npm test` (or just `mocha test/examples-test.js`) to test that your
    example strings match the regexp.
-3. Run `npm lock` to regenerate the `db/agents.lock.yml`.  This file normalizes
+3. Run `npm run lock` to regenerate the `db/agents.lock.yml`.  This file normalizes
    the text tags/labels shared between the various matchers.  Check that your
    change didn't add any unexpected new tags (if you accidentally changed the
    case of a label or something).
