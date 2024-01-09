@@ -3,6 +3,9 @@
   "version": "0.1.16",
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
+  "engines": {
+    "node": ">=10 <21"
+  },
   "scripts": {
     "start": "concurrently -k \"npm run dev-serve\" \"npm run dev-lock\"",
     "dev-serve": "live-server docs",
