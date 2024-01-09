@@ -3,6 +3,9 @@
   "version": "0.1.16",
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
+  "engines": {
+    "node": ">=10 <21"
+  },
   "scripts": {
     "start": "concurrently -k \"npm run dev-serve\" \"npm run dev-lock\"",
     "dev-serve": "live-server docs",
@@ -31,6 +34,7 @@
     "chai": "^4.1.1",
     "concurrently": "^4.1.1",
     "csv": "^1.1.1",
+    "diff": ">= 3.5.0",
     "js-yaml": "^3.14.1",
     "live-server": "^1.2.1",
     "mocha": "^3.5.0",
