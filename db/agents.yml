@@ -1628,7 +1628,7 @@ agents:
     bot: true
     examples:
       - Mozilla/5.0 (compatible; Cloudinary/1.0)
-  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb'
+  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer'
     ignorecase: true
     bot: true
     notes:
@@ -1643,6 +1643,7 @@ agents:
       - Deezer Podcasters/1.0
       - Riddler (http://riddler.io/about)
       - Mozilla/5.0 (compatible; INA dlweb; +https://www.ina.fr/collecte-du-depot-legal-web)
+      - pdrl.fm Analyzer / 1.0.0
   - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation'
     ignorecase: true
     bot: true
