@@ -358,16 +358,6 @@
       ]
     },
     {
-      "regex": "^Dalvik.+Android",
-      "name": null,
-      "type": "Mobile App",
-      "os": "Android",
-      "examples": [
-        "Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)",
-        "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N900 Build/KOT49H)"
-      ]
-    },
-    {
       "regex": "^Deezer.+windows",
       "name": "Deezer",
       "type": "Desktop App",
@@ -949,12 +939,13 @@
       ]
     },
     {
-      "regex": "^NPROneAndroid",
+      "regex": "^(NPROneAndroid|Dalvik.+nprone_android)",
       "name": "NPR One",
       "type": "Mobile App",
       "os": "Android",
       "examples": [
-        "NPROneAndroid"
+        "NPROneAndroid",
+        "Dalvik/2.1.0 (Linux; U; Android 14; Pixel 7 Build/UQ1A.240105.004.A1) nprone_android/3.8.3/OSv:14,15"
       ]
     },
     {
@@ -1831,6 +1822,24 @@
       ]
     },
     {
+      "regex": "^com\\.google\\.android\\.apps\\.youtube\\.music",
+      "name": "YouTube Music",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "com.google.android.apps.youtube.music/6.36.51(Linux; U; Android 14; en_US; Pixel 6 Pro Build/UQ1A.240105.002),198"
+      ]
+    },
+    {
+      "regex": "^YouTubeMusic.+CFNetwork",
+      "name": "YouTube Music",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "YouTubeMusic/6.36.3 CFNetwork/1492.0.1 Darwin/23.3.0,34"
+      ]
+    },
+    {
       "regex": "^Zune",
       "name": "Zune",
       "type": "Mobile App",
@@ -1857,6 +1866,16 @@
         "MixerBox/807.iOS (iPhone; iOS 14.4; en_US)",
         "MixerBox/817 CFNetwork/1220.1 Darwin/20.3.0",
         "MixerBox Pro/10015 CFNetwork/1490.0.4 Darwin/23.2.0"
+      ]
+    },
+    {
+      "regex": "^Dalvik.+Android",
+      "name": null,
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-G950U Build/R16NW)",
+        "Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-N900 Build/KOT49H)"
       ]
     },
     {

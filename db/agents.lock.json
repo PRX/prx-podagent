@@ -209,11 +209,6 @@
       "type": "35"
     },
     {
-      "regex": "^Dalvik.+Android",
-      "type": "36",
-      "os": "42"
-    },
-    {
       "regex": "^Deezer.+windows",
       "name": "100",
       "type": "35",
@@ -554,7 +549,7 @@
       "os": "43"
     },
     {
-      "regex": "^NPROneAndroid",
+      "regex": "^(NPROneAndroid|Dalvik.+nprone_android)",
       "name": "13",
       "type": "36",
       "os": "42"
@@ -1079,6 +1074,18 @@
       "type": "36"
     },
     {
+      "regex": "^com\\.google\\.android\\.apps\\.youtube\\.music",
+      "name": "147",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^YouTubeMusic.+CFNetwork",
+      "name": "147",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^Zune",
       "name": "24",
       "type": "36",
@@ -1095,6 +1102,11 @@
       "name": "133",
       "type": "36",
       "os": "43"
+    },
+    {
+      "regex": "^Dalvik.+Android",
+      "type": "36",
+      "os": "42"
     },
     {
       "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/.+(x86_64)",
@@ -1550,6 +1562,7 @@
     "143": "mowPod",
     "144": "Sony Playstation",
     "145": "Yandex Music",
-    "146": "The New Yorker"
+    "146": "The New Yorker",
+    "147": "YouTube Music"
   }
 }

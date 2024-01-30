@@ -35,7 +35,6 @@ exports.agents = [
   [/^Castro/, 9, 36, 43],
   [/^(Mozilla\/.+CrKey|Google;Chromecast)/, 94, 37, 48],
   [/^Clementine/, 10, 35, null],
-  [/^Dalvik.+Android/, null, 36, 42],
   [/^Deezer.+windows/, 100, 35, 41],
   [/^Deezer.+osx/, 100, 35, 45],
   [/^Deezer.+Android/, 100, 36, 42],
@@ -95,7 +94,7 @@ exports.agents = [
   [/^The New Yorker.+CFNetwork/, 146, 36, 43],
   [/^Newsboat.+Linux/, 139, 35, 49],
   [/^NPR( One)?.+CFNetwork/, 13, 36, 43],
-  [/^NPROneAndroid/, 13, 36, 42],
+  [/^(NPROneAndroid|Dalvik.+nprone_android)/, 13, 36, 42],
   [/^(NSPlayer|WMFSDK|WMPlayer)/, 55, 35, 41],
   [/^NVIDIA;SHIELDAndroidTV/, 124, 38, 42],
   [/^OkDownload/, null, 36, 42],
@@ -186,9 +185,12 @@ exports.agents = [
   [/^Xiaoyuzhou/, 123, 36, 43],
   [/^microsoft;xbox/, 134, 38, null],
   [/^Ya(ndex)?\.Music/, 145, 36, null],
+  [/^com\.google\.android\.apps\.youtube\.music/, 147, 36, 42],
+  [/^YouTubeMusic.+CFNetwork/, 147, 36, 43],
   [/^Zune/, 24, 36, 41],
   [/^MixerBox( Pro)?\/.*Android/, 133, 36, 42],
   [/^MixerBox( Pro)?\/.*(iOS|CFNetwork)/, 133, 36, 43],
+  [/^Dalvik.+Android/, null, 36, 42],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\/.+(x86_64)/, 25, 35, 45],
   [/^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\//, 25, 36, 43],
   [/^itunesstored/, 25, 36, 43],
@@ -390,5 +392,6 @@ exports.tags = {
   143: 'mowPod',
   144: 'Sony Playstation',
   145: 'Yandex Music',
-  146: 'The New Yorker'
+  146: 'The New Yorker',
+  147: 'YouTube Music'
 };
