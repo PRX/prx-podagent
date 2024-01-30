@@ -67,7 +67,7 @@ agents:
     name: '130'
     type: '36'
     os: '42'
-  - regex: ^Audible.+CFNetwork
+  - regex: ^(Audible|com\.audible).+(CFNetwork|iOS)
     name: '130'
     type: '36'
     os: '43'
@@ -172,7 +172,7 @@ agents:
     os: '45'
   - regex: ^iTunes.+Downcast
     name: '11'
-  - regex: ^Echo
+  - regex: ^(Amazon;)?Echo
     name: '3'
     type: '37'
     os: '44'
@@ -344,11 +344,19 @@ agents:
     name: '109'
     type: '35'
     os: '41'
+  - regex: ^com\.condenast\.thenewyorker.+Android
+    name: '146'
+    type: '36'
+    os: '42'
+  - regex: ^The New Yorker.+CFNetwork
+    name: '146'
+    type: '36'
+    os: '43'
   - regex: ^Newsboat.+Linux
     name: '139'
     type: '35'
     os: '49'
-  - regex: ^NPR One.+CFNetwork
+  - regex: ^NPR( One)?.+CFNetwork
     name: '13'
     type: '36'
     os: '43'
@@ -474,6 +482,10 @@ agents:
     name: '58'
     type: '36'
     os: '42'
+  - regex: ^PodcastRepublic.+(iPhone|iPad|iPod)
+    name: '58'
+    type: '36'
+    os: '43'
   - regex: ^Podcoin
     name: '98'
     type: '36'
@@ -563,6 +575,9 @@ agents:
     name: '125'
     type: '38'
     os: '42'
+  - regex: ^sony.+ps5
+    name: '144'
+    type: '38'
   - regex: ^Spotify(-Lite)?\/.+Android
     name: '77'
     type: '36'
@@ -685,23 +700,27 @@ agents:
   - regex: ^microsoft;xbox
     name: '134'
     type: '38'
+  - regex: ^Ya(ndex)?\.Music
+    name: '145'
+    type: '36'
   - regex: ^Zune
     name: '24'
     type: '36'
     os: '41'
-  - regex: ^MixerBox\/.*Android
+  - regex: ^MixerBox( Pro)?\/.*Android
     name: '133'
     type: '36'
     os: '42'
-  - regex: ^MixerBox\/.*(iOS|CFNetwork)
+  - regex: ^MixerBox( Pro)?\/.*(iOS|CFNetwork)
     name: '133'
     type: '36'
     os: '43'
-  - regex: ^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\/.+(x86_64)
+  - regex: >-
+      ^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\/.+(x86_64)
     name: '25'
     type: '35'
     os: '45'
-  - regex: ^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\/
+  - regex: ^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\/
     name: '25'
     type: '36'
     os: '43'
@@ -713,7 +732,7 @@ agents:
     name: '25'
     type: '38'
     os: '43'
-  - regex: ^AppleCoreMedia.+(Audio Accessory|HomePod)
+  - regex: ^(AppleCoreMedia.+Audio Accessory|AppleCoreMedia.+HomePod|AirPodcasts.+CFNetwork)
     name: '25'
     type: '37'
     os: '43'
@@ -892,10 +911,11 @@ agents:
     bot: true
   - regex: >-
       ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac
-      network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer
+      network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot
     ignorecase: true
     bot: true
-  - regex: bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation
+  - regex: >-
+      bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google
     ignorecase: true
     bot: true
 tags:
@@ -1042,3 +1062,6 @@ tags:
   '141': VLC
   '142': PRX Play
   '143': mowPod
+  '144': Sony Playstation
+  '145': Yandex Music
+  '146': The New Yorker

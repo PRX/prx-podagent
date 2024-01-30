@@ -179,13 +179,14 @@
       ]
     },
     {
-      "regex": "^Audible.+CFNetwork",
+      "regex": "^(Audible|com\\.audible).+(CFNetwork|iOS)",
       "name": "Audible",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
         "Audible/648 CFNetwork/1206 Darwin/20.1.0",
-        "Audible/123 CFNetwork/1197 Darwin/19.6.0"
+        "Audible/123 CFNetwork/1197 Darwin/19.6.0",
+        "com.audible.playersdk.player/4.13.1;(iOS/AVPlayer/17.2.1)"
       ]
     },
     {
@@ -454,13 +455,17 @@
       ]
     },
     {
-      "regex": "^Echo",
+      "regex": "^(Amazon;)?Echo",
       "name": "Alexa",
       "type": "Smart Home",
       "os": "Amazon OS",
       "examples": [
         "Echo/1.0(APNG)",
-        "Echo/1.0(MRM)"
+        "Echo/1.0(MRM)",
+        "Amazon;Echo;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422",
+        "Amazon;Echo_Dot;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422",
+        "Amazon;Echo_Dot_with_clock;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422",
+        "Amazon;Echo_Show_5;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422"
       ]
     },
     {
@@ -905,6 +910,24 @@
       ]
     },
     {
+      "regex": "^com\\.condenast\\.thenewyorker.+Android",
+      "name": "The New Yorker",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "com.condenast.thenewyorker.mediaplayer/5.0.2 (Linux;Android 14) ExoPlayerLib/2.18.2"
+      ]
+    },
+    {
+      "regex": "^The New Yorker.+CFNetwork",
+      "name": "The New Yorker",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "The New Yorker/8198 CFNetwork/1490.0.4 Darwin/23.2.0"
+      ]
+    },
+    {
       "regex": "^Newsboat.+Linux",
       "name": "Newsboat",
       "type": "Desktop App",
@@ -914,13 +937,14 @@
       ]
     },
     {
-      "regex": "^NPR One.+CFNetwork",
+      "regex": "^NPR( One)?.+CFNetwork",
       "name": "NPR One",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
         "NPR%20One/122 CFNetwork/976 Darwin/18.2.0",
-        "NPR One/217 CFNetwork/1121.2.2 Darwin/19.3.0"
+        "NPR One/217 CFNetwork/1121.2.2 Darwin/19.3.0",
+        "NPR/654 CFNetwork/1490.0.4 Darwin/23.2.0"
       ]
     },
     {
@@ -1234,6 +1258,15 @@
       ]
     },
     {
+      "regex": "^PodcastRepublic.+(iPhone|iPad|iPod)",
+      "name": "PodcastRepublic",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "PodcastRepublic/18.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X)"
+      ]
+    },
+    {
       "regex": "^Podcoin",
       "name": "Podcoin",
       "type": "Mobile App",
@@ -1464,6 +1497,14 @@
       "examples": [
         "Sony;BRAVIA4KGB;756a522d9f1648b89e76e80be654456a;;tpapi",
         "Sony;BRAVIA2015;756a522d9f1648b89e76e80be654456a;;tpapi"
+      ]
+    },
+    {
+      "regex": "^sony.+ps5",
+      "name": "Sony Playstation",
+      "type": "Smart TV",
+      "examples": [
+        "sony_tv;ps5;9b18101888dd42948afd0b8792122bec;;tpapi;3.203.235"
       ]
     },
     {
@@ -1780,6 +1821,15 @@
       ]
     },
     {
+      "regex": "^Ya(ndex)?\\.Music",
+      "name": "Yandex Music",
+      "type": "Mobile App",
+      "examples": [
+        "Yandex.Music/2019-11-01.trunk.5885661",
+        "Ya.Music/2024-01-24.trunk.13277979"
+      ]
+    },
+    {
       "regex": "^Zune",
       "name": "Zune",
       "type": "Mobile App",
@@ -1789,7 +1839,7 @@
       ]
     },
     {
-      "regex": "^MixerBox\\/.*Android",
+      "regex": "^MixerBox( Pro)?\\/.*Android",
       "name": "MixerBox",
       "type": "Mobile App",
       "os": "Android",
@@ -1798,23 +1848,25 @@
       ]
     },
     {
-      "regex": "^MixerBox\\/.*(iOS|CFNetwork)",
+      "regex": "^MixerBox( Pro)?\\/.*(iOS|CFNetwork)",
       "name": "MixerBox",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
         "MixerBox/807.iOS (iPhone; iOS 14.4; en_US)",
-        "MixerBox/817 CFNetwork/1220.1 Darwin/20.3.0"
+        "MixerBox/817 CFNetwork/1220.1 Darwin/20.3.0",
+        "MixerBox Pro/10015 CFNetwork/1490.0.4 Darwin/23.2.0"
       ]
     },
     {
-      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/.+(x86_64)",
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/.+(x86_64)",
       "name": "Apple Podcasts",
       "type": "Desktop App",
       "os": "macOS",
       "examples": [
         "Podcasts/1425.5 CFNetwork/1121.1.2 Darwin/19.3.0 (x86_64)",
         "Подкасты/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)",
+        "Подкасттар/1709.2.2 CFNetwork/1390 Darwin/22.0.0 (x86_64)",
         "Podcast/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)",
         "Podkaster/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)",
         "Podcasty/1425.5 CFNetwork/1121.1.2 Darwin/19.2.0 (x86_64)",
@@ -1825,7 +1877,7 @@
       ]
     },
     {
-      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/",
+      "regex": "^(Podcasts|Podcast’ler|Podcast|Podcaster|Podcasti|Podcastit|Podcastok|Podcasturi|Podcasty|Podkaster|Balados|Подкасти|Подкасты|Подкасттар|פודקאסטים|البودكاست|पॉडकास्ट|พ็อดคาสท์|播客|팟캐스트|ポッドキャスト)\\/",
       "name": "Apple Podcasts",
       "type": "Mobile App",
       "os": "iOS",
@@ -1838,6 +1890,7 @@
         "Podcaster/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0",
         "팟캐스트/1425.5 CFNetwork/1121.2.2 Darwin/19.3.0",
         "Подкасты/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0",
+        "Подкасттар/1709.2.2 CFNetwork/1390 Darwin/22.0.0",
         "Podcastit/1425.5 CFNetwork/1121.2.2 Darwin/19.2.0",
         "%D0%9F%D0%BE%D0%B4%D0%BA%D0%B0%D1%81%D1%82%D1%8B/1420.34 CFNetwork/1121.2.2 Darwin/19.2.0",
         "ポッドキャスト/1709.2.2 CFNetwork/1390 Darwin/22.0.0"
@@ -1866,12 +1919,13 @@
       ]
     },
     {
-      "regex": "^AppleCoreMedia.+(Audio Accessory|HomePod)",
+      "regex": "^(AppleCoreMedia.+Audio Accessory|AppleCoreMedia.+HomePod|AirPodcasts.+CFNetwork)",
       "name": "Apple Podcasts",
       "type": "Smart Home",
       "os": "iOS",
       "examples": [
-        "AppleCoreMedia/1.0.0.16D39 (HomePod; U; CPU OS 12_1_3 like Mac OS X; en_us)"
+        "AppleCoreMedia/1.0.0.16D39 (HomePod; U; CPU OS 12_1_3 like Mac OS X; en_us)",
+        "AirPodcasts/4023.420.1 CFNetwork/1492.0.1 Darwin/23.3.0"
       ]
     },
     {
@@ -2325,7 +2379,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer|yandexbot",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2341,11 +2395,12 @@
         "Deezer Podcasters/1.0",
         "Riddler (http://riddler.io/about)",
         "Mozilla/5.0 (compatible; INA dlweb; +https://www.ina.fr/collecte-du-depot-legal-web)",
-        "pdrl.fm Analyzer / 1.0.0"
+        "pdrl.fm Analyzer / 1.0.0",
+        "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
       ]
     },
     {
-      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation",
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2355,7 +2410,9 @@
         "Googlebot-Video/1.0",
         "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
         "msnbot/2.0b (+http://search.msn.com/msnbot.htm)",
-        "FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)"
+        "FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)",
+        "Mediapartners-Google",
+        "AdsBot-Google (+http://www.google.com/adsbot.html)"
       ]
     }
   ]
