@@ -588,6 +588,7 @@ agents:
     os: Android
     examples:
       - Luminary/1.0.0 build 1035/Android 27
+      - Luminary/53.0 (Android 13; motorola edge 30 fusion; motorola tundra; en)
   - regex: '^MediaMonkey'
     name: MediaMonkey
     type: Desktop App
