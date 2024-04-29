@@ -793,6 +793,11 @@
       "os": "43"
     },
     {
+      "regex": "^PRX-Feeder-Apple/1.0 \\(nodejs\\)",
+      "bot": true,
+      "name": "148"
+    },
+    {
       "regex": "^play\\.prx\\.org",
       "name": "142"
     },
@@ -1563,6 +1568,7 @@
     "144": "Sony Playstation",
     "145": "Yandex Music",
     "146": "The New Yorker",
-    "147": "YouTube Music"
+    "147": "YouTube Music",
+    "148": "PRX Feeder Apple Publisher"
   }
 }

@@ -136,6 +136,7 @@ exports.agents = [
   [/^Podkicker/, 20, 36, 42],
   [/^PRI\/.+CFNetwork/, 114, 36, 43],
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
+  [/^PRX-Feeder-Apple\/1.0 \(nodejs\)/, 148, null, null, true],
   [/^play\.prx\.org/, 142, null, null],
   [/^RadioPublic Android|^RadioPublic\/android/, 21, 36, 42],
   [/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic\/iOS/, 21, 36, 43],
@@ -393,5 +394,6 @@ exports.tags = {
   144: 'Sony Playstation',
   145: 'Yandex Music',
   146: 'The New Yorker',
-  147: 'YouTube Music'
+  147: 'YouTube Music',
+  148: 'PRX Feeder Apple Publisher'
 };

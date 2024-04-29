@@ -517,6 +517,9 @@ agents:
     name: '83'
     type: '36'
     os: '43'
+  - regex: ^PRX-Feeder-Apple/1.0 \(nodejs\)
+    bot: true
+    name: '148'
   - regex: ^play\.prx\.org
     name: '142'
   - regex: ^RadioPublic Android|^RadioPublic\/android
@@ -1074,3 +1077,4 @@ tags:
   '145': Yandex Music
   '146': The New Yorker
   '147': YouTube Music
+  '148': PRX Feeder Apple Publisher
