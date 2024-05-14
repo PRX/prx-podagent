@@ -925,6 +925,13 @@ agents:
     examples:
       - Procast (iOS)
       - ProCast/1 CFNetwork/976 Darwin/18.2.0
+  - regex: '^PRX-Feeder-Apple/1.0 \(nodejs\)'
+    bot: true
+    name: PRX Feeder Apple Publisher
+    notes:
+      - UA that fetches CDN data
+    examples:
+      - PRX-Feeder-Apple/1.0 (nodejs)
   - regex: '^play\.prx\.org'
     name: PRX Play
     notes:
