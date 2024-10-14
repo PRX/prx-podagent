@@ -75,6 +75,9 @@ agents:
     name: '101'
     type: '36'
     os: '43'
+  - regex: ^audiobookshelf
+    name: '149'
+    type: '36'
   - regex: ^BashPodder
     name: '119'
     type: '35'
@@ -105,7 +108,7 @@ agents:
     name: '7'
     type: '36'
     os: '43'
-  - regex: '^Cast[Bb]ox.+Android'
+  - regex: '^(Cast[Bb]ox|fm.castbox).+Android'
     name: '8'
     type: '36'
     os: '42'
@@ -173,14 +176,16 @@ agents:
     name: '3'
     type: '37'
     os: '44'
-  - regex: ^English.+Radio.+IELTS.+TOEFL.+CFNetwork
+  - regex: ^English.*Radio.+CFNetwork
     name: '81'
     type: '36'
     os: '43'
+  - regex: ^ESP32 HTTP Client
+    type: '37'
   - regex: ^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)
     type: '36'
     os: '42'
-  - regex: ^FileDownloader\/
+  - regex: ^FileDownloader
     type: '36'
     os: '42'
   - regex: ^Fire OS.+stagefright
@@ -522,6 +527,14 @@ agents:
     name: '148'
   - regex: ^play\.prx\.org
     name: '142'
+  - regex: ^Radio thmanyah.+Android
+    name: '150'
+    type: '36'
+    os: '42'
+  - regex: ^Radio thmanyah.+iOS
+    name: '150'
+    type: '36'
+    os: '43'
   - regex: ^RadioPublic Android|^RadioPublic\/android
     name: '21'
     type: '36'
@@ -626,7 +639,7 @@ agents:
     name: '59'
     type: '36'
     os: '43'
-  - regex: ^(TED.+Android)|(com\.sciker\.tedtalksdaily)
+  - regex: ^(TED.+Android|com\.sciker\.tedtalksdaily|com\.ted\.android)
     name: '59'
     type: '36'
     os: '42'
@@ -1078,3 +1091,5 @@ tags:
   '146': The New Yorker
   '147': YouTube Music
   '148': PRX Feeder Apple Publisher
+  '149': audiobookshelf
+  '150': Radio thmanyah
