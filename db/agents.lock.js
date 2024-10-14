@@ -19,7 +19,7 @@ exports.agents = [
   [/^(Audible|com\.audible).+Android/, 130, 36, 42],
   [/^(Audible|com\.audible).+(CFNetwork|iOS)/, 130, 36, 43],
   [/^IOSAudiobooks.+CFNetwork/, 101, 36, 43],
-  [/^audiobookshelf/, 150, 36, null],
+  [/^audiobookshelf/, 149, 36, null],
   [/^BashPodder/, 119, 35, 49],
   [/^Mozilla\/5\.0.+BeyondPod/, 33, 36, 42],
   [/^Bose\//, 86, 37, null],
@@ -47,7 +47,7 @@ exports.agents = [
   [/^iTunes.+Downcast/, 11, null, null],
   [/^(Amazon;)?Echo/, 3, 37, 44],
   [/^English.*Radio.+CFNetwork/, 81, 36, 43],
-  [/^ESP32 HTTP Client/, null, 37, 149],
+  [/^ESP32 HTTP Client/, null, 37, null],
   [/^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)/, null, 36, 42],
   [/^FileDownloader/, null, 36, 42],
   [/^Fire OS.+stagefright/, null, 36, 42],
@@ -140,8 +140,8 @@ exports.agents = [
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
   [/^PRX-Feeder-Apple\/1.0 \(nodejs\)/, 148, null, null, true],
   [/^play\.prx\.org/, 142, null, null],
-  [/^Radio thmanyah.+Android/, 151, 36, 42],
-  [/^Radio thmanyah.+iOS/, 151, 36, 43],
+  [/^Radio thmanyah.+Android/, 150, 36, 42],
+  [/^Radio thmanyah.+iOS/, 150, 36, 43],
   [/^RadioPublic Android|^RadioPublic\/android/, 21, 36, 42],
   [/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic\/iOS/, 21, 36, 43],
   [/^ReactNativeVideo.+Android/, null, 36, 42],
@@ -400,7 +400,6 @@ exports.tags = {
   146: 'The New Yorker',
   147: 'YouTube Music',
   148: 'PRX Feeder Apple Publisher',
-  149: 'Arduino',
-  150: 'audiobookshelf',
-  151: 'Radio thmanyah'
+  149: 'audiobookshelf',
+  150: 'Radio thmanyah'
 };

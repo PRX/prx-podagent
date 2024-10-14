@@ -118,7 +118,7 @@
     },
     {
       "regex": "^audiobookshelf",
-      "name": "150",
+      "name": "149",
       "type": "36"
     },
     {
@@ -279,8 +279,7 @@
     },
     {
       "regex": "^ESP32 HTTP Client",
-      "type": "37",
-      "os": "149"
+      "type": "37"
     },
     {
       "regex": "^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)",
@@ -813,13 +812,13 @@
     },
     {
       "regex": "^Radio thmanyah.+Android",
-      "name": "151",
+      "name": "150",
       "type": "36",
       "os": "42"
     },
     {
       "regex": "^Radio thmanyah.+iOS",
-      "name": "151",
+      "name": "150",
       "type": "36",
       "os": "43"
     },
@@ -1592,8 +1591,7 @@
     "146": "The New Yorker",
     "147": "YouTube Music",
     "148": "PRX Feeder Apple Publisher",
-    "149": "Arduino",
-    "150": "audiobookshelf",
-    "151": "Radio thmanyah"
+    "149": "audiobookshelf",
+    "150": "Radio thmanyah"
   }
 }

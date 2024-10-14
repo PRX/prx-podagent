@@ -486,7 +486,7 @@
       "regex": "^ESP32 HTTP Client",
       "name": null,
       "type": "Smart Home",
-      "os": "Arduino",
+      "os": null,
       "examples": [
         "ESP32 HTTP Client/1.0"
       ]

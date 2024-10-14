@@ -337,7 +337,7 @@ agents:
   - regex: '^ESP32 HTTP Client'
     name: null
     type: Smart Home
-    os: Arduino
+    os: null
     examples:
       - ESP32 HTTP Client/1.0
   - regex: '^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)'

@@ -76,7 +76,7 @@ agents:
     type: '36'
     os: '43'
   - regex: ^audiobookshelf
-    name: '150'
+    name: '149'
     type: '36'
   - regex: ^BashPodder
     name: '119'
@@ -182,7 +182,6 @@ agents:
     os: '43'
   - regex: ^ESP32 HTTP Client
     type: '37'
-    os: '149'
   - regex: ^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)
     type: '36'
     os: '42'
@@ -529,11 +528,11 @@ agents:
   - regex: ^play\.prx\.org
     name: '142'
   - regex: ^Radio thmanyah.+Android
-    name: '151'
+    name: '150'
     type: '36'
     os: '42'
   - regex: ^Radio thmanyah.+iOS
-    name: '151'
+    name: '150'
     type: '36'
     os: '43'
   - regex: ^RadioPublic Android|^RadioPublic\/android
@@ -1092,6 +1091,5 @@ tags:
   '146': The New Yorker
   '147': YouTube Music
   '148': PRX Feeder Apple Publisher
-  '149': Arduino
-  '150': audiobookshelf
-  '151': Radio thmanyah
+  '149': audiobookshelf
+  '150': Radio thmanyah
