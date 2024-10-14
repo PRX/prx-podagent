@@ -117,6 +117,11 @@
       "os": "43"
     },
     {
+      "regex": "^audiobookshelf",
+      "name": "150",
+      "type": "36"
+    },
+    {
       "regex": "^BashPodder",
       "name": "119",
       "type": "35",
@@ -163,7 +168,7 @@
       "os": "43"
     },
     {
-      "regex": "^Cast[Bb]ox.+Android",
+      "regex": "^(Cast[Bb]ox|fm.castbox).+Android",
       "name": "8",
       "type": "36",
       "os": "42"
@@ -267,10 +272,15 @@
       "os": "44"
     },
     {
-      "regex": "^English.+Radio.+IELTS.+TOEFL.+CFNetwork",
+      "regex": "^English.*Radio.+CFNetwork",
       "name": "81",
       "type": "36",
       "os": "43"
+    },
+    {
+      "regex": "^ESP32 HTTP Client",
+      "type": "37",
+      "os": "149"
     },
     {
       "regex": "^(ExoMediaPlayer.+Android|ExoPlayer.+Android|yourApplicationName.+Android.+ExoPlayer|Exo2.+Android)",
@@ -278,7 +288,7 @@
       "os": "42"
     },
     {
-      "regex": "^FileDownloader\\/",
+      "regex": "^FileDownloader",
       "type": "36",
       "os": "42"
     },
@@ -802,6 +812,18 @@
       "name": "142"
     },
     {
+      "regex": "^Radio thmanyah.+Android",
+      "name": "151",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Radio thmanyah.+iOS",
+      "name": "151",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^RadioPublic Android|^RadioPublic\\/android",
       "name": "21",
       "type": "36",
@@ -960,7 +982,7 @@
       "os": "43"
     },
     {
-      "regex": "^(TED.+Android)|(com\\.sciker\\.tedtalksdaily)",
+      "regex": "^(TED.+Android|com\\.sciker\\.tedtalksdaily|com\\.ted\\.android)",
       "name": "59",
       "type": "36",
       "os": "42"
@@ -1569,6 +1591,9 @@
     "145": "Yandex Music",
     "146": "The New Yorker",
     "147": "YouTube Music",
-    "148": "PRX Feeder Apple Publisher"
+    "148": "PRX Feeder Apple Publisher",
+    "149": "Arduino",
+    "150": "audiobookshelf",
+    "151": "Radio thmanyah"
   }
 }
