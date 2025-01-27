@@ -2453,7 +2453,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer|yandexbot",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer|yandexbot|^podCloud",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2470,7 +2470,8 @@
         "Riddler (http://riddler.io/about)",
         "Mozilla/5.0 (compatible; INA dlweb; +https://www.ina.fr/collecte-du-depot-legal-web)",
         "pdrl.fm Analyzer / 1.0.0",
-        "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)"
+        "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
+        "podCloud/3.20.0-fd4a2eea48101274d85a0abeeb3b81a3237b4dd3 (Podcast app like iTunes/12.0; Reason: MediaAnalyzer (6796cf57f44f856f3ee5bfeb))"
       ]
     },
     {

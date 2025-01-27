@@ -248,7 +248,7 @@ exports.agents = [
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/^Linux;Android [0-9]/, null, null, 42],
   [/^Mozilla\/5\.0.+Cloudinary/, null, null, null, true],
-  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot/i, null, null, null, true],
+  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud/i, null, null, null, true],
   [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google/i, null, null, null, true]
 ];
 exports.tags = {
