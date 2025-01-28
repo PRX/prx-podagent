@@ -256,6 +256,20 @@ agents:
     examples:
       - Clementine 1.3.1 Clementine 1.3.1 Clementine 1.3.1
       - Clementine 1.3.1
+  - regex: '^ColoradoPublicRadio.+Android'
+    name: CPR App
+    type: Mobile App
+    os: Android
+    examples:
+      - ColoradoPublicRadioApp/6.2.24 (Pixel 8a; Android 15)
+      - ColoradoPublicRadioApp/6.2.24 (SM-S918U; Android 14)
+  - regex: '^ColoradoPublicRadio.+(iPhone|iPad|iOS|CFNetwork)'
+    name: CPR App
+    type: Mobile App
+    os: iOS
+    examples:
+      - ColoradoPublicRadioApp/6.2.19 (iPhone14,5; iOS 18.1.1)
+      - ColoradoPublicRadioApp/6.2.19 (iPad8,11; iPadOS 18.1.1)
   - regex: '^Deezer.+windows'
     name: Deezer
     type: Desktop App
@@ -521,12 +535,20 @@ agents:
     os: Windows
     examples:
       - Juice/2.2 (Windows) +http://juicereceiver.sf.net/
-  - regex: '^KERA.+IOS'
+  - regex: '^KERA.+Android'
+    name: KERA App
+    type: Mobile App
+    os: Android
+    examples:
+      - KERAPublicRadioApp/4.6.2 (SM-S911U; Android 14)
+      - KERAPublicRadioApp/6.2.14 (Pixel 3a XL; Android 12)
+  - regex: '^KERA.+(iPhone|iPad|iOS|CFNetwork)'
     name: KERA App
     type: Mobile App
     os: iOS
     examples:
       - KERA/3.7.14/IOS/12.4/iPhone
+      - KERAPublicRadioApp/6.2.17 (iPhone14,3; iOS 18.1.1)
   - regex: '^Kids Listen.+CFNetwork'
     name: Kids Listen
     type: Mobile App
@@ -1022,13 +1044,23 @@ agents:
     os: Android
     examples:
       - ServeStream
-  - regex: '^SiriusXM.+CFNetwork'
+  - regex: '^sxm-android'
+    name: SiriusXM
+    type: Mobile App
+    os: Android
+    examples:
+      - sxm-android/7.11.1 samsung/SM-S918U Android/14
+      - sxm-android/7.11.0 google/Pixel-7 Android/15
+  - regex: '^(SiriusXM|SXMApp|sxm-apple).+(iPhone|iPad|iOS|CFNetwork)'
     name: SiriusXM
     type: Mobile App
     os: iOS
     examples:
       - SiriusXM/1605726906 CFNetwork/1206 Darwin/20.1.0
       - SiriusXM/1605726906 CFNetwork/978.0.7 Darwin/18.7.0
+      - SXMApp/23998 CFNetwork/1490.0.4 Darwin/23.2.0
+      - sxm-apple/7.11.3 iPhone14,5 iOS18.1.1
+      - sxm-apple/7.11.3 iPad12,1 iPadOS18.1.1
   - regex: '^Snipd.+Android'
     name: Snipd
     type: Mobile App
@@ -1129,6 +1161,11 @@ agents:
     examples:
       - Stitcher/Android
       - Stitcher Demo/4.8.0 (Linux;Android 10) ExoPlayerLib/2.10.7
+  - regex: '^Storybutton/'
+    name: Storybutton
+    type: Smart Home
+    examples:
+      - Storybutton/1.0
   - regex: '^iTunes.+(SqueezeCenter|SqueezeNetwork)'
     name: Squeezebox
     type: Smart Home
@@ -1254,6 +1291,34 @@ agents:
     os: iOS
     examples:
       - WNYC App/3.0.30-11136 iOS/12.2 device/iPhone10,1
+  - regex: '^WPR.+Android'
+    name: WPR App
+    type: Mobile App
+    os: Android
+    examples:
+      - WPRPublicRadioApp/6.2.0 (SM-G781U; Android 13)
+      - WPRPublicRadioApp/6.2.0 (moto g pure; Android 12)
+  - regex: '^WPR.+(iPhone|iPad|iOS|CFNetwork)'
+    name: WPR App
+    type: Mobile App
+    os: iOS
+    examples:
+      - WPRPublicRadioApp/6.2.3 (iPhone14,3; iOS 18.2.1)
+      - WPRPublicRadioApp/6.2.3 (iPad7,1; iPadOS 17.7.2)
+  - regex: '^WUNC.+Android'
+    name: WUNC App
+    type: Mobile App
+    os: Android
+    examples:
+      - WUNCPublicRadioApp/6.2.21 (SM-G781V; Android 13)
+      - WUNCPublicRadioApp/6.2.21 (Pixel 9; Android 15)
+  - regex: '^WUNC.+(iPhone|iPad|iOS|CFNetwork)'
+    name: WUNC App
+    type: Mobile App
+    os: iOS
+    examples:
+      - WUNCPublicMediaApp/6.2.22 (iPhone14,6; iOS 18.1.1)
+      - WUNCPublicMediaApp/6.2.22 (iPad12,1; iPadOS 18.1.1)
   - regex: '^Wilson\/'
     name: Wilson FM
     type: Mobile App

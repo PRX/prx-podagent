@@ -214,6 +214,18 @@
       "type": "35"
     },
     {
+      "regex": "^ColoradoPublicRadio.+Android",
+      "name": "151",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^ColoradoPublicRadio.+(iPhone|iPad|iOS|CFNetwork)",
+      "name": "151",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^Deezer.+windows",
       "name": "100",
       "type": "35",
@@ -432,7 +444,13 @@
       "os": "41"
     },
     {
-      "regex": "^KERA.+IOS",
+      "regex": "^KERA.+Android",
+      "name": "106",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^KERA.+(iPhone|iPad|iOS|CFNetwork)",
       "name": "106",
       "type": "36",
       "os": "43"
@@ -868,7 +886,13 @@
       "os": "42"
     },
     {
-      "regex": "^SiriusXM.+CFNetwork",
+      "regex": "^sxm-android",
+      "name": "128",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^(SiriusXM|SXMApp|sxm-apple).+(iPhone|iPad|iOS|CFNetwork)",
       "name": "128",
       "type": "36",
       "os": "43"
@@ -961,6 +985,11 @@
       "name": "23",
       "type": "36",
       "os": "42"
+    },
+    {
+      "regex": "^Storybutton/",
+      "name": "152",
+      "type": "37"
     },
     {
       "regex": "^iTunes.+(SqueezeCenter|SqueezeNetwork)",
@@ -1068,6 +1097,30 @@
     {
       "regex": "^WNYC.+(Darwin|iPhone|iOS)",
       "name": "85",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^WPR.+Android",
+      "name": "153",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^WPR.+(iPhone|iPad|iOS|CFNetwork)",
+      "name": "153",
+      "type": "36",
+      "os": "43"
+    },
+    {
+      "regex": "^WUNC.+Android",
+      "name": "154",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^WUNC.+(iPhone|iPad|iOS|CFNetwork)",
+      "name": "154",
       "type": "36",
       "os": "43"
     },
@@ -1592,6 +1645,10 @@
     "147": "YouTube Music",
     "148": "PRX Feeder Apple Publisher",
     "149": "audiobookshelf",
-    "150": "Radio thmanyah"
+    "150": "Radio thmanyah",
+    "151": "CPR App",
+    "152": "Storybutton",
+    "153": "WPR App",
+    "154": "WUNC App"
   }
 }
