@@ -329,6 +329,8 @@ agents:
   - regex: ^(LG-|LM-|Player).+LG Player.+Android
     type: '36'
     os: '42'
+  - regex: ^listennetwork
+    name: '155'
   - regex: ^Luminary.+(iOS|CFNetwork)
     name: '91'
     type: '36'
@@ -1132,3 +1134,4 @@ tags:
   '152': Storybutton
   '153': WPR App
   '154': WUNC App
+  '155': Listen Network

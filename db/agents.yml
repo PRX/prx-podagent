@@ -607,6 +607,12 @@ agents:
       - Player/LG Player 1.0 for Android 7.0 (stagefright alternative),
       - LM-G710/V10o Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
       - LG-H872/V20g Player/LG Player 1.0 for Android 8.0.0 (stagefright alternative)
+  - regex: '^listennetwork'
+    name: Listen Network
+    notes:
+      - Query param "?_from=" traffic - https://www.listennetwork.co/
+    examples:
+      - listennetwork
   - regex: '^Luminary.+(iOS|CFNetwork)'
     name: Luminary
     type: Mobile App
@@ -974,7 +980,7 @@ agents:
   - regex: '^play\.prx\.org'
     name: PRX Play
     notes:
-      - Embeddable play.prx.org audio player
+      - Query param "?_from=" traffic - https://play.prx.org
     examples:
       - play.prx.org
   - regex: '^Radio thmanyah.+Android'
