@@ -878,6 +878,16 @@
       ]
     },
     {
+      "regex": "^listennetwork",
+      "name": "Listen Network",
+      "notes": [
+        "Query param \"?_from=\" traffic - https://www.listennetwork.co/"
+      ],
+      "examples": [
+        "listennetwork"
+      ]
+    },
+    {
       "regex": "^Luminary.+(iOS|CFNetwork)",
       "name": "Luminary",
       "type": "Mobile App",
@@ -1413,7 +1423,7 @@
       "regex": "^play\\.prx\\.org",
       "name": "PRX Play",
       "notes": [
-        "Embeddable play.prx.org audio player"
+        "Query param \"?_from=\" traffic - https://play.prx.org"
       ],
       "examples": [
         "play.prx.org"

@@ -87,6 +87,7 @@ exports.agents = [
   [/^Lavf/, null, 35, null],
   [/^Laughable.+iOS/, 54, 36, 43],
   [/^(LG-|LM-|Player).+LG Player.+Android/, null, 36, 42],
+  [/^listennetwork/, 155, null, null],
   [/^Luminary.+(iOS|CFNetwork)/, 91, 36, 43],
   [/^Luminary.+Android/, 91, 36, 42],
   [/^MediaMonkey/, 71, 35, 41],
@@ -414,5 +415,6 @@ exports.tags = {
   151: 'CPR App',
   152: 'Storybutton',
   153: 'WPR App',
-  154: 'WUNC App'
+  154: 'WUNC App',
+  155: 'Listen Network'
 };
