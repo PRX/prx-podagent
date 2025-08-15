@@ -31,6 +31,14 @@
       "os": "43"
     },
     {
+      "regex": "^source=iheart",
+      "name": "159"
+    },
+    {
+      "regex": "^NPROne=true",
+      "name": "160"
+    },
+    {
       "regex": "^(AlexaMediaPlayer|AlexaService)",
       "name": "3",
       "type": "37",
@@ -736,6 +744,23 @@
       "type": "36"
     },
     {
+      "regex": "^poddl",
+      "name": "156",
+      "type": "35"
+    },
+    {
+      "regex": "^Podme.+(Android)",
+      "name": "157",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^PodMe.+(iOS|CFNetwork|Darwin)",
+      "name": "157",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^PodTrapper",
       "name": "57",
       "type": "36",
@@ -1155,6 +1180,18 @@
       "regex": "^Ya(ndex)?\\.Music",
       "name": "145",
       "type": "36"
+    },
+    {
+      "regex": "^Yoto.+Android",
+      "name": "158",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Yoto.+CFNetwork",
+      "name": "158",
+      "type": "36",
+      "os": "43"
     },
     {
       "regex": "^com\\.google\\.android\\.apps\\.youtube\\.music",
@@ -1654,6 +1691,11 @@
     "152": "Storybutton",
     "153": "WPR App",
     "154": "WUNC App",
-    "155": "Listen Network"
+    "155": "Listen Network",
+    "156": "poddl",
+    "157": "PodMe",
+    "158": "Yoto",
+    "159": "Alexa iHeartRadio",
+    "160": "Alexa NPR One"
   }
 }
