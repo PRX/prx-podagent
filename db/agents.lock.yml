@@ -19,6 +19,10 @@ agents:
     name: '131'
     type: '36'
     os: '43'
+  - regex: ^source=iheart
+    name: '156'
+  - regex: ^NPROne=true
+    name: '157'
   - regex: ^(AlexaMediaPlayer|AlexaService)
     name: '3'
     type: '37'
@@ -478,6 +482,17 @@ agents:
   - regex: ^Podbbang
     name: '75'
     type: '36'
+  - regex: ^poddl
+    name: '158'
+    type: '35'
+  - regex: ^Podme.+(Android)
+    name: '159'
+    type: '36'
+    os: '42'
+  - regex: ^PodMe.+(iOS|CFNetwork|Darwin)
+    name: '159'
+    type: '36'
+    os: '43'
   - regex: ^PodTrapper
     name: '57'
     type: '36'
@@ -753,6 +768,14 @@ agents:
   - regex: ^Ya(ndex)?\.Music
     name: '145'
     type: '36'
+  - regex: ^Yoto.+Android
+    name: '160'
+    type: '36'
+    os: '42'
+  - regex: ^Yoto.+CFNetwork
+    name: '160'
+    type: '36'
+    os: '43'
   - regex: ^com\.google\.android\.apps\.youtube\.music
     name: '147'
     type: '36'
@@ -1135,3 +1158,8 @@ tags:
   '153': WPR App
   '154': WUNC App
   '155': Listen Network
+  '156': Alexa iHeartRadio
+  '157': Alexa NPR One
+  '158': poddl
+  '159': PodMe
+  '160': Yoto
