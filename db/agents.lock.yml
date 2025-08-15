@@ -21,8 +21,12 @@ agents:
     os: '43'
   - regex: ^source=iheart
     name: '156'
+    type: '37'
+    os: '44'
   - regex: ^NPROne=true
     name: '157'
+    type: '37'
+    os: '44'
   - regex: ^(AlexaMediaPlayer|AlexaService)
     name: '3'
     type: '37'
