@@ -1,6 +1,6 @@
 {
   "name": "prx-podagent",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "User-agent parser for common podcast clients",
   "main": "index.js",
   "engines": {
