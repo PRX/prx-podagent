@@ -57,29 +57,39 @@ Airr/4070 CFNetwork/1128.0.1 Darwin/19.6.0
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><code>/^source=iheart/</code></h5>
+          <h5 class="card-title"><code>/^(AlexaMediaPlayer|AlexaService|Echo).+source=iheart/</code></h5>
           <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa iHeartRadio</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
           </h6>
-          <p class="card-text">Query param &quot;source=iheart&quot; traffic from Alexa devices</p><code class="examples">source=iheart
+          <p class="card-text">Query param &quot;source=iheart&quot; traffic from Alexa devices. MUST match UA and have the query param</p><code class="examples">AlexaMediaPlayer/2.1.6923.0 (Linux;Android 7.1.2) ExoPlayerLib/1.5.9 source=iheart
+AlexaService/2.2.639718.0 (Linux;Android 11) AmznExoPlayerLib/2.13.3 source=iheart
+Echo/1.0(APNG) source=iheart
 </code>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><code>/^NPROne=true/</code></h5>
+          <h5 class="card-title"><code>/^(AlexaMediaPlayer|AlexaService|Echo).+NPROne=true/</code></h5>
           <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa NPR One</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
           </h6>
-          <p class="card-text">Query param &quot;NPROne=true&quot; traffic from Alexa devices</p><code class="examples">NPROne=true
+          <p class="card-text">Query param &quot;NPROne=true&quot; traffic from Alexa devices. MUST match UA and have the query param.</p><code class="examples">AlexaMediaPlayer/2.1.6923.0 (Linux;Android 7.1.2) ExoPlayerLib/1.5.9 NPROne=true
+AlexaService/2.2.639718.0 (Linux;Android 11) AmznExoPlayerLib/2.13.3 NPROne=true
+Echo/1.0(APNG) NPROne=true
 </code>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title"><code>/^(AlexaMediaPlayer|AlexaService)/</code></h5>
+          <h5 class="card-title"><code>/^(AlexaMediaPlayer|AlexaService|Amazon;Echo|Echo\/)/</code></h5>
           <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
           </h6><code class="examples">AlexaMediaPlayer/2.0.205032.0 (Linux;Android 5.1.1) ExoPlayerLib/1.5.9
 AlexaMediaPlayer/Stitcher (Linux;Android 8.1.0) ExoPlayerLib/2.2.0
 AlexaService/2.2.257912.0 (Linux;Android 8.0.0) ExoPlayerLib/2.5.4
+Amazon;Echo;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+Amazon;Echo_Dot;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+Amazon;Echo_Dot_with_clock;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+Amazon;Echo_Show_5;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+Echo/1.0(APNG)
+Echo/1.0(MRM)
 </code>
         </div>
       </div>
@@ -451,19 +461,6 @@ Downcast/2.9.38 (iPod touch; iOS 12.1.1; Scale/2.00)
           <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Downcast</span>
           </h6>
           <p class="card-text">https://downcast.fm/2016/03/07/Publishers-and-user-agents.html</p><code class="examples">iTunes/10.7 Downcast/4955
-</code>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><code>/^(Amazon;)?Echo/</code></h5>
-          <h6 class="card-subtitle mb2"><span class="badge badge-pill badge-primary">Alexa</span><span class="badge badge-pill badge-success">Smart Home</span><span class="badge badge-pill badge-info">Amazon OS</span>
-          </h6><code class="examples">Echo/1.0(APNG)
-Echo/1.0(MRM)
-Amazon;Echo;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-Amazon;Echo_Dot;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-Amazon;Echo_Dot_with_clock;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-Amazon;Echo_Show_5;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
 </code>
         </div>
       </div>

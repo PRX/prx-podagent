@@ -19,15 +19,15 @@ agents:
     name: '131'
     type: '36'
     os: '43'
-  - regex: ^source=iheart
+  - regex: ^(AlexaMediaPlayer|AlexaService|Echo).+source=iheart
     name: '156'
     type: '37'
     os: '44'
-  - regex: ^NPROne=true
+  - regex: ^(AlexaMediaPlayer|AlexaService|Echo).+NPROne=true
     name: '157'
     type: '37'
     os: '44'
-  - regex: ^(AlexaMediaPlayer|AlexaService)
+  - regex: ^(AlexaMediaPlayer|AlexaService|Amazon;Echo|Echo\/)
     name: '3'
     type: '37'
     os: '44'
@@ -188,10 +188,6 @@ agents:
     os: '45'
   - regex: ^iTunes.+Downcast
     name: '11'
-  - regex: ^(Amazon;)?Echo
-    name: '3'
-    type: '37'
-    os: '44'
   - regex: ^English.*Radio.+CFNetwork
     name: '81'
     type: '36'
