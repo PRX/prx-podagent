@@ -32,23 +32,27 @@ agents:
     examples:
       - Airr/4070 CFNetwork/1206 Darwin/20.1.0
       - Airr/4070 CFNetwork/1128.0.1 Darwin/19.6.0
-  - regex: '^source=iheart'
+  - regex: '^(AlexaMediaPlayer|AlexaService|Echo).+source=iheart'
     name: Alexa iHeartRadio
     type: Smart Home
     os: Amazon OS
     notes:
-      - Query param "source=iheart" traffic from Alexa devices
+      - Query param "source=iheart" traffic from Alexa devices. MUST match UA and have the query param
     examples:
-      - source=iheart
-  - regex: '^NPROne=true'
+      - AlexaMediaPlayer/2.1.6923.0 (Linux;Android 7.1.2) ExoPlayerLib/1.5.9 source=iheart
+      - AlexaService/2.2.639718.0 (Linux;Android 11) AmznExoPlayerLib/2.13.3 source=iheart
+      - Echo/1.0(APNG) source=iheart
+  - regex: '^(AlexaMediaPlayer|AlexaService|Echo).+NPROne=true'
     name: Alexa NPR One
     type: Smart Home
     os: Amazon OS
     notes:
-      - Query param "NPROne=true" traffic from Alexa devices
+      - Query param "NPROne=true" traffic from Alexa devices. MUST match UA and have the query param.
     examples:
-      - NPROne=true
-  - regex: '^(AlexaMediaPlayer|AlexaService)'
+      - AlexaMediaPlayer/2.1.6923.0 (Linux;Android 7.1.2) ExoPlayerLib/1.5.9 NPROne=true
+      - AlexaService/2.2.639718.0 (Linux;Android 11) AmznExoPlayerLib/2.13.3 NPROne=true
+      - Echo/1.0(APNG) NPROne=true
+  - regex: '^(AlexaMediaPlayer|AlexaService|Amazon;Echo|Echo\/)'
     name: Alexa
     type: Smart Home
     os: Amazon OS
@@ -56,6 +60,12 @@ agents:
       - AlexaMediaPlayer/2.0.205032.0 (Linux;Android 5.1.1) ExoPlayerLib/1.5.9
       - AlexaMediaPlayer/Stitcher (Linux;Android 8.1.0) ExoPlayerLib/2.2.0
       - AlexaService/2.2.257912.0 (Linux;Android 8.0.0) ExoPlayerLib/2.5.4
+      - Amazon;Echo;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+      - Amazon;Echo_Dot;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+      - Amazon;Echo_Dot_with_clock;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+      - Amazon;Echo_Show_5;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
+      - Echo/1.0(APNG)
+      - Echo/1.0(MRM)
   - regex: '^AllYouCanBooks.+CFNetwork'
     name: AllYouCanBooks
     type: Mobile App
@@ -345,17 +355,6 @@ agents:
       - iTunes/10.7 Downcast/4955
     notes:
       - https://downcast.fm/2016/03/07/Publishers-and-user-agents.html
-  - regex: '^(Amazon;)?Echo'
-    name: Alexa
-    type: Smart Home
-    os: Amazon OS
-    examples:
-      - Echo/1.0(APNG)
-      - Echo/1.0(MRM)
-      - Amazon;Echo;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-      - Amazon;Echo_Dot;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-      - Amazon;Echo_Dot_with_clock;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
-      - Amazon;Echo_Show_5;27d4dfe427b34d57995b463e5d63198d;;tpapi;3.199.422
   - regex: '^English.*Radio.+CFNetwork'
     name: English Radio IELTS TOEFL
     type: Mobile App
