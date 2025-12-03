@@ -1715,6 +1715,24 @@
       ]
     },
     {
+      "regex": "^SpreakerPodcast/.+(Android",
+      "name": "Spreaker",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "SpreakerPodcast/1.0 (Android/12; Google Pixel 4a; en_US)"
+      ]
+    },
+    {
+      "regex": "^SpreakerPodcast/.+(iOS",
+      "name": "Spreaker",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "SpreakerPodcast/1.0 (iOS/14.8.1; iPhone10,6; en_US)"
+      ]
+    },
+    {
       "regex": "^Spreaker for Android",
       "name": "Spreaker",
       "type": "Mobile App",

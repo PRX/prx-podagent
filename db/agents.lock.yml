@@ -648,6 +648,14 @@ agents:
     name: '77'
     type: '36'
     os: '42'
+  - regex: ^SpreakerPodcast\/.+\(Android
+    name: '96'
+    type: '36'
+    os: '42'
+  - regex: ^SpreakerPodcast\/.+\(iOS
+    name: '96'
+    type: '36'
+    os: '43'
   - regex: ^Spreaker for Android
     name: '96'
     type: '36'
