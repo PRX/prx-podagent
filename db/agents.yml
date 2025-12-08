@@ -838,7 +838,7 @@ agents:
     examples:
       - PlexMobile/5.13 (iPhone; iOS 12.3.1; Scale/3.00)
       - PlexMobile/5.15.1 (iPad; iOS 12.1.4; Scale/2.00)
-  - regex: '^Pocket Casts'
+  - regex: '^Pocket ?Casts'
     name: Pocket Casts
     type: Mobile App
     os: null
@@ -1056,7 +1056,7 @@ agents:
     examples:
       - Roku/DVP-9.0 (049.00E04142A)
       - roku;3930rw;4916bf2fd1c54ff2bace038314d21f39;;tpapi;3.199.379
-  - regex: '^RSSRadio'
+  - regex: '^RSS ?Radio'
     name: RSSRadio
     type: Mobile App
     os: iOS
@@ -1066,6 +1066,7 @@ agents:
       - RSSRadio/9220 (iPad;iOS;12.1.4)
       - RSSRadio/9220 (iPod touch;iOS;12.1.1)
       - RSSRadio7Lite/9220 CFNetwork/976 Darwin/18.2.0
+      - RSS Radio - Player FM
   - regex: '^samsung-agent\/'
     name: null
     type: Smart Home
@@ -1232,6 +1233,12 @@ agents:
     os: iOS
     examples:
       - Stitcher/iOS
+  - regex: '^Swinsian.+CFNetwork'
+    name: Swinsian
+    type: Desktop App
+    os: macOS
+    examples:
+      - Swinsian/617 CFNetwork/3826.600.41 Darwin/24.6.0
   - regex: '^TED.+CFNetwork'
     name: TED
     type: Mobile App
@@ -1422,6 +1429,11 @@ agents:
     examples:
       - Yoto/15035 CFNetwork/3826.500.131 Darwin/24.5.0
       - Yoto/15198 CFNetwork/1.0 Darwin/18.5.0
+  - regex: '^Yoto'
+    name: Yoto
+    type: Smart Home
+    examples:
+      - Yoto v2 FW; version v2.23.2
   - regex: '^com\.google\.android\.apps\.youtube\.music'
     name: YouTube Music
     type: Mobile App
@@ -1608,6 +1620,12 @@ agents:
       - Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko
 
   # android browsers
+  - regex: '^Mozilla\/5\.0.+Android.+Googlebot'
+    bot: true
+    notes:
+      - Googlebot impersonating a browser
+    examples:
+      - Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
   - regex: '^Mozilla\/5\.0.+Android.+musical_ly'
     name: TikTok
     type: Mobile App
@@ -1850,7 +1868,7 @@ agents:
     bot: true
     examples:
       - Mozilla/5.0 (compatible; Cloudinary/1.0)
-  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud'
+  - regex: '^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud|^podcastbulkdownloader'
     ignorecase: true
     bot: true
     notes:
@@ -1868,7 +1886,16 @@ agents:
       - pdrl.fm Analyzer / 1.0.0
       - Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
       - "podCloud/3.20.0-fd4a2eea48101274d85a0abeeb3b81a3237b4dd3 (Podcast app like iTunes/12.0; Reason: MediaAnalyzer (6796cf57f44f856f3ee5bfeb))"
-  - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google'
+      - PodcastBulkDownloader/0.10.1
+  - regex: '^zencastr|^allears'
+    ignorecase: true
+    bot: true
+    notes:
+      - AI related bots
+    examples:
+      - Zencastr/4.0
+      - AllEars/1.0; (+www.allears.ai)
+  - regex: 'bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler'
     ignorecase: true
     bot: true
     notes:
@@ -1880,3 +1907,4 @@ agents:
       - FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)
       - Mediapartners-Google
       - AdsBot-Google (+http://www.google.com/adsbot.html)
+      - google-xrawler
