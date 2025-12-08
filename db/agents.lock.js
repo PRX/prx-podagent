@@ -121,7 +121,7 @@ exports.agents = [
   [/^Player FM.+CFNetwork/, 15, 36, 43],
   [/^Player FM/, 15, 36, 42],
   [/^Plex.+iOS/, 113, 36, 43],
-  [/^Pocket Casts/, 16, 36, null],
+  [/^Pocket ?Casts/, 16, 36, null],
   [/^Podbean.+Android/, 17, 36, 42],
   [/^Podbean\/iOS/, 17, 36, 43],
   [/^(PodCruncher.+CFNetwork|iTunes.+PodCruncher)/, 56, 36, 43],
@@ -154,7 +154,7 @@ exports.agents = [
   [/^RadioPublic iOS|^RadioPublic.+CFNetwork|^RadioPublic\/iOS/, 21, 36, 43],
   [/^ReactNativeVideo.+Android/, null, 36, 42],
   [/^(Roku|roku)/, 64, 37, null],
-  [/^RSSRadio/, 63, 36, 43],
+  [/^RSS ?Radio/, 63, 36, 43],
   [/^samsung-agent\//, null, 37, 42],
   [/^Samsung Free\/|^sp-agent/, 135, 36, 42],
   [/^ServeStream/, 65, 36, 42],
@@ -180,6 +180,7 @@ exports.agents = [
   [/^Storybutton\//, 152, 37, null],
   [/^iTunes.+(SqueezeCenter|SqueezeNetwork)/, 95, 37, 49],
   [/^Stitcher\/iOS/, 23, 36, 43],
+  [/^Swinsian.+CFNetwork/, 161, 35, 45],
   [/^TED.+CFNetwork/, 59, 36, 43],
   [/^(TED.+Android|com\.sciker\.tedtalksdaily|com\.ted\.android)/, 59, 36, 42],
   [/^telmate-audio-player.+Android/, 137, 36, 42],
@@ -208,6 +209,7 @@ exports.agents = [
   [/^Ya(ndex)?\.Music/, 145, 36, null],
   [/^Yoto.+Android/, 160, 36, 42],
   [/^Yoto.+CFNetwork/, 160, 36, 43],
+  [/^Yoto/, 160, 37, null],
   [/^com\.google\.android\.apps\.youtube\.music/, 147, 36, 42],
   [/^YouTubeMusic.+CFNetwork/, 147, 36, 43],
   [/^Zune/, 24, 36, 41],
@@ -230,6 +232,7 @@ exports.agents = [
   [/^Mozilla\/5\.0.+BB10.+Safari/, 27, 40, 46],
   [/^Mozilla\/5\.0.+Windows Phone.+Edge\//, 92, 40, 47],
   [/^Mozilla\/5\.0.+Windows Phone.+IEMobile/, 26, 40, 47],
+  [/^Mozilla\/5\.0.+Android.+Googlebot/, null, null, null, true],
   [/^Mozilla\/5\.0.+Android.+musical_ly/, 127, 36, 42],
   [/^Mozilla\/5\.0.+Android.+Firefox/, 28, 40, 42],
   [/^Mozilla\/5\.0.+Android.+Chrome/, 29, 40, 42],
@@ -266,8 +269,9 @@ exports.agents = [
   [/^Mozilla\/5\.0( compatible)?$/, null, 39, null],
   [/^Linux;Android [0-9]/, null, null, 42],
   [/^Mozilla\/5\.0.+Cloudinary/, null, null, null, true],
-  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud/i, null, null, null, true],
-  [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google/i, null, null, null, true]
+  [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud|^podcastbulkdownloader/i, null, null, null, true],
+  [/^zencastr|^allears/i, null, null, null, true],
+  [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler/i, null, null, null, true]
 ];
 exports.tags = {
   1: 'HermesPod',
@@ -429,5 +433,6 @@ exports.tags = {
   157: 'Alexa NPR One',
   158: 'poddl',
   159: 'PodMe',
-  160: 'Yoto'
+  160: 'Yoto',
+  161: 'Swinsian'
 };

@@ -1216,7 +1216,7 @@
       ]
     },
     {
-      "regex": "^Pocket Casts",
+      "regex": "^Pocket ?Casts",
       "name": "Pocket Casts",
       "type": "Mobile App",
       "os": null,
@@ -1535,7 +1535,7 @@
       ]
     },
     {
-      "regex": "^RSSRadio",
+      "regex": "^RSS ?Radio",
       "name": "RSSRadio",
       "type": "Mobile App",
       "os": "iOS",
@@ -1544,7 +1544,8 @@
         "RSSRadio/9220 (iPhone;iOS;12.1.4)",
         "RSSRadio/9220 (iPad;iOS;12.1.4)",
         "RSSRadio/9220 (iPod touch;iOS;12.1.1)",
-        "RSSRadio7Lite/9220 CFNetwork/976 Darwin/18.2.0"
+        "RSSRadio7Lite/9220 CFNetwork/976 Darwin/18.2.0",
+        "RSS Radio - Player FM"
       ]
     },
     {
@@ -1786,6 +1787,15 @@
       "os": "iOS",
       "examples": [
         "Stitcher/iOS"
+      ]
+    },
+    {
+      "regex": "^Swinsian.+CFNetwork",
+      "name": "Swinsian",
+      "type": "Desktop App",
+      "os": "macOS",
+      "examples": [
+        "Swinsian/617 CFNetwork/3826.600.41 Darwin/24.6.0"
       ]
     },
     {
@@ -2065,6 +2075,14 @@
       ]
     },
     {
+      "regex": "^Yoto",
+      "name": "Yoto",
+      "type": "Smart Home",
+      "examples": [
+        "Yoto v2 FW; version v2.23.2"
+      ]
+    },
+    {
       "regex": "^com\\.google\\.android\\.apps\\.youtube\\.music",
       "name": "YouTube Music",
       "type": "Mobile App",
@@ -2303,6 +2321,16 @@
       "os": "Windows Phone",
       "examples": [
         "Mozilla/5.0 (Windows Phone 8.1; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; Lumia 640 LTE) like Gecko"
+      ]
+    },
+    {
+      "regex": "^Mozilla\\/5\\.0.+Android.+Googlebot",
+      "bot": true,
+      "notes": [
+        "Googlebot impersonating a browser"
+      ],
+      "examples": [
+        "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.7390.122 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
       ]
     },
     {
@@ -2642,7 +2670,7 @@
       ]
     },
     {
-      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer|yandexbot|^podCloud",
+      "regex": "^fyyd-poll|^itms|^mozilla\\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\\/1\\.0|spotify\\/1\\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\\/5.0.+ina dlweb|^pdrl\\.fm analyzer|yandexbot|^podCloud|^podcastbulkdownloader",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2660,11 +2688,24 @@
         "Mozilla/5.0 (compatible; INA dlweb; +https://www.ina.fr/collecte-du-depot-legal-web)",
         "pdrl.fm Analyzer / 1.0.0",
         "Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)",
-        "podCloud/3.20.0-fd4a2eea48101274d85a0abeeb3b81a3237b4dd3 (Podcast app like iTunes/12.0; Reason: MediaAnalyzer (6796cf57f44f856f3ee5bfeb))"
+        "podCloud/3.20.0-fd4a2eea48101274d85a0abeeb3b81a3237b4dd3 (Podcast app like iTunes/12.0; Reason: MediaAnalyzer (6796cf57f44f856f3ee5bfeb))",
+        "PodcastBulkDownloader/0.10.1"
       ]
     },
     {
-      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google",
+      "regex": "^zencastr|^allears",
+      "ignorecase": true,
+      "bot": true,
+      "notes": [
+        "AI related bots"
+      ],
+      "examples": [
+        "Zencastr/4.0",
+        "AllEars/1.0; (+www.allears.ai)"
+      ]
+    },
+    {
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2676,7 +2717,8 @@
         "msnbot/2.0b (+http://search.msn.com/msnbot.htm)",
         "FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)",
         "Mediapartners-Google",
-        "AdsBot-Google (+http://www.google.com/adsbot.html)"
+        "AdsBot-Google (+http://www.google.com/adsbot.html)",
+        "google-xrawler"
       ]
     }
   ]

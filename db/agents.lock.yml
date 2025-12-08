@@ -456,7 +456,7 @@ agents:
     name: '113'
     type: '36'
     os: '43'
-  - regex: ^Pocket Casts
+  - regex: ^Pocket ?Casts
     name: '16'
     type: '36'
   - regex: ^Podbean.+Android
@@ -578,7 +578,7 @@ agents:
   - regex: ^(Roku|roku)
     name: '64'
     type: '37'
-  - regex: ^RSSRadio
+  - regex: ^RSS ?Radio
     name: '63'
     type: '36'
     os: '43'
@@ -679,6 +679,10 @@ agents:
     name: '23'
     type: '36'
     os: '43'
+  - regex: ^Swinsian.+CFNetwork
+    name: '161'
+    type: '35'
+    os: '45'
   - regex: ^TED.+CFNetwork
     name: '59'
     type: '36'
@@ -784,6 +788,9 @@ agents:
     name: '160'
     type: '36'
     os: '43'
+  - regex: ^Yoto
+    name: '160'
+    type: '37'
   - regex: ^com\.google\.android\.apps\.youtube\.music
     name: '147'
     type: '36'
@@ -873,6 +880,8 @@ agents:
     name: '26'
     type: '40'
     os: '47'
+  - regex: ^Mozilla\/5\.0.+Android.+Googlebot
+    bot: true
   - regex: ^Mozilla\/5\.0.+Android.+musical_ly
     name: '127'
     type: '36'
@@ -1003,11 +1012,14 @@ agents:
     bot: true
   - regex: >-
       ^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac
-      network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud
+      network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud|^podcastbulkdownloader
+    ignorecase: true
+    bot: true
+  - regex: ^zencastr|^allears
     ignorecase: true
     bot: true
   - regex: >-
-      bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google
+      bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler
     ignorecase: true
     bot: true
 tags:
@@ -1171,3 +1183,4 @@ tags:
   '158': poddl
   '159': PodMe
   '160': Yoto
+  '161': Swinsian
