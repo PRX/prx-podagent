@@ -144,6 +144,8 @@ exports.agents = [
   [/^Podhero.+CFNetwork/, 132, 36, 43],
   [/^Podhero/, 132, 36, null],
   [/^Podkicker/, 20, 36, 42],
+  [/^Podverse.+Android/, 162, 36, 42],
+  [/^Podverse.+iOS/, 162, 36, 43],
   [/^PRI\/.+CFNetwork/, 114, 36, 43],
   [/^Pro[Cc]ast.+(iOS|CFNetwork)/, 83, 36, 43],
   [/^PRX-Feeder-Apple\/1.0 \(nodejs\)/, 148, null, null, true],
@@ -191,6 +193,7 @@ exports.agents = [
   [/^TuneIn.+CFNetwork/, 60, 36, 43],
   [/^TuneIn.+Android/, 60, 36, 42],
   [/^TuneIn Radio/, 60, null, null],
+  [/^Turtlecast.+Android/, 163, 36, 42],
   [/^(uTorrent|BTWebClient)/, 66, 35, null],
   [/^VictorReader/, 97, 37, null],
   [/^VLC\//, 141, 35, null],
@@ -436,5 +439,7 @@ exports.tags = {
   158: 'poddl',
   159: 'PodMe',
   160: 'Yoto',
-  161: 'Swinsian'
+  161: 'Swinsian',
+  162: 'Podverse',
+  163: 'Turtlecast'
 };

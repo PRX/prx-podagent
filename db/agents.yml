@@ -992,6 +992,19 @@ agents:
     examples:
       - Podkicker/3.0.2
       - Podkicker Pro/3.0.2
+  - regex: '^Podverse.+Android'
+    name: Podverse
+    type: Mobile App
+    os: Android
+    examples:
+      - Podverse/F-Droid Android Mobile App
+      - Podverse/Android Mobile App
+  - regex: '^Podverse.+iOS'
+    name: Podverse
+    type: Mobile App
+    os: iOS
+    examples:
+      - Podverse/iOS Mobile App
   - regex: '^PRI\/.+CFNetwork'
     name: PRI App
     type: Mobile App
@@ -1306,6 +1319,13 @@ agents:
     os: null
     examples:
       - TuneIn Radio
+  - regex: '^Turtlecast.+Android'
+    name: Turtlecast
+    type: Mobile App
+    os: Android
+    examples:
+      - Turtlecast/2.7.0; (Android 16);
+      - Turtlecast/2.7.0; (Android 8.1.0);
   - regex: '^(uTorrent|BTWebClient)'
     name: uTorrent
     type: Desktop App # and mobile???

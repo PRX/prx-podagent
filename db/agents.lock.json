@@ -835,6 +835,18 @@
       "os": "42"
     },
     {
+      "regex": "^Podverse.+Android",
+      "name": "162",
+      "type": "36",
+      "os": "42"
+    },
+    {
+      "regex": "^Podverse.+iOS",
+      "name": "162",
+      "type": "36",
+      "os": "43"
+    },
+    {
       "regex": "^PRI\\/.+CFNetwork",
       "name": "114",
       "type": "36",
@@ -1105,6 +1117,12 @@
     {
       "regex": "^TuneIn Radio",
       "name": "60"
+    },
+    {
+      "regex": "^Turtlecast.+Android",
+      "name": "163",
+      "type": "36",
+      "os": "42"
     },
     {
       "regex": "^(uTorrent|BTWebClient)",
@@ -1737,6 +1755,8 @@
     "158": "poddl",
     "159": "PodMe",
     "160": "Yoto",
-    "161": "Swinsian"
+    "161": "Swinsian",
+    "162": "Podverse",
+    "163": "Turtlecast"
   }
 }

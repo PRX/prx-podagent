@@ -1439,6 +1439,25 @@
       ]
     },
     {
+      "regex": "^Podverse.+Android",
+      "name": "Podverse",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Podverse/F-Droid Android Mobile App",
+        "Podverse/Android Mobile App"
+      ]
+    },
+    {
+      "regex": "^Podverse.+iOS",
+      "name": "Podverse",
+      "type": "Mobile App",
+      "os": "iOS",
+      "examples": [
+        "Podverse/iOS Mobile App"
+      ]
+    },
+    {
       "regex": "^PRI\\/.+CFNetwork",
       "name": "PRI App",
       "type": "Mobile App",
@@ -1893,6 +1912,16 @@
       "os": null,
       "examples": [
         "TuneIn Radio"
+      ]
+    },
+    {
+      "regex": "^Turtlecast.+Android",
+      "name": "Turtlecast",
+      "type": "Mobile App",
+      "os": "Android",
+      "examples": [
+        "Turtlecast/2.7.0; (Android 16);",
+        "Turtlecast/2.7.0; (Android 8.1.0);"
       ]
     },
     {
