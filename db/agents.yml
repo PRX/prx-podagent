@@ -1759,6 +1759,12 @@ agents:
     examples:
       - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko)
 
+  # facebook bot looking a bit like a browser
+  - regex: '^Mozilla\/5\.0.+meta-webindexer'
+    bot: true
+    examples:
+      - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 (compatible; meta-webindexer/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)) play.prx.org
+
   # windows desktop browsers
   - regex: '^Mozilla\/5\.0.+Windows NT.+Edge'
     name: Edge
