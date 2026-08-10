@@ -2693,6 +2693,22 @@
       ]
     },
     {
+      "regex": "^Radioline Stream Monitoring|^Podget|^StorytelDownloader|^MixcloudPodcastImporter|^Triton Digital Podcast Sync|^Podscribe|^Transmission",
+      "bot": true,
+      "notes": [
+        "More podcast specific bots"
+      ],
+      "examples": [
+        "Radioline Stream Monitoring (tech@radioline.co)",
+        "Podget",
+        "StorytelDownloader/1.0 (https://www.storytel.com; dev@storytel.com)",
+        "MixcloudPodcastImporter/2.0",
+        "Triton Digital Podcast Sync",
+        "Podscribe/1.1",
+        "Transmission/2.77"
+      ]
+    },
+    {
       "regex": "^zencastr|^allears",
       "ignorecase": true,
       "bot": true,
@@ -2705,7 +2721,7 @@
       ]
     },
     {
-      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler",
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler|googleother",
       "ignorecase": true,
       "bot": true,
       "notes": [
@@ -2718,7 +2734,8 @@
         "FeedStation/4.5 (http://www.newsgator.com/; Microsoft Windows)",
         "Mediapartners-Google",
         "AdsBot-Google (+http://www.google.com/adsbot.html)",
-        "google-xrawler"
+        "google-xrawler",
+        "GoogleOther-Video/1.0"
       ]
     }
   ]

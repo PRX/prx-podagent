@@ -1556,12 +1556,16 @@
       "bot": true
     },
     {
+      "regex": "^Radioline Stream Monitoring|^Podget|^StorytelDownloader|^MixcloudPodcastImporter|^Triton Digital Podcast Sync|^Podscribe|^Transmission",
+      "bot": true
+    },
+    {
       "regex": "^zencastr|^allears",
       "ignorecase": true,
       "bot": true
     },
     {
-      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler",
+      "regex": "bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler|googleother",
       "ignorecase": true,
       "bot": true
     }

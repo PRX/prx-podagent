@@ -270,8 +270,9 @@ exports.agents = [
   [/^Linux;Android [0-9]/, null, null, 42],
   [/^Mozilla\/5\.0.+Cloudinary/, null, null, null, true],
   [/^fyyd-poll|^itms|^mozilla\/5.0.+google-podcast|^stitcherbot|^rest-client|castfeedvalidator|^amazonnewscontentservice|^trackable|luminary\/1\.0|spotify\/1\.0|^podtrac network|^anchorimport|^adswizz-podscribe|^deezer podcasters|^riddler|^mozilla\/5.0.+ina dlweb|^pdrl\.fm analyzer|yandexbot|^podCloud|^podcastbulkdownloader/i, null, null, null, true],
+  [/^Radioline Stream Monitoring|^Podget|^StorytelDownloader|^MixcloudPodcastImporter|^Triton Digital Podcast Sync|^Podscribe|^Transmission/, null, null, null, true],
   [/^zencastr|^allears/i, null, null, null, true],
-  [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler/i, null, null, null, true]
+  [/bot|spider|crawl|slurp|scan|scrap|archiver|transcoder|^curl|wget|^ruby|^python|^java|perl|php|httpclient|http-client|wordpress|facebook|yahoo|^pinterest|HWCDN|appengine|hwcdn|httrack|feedstation|mediapartners-google|adsbot-google|google-xrawler|googleother/i, null, null, null, true]
 ];
 exports.tags = {
   1: 'HermesPod',
