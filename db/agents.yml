@@ -1333,6 +1333,20 @@ agents:
     examples:
       - uTorrent/2210(25302)
       - BTWebClient/355S(44994)
+  - regex: '^VermontPublicApp.+Android'
+    name: VPR App
+    type: Mobile App
+    os: Android
+    examples:
+      - VermontPublicApp/7.4.4 (SM-S931U; Android 16)
+      - VermontPublicApp/7.4.4 (Pixel 7; Android 16)
+  - regex: '^VermontPublicApp.+(iPhone|iPad|iOS|CFNetwork)'
+    name: VPR App
+    type: Mobile App
+    os: iOS
+    examples:
+      - VermontPublicApp/12.0.0 (iPhone14,5; iOS 26.5.2)
+      - VermontPublicApp/12.0.0 (iPad7,3; iPadOS 17.7.11)
   - regex: '^VictorReader'
     name: VictorReader
     type: Smart Home
@@ -1366,13 +1380,27 @@ agents:
       - WUBR Listen/2.0.8 (Linux;Android 5.0) ExoPlayerLib/2.9.2
       # just in case they fix it
       - WBUR Listen/2.0.8 (Linux;Android 5.0) ExoPlayerLib/2.9.2
+  - regex: '^WGBH.+Android'
+    name: WGBH App
+    type: Mobile App
+    os: Android
+    examples:
+      - WGBHPublicRadioApp/12.0.1 (moto g 5G - 2024; Android 15)
+      - WGBHPublicRadioApp/12.0.1 (Pixel 2; Android 11)
+  - regex: '^WGBH.+(iPhone|iPad|iOS|CFNetwork)'
+    name: WGBH App
+    type: Mobile App
+    os: iOS
+    examples:
+      - WGBHPublicMediaApp/12.0.7 (iPhone14,5; iOS 26.5.2)
+      - WGBHPublicMediaApp/7.3.2 (iPad7,5; iPadOS 17.7.11)
   - regex: '^WNYC.+Android'
     name: WNYC App
     type: Mobile App
     os: Android
     examples:
       - WNYC App/3.0.10 Android/25 device/KYOCERA-E6810
-  - regex: '^WNYC.+(Darwin|iPhone|iOS)'
+  - regex: '^WNYC.+(iPhone|iPad|iOS|CFNetwork)'
     name: WNYC App
     type: Mobile App
     os: iOS
@@ -1392,6 +1420,20 @@ agents:
     examples:
       - WPRPublicRadioApp/6.2.3 (iPhone14,3; iOS 18.2.1)
       - WPRPublicRadioApp/6.2.3 (iPad7,1; iPadOS 17.7.2)
+  - regex: '^WRKF.+Android'
+    name: WRKF App
+    type: Mobile App
+    os: Android
+    examples:
+      - WRKFPublicRadioApp/7.4.1 (SM-S911U; Android 16)
+      - WRKFPublicRadioApp/7.4.1 (motorola razr 2025; Android 16)
+  - regex: '^WRKF.+(iPhone|iPad|iOS|CFNetwork)'
+    name: WRKF App
+    type: Mobile App
+    os: iOS
+    examples:
+      - WRKFPublicRadioApp/12.0.3 (iPhone14,5; iOS 26.5.2)
+      - WRKFPublicRadioApp/12.0.3 (iPad16,1; iPadOS 26.5)
   - regex: '^WUNC.+Android'
     name: WUNC App
     type: Mobile App

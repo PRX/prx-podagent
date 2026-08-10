@@ -736,6 +736,14 @@ agents:
   - regex: ^(uTorrent|BTWebClient)
     name: '66'
     type: '35'
+  - regex: ^VermontPublicApp.+Android
+    name: '166'
+    type: '36'
+    os: '42'
+  - regex: ^VermontPublicApp.+(iPhone|iPad|iOS|CFNetwork)
+    name: '166'
+    type: '36'
+    os: '43'
   - regex: ^VictorReader
     name: '97'
     type: '37'
@@ -754,11 +762,19 @@ agents:
     name: '115'
     type: '36'
     os: '42'
+  - regex: ^WGBH.+Android
+    name: '164'
+    type: '36'
+    os: '42'
+  - regex: ^WGBH.+(iPhone|iPad|iOS|CFNetwork)
+    name: '164'
+    type: '36'
+    os: '43'
   - regex: ^WNYC.+Android
     name: '85'
     type: '36'
     os: '42'
-  - regex: ^WNYC.+(Darwin|iPhone|iOS)
+  - regex: ^WNYC.+(iPhone|iPad|iOS|CFNetwork)
     name: '85'
     type: '36'
     os: '43'
@@ -768,6 +784,14 @@ agents:
     os: '42'
   - regex: ^WPR.+(iPhone|iPad|iOS|CFNetwork)
     name: '153'
+    type: '36'
+    os: '43'
+  - regex: ^WRKF.+Android
+    name: '165'
+    type: '36'
+    os: '42'
+  - regex: ^WRKF.+(iPhone|iPad|iOS|CFNetwork)
+    name: '165'
     type: '36'
     os: '43'
   - regex: ^WUNC.+Android
@@ -1204,3 +1228,6 @@ tags:
   '161': Swinsian
   '162': Podverse
   '163': Turtlecast
+  '164': WGBH App
+  '165': WRKF App
+  '166': VPR App
