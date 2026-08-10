@@ -19,7 +19,7 @@ exports.agents = [
   [/^Apache-HttpClient/, null, 36, 42],
   [/^APKXDL.+Android/, null, 36, 42],
   [/^(Audible|com\.audible).+Android/, 130, 36, 42],
-  [/^(Audible|com\.audible).+(CFNetwork|iOS)/, 130, 36, 43],
+  [/^(Audible|com\.audible).+(CFNetwork|iOS|iPadOS)/, 130, 36, 43],
   [/^IOSAudiobooks.+CFNetwork/, 101, 36, 43],
   [/^audiobookshelf/, 149, 36, null],
   [/^BashPodder/, 119, 35, 49],

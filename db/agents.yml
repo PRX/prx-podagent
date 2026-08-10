@@ -149,7 +149,7 @@ agents:
       - com.audible.playersdk.player/2.64.0 (Linux;Android 10) ExoPlayerLib/2.5.3
       - Audible, Android, 2.64.0, samsung, SM-G988U, z3qsqw, 10, 1.0, WIFI
       - Audible, Android, 2.64.0, lge, LM-G820, alphalm_lao_com, 10, 1.0, WIFI
-  - regex: '^(Audible|com\.audible).+(CFNetwork|iOS)'
+  - regex: '^(Audible|com\.audible).+(CFNetwork|iOS|iPadOS)'
     name: Audible
     type: Mobile App
     os: iOS
@@ -157,6 +157,7 @@ agents:
       - Audible/648 CFNetwork/1206 Darwin/20.1.0
       - Audible/123 CFNetwork/1197 Darwin/19.6.0
       - com.audible.playersdk.player/4.13.1;(iOS/AVPlayer/17.2.1)
+      - com.audible.playersdk.player/4.73;(iPadOS/AVPlayer/26.5)
   - regex: '^IOSAudiobooks.+CFNetwork'
     name: Audiobooks
     type: Mobile App

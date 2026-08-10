@@ -117,7 +117,7 @@
       "os": "42"
     },
     {
-      "regex": "^(Audible|com\\.audible).+(CFNetwork|iOS)",
+      "regex": "^(Audible|com\\.audible).+(CFNetwork|iOS|iPadOS)",
       "name": "130",
       "type": "36",
       "os": "43"

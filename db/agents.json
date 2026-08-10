@@ -213,14 +213,15 @@
       ]
     },
     {
-      "regex": "^(Audible|com\\.audible).+(CFNetwork|iOS)",
+      "regex": "^(Audible|com\\.audible).+(CFNetwork|iOS|iPadOS)",
       "name": "Audible",
       "type": "Mobile App",
       "os": "iOS",
       "examples": [
         "Audible/648 CFNetwork/1206 Darwin/20.1.0",
         "Audible/123 CFNetwork/1197 Darwin/19.6.0",
-        "com.audible.playersdk.player/4.13.1;(iOS/AVPlayer/17.2.1)"
+        "com.audible.playersdk.player/4.13.1;(iOS/AVPlayer/17.2.1)",
+        "com.audible.playersdk.player/4.73;(iPadOS/AVPlayer/26.5)"
       ]
     },
     {
