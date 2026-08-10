@@ -958,6 +958,8 @@ agents:
   - regex: ^Mozilla\/5\.0.+Macintosh
     type: '39'
     os: '45'
+  - regex: ^Mozilla\/5\.0.+meta-webindexer
+    bot: true
   - regex: ^Mozilla\/5\.0.+Windows NT.+Edge
     name: '92'
     type: '39'

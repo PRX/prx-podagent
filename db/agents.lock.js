@@ -253,6 +253,7 @@ exports.agents = [
   [/^Mozilla\/5\.0.+Macintosh.+Chrome/, 29, 39, 45],
   [/^Mozilla\/5\.0.+Macintosh.+Safari/, 27, 39, 45],
   [/^Mozilla\/5\.0.+Macintosh/, null, 39, 45],
+  [/^Mozilla\/5\.0.+meta-webindexer/, null, null, null, true],
   [/^Mozilla\/5\.0.+Windows NT.+Edge/, 92, 39, 41],
   [/^Mozilla\/5\.0.+Windows NT.+Firefox/, 28, 39, 41],
   [/^Mozilla\/5\.0.+Windows NT.+Chrome/, 29, 39, 41],
