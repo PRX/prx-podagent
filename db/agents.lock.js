@@ -172,6 +172,7 @@ exports.agents = [
   [/^Spotify\/.+Win32/, 77, 35, 41],
   [/^Spotify\/.+Linux/, 77, 35, 49],
   [/^Spotify\/.+(Volvo|Rivian|Polestar)/, 77, 36, 42],
+  [/^Spotify\/.+tvOS/, 77, 38, 43],
   [/^SpreakerPodcast\/.+\(Android/, 96, 36, 42],
   [/^SpreakerPodcast\/.+\(iOS/, 96, 36, 43],
   [/^Spreaker for Android/, 96, 36, 42],

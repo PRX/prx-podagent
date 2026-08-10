@@ -1184,6 +1184,12 @@ agents:
       - Spotify/4.3.2.0 Volvo/30 (Volvo)
       - Spotify/4.3.1.2 Rivian R1T/29 (Rivian R1T)
       - Spotify/4.3.2.0 Polestar/30 (Polestar)
+  - regex: '^Spotify\/.+tvOS'
+    name: Spotify
+    type: Smart TV
+    os: iOS
+    examples:
+      - Spotify/9.1.62 tvOS/26.5 (AppleTV14,1)
   - regex: '^SpreakerPodcast\/.+\(Android'
     name: Spreaker
     type: Mobile App

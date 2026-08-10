@@ -996,6 +996,12 @@
       "os": "42"
     },
     {
+      "regex": "^Spotify\\/.+tvOS",
+      "name": "77",
+      "type": "38",
+      "os": "43"
+    },
+    {
       "regex": "^SpreakerPodcast\\/.+\\(Android",
       "name": "96",
       "type": "36",

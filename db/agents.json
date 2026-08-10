@@ -1717,6 +1717,15 @@
       ]
     },
     {
+      "regex": "^Spotify\\/.+tvOS",
+      "name": "Spotify",
+      "type": "Smart TV",
+      "os": "iOS",
+      "examples": [
+        "Spotify/9.1.62 tvOS/26.5 (AppleTV14,1)"
+      ]
+    },
+    {
       "regex": "^SpreakerPodcast\\/.+\\(Android",
       "name": "Spreaker",
       "type": "Mobile App",
